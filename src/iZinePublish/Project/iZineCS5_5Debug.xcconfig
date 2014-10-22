@@ -1,0 +1,28 @@
+//	$HeadURL: https://my.redfive.biz/svn/izine/iZinePlns/Codebase/trunk/iZinePublish/Project/iZineCS5_5Debug.xcconfig $
+//	$Revision: 1156 $
+//	$Date: 2010-05-17 14:25:23 +0530 (Mon, 17 May 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: mindfire
+//	Created: 2012 Oct 29
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Configuration file for iZinePublish CS5_5 Debug target
+
+#include "../../InDesignCommonCS5_5.xcconfig"
+
+BUILT_PRODUCTS_DIR = $(InDnCS55PlnsDebug)
+DSTROOT = $(InDnCS55PlnsDebug)
+
+DebugOrReleaseFolder = debug
+
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) DEBUG INDESIGN_CS5_5 InDnCS5_5
+GCC_THREADSAFE_STATICS = NO
+GCC_TREAT_WARNINGS_AS_ERRORS = NO
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+OTHER_REZFLAGS = -d __GNUC__ -d DEBUG -d MACINTOSH  -d INDESIGN_CS5_5 -d InDnCS5_5
+ODFRCArg2 = -d DEBUG -d INDESIGN_CS5_5 -d InDnCS5_5

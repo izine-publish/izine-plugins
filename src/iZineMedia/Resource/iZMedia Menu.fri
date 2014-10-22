@@ -1,0 +1,118 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMedia%20Menu.fri $
+//	$Revision: 2800 $
+//	$Date: 2011-04-12 12:41:56 +0200 (Tue, 12 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 25-03-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+//Application related menu items
+//prefs,about,login,logoff
+resource MenuDef (kSDKDefMenuResourceID)
+{
+	{
+		// The About Plug-ins sub-menu item for this plug-in.
+		kIZMediaAboutActionID,			// ActionID (kInvalidActionID for positional entries)
+		kIZMediaAboutMenuPath,			// Menu Path.
+		kSDKDefAlphabeticPosition,			// Menu Position.
+		kSDKDefIsNotDynamicMenuFlag,		// kSDKDefIsNotDynamicMenuFlag or kSDKDefIsDynamicMenuFlag
+
+		//kIZMExportFrontDocActionID,	//Commented as the same thing can be done via Ctrl+E i.e File->Export
+		//kIZMFileMenuPath,
+		//kExportSepMenuPosition - 1,
+		//kSDKDefIsNotDynamicMenuFlag,
+
+		//Edit->Preferences->iZine Media
+		kIZMPreferencesPanelActionID,
+		kSDKDefPreferencesStandardMenuPath,
+		kIZMPreferencesMenuPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+	}
+};
+
+resource MenuDef (kSDKDefMenuResourceID + 3)
+{
+	{	//Tree View Header right click menu
+		kIZMTVHeaderShowColumnsActionID,
+		kIZMTVHeaderMenuPath,
+		1,
+		kSDKDefIsDynamicMenuFlag,
+	}
+};
+
+#ifdef DEBUG
+resource MenuDef (kSDKDefMenuResourceID + 20)
+{
+	{
+		//Debugging menu items goes here
+	}
+};
+#endif
+
+//Application related Action items
+//about, export actions
+//panels pop menu
+resource ActionDef (kSDKDefActionResourceID)
+{
+	{
+		kZMAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZMediaAboutActionID,				// ActionID.
+		kIZMediaAboutMenuKey,					// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem,					// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		//Edit->Preferences->iZine Media
+		kZMAppActionComponentBoss,
+		kIZMPreferencesPanelActionID,
+		kIZMPreferencesPanelMenuItemKey,
+		kOtherActionArea,
+		kNormalAction,
+		kDisableIfLowMem,
+		kInvalidInterfaceID,
+		kSDKDefInvisibleInKBSCEditorFlag,
+
+	}
+};
+
+//panel Menu
+resource ActionDef ( kSDKDefActionResourceID+1 )
+{
+	{
+	}
+};
+
+//TreeView Header Menu
+resource ActionDef ( kSDKDefActionResourceID+3 )
+{
+	{
+		kZMTVHeaderActionComponentBoss,		// ClassID of boss class that implements the ActionID.
+		kIZMTVHeaderShowColumnsActionID,	// ActionID.
+		kIZMTVHdrVisibleColumnsMenuKey,		// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem,					// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+	}
+};
+
+//Debugging Menu
+resource ActionDef ( kSDKDefActionResourceID+2 )
+{
+	{
+		//Debugging actions added here
+	}
+};
+
+#endif //__ODFRC__

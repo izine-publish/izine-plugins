@@ -1,0 +1,57 @@
+-------------------- Common ------------------------
+=> Some of the services expect to use the target file, instead of manageable asset. like enEnsureLatestVersion 
+
+
+-------------------- Document ----------------------
+=> When opening an ID/IC document path, ensure latest version service is called.
+
+=> intialize service is called after opening the file for document or creating a new document.
+
+=> enEnsureLatesVersion is coming two time for opening ID document.
+
+=> enRevert ::VerifyContext of document service, controls enabling the "File" -> "Revert" menu item.
+
+-------------------- Assignment --------------------
+=> Assignment when opened in InCopy, the file path is with kDocBoss and there is not manageable asset for assignment.
+=> InCopy: After save service is called for "Save All Content"
+
+-------------------- Linked Story ------------------
+=> Linked story check-in does not come after adding it to assignment till the lock state is set to unavailable.
+
+
+-------------------- IC Document -------------------
+=> Before first check, we treat it as document. And after that as linked story.
+
+----------------------------------------------------
+
+
+
+Creating a new document and clicking the file menu
+	GetService is called for
+		enRevert
+
+During save a new document
+	CanService is called with extension hint, and file path to be saved.
+	IsVersioned is called to check if this file path have versioned history.
+	
+	GetService is called for 
+		enUpdateStoredAssetReference
+		enUpdateProxyVersionNumber
+		enAfterSaveAs
+
+During opening a file path ( incx in InCopy )
+	CanService is called with extension hint, and file path to be saved.
+	GetService - enEnsureLatestVersion
+	OverrideOpenFlags - here we can mark read-only if opening a non-head version.
+	GetService - enEnsureLatestVersion is called two times again.
+	GetService - enInitialize
+
+	GetService is called for 
+		enUpdateStoredAssetReference
+		enUpdateProxyVersionNumber
+
+Opening/Activating the window for document calls
+	GetService - enCheckout
+	GetService - enCheckIn
+		VerifyContext is called for enCheckIn service.	
+

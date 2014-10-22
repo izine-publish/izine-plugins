@@ -1,0 +1,38 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp_Errors.fri $
+//	$Revision: 3900 $
+//	$Date: 2012-02-10 13:12:32 +0100 (Fri, 10 Feb 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-2-2012
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+/*
+// User Error Table resource
+// To be coupled with an IErrorStringService implementation and
+// string translations (see localized .fr files)
+// Note: that the string provided in the UserErrorTable is not localized
+*/
+resource UserErrorTable(kSDKDefErrorStringResourceID)	//id is used in service, don't change
+{
+	{
+		kIZExpFileWritingError, kIZExpMsgFileWritingFailKey,
+		kIZExpParamError, kIZExpParamFailKey,	
+		kIZExpWSFailError, kZExpMsgWSFailKey,
+		kIZExpXMLFileCreationFailError, kZExpMsgXMLFileCreationFailKey,
+		kIZExpPDFFileCreationFailError, kZExpMsgPDFFileCreationFailKey,
+		kIZExpXMLFileReadFailError, kZExpMsgXMLReadFailKey,
+		kIZExpXMLFileUploadFailError, kZExpMsgXMLUploadingFailKey,
+		kIZExpPDFFileUploadFailError, kZExpMsgPDFUploadingFailKey,
+		kIZExpHighResImageUploadFailError, kZExpMsgHighResImageUploadFailKey,
+		kIZExpLowResImageUploadFailError, kZExpMsgLowResImageUploadFailKey,
+		kIZExpUploadFinishFailError, kZExpMsgUploadFinishFailKey,
+		kIZExpPluginIdEmptyError, kZExpMsgPluginIdEmptyErrorKey,
+		kIZExpConfigDataFetchFailError, kZExpMsgConfigDataFetchFailKey,
+	}
+};

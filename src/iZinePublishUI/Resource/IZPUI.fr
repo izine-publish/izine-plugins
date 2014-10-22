@@ -1,0 +1,148 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI.fr $
+//	$Revision: 4088 $
+//	$Date: 2012-10-26 14:24:55 +0200 (Fri, 26 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#include "VCPlugInHeaders.h"
+
+// General includes:
+#include "ActionDef.fh"
+#include "ActionDefs.h"
+#include "AdobeMenuPositions.h"
+#include "BuildNumber.h"
+#include "IControlViewDefs.h"
+#include "IDList.fh"
+#include "IDListPair.fh"
+#include "InCopyBridgeUIID.h"
+#include "InterfaceColorDefines.h"
+#include "LocaleIndex.h"
+#include "MenuDef.fh"
+#include "ObjectModelTypes.fh"
+#include "PanelList.fh"
+#include "PMLocaleIds.h"
+#include "StringTable.fh"
+#include "SysControlIDs.h"
+#include "Widgets.fh"	// for PalettePanelWidget or DialogBoss
+
+#include "ActionID.h"
+#include "AssignmentUIID.h"
+#include "DocFrameworkID.h"
+#include "DragDropID.h"
+#include "InCopyExportUIID.h"
+#include "TextID.h"
+#include "workgroupid.h"
+#include "WorkspaceID.h"
+
+
+// Project includes:
+#include "IZPID.h"
+#include "IZPUIID.h"
+
+#ifdef __ODFRC__
+
+#define kInDesignProductAndServerFS ( kInDesignProductFS | kInDesignServerProductFS | kAllLanguagesFS)
+
+/*
+// User Error Table resource
+// To be coupled with an IErrorStringService implementation and
+// string translations (see localized .fr files)
+*/
+/*
+resource UserErrorTable(kSDKDefErrorStringResourceID)
+{
+		{
+			kFrmLblFailureErrorCode, kFrmLblFailureErrorCodeStringKey,
+		}
+};
+*/
+
+#pragma mark -
+resource IgnoreTags(1)
+{
+	kImplementationIDSpace,
+	{
+		kZPUIActionFilterDataImpl,
+		kZPDocumentPreviewControlViewImpl,
+		kZPAssetsPanelControlViewImpl,
+	}
+};
+
+/*
+	The following resource asks the InDesign to warn the user that the data$
+	to the document is critical, if this plug-in is missing when
+	InDesign tries to open a document that contains the data.
+*/
+/*
+resource CriticalTags(1)
+{
+	kImplementationIDSpace,
+	{
+//		kAssetDataPersistImpl,
+	}
+};*/
+/*
+resource CriticalTags(2)
+{
+	kClassIDSpace,
+	{
+//		kDocDataBoss,
+	}
+};
+*/
+
+/*	Implementation definition.
+*/
+resource FactoryList (kSDKDefFactoryListResourceID)
+{
+	kImplementationIDSpace,
+	{
+		#include "IZPUIFactoryList.h"
+	}
+};
+
+#if defined(InDnCS5) || defined(InDnCS5_5)
+#define			ConvertAmpersandsTrue	kTrue,							// Convert ampersands
+#define			ConvertAmpersandsFalse	kFalse,							// Convert ampersands
+#else
+#define			ConvertAmpersandsTrue
+#define			ConvertAmpersandsFalse
+#endif
+
+#ifdef InDnCS3
+#define kIsResizable	isResizable
+#endif
+
+//Don't change the order of includes.
+#include "IZPUI Version.fri"
+#include "IZPUI Aliases.fri"
+#include "IZPUI ClassDefinitions.fri"
+#include "IZPUI Addins.fri"
+#include "IZPUI Menu.fri"
+#include "IZPUI Images.fri"
+#include "IZPUI Scripting.fri"
+#include "IZPUI Strings.fri"
+#include "IZPUI Schema.fri"
+#include "IZPUI Controls.fri"
+//Panels
+#include "IZPUI_AssetsPanel.fri"
+#include "IZPUI_TasksPanel.fri"
+//Dialogs
+#include "IZPUI_LoginDialog.fri"
+#include "IZPUI_SaveToRepositoryDialog.fri"
+#include "IZPUI_AlertDialog.fri"
+#include "IZPUI_PrefsDialog.fri"
+#include "IZPUI_CreateTaskDialog.fri"
+#include "IZPUI_UpdateVersionStatusDialog.fri"
+#include "IZPUI_RenameAssetDialog.fri"
+
+
+#endif // __ODFRC__=======

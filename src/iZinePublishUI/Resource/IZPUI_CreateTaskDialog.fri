@@ -1,0 +1,484 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_CreateTaskDialog.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 23-9-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+#ifdef __ODFRC__
+
+resource LocaleIndex (kZPUICreateTaskDialogResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUICreateTaskDialogResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPCreateTaskDialogWidget(kViewRsrcType) : ResizeDialogWidget(ClassID = kZPCreateTaskDialogBoss)
+{
+};
+
+#define ZPCTaskFullView 0
+#define ZPCTaskVisibleInCompact			kFalse
+
+#define ZPCTaskDlgPanelWidth			460
+#define ZPCTaskDlgPanelHeight			(ZPCTaskDlgBtnCancel_T + ZPCTaskDlgCtrlBtnHeight+ ZPCTaskDlgBottomMargin )
+
+#define ZPCTaskDlgLeftMargin			10
+#define ZPCTaskDlgRightMargin			10
+#define ZPCTaskDlgTopMargin				10
+#define ZPCTaskDlgBottomMargin			10
+#define ZPCTaskDlgEditLeft				110
+#define ZPCTaskDlgLblRightMarign		5
+#define ZPCTaskDlgCtrlVMarign			5
+#define ZPCTaskDlgCtrlLblHeight			18
+#define ZPCTaskDlgCtrlTxtHeight			20
+#define ZPCTaskDlgCtrlPopHeight			20
+#define ZPCTaskDlgCtrlBtnHeight			20
+
+//Top Bottom calculations
+#define ZPCTaskDlgLblSubject_T			ZPCTaskDlgTopMargin
+#define ZPCTaskDlgLblSubject_L			ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblSubject_R			( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#if ZPCTaskFullView
+#define ZPCTaskDlgLblDescription_T		( ZPCTaskDlgLblSubject_T + ZPCTaskDlgCtrlTxtHeight + ZPCTaskDlgCtrlVMarign )
+#else
+#define ZPCTaskDlgLblDescription_T		( ZPCTaskDlgTopMargin )
+#endif
+#define ZPCTaskDlgLblDescription_L		ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblDescription_R		( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#define ZPCTaskDlgPopTitle_T			( ZPCTaskDlgLblDescription_T + ZPCTaskDlgCtrlTxtHeight*4 + ZPCTaskDlgCtrlVMarign )
+#define ZPCTaskDlgPopTitle_L			ZPCTaskDlgEditLeft
+#define ZPCTaskDlgPopTitle_R			( ZPCTaskDlgPopTitle_L + 150 )
+#define ZPCTaskDlgLblAsgnToDoc_T		( ZPCTaskDlgPopTitle_T + ZPCTaskDlgCtrlPopHeight + ZPCTaskDlgCtrlVMarign )
+#define ZPCTaskDlgLblAsgnToDoc_L		ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblAsgnToDoc_R		( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#define ZPCTaskDlgLblSpread_T			( ZPCTaskDlgLblAsgnToDoc_T + ZPCTaskDlgCtrlPopHeight + ZPCTaskDlgCtrlVMarign )
+#define ZPCTaskDlgLblSpread_L			ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblSpread_R			( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#if ZPCTaskFullView
+#define ZPCTaskDlgLblStatus_T			( ZPCTaskDlgLblSpread_T + ZPCTaskDlgCtrlTxtHeight + ZPCTaskDlgCtrlVMarign )
+#else
+#define ZPCTaskDlgLblStatus_T			( ZPCTaskDlgLblAsgnToDoc_T + ZPCTaskDlgCtrlTxtHeight + ZPCTaskDlgCtrlVMarign )
+#endif
+#define ZPCTaskDlgLblStatus_L			ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblStatus_R			( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#define ZPCTaskDlgLblCategory_T			( ZPCTaskDlgLblStatus_T + ZPCTaskDlgCtrlPopHeight + ZPCTaskDlgCtrlVMarign )
+#define ZPCTaskDlgLblCategory_L			ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblCategory_R			( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#define ZPCTaskDlgLblAsgnToUsr_T		( ZPCTaskDlgLblCategory_T + ZPCTaskDlgCtrlPopHeight + ZPCTaskDlgCtrlVMarign )
+#define ZPCTaskDlgLblAsgnToUsr_L		ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblAsgnToUsr_R		( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#define ZPCTaskDlgLblCmnt_T				( ZPCTaskDlgLblAsgnToUsr_T + ZPCTaskDlgCtrlPopHeight + ZPCTaskDlgCtrlVMarign )
+#define ZPCTaskDlgLblCmnt_L				ZPCTaskDlgLeftMargin
+#define ZPCTaskDlgLblCmnt_R				( ZPCTaskDlgEditLeft - ZPCTaskDlgLblRightMarign )
+#if ZPCTaskFullView
+#define ZPCTaskDlgBtnCancel_T			( ZPCTaskDlgLblCmnt_T + ZPCTaskDlgCtrlTxtHeight*3 + ZPCTaskDlgCtrlVMarign )
+#else
+#define ZPCTaskDlgBtnCancel_T			( ZPCTaskDlgLblStatus_T + ZPCTaskDlgCtrlPopHeight + ZPCTaskDlgCtrlVMarign )
+#endif
+
+//Left Right calculations
+#define ZPCTaskDlgTxtSubject_L			ZPCTaskDlgEditLeft
+#define ZPCTaskDlgTxtSubject_R			ZPCTaskDlgPanelWidth
+#define ZPCTaskDlgTxtDescription_L		ZPCTaskDlgEditLeft
+#define ZPCTaskDlgTxtDescription_R		ZPCTaskDlgPanelWidth
+#define ZPCTaskDlgPopEdition_L			(ZPCTaskDlgPopTitle_R + 10 )
+#define ZPCTaskDlgPopEdition_R			(ZPCTaskDlgPopEdition_L + 150 )
+#define ZPCTaskDlgPopAsgnToDoc_L		ZPCTaskDlgEditLeft
+#define ZPCTaskDlgPopAsgnToDoc_R		(ZPCTaskDlgPopAsgnToDoc_L + 250 )
+#define ZPCTaskDlgTxtSpread_L			ZPCTaskDlgEditLeft
+#define ZPCTaskDlgTxtSpread_R			(ZPCTaskDlgTxtSpread_L + 100 )
+#define ZPCTaskDlgLblPage_L				(ZPCTaskDlgTxtSpread_R + 10 )
+#define ZPCTaskDlgLblPage_R				(ZPCTaskDlgLblPage_L + 50 )
+#define ZPCTaskDlgTxtPage_L				(ZPCTaskDlgLblPage_R + 10 )
+#define ZPCTaskDlgTxtPage_R				(ZPCTaskDlgTxtPage_L + 100 )
+#define ZPCTaskDlgPopStatus_L			ZPCTaskDlgEditLeft
+#define ZPCTaskDlgPopStatus_R			(ZPCTaskDlgPopStatus_L + 200 )
+#define ZPCTaskDlgPopCategory_L			ZPCTaskDlgEditLeft
+#define ZPCTaskDlgPopCategory_R			(ZPCTaskDlgPopCategory_L + 200 )
+#define ZPCTaskDlgPopAsgnToUsr_L		ZPCTaskDlgEditLeft
+#define ZPCTaskDlgPopAsgnToUsr_R		(ZPCTaskDlgPopAsgnToUsr_L + 200 )
+#define ZPCTaskDlgTxtComnt_L			ZPCTaskDlgEditLeft
+#define ZPCTaskDlgTxtComnt_R			ZPCTaskDlgPanelWidth
+#define ZPCTaskDlgBtnCreate_L			(ZPCTaskDlgBtnCreate_R - 80 )
+#define ZPCTaskDlgBtnCreate_R			(ZPCTaskDlgPanelWidth - 10 )
+#define ZPCTaskDlgBtnCancel_L			(ZPCTaskDlgBtnCancel_R - 80 )
+#define ZPCTaskDlgBtnCancel_R			(ZPCTaskDlgBtnCreate_L - 10 )
+
+// Vertical binding defined for each row controls. Labels can take binding from one row top/bottom.
+#define ZPCTaskDlgVBind_1		kBindTop
+#define ZPCTaskDlgVBind_2		kBindTop | kBindBottom
+#define ZPCTaskDlgVBind_3		kBindBottom
+#define ZPCTaskDlgVBind_4		ZPCTaskDlgVBind_3
+#define ZPCTaskDlgVBind_5		ZPCTaskDlgVBind_4
+#define ZPCTaskDlgVBind_6		ZPCTaskDlgVBind_5
+#define ZPCTaskDlgVBind_7		ZPCTaskDlgVBind_6
+#define ZPCTaskDlgVBind_8		ZPCTaskDlgVBind_7
+#define ZPCTaskDlgVBind_9		ZPCTaskDlgVBind_8
+#define ZPCTaskDlgVBind_10		ZPCTaskDlgVBind_9
+
+/*  Dialog definition.
+*/
+resource ZPCreateTaskDialogWidget (kZPUICreateTaskDialogResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUICreateTaskDlgWidgetID,		// WidgetID
+	kPMRsrcID_None,					// RsrcID
+	kBindAll,						// Binding
+	1, 0, ZPCTaskDlgPanelWidth + ZPCTaskDlgRightMargin, ZPCTaskDlgPanelHeight,	// Frame (l,t,r,b)
+	kTrue, kTrue,					// Visible, Enabled
+	kTrue, kInterfacePaletteFill,	// For Resizeable dialog boss.
+	kIZPCreateTaskDialogTitleKey,	// Dialog name
+	{
+		//Subject
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_1,	// Binding
+			Frame(ZPCTaskDlgLblSubject_L, ZPCTaskDlgLblSubject_T, ZPCTaskDlgLblSubject_R, (ZPCTaskDlgLblSubject_T + ZPCTaskDlgCtrlLblHeight))
+			ZPCTaskVisibleInCompact, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblSubjectKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		TextEditBoxWidget
+		(
+#if ZPCTaskFullView
+			kZPUICreateTaskDlgTxtSubjectWidgetID,	// WidgetID
+#else
+			kZPUICreateTaskDlgTxtDescriptionWidgetID,
+#endif
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | kBindRight | ZPCTaskDlgVBind_1,	// Binding
+			Frame(ZPCTaskDlgTxtSubject_L, ZPCTaskDlgLblSubject_T, ZPCTaskDlgTxtSubject_R, (ZPCTaskDlgLblSubject_T + ZPCTaskDlgCtrlTxtHeight))
+			ZPCTaskVisibleInCompact, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,								// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+
+		//Description
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_1,	// Binding
+			Frame(ZPCTaskDlgLblDescription_L, ZPCTaskDlgLblDescription_T, ZPCTaskDlgLblDescription_R, (ZPCTaskDlgLblDescription_T + ZPCTaskDlgCtrlLblHeight))
+			kTrue, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblDescriptionKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		MultilineTextEditBoxWidget
+		(
+#if ZPCTaskFullView
+			kZPUICreateTaskDlgTxtDescriptionWidgetID,	// WidgetID
+#else
+			kZPUICreateTaskDlgTxtSubjectWidgetID
+#endif
+			kSysEditBoxPMRsrcId,					// RsrcId
+			kBindLeft | kBindRight | ZPCTaskDlgVBind_2,	// Binding
+			Frame(ZPCTaskDlgTxtDescription_L, ZPCTaskDlgLblDescription_T, ZPCTaskDlgTxtDescription_R, (ZPCTaskDlgLblDescription_T + ZPCTaskDlgCtrlTxtHeight*4))
+			kTrue, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Widget id of nudge , Small, Large
+			0,									// max num chars( 0 = no limit)
+			kFalse,								// is read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// range checking enabled
+			kTrue,								// blank entry allowed
+			0,0,								// upper/lower bounds
+			"",
+		),
+
+		//Title
+		ZPTitlesDropdownWidget
+		(
+			kZPUICreateTaskDlgPopTitleWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPCTaskDlgVBind_3,	// Binding
+			Frame(ZPCTaskDlgPopTitle_L, ZPCTaskDlgPopTitle_T, ZPCTaskDlgPopTitle_R, ZPCTaskDlgPopTitle_T + ZPCTaskDlgCtrlPopHeight),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+		
+		//Edition
+		ZPEditionsDropdownWidget
+		(
+			kZPUICreateTaskDlgPopEditionWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPCTaskDlgVBind_3,	// Binding
+			Frame(ZPCTaskDlgPopEdition_L, ZPCTaskDlgPopTitle_T, ZPCTaskDlgPopEdition_R, ZPCTaskDlgPopTitle_T + ZPCTaskDlgCtrlPopHeight),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+
+		// Assigned to Document
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_4,	// Binding
+			Frame(ZPCTaskDlgLblAsgnToDoc_L, ZPCTaskDlgLblAsgnToDoc_T, ZPCTaskDlgLblAsgnToDoc_R, (ZPCTaskDlgLblAsgnToDoc_T + ZPCTaskDlgCtrlLblHeight))
+			kTrue, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblAsgnToDocKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+		
+		ZPEditionAssetsDropdownWidget
+		(
+			kZPUICreateTaskDlgPopAsgnToDocWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPCTaskDlgVBind_4,	// Binding
+			Frame(ZPCTaskDlgPopAsgnToDoc_L, ZPCTaskDlgLblAsgnToDoc_T, ZPCTaskDlgPopAsgnToDoc_R, ZPCTaskDlgLblAsgnToDoc_T + ZPCTaskDlgCtrlPopHeight),
+			kTrue, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+				kIZPPopupItemEmptyKey,
+			}
+		),
+
+		//Spread
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_5,	// Binding
+			Frame(ZPCTaskDlgLblSpread_L, ZPCTaskDlgLblSpread_T, ZPCTaskDlgLblSpread_R, (ZPCTaskDlgLblSpread_T + ZPCTaskDlgCtrlLblHeight))
+			ZPCTaskVisibleInCompact, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblSpreadKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		TextEditBoxWidget
+		(
+			kZPUICreateTaskDlgTxtSpreadWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_5,		// Binding
+			Frame(ZPCTaskDlgTxtSpread_L, ZPCTaskDlgLblSpread_T, ZPCTaskDlgTxtSpread_R, (ZPCTaskDlgLblSpread_T + ZPCTaskDlgCtrlTxtHeight))
+			ZPCTaskVisibleInCompact, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+		
+		//Page
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_5,	// Binding
+			Frame(ZPCTaskDlgLblPage_L, ZPCTaskDlgLblSpread_T, ZPCTaskDlgLblPage_R, (ZPCTaskDlgLblSpread_T + ZPCTaskDlgCtrlLblHeight))
+			ZPCTaskVisibleInCompact, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblPageKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		TextEditBoxWidget
+		(
+			kZPUICreateTaskDlgTxtPageWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_5,	// Binding
+			Frame(ZPCTaskDlgTxtPage_L, ZPCTaskDlgLblSpread_T, ZPCTaskDlgTxtPage_R, (ZPCTaskDlgLblSpread_T + ZPCTaskDlgCtrlTxtHeight))
+			ZPCTaskVisibleInCompact, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+
+		//Status
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_6,	// Binding
+			Frame(ZPCTaskDlgLblStatus_L, ZPCTaskDlgLblStatus_T, ZPCTaskDlgLblStatus_R, (ZPCTaskDlgLblStatus_T + ZPCTaskDlgCtrlLblHeight))
+			kTrue, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblStatusKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		ZPTaskStatusDropdownWidget
+		(
+			kZPUICreateTaskDlgPopStatusWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPCTaskDlgVBind_6,	// Binding
+			Frame(ZPCTaskDlgPopStatus_L, ZPCTaskDlgLblStatus_T, ZPCTaskDlgPopStatus_R, ZPCTaskDlgLblStatus_T + ZPCTaskDlgCtrlPopHeight),
+			kTrue, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+			}
+		),
+
+		//Category
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_7,	// Binding
+			Frame(ZPCTaskDlgLblCategory_L, ZPCTaskDlgLblCategory_T, ZPCTaskDlgLblCategory_R, (ZPCTaskDlgLblCategory_T + ZPCTaskDlgCtrlLblHeight))
+			ZPCTaskVisibleInCompact, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblCategoryKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		ZPTaskCategoryDropdownWidget
+		(
+			kZPUICreateTaskDlgPopCategoryWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPCTaskDlgVBind_7,	// Binding
+			Frame(ZPCTaskDlgPopCategory_L, ZPCTaskDlgLblCategory_T, ZPCTaskDlgPopCategory_R, ZPCTaskDlgLblCategory_T + ZPCTaskDlgCtrlPopHeight),
+			ZPCTaskVisibleInCompact, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+				kIZPPopupItemEmptyKey,
+			}
+		),
+
+		//Assigned to user
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_8,	// Binding
+			Frame(ZPCTaskDlgLblAsgnToUsr_L, ZPCTaskDlgLblAsgnToUsr_T, ZPCTaskDlgLblAsgnToUsr_R, (ZPCTaskDlgLblAsgnToUsr_T + ZPCTaskDlgCtrlLblHeight))
+			ZPCTaskVisibleInCompact, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblAsgnToUsrKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		ZPTitleUsersDropdownWidget
+		(
+			kZPUICreateTaskDlgPopAsgnToUserWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPCTaskDlgVBind_8,	// Binding
+			Frame(ZPCTaskDlgPopAsgnToUsr_L, ZPCTaskDlgLblAsgnToUsr_T, ZPCTaskDlgPopAsgnToUsr_R, ZPCTaskDlgLblAsgnToUsr_T + ZPCTaskDlgCtrlPopHeight),
+			ZPCTaskVisibleInCompact, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+				kIZPPopupItemEmptyKey,
+			}
+		),
+
+		//Comments
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPCTaskDlgVBind_9,	// Binding
+			Frame(ZPCTaskDlgLblCmnt_L, ZPCTaskDlgLblCmnt_T, ZPCTaskDlgLblCmnt_R, (ZPCTaskDlgLblCmnt_T + ZPCTaskDlgCtrlLblHeight))
+			ZPCTaskVisibleInCompact, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPCTaskDlgLblCmntKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		MultilineTextEditBoxWidget
+		(
+			kZPUICreateTaskDlgTxtCommentsWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,					// RsrcId
+			kBindLeft | kBindRight | ZPCTaskDlgVBind_9,			// Binding
+			Frame(ZPCTaskDlgTxtComnt_L, ZPCTaskDlgLblCmnt_T, ZPCTaskDlgTxtComnt_R, (ZPCTaskDlgLblCmnt_T + ZPCTaskDlgCtrlLblHeight*3))
+			ZPCTaskVisibleInCompact, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Widget id of nudge , Small, Large
+			0,									// max num chars( 0 = no limit)
+			kFalse,								// is read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// range checking enabled
+			kTrue,								// blank entry allowed
+			0,0,								// upper/lower bounds
+			"",
+		),
+
+		//Default Buttons
+		DefaultButtonWidget
+		(
+			kOKButtonWidgetID,		// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindRight | ZPCTaskDlgVBind_10,	// Binding
+			ZPCTaskDlgBtnCreate_L, ZPCTaskDlgBtnCancel_T, ZPCTaskDlgBtnCreate_R, (ZPCTaskDlgBtnCancel_T+ZPCTaskDlgCtrlBtnHeight),		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kIZPCreateTaskDlgCreateBtnKey,	// Button text
+		),
+		CancelButtonWidget
+		(
+			kCancelButton_WidgetID,	// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindRight | ZPCTaskDlgVBind_10,	// Binding
+			ZPCTaskDlgBtnCancel_L, ZPCTaskDlgBtnCancel_T, ZPCTaskDlgBtnCancel_R, (ZPCTaskDlgBtnCancel_T+ZPCTaskDlgCtrlBtnHeight),		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kSDKDefCancelButtonApplicationKey,	// Button name
+			kFalse,					// Change to Reset on option-click.
+		),
+
+		//Dialog Resize widget
+		DialogWindowSizeBoxWidget
+		(
+			kInvalidWidgetID,				// WidgetID
+			kSDKDefIconInfoResourceID,		// Icon resource ID 
+			kIZPUIPluginID,					// Plug-in ID
+			kBindRight | kBindBottom,		// Binding
+			Frame(ZPCTaskDlgPanelWidth + ZPCTaskDlgRightMargin - 20, ZPCTaskDlgPanelHeight -20, ZPCTaskDlgPanelWidth + ZPCTaskDlgRightMargin, ZPCTaskDlgPanelHeight)			// Frame (l,t,r,b)
+			kTrue, kTrue,					// Visible, Enabled
+			kADBEIconSuiteButtonDrawWellType
+		),
+	},
+};
+#endif

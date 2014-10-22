@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!--
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Project/iZine.vsprops $
+//	$Revision: 4082 $
+//	$Date: 2012-10-12 08:56:51 +0200 (Fri, 12 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Visual Studio property sheet for InDesign project.
+-->
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="iZine">
+	
+	<Tool
+		Name="VCCLCompilerTool"
+		PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE;STRICT;WITH_COOKIES;WITH_ZLIB;WITH_OPENSSL;ZPBuild;Debug_WS;CacheWithFolder;AssetFileOfAssetName"
+		AdditionalIncludeDirectories="
+			&quot;$(ZPSDKDir)\Public&quot;;
+			&quot;$(ZPSDKDir)\Public\App&quot;;
+			&quot;$(ZPSDKDir)\Public\Session&quot;;
+			&quot;$(ZPSDKDir)\Public\WS&quot;;
+			&quot;$(ZPSDKDir)\Public\WS\Requests&quot;;
+			&quot;$(ZPSDKDir)\Public\WS\Responses&quot;;
+			&quot;$(ZPSDKDir)\Public\ZPDataMgr&quot;;
+			&quot;$(ZPSDKDir)\Public\Login&quot;;
+			&quot;$(ZPSDKDir)\Public\ZPData&quot;;
+			&quot;$(ZPSDKDir)\Public\Utils&quot;;
+			&quot;$(ZPSDKDir)\Private\AssetManagement&quot;;
+			&quot;$(ZPSourceDir)&quot;;
+			&quot;$(ZPSourceDir)\Plugin&quot;;
+			&quot;$(ZPSourceDir)\WS&quot;;
+			&quot;$(ZPSourceDir)\WS\gSoapGenerated&quot;;
+			&quot;$(ZPSourceDir)\Utils&quot;;
+			&quot;$(ZPSourceDir)\AssetManagement\SystemProvider&quot;;
+			&quot;$(ZPSourceDir)\AssetManagement\ServiceProvider&quot;;
+			&quot;..\Resource&quot;;
+			&quot;$(ZPCommonDir)&quot;;
+			&quot;$(ZPCommonDir)\IdleTask&quot;;
+			&quot;$(ZPCommonDir)\String&quot;;
+			&quot;$(ZPCommonDir)\Utils&quot;;
+			&quot;$(ZPCommonDir)\Utils\Logs&quot;;			
+			&quot;$(ZExpSDKDir)\Public&quot;;
+			&quot;$(ZExpSDKDir)\Public\Utils&quot;;
+			&quot;$(ZExpRootDir)\Source&quot;;
+			&quot;$(OpenSSLRootDir)\inc32&quot;;
+			&quot;$(ZlibRootDir)&quot;;
+			&quot;$(gSoapRootDir)&quot;;
+			&quot;$(gSoapRootDir)\import&quot;;
+			&quot;$(gSoapRootDir)\plugin&quot;
+		"
+		UsePrecompiledHeader="2"
+		PrecompiledHeaderThrough="VCPlugInHeaders.h"
+		PrecompiledHeaderFile="$(IntDir)/$(ProjectName).pch"
+		AssemblerListingLocation="$(IntDir)/"
+		ObjectFile="$(IntDir)/"
+		ProgramDataBaseFileName="$(IntDir)/"
+		DisableSpecificWarnings="4819"
+		AdditionalOptions="/vmg "
+		StringPooling="true"
+		SuppressStartupBanner="true"
+		TreatWChar_tAsBuiltInType="true"
+		ForceConformanceInForLoopScope="true"
+		WarnAsError="false"
+	/>
+	
+	<Tool
+		Name="VCLinkerTool"
+		ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+		ImportLibrary="$(OutDir)/$(ProjectName).lib"
+		TargetMachine="1"
+		SuppressStartupBanner="true"
+		SubSystem="2"
+		DataExecutionPrevention="0"
+	/>
+	
+	<Tool
+		Name="VCResourceCompilerTool"
+		PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
+		Culture="1033"
+		AdditionalIncludeDirectories="
+			$(ZPSourceDir);
+			..\Resource;
+			&quot;$(ZPSourceDir)\Plugin&quot;;
+			&quot;$(ZPSDKDir)\Public&quot;;
+		"
+	/>
+	
+	
+	<Tool
+		Name="VCMIDLTool"
+		PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
+		MkTypLibCompatible="true"
+		SuppressStartupBanner="true"
+		TargetEnvironment="1"
+		TypeLibraryName="$(OutDir)$(ProjectName)/$(ProjectName).tlb"
+		HeaderFileName=""
+	/>
+
+	<UserMacro Name="PrjODFRCPaths"
+		Value="
+		-i &quot;$(ZPSourceDir)&quot;
+		-i &quot;$(ZPSourceDir)\Plugin&quot;
+		-i &quot;..\Resources&quot;
+		-i &quot;$(ZPSDKDir)\Public&quot;
+		"	/>
+
+	<!--
+	 Make sure following settings are done for all configurations.
+	 fr file command line 
+		$(ODFRCCommand) "$(InputPath)" $(ODFRCArgs) $(ODFRCDefines) $(ODFRCIncludes)
+			
+	 fr file outputs
+		$(IntDir)\$(InputName).fres
+			
+	 fr file additional dependencies
+		$(IntDir)\TriggerResourceDeps.obj;
+	 -->
+	
+	<UserMacro Name="PluginName"
+		Value="iZinePublish"	/>
+	<UserMacro Name="BuildRootDir"
+		Value="$(ProjectDir)..\..\Build"	/>
+	<UserMacro Name="ZPRootDir"
+		Value=".."	/>
+	<UserMacro Name="ZPCommonDir"
+		Value="$(ProjectDir)..\..\Common"	/>
+	<UserMacro Name="ZPSDKDir"
+		Value="$(ZPRootDir)\SDK"	/>
+	<UserMacro Name="ZPSourceDir"
+		Value="$(ZPRootDir)\Source"	/>
+	<UserMacro Name="ZExpRootDir"
+		Value="$(ProjectDir)..\..\iZineExport"	/>
+	<UserMacro Name="ZExpSDKDir"
+		Value="$(ZExpRootDir)\SDK"	/>
+
+	<UserMacro Name="PrjExternalDir"
+		Value="..\..\..\..\..\iZine.ui\External"	/>
+	<UserMacro Name="OpenSSLRootDir"
+		Value="$(PrjExternalDir)\openssl-0.9.8l"	/>
+	<UserMacro Name="ZlibRootDir"
+		Value="$(PrjExternalDir)\zlib123"	/>
+	<UserMacro Name="gSoapRootDir"
+		Value="$(PrjExternalDir)\gsoap"	/>
+	
+</VisualStudioPropertySheet>

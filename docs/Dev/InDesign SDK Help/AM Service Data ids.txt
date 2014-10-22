@@ -1,0 +1,92 @@
+kWorkgroupPrefix = 0x15A00
+
+IAMService 
+	enTargetAsset			= kWorkgroupPrefix + 1,		/** Input parameter: the asset to perform the service on. */
+	enCheckInComment		= kWorkgroupPrefix + 2,		/** Input parameter: the CheckIn comment. */
+	enContentSaver			= kWorkgroupPrefix + 3,		/** Input parameter: the ISaveAssetContent callback interface. */ 
+	enUIFlags				= kWorkgroupPrefix + 4,		/** Input parameter: the UIFlags permitted for the service. */
+	enUniqueAssetLocation	= kWorkgroupPrefix + 5,		/** Output parameter: the unique asset location as return by the IAMServiceProvider::enGetUniqueAssetLocation service. */
+	enUseStoredData			= kWorkgroupPrefix + 6,		/** Input parameter: flag specifies use of stored asset management-specific data for an IDataLink. */
+	enCheckOutToUserName	= kWorkgroupPrefix + 7,		/** Input parameter: user name to check out an asset to. */
+	enOverrideAuthority		= kWorkgroupPrefix + 8,		/** Input parameter: flag specifies permission to override a lock during CheckIn. */
+	enForceSave				= kWorkgroupPrefix + 9,		/** Input parameter: asset save option during CheckIn. */
+	enCommandUndoability	= kWorkgroupPrefix + 10,	/** Input parameter: the ICommand::Undoability permitted for any ICommands executed by the service. */
+	enSaveVersion			= kWorkgroupPrefix + 11,	/** Input parameter: flag specifies whether or not to save a new version as part of a CheckIn. */
+	enModelObject			= kWorkgroupPrefix + 12		/** Input parameter: identifies the model object associated with an asset. */
+
+	/** Predefined IAMServiceData identifiers for data parameters passed to services
+		(input parameter) or returned to the service requestor (output parameter).
+		@see IAMServiceData.
+		@see IAMUIServiceProvider for the data parameters and data types required by
+			each predefined UI Service.
+	*/
+IAMUIService
+		enFollowupAction				= 1,		/** Output parameter: the predefined FollowupAction. */
+		enDefaultFile 					= kWorkgroupPrefix + 1,		/** Input parameter: default file destination. */
+		enSelectedFile					= kWorkgroupPrefix + 2,		/** Output parameter: the user-selected file. */ 
+		enUseSystemDefaultDirectory		= kWorkgroupPrefix + 3,		/** Input parameter: init dialog to use system default directory. */
+		enSaveAsStationery				= kWorkgroupPrefix + 4,		/** Input parameter: init dialog to save as stationery. */
+		enTemporaryVersionFile			= kWorkgroupPrefix + 5,		/** Output parameter: temporary version file (for viewing older version). */
+		enVersionComment				= kWorkgroupPrefix + 6,		/** Output parameter: user comments. */
+		enAssetCount					= kWorkgroupPrefix + 7,		/** Input parameter: number of assets involved (for UI for batch operation). */
+		enDocumentName					= kWorkgroupPrefix + 8,		/** Input parameter: name of the current document. */
+		enServiceID						= kWorkgroupPrefix + 9,		/** Input parameter: the IAMUIService service id. This parameter can be set by the IAMUIServiceProvider::GetService implementation. This allows a
+																		single instance and implementation of IAMUIService to handle more than one
+																		UI service. For example, a single alert service can check the enServiceID to determine which alert to display. */
+		enMessageText					= kWorkgroupPrefix + 10,	/** User message text (e.g., for alerts. */
+		enCheckedOutBy					= kWorkgroupPrefix + 11,	/** Current IAMLockable user name that owns the lock. */
+		enCheckedOutApp					= kWorkgroupPrefix + 12,	/** Current IAMLockable application name that owns the lock. */
+		enCheckedOutDoc					= kWorkgroupPrefix + 13		/** Current IAMLockable document name that owns the lock. */
+		// end predefined IAMServiceData identifiers 
+
+Custom - iZine's
+kZPAMUIServiceType			0x0014D501		//eAMUIServiceType_Document = 0, eAMUIServiceType_Assignment, eAMUIServiceType_LinkedStory
+kZPAMServiceDataAssetID,	kIZPPrefix + 1	//0x00130701
+kZPAMServiceDataTitleID,	kIZPPrefix + 2	//0x00130702
+kZPAMServiceDataEditionID	kIZPPrefix + 3	//0x00130703
+kZPAMServiceDataStatusID,	kIZPPrefix + 4	//0x00130704
+
+AssetService
+		enInvalidService = 0,
+		enEnsureLatestVersion			= kWorkgroupPrefix + 1,
+		enCheckIn						= kWorkgroupPrefix + 2,
+		enRevert						= kWorkgroupPrefix + 3,
+		enCheckOut						= kWorkgroupPrefix + 4,
+		enCancelCheckOut				= kWorkgroupPrefix + 5,
+		enTerminate						= kWorkgroupPrefix + 6,
+		enInitialize					= kWorkgroupPrefix + 7,
+		enAfterSave						= kWorkgroupPrefix + 8,
+		enAfterSaveAs					= kWorkgroupPrefix + 9,
+		enUpdateStoredAssetReference	= kWorkgroupPrefix + 10,
+		enUpdateProxyVersionNumber		= kWorkgroupPrefix + 11,
+		enInvalidateProxyVersionNumber	= kWorkgroupPrefix + 12,
+		enGetUniqueAssetLocation		= kWorkgroupPrefix + 13,
+		enBatchCheckIn					= kWorkgroupPrefix + 14,
+		enAfterCheckIn					= kWorkgroupPrefix + 15,
+		enBeforeCheckOut				= kWorkgroupPrefix + 16,
+		enAfterCancelCheckOut			= kWorkgroupPrefix + 17,
+		enUpdateLinkLocation			= kWorkgroupPrefix + 18,
+		enRelink						= kWorkgroupPrefix + 19,
+		enUnembed						= kWorkgroupPrefix + 20 
+		
+		
+FollowupAction
+		enNone							= 0,						/** No followup action required */
+		enCancel						= 1,						/** Cancel the current operation */
+		enDefaultAction					= 2,						/** Perform the default action */
+		enSave 							= kWorkgroupPrefix + 1,		/** Save the document */
+		enSaveVersion					= kWorkgroupPrefix + 2,		/** Save a new version of the document */
+		enDontSave						= kWorkgroupPrefix + 3,		/** Do not save (discard changes) */
+		enRevertDocument				= kWorkgroupPrefix + 4,		/** Discard model changes */
+		enRevertToLastVersion			= kWorkgroupPrefix + 5,		/** Revert the document to the existing stored version */
+		enPromoteVersion				= kWorkgroupPrefix + 6,		/** Promote an older version to be the current version */
+		enOpenFile						= kWorkgroupPrefix + 7,		/** Open a file for viewing */
+		enDiscardChanges				= kWorkgroupPrefix + 8,		/** Discard model changes */
+		enContinueEditing				= kWorkgroupPrefix + 9,		/** Continue editing an out-of-date document */
+		enOverride						= kWorkgroupPrefix + 10,	/** Save model changes anyway */
+		enOverrideAndSaveAVersion		= kWorkgroupPrefix + 11,	/** Save model changes over current version */
+		enSaveToNewFile					= kWorkgroupPrefix + 12,	/** Save to a new file location */
+		enSaveAVersion					= kWorkgroupPrefix + 13,	/** Save a new version */
+		enCloseDocument					= kWorkgroupPrefix + 14,	/** Close the current document */
+		enRecreateDocument				= kWorkgroupPrefix + 15		/** Recreate the document from the latest version. */
+

@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<!--
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Project/RedfiveExportCS5Release.vsprops $
+//	$Revision: 3975 $
+//	$Date: 2012-03-06 12:54:10 +0100 (Tue, 06 Mar 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2011 Aug 16
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+
+//	Description: Visual Studio property sheet for InDesign project.
+-->
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="iZine CS5 Release"
+	InheritedPropertySheets="..\..\InDesignCommonCS5.vsprops;iZineExport.vsprops"
+	>
+	<!-- Settings for Release Debug build.
+		 Copy paste these settings to VCCLCompilerTool & VCLinkerTool
+	Compiler
+		Optimization="0"
+		DebugInformationFormat="3"
+		InlineFunctionExpansion="1"
+		RuntimeLibrary="2"
+		EnableFunctionLevelLinking="false"
+		BrowseInformation="1"
+		WarningLevel="3"
+		BasicRuntimeChecks="3"
+	
+	Linker
+		LinkIncremental="2"
+		GenerateDebugInformation="true"
+		OptimizeReferences="1"
+		EnableCOMDATFolding="1"
+		RandomizedBaseAddress="1"
+		AssemblyDebug="1"
+	-->
+
+	<!-- Settings for Release build
+	Compiler
+		Optimization="2"
+		DebugInformationFormat="1"
+		InlineFunctionExpansion="1"
+		RuntimeLibrary="2"
+		EnableFunctionLevelLinking="true"
+		BrowseInformation="0"
+		WarningLevel="3"
+		BasicRuntimeChecks="0"
+
+	Linker
+		LinkIncremental="1"
+		GenerateDebugInformation="false"
+		OptimizeReferences="2"
+		EnableCOMDATFolding="2"
+		RandomizedBaseAddress="1"
+	-->
+	
+	<Tool
+		Name="VCCLCompilerTool"
+		PreprocessorDefinitions="RELEASE;NDEBUG;RVExport;CURL_STATICLIB;HTTP_ONLY;"
+		
+		Optimization="0"
+		DebugInformationFormat="3"
+		InlineFunctionExpansion="1"
+		RuntimeLibrary="2"
+		BrowseInformation="1"
+		WarningLevel="3"
+		BasicRuntimeChecks="3"
+		EnableFunctionLevelLinking="false"
+	/>
+
+	<Tool
+		Name="VCResourceCompilerTool"
+		PreprocessorDefinitions="NDEBUG;RVExport"
+	/>
+
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalOptions="/IGNORE:4089"
+		AdditionalDependencies="
+			&quot;$(InDnPackageDir)\PMRuntime.lib&quot;
+			&quot;$(InDnPackageDir)\Public.lib&quot;
+			&quot;$(InDnPackageDir)\WidgetBin.lib&quot;
+			&quot;$(InDesignSDKDir)\external\afl\libs\win\release\afl.lib&quot;
+			&quot;$(PrjExternalDir)\libcurl\lib\release\libcurl.lib&quot;
+			&quot;$(OpenSSLRootDir)\out32dll\libeay32.lib&quot;
+			ws2_32.lib
+			Rpcrt4.lib
+		"
+		OutputFile="$(MainPluginsDir)\$(PluginName).pln"
+		
+		LinkIncremental="2"
+		GenerateDebugInformation="true"
+		OptimizeReferences="1"
+		RandomizedBaseAddress="1"
+		AssemblyDebug="1"
+		EnableCOMDATFolding="1"
+	/>
+	
+	<Tool
+		Name="VCPreLinkEventTool"
+		CommandLine="
+			set PATH=%PATH%;&quot;$(InDesignSDKDir)\DevTools\bin&quot; &#x0D;&#x0A;
+			echo &quot;$(InDesignSDKDir)\DevTools\bin\merge_res.cmd&quot; &quot;$(IntDir)&quot; IZExp &#x0D;&#x0A;
+			&quot;$(InDesignSDKDir)\DevTools\bin\merge_res.cmd&quot; &quot;$(IntDir)&quot; IZExp
+			&amp; echo del /f /s &quot;$(TargetDir)($(TargetName) Resources)\&quot;*.idrc
+			&amp;del /f /s &quot;$(TargetDir)($(TargetName) Resources)\&quot;*.idrc
+			&amp;echo xcopy /Q /E &quot;$(IntDir)\&quot;*.idrc &quot;$(TargetDir)($(TargetName) Resources)\&quot; /Y
+			&amp;xcopy /Q /E &quot;$(IntDir)\&quot;*.idrc &quot;$(TargetDir)($(TargetName) Resources)\&quot; /Y"
+	/>
+
+	<Tool
+		Name="VCPostBuildEventTool"
+		CommandLine="
+			echo copying plugin to &quot;$(SecondaryPluginsDir)&quot;&#x0D;&#x0A;
+			copy /B /Y &quot;$(TargetPath)&quot; &quot;$(SecondaryPluginsDir)&quot;&#x0D;&#x0A;
+			set PATH=%PATH%;&quot;$(InDesignSDKDir)\DevTools\bin&quot; &#x0D;&#x0A;
+			echo &quot;$(InDesignSDKDir)\DevTools\bin\restore_res.cmd&quot; &quot;$(IntDir)&quot; IZExp &#x0D;&#x0A;
+			&quot;$(InDesignSDKDir)\DevTools\bin\restore_res.cmd&quot; &quot;$(IntDir)&quot; IZExp"
+	/>
+	<Tool
+		Name="VCMIDLTool"
+		PreprocessorDefinitions="NDEBUG"
+	/>
+
+	<!-- Different plugin name for Redfive Export target -->
+	<UserMacro Name="PluginName"
+		Value="RedfiveExport"	/>
+
+	<!-- suffix is set to "x64" for 64 bit machine build -->
+	<UserMacro Name="DebugReleaseSuffix"
+		Value=""	/>
+	<UserMacro Name="IDDebugReleaseFolder"
+		Value="objr$(DebugReleaseSuffix)"	/>
+	<UserMacro Name="InDnPackageDir"
+		Value="$(InDesignSDKDir)\build\win\$(IDDebugReleaseFolder)"	/>
+	<UserMacro Name="InDesignPlnsDir"
+		Value="$(InDnCS5PlnsRelease)"	/>
+	<UserMacro Name="InCopyPlnsDir"
+		Value="$(InCpCS5PlnsRelease)"	/>
+		
+	<UserMacro Name="ODFRCArgs"
+		Value=" -o &quot;$(IntDir)\IZExp.fres&quot;"	/>
+	<UserMacro Name="ODFRCDefines"
+		Value="$(ODFRCDefinesAllTgt) -d RELEASE -d NDEBUG -d RVExport" />
+	<UserMacro Name="ODFRCIncludes"
+		Value="
+		$(PrjODFRCPaths)
+		$(InDnODFRCPaths);"	/>
+
+	<!--
+		MainPluginsDir is the directory where pln will be created.
+		SecondaryPluginsDir is the directory where plugin will be copied in post build.
+		HostAppFile is name of host application i.e InDesign.exe or InCopy.exe
+		When Debugging InDesign pln, MainPluginsDir is InDesignPlnsDir and HostAppFile is InDesign.exe
+		When Debugging InCopy pln, MainPluginsDir is InCopyPlnsDir and HostAppFile is InCopy.exe
+	-->
+	<UserMacro Name="MainPluginsDir"
+		Value="$(InDesignPlnsDir)"	/>
+	<UserMacro Name="SecondaryPluginsDir"
+		Value="$(InCopyPlnsDir)"	/>
+	<UserMacro Name="HostAppFile"
+		Value="InDesign.exe"	/>
+	
+</VisualStudioPropertySheet>

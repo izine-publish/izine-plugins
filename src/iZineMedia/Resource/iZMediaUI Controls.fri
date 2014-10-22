@@ -1,0 +1,250 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMediaUI%20Controls.fri $
+//	$Revision: 2756 $
+//	$Date: 2011-04-08 13:50:19 +0200 (Fri, 08 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 27-4-2010
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+#ifdef __ODFRC__
+
+//Types
+	//Ads TreeView
+type ZMAdsPanelTreeViewWidget(kViewRsrcType) :	TreeViewWidget(ClassID = kZMAdsTreeViewWidgetBoss)
+{
+	LinkedWidgetAttributes;	//Widget ID for associated tree header
+};
+		//AdFile TreeView node
+type ZMAdsTVAdFileNodeWidget(kViewRsrcType) : PrimaryResourcePanelWidget(ClassID = kZMAdsTVAdFileNodeWidgetBoss)
+{
+};
+
+		//Ad TreeView node
+type ZMAdsTVAdNodeWidget(kViewRsrcType) : PrimaryResourcePanelWidget(ClassID = kZMAdsTVAdNodeWidgetBoss)
+{
+};
+
+	//TreeView Header
+type ZMTreeTypeAttribute: Interface (IID = IID_IZMINTDATA)
+{
+	longint;				// Integer data
+};
+
+type ZMTVHeaderWidget( kViewRsrcType ) : Widget( ClassID = kZMTVHeaderWidgetBoss )
+{
+	CControlView;
+	ZMTreeTypeAttribute;	//Tree Type, 1 Ads, 2 ?
+	LinkedWidgetAttributes;	//Widget ID for associated tree
+	CPanelControlData;
+};
+
+type ZMTVHeaderColumnHeaderTxtWidget(kViewRsrcType) :
+					InfoStaticTextWidget(ClassID = kInfoStaticTextWidgetBoss)
+{
+};
+
+	//Tree Column Widgets
+type ZMTVColumnTxtWidget(kViewRsrcType) : InfoStaticTextWidget(ClassID = kInfoStaticTextWidgetBoss)
+{
+};
+
+type ZMTVColumnIconWidget(kViewRsrcType) : IconSuiteWidget(ClassID = kIconSuiteWidgetBoss)
+{
+};
+
+#pragma mark -
+type FixedItemListControlData : DropDownListControlData (IID = IID_IZMPOPFIXEDITEMSTRINGDATA)
+{
+};
+
+	//Titles dropdown
+type ZMTitlesDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZMUIPopTitleListBoss)
+{
+};
+	//Editions dropdown
+type ZMEditionsDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZMUIPopEditionsListBoss)
+{
+};
+
+	// Edition With Extra values dropdown
+type ZMEditionPlusDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZMUIPopEditionWithAllListBoss)
+{
+	FixedItemListControlData;
+};
+
+#pragma mark -
+//Resources
+	//TreeView node - Ad File
+resource LocaleIndex (kIZMAdsTVAdFileNodeWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kIZMAdsTVAdFileNodeWidgetRsrcID + index_enUS
+	}
+};
+
+resource ZMAdsTVAdFileNodeWidget (kIZMAdsTVAdFileNodeWidgetRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZMUIAdsTVAdFileNodeWidgetID,
+	kPMRsrcID_None,					// WidgetId, RsrcId
+	kBindLeft | kBindRight,			// Frame binding
+	Frame(0,0,600,20),				// Frame (left, top, right, bottom)
+	kTrue, kTrue,					// Visible, Enabled
+	"",								// Panel name
+	{
+		// Drop down arrow
+		TreeExpanderWidget
+		(
+			kTreeNodeExpanderWidgetID,		// WidgetId
+			kTreeBranchCollapsedRsrcID,		// RsrcId for collapsed node icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed node icon
+			kBindNone,						// Frame binding
+			Frame(0,3,10,18),				// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			kTreeBranchExpandedRsrcID, 		// RsrcId for expanded node icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for expanded node icon
+			kTrue,							// Cmd-Click expands/collapses children
+			kFalse,							// Scroll to show children when expanded
+			kIconNoCentering,
+			kIconRaisedLook,		// Sets the icon look -- (kIconRaisedLook | kIconFlushLook)
+			kFalse					// Bool integer sets whether the icon draws a well.
+		),
+		GenericPanelWidget
+		(
+			kZMUITVGroupElementWidgetID,	// WidgetId
+			kPMRsrcID_None,					// RsrcId
+			kBindLeft | kBindRight,			// Frame binding
+			Frame(11,0,600,19)				// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			"",
+			{
+				IconSuiteWidget
+				(
+						kZMUIAdsTVNodeIconWidgetID,
+						kPMRsrcID_None,
+						kBindLeft,
+						Frame(0,1,18,18),
+						kTrue, kTrue,
+						kIconCentering,
+						kIconRaisedLook,
+						kFalse,
+						0,
+				),
+
+				InfoStaticTextWidget
+				(
+					kZMUIAdsTVNodeNameWidgetID,		// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(76,1,178,18),				// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+			}
+		),
+	}
+}
+
+#pragma mark -
+	//TreeView node - Ad
+resource LocaleIndex (kIZMAdsTVAdNodeWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kIZMAdsTVAdNodeWidgetRsrcID + index_enUS
+	}
+};
+
+resource ZMAdsTVAdNodeWidget (kIZMAdsTVAdNodeWidgetRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZMUIAdsTVAdNodeWidgetID,
+	kPMRsrcID_None,					// WidgetId, RsrcId
+	kBindLeft | kBindRight,			// Frame binding
+	Frame(0,0,600,20),				// Frame (left, top, right, bottom)
+	kTrue, kTrue,					// Visible, Enabled
+	"",								// Panel name
+	{
+	}
+}
+
+#pragma mark -
+	//TreeView header - column header widget
+resource LocaleIndex (kZMUITVHeaderColumnWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kZMUITVHeaderColumnWidgetRsrcID + index_enUS
+	}
+};
+resource ZMTVHeaderColumnHeaderTxtWidget(kZMUITVHeaderColumnWidgetRsrcID + index_enUS)
+{
+	kInvalidWidgetID,	// WidgetId
+	kPMRsrcID_None,		// RsrcId
+	kBindLeft,			// Frame binding
+	Frame( 0, 0, 150, 18),
+	kTrue, kTrue,		// Visible, Enabled
+	kAlignCenter,		// Alignment
+	kEllipsizeEnd,		// Ellipsize style
+	"",					// Text Control Data
+	0,					// associated WidgetId
+	kDocWindowFontId,
+	kDocWindowFontId,
+}
+
+#pragma mark -
+	//Tree Column Widgets
+resource LocaleIndex (kZMUITVColumnTxtWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kZMUITVColumnTxtWidgetRsrcID + index_enUS
+	}
+};
+resource ZMTVColumnTxtWidget(kZMUITVColumnTxtWidgetRsrcID + index_enUS)
+{
+	kInvalidWidgetID,	// WidgetId
+	kPMRsrcID_None,		// RsrcId
+	kBindLeft,			// Frame binding
+	Frame( 0, 0, 150, 18),
+	kTrue, kTrue,		// Visible, Enabled
+	kAlignLeft,			// Alignment
+	kDontEllipsize,		// Ellipsize style
+	"",					// Text Control Data
+	0,					// associated WidgetId
+	kDocWindowFontId,
+	kDocWindowFontId,
+}
+
+resource LocaleIndex (kZMUITVColumnIconWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kZMUITVColumnIconWidgetRsrcID + index_enUS
+	}
+};
+
+resource ZMTVColumnIconWidget(kZMUITVColumnIconWidgetRsrcID + index_enUS)
+{
+	kInvalidWidgetID,
+	kPMRsrcID_None,
+	kBindLeft,
+	Frame(0, 0, 18, 18),
+	kTrue, kTrue,
+	kIconCentering,
+	kIconRaisedLook,
+	kFalse,
+	0,
+}
+
+#endif

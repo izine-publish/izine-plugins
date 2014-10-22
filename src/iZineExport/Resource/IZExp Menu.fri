@@ -1,0 +1,117 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp%20Menu.fri $
+//	$Revision: 3334 $
+//	$Date: 2011-06-22 10:39:40 +0200 (Wed, 22 Jun 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 12-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+//Application related menu items
+//prefs,about,login,logoff
+resource MenuDef (kSDKDefMenuResourceID)
+{
+	{
+		// The About Plug-ins sub-menu item for this plug-in.
+		kIZExpAboutActionID,			// ActionID (kInvalidActionID for positional entries)
+		kIZExpAboutMenuPath,			// Menu Path.
+		kSDKDefAlphabeticPosition,			// Menu Position.
+		kSDKDefIsNotDynamicMenuFlag,		// kSDKDefIsNotDynamicMenuFlag or kSDKDefIsDynamicMenuFlag
+
+		//kIZExpExportFrontDocActionID,	//Commented as the same thing can be done via Ctrl+E i.e File->Export
+		//kIZExpFileMenuPath,
+		//kExportSepMenuPosition - 1,
+		//kSDKDefIsNotDynamicMenuFlag,
+
+#ifdef RVExport
+		kIZExpExportActionID,
+		kIZExpFileMenuPath,
+		kIZExpExportMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZExpPrefActionID,
+		kSDKDefPreferencesStandardMenuPath,
+		kIZExpPreferencesMenuPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+#endif //RVExport
+	}
+};
+
+#ifdef DEBUG
+resource MenuDef (kSDKDefMenuResourceID + 20)
+{
+	{
+		//Debugging menu items goes here
+	}
+};
+#endif
+
+//Application related Action items
+//about, export actions
+//panels pop menu
+resource ActionDef (kSDKDefActionResourceID)
+{
+	{
+		kZExpAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZExpAboutActionID,				// ActionID.
+		kIZExpAboutMenuKey,					// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem,					// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		kZExpAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZExpExportFrontDocActionID,		// ActionID.
+		kIZExpExportFrontDocMenuKey,		// Sub-menu string.
+		kZExpActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfNoFrontDocument,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefVisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+#ifdef RVExport
+		kZExpAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZExpExportActionID,				// ActionID.
+		kIZExpExportMenuKey,				// Sub-menu string.
+		kZExpActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfNoFrontDocument,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefVisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		kZExpAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZExpPrefActionID,					// ActionID.
+		kIZExpExportPrefsMenuKey,			// Sub-menu string.
+		kZExpActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefVisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+#endif	//RVExport
+	}
+};
+
+//panel Menu
+resource ActionDef ( kSDKDefActionResourceID+1 )
+{
+	{
+	}
+};
+
+//Debugging Menu
+resource ActionDef ( kSDKDefActionResourceID+2 )
+{
+	{
+		//Debugging actions added here
+	}
+};
+
+#endif //__ODFRC__

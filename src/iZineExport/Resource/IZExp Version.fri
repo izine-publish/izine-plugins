@@ -1,0 +1,77 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp%20Version.fri $
+//	$Revision: 3589 $
+//	$Date: 2011-08-16 12:14:41 +0200 (Tue, 16 Aug 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#ifdef InDnCS5
+#include "PlugInModel_UIAttributes.h"
+#endif
+
+#define kIZExpPluginVersionResourceID		1000
+
+#pragma mark -
+/*	Plugin version definition.
+*/
+resource PluginVersion (kIZExpPluginVersionResourceID)
+{
+	kTargetVersion,
+	kIZExpPluginID,
+	kIZExpMajorVersion, kIZExpMinorVersion,
+	kMajorVersionNumber, kMinorVersionNumber,					//Defined in SDK\source\public\includes\buildnumber.h
+	kIZExpCurrentMajorFormatNumber, kIZExpCurrentMinorFormatNumber,
+	{ kInDesignProduct, kInDesignServerProduct},//, kInCopyProduct},
+	{ kWildFS },
+#ifdef InDnCS5
+	kUIPlugIn,
+#endif
+	kIZExpVersion
+};
+
+//this plugin is dependent on following
+resource PluginDependency(1)
+{
+	kWildFS
+	{
+		//Assignment
+		//kAssignmentPlugInID,		kAssignmentPlugInName,			kMajorVersionNumber,			kMinorVersionNumber,
+	}
+}
+
+//this plugin is dependent on InCopy Export.apln only in InDesign. Not a requirement for InCopy.
+//#define kInCopyExportPrefix_ 0x17000
+//DECLARE_PMID(kPlugInIDSpace, kInCopyExportPlugInID_,							kInCopyExportPrefix_ + 1)
+//resource PluginDependency(kSDKDefPluginDependencyResourceID)
+//{
+//	kInDesignProductAndServerFS
+//	{
+//		//InCopy Export
+//		kInCopyExportPlugInID_,		kInCopyExportPluginName,		kMajorVersionNumber,			kMinorVersionNumber,
+//	}
+//}
+
+#pragma mark -
+/*	The ExtraPluginInfo resource adds extra information to the Missing Plug-in dialog
+	that is popped when a document containing this plug-in's data is opened when
+	this plug-in is not present. These strings are not translatable strings
+	since they must be available when the plug-in isn't around. They get stored
+	in any document that this plug-in contributes data to.
+*/
+resource ExtraPluginInfo(1)
+{
+	kIZExpCompanyValue,				// Company name
+	kIZExpMissingPluginURLValue,	// URL
+	kIZExpMissingPluginAlertValue,	// Missing plug-in alert text
+};
+
+#endif // __ODFRC__=======

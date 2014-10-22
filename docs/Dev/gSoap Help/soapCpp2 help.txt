@@ -1,0 +1,27 @@
+G:\Projects\izine.ui\External\gsoap-2.7\gsoap\bin\win32>soapcpp2.exe /?
+Usage: soapcpp2 [-1|-2] [-C|-S] [-L] [-a] [-c] [-d path] [-e] [-h] [-i] [-I path;path;...] [-l] [-m] [-n] [-p name] [-s
+ [-t] [-v] [-w] [-x] [infile]
+
+-1      generate SOAP 1.1 bindings
+-2      generate SOAP 1.2 bindings
+-C      generate client-side code only
+-S      generate server-side code only
+-L      don't generate soapClientLib/soapServerLib
+-a      use value of SOAPAction HTTP header to dispatch method at server side
+-c      generate C source code
+-dpath  use path to save files
+-e      generate SOAP RPC encoding style bindings
+-h      display help info
+-i      generate service proxies and objects inherited from soap struct
+-Ipath  use path(s) for #import
+-l      generate linkable modules (experimental)
+-m      generate Matlab(tm) code for MEX compiler
+-n      use service name to rename service functions and namespace table
+-pname  save files with new prefix name instead of 'soap'
+-qname  use name as the C++ namespace of all declarations
+-s      generate deserialization code with strict XML validation checks
+-t      generate code for fully xsi:type typed SOAP/XML messaging
+-v      display version info
+-w      don't generate WSDL and schema files
+-x      don't generate sample XML message files
+infile  header file to parse (or stdin)

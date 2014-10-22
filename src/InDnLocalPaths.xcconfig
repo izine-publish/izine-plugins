@@ -1,0 +1,40 @@
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/InDnLocalPaths.xcconfig $
+//	$Revision: 4091 $
+//	$Date: 2012-10-30 07:49:44 +0100 (Tue, 30 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 May 13
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Machine specific paths are defined in this file.
+
+// Any of the macro defined in this file must not be directly used in project file.
+// It should be only used in another xcconfig file.
+
+
+//CS3 Paths
+IDCS3SDK = /Volumes/Projects/AdobeSDKs/CS3
+InDnCS3PlnsDebug = /Applications/Adobe InDesign CS3 Debug/Adobe InDesign CS3/Plug-Ins
+InDnCS3PlnsRelease = /Applications/Adobe InDesign CS3/Plug-Ins
+InCpCS3PlnsDebug = /Applications/Adobe InCopy CS3 Debug/Adobe InCopy CS3/Plug-Ins
+InCpCS3PlnsRelease = /build/InCopy CS3 Release/Adobe InCopy CS3 Release/Plug-Ins
+
+//CS4 Paths
+
+
+//CS5 Paths
+IDCS5SDK = /Volumes/Projects/AdobeSDKs/CS5
+IDCS5ResScript = /Volumes/Projects/AdobeSDKs/CS5/build/mac/packagescripts/copyResources.sh
+InDnCS5PlnsDebug = /Applications/Adobe InDesign CS5 Debug/Adobe InDesign CS5/Plug-Ins
+InDnCS5PlnsRelease = /Applications/Adobe InDesign CS5/Plug-Ins
+InCpCS5PlnsDebug = /Applications/Adobe InCopy CS5 Debug/Adobe InCopy CS5/Plug-Ins
+InCpCS5PlnsRelease = /build/InCopy CS5 Release/Adobe InCopy CS5 Release/Plug-Ins
+
+//CS5.5 Paths
+IDCS55SDK = /Volumes/Projects/AdobeSDKs/CS5_5
+IDCS55ResScript = /Volumes/Projects/AdobeSDKs/CS5_5/build/mac/packagescripts/copyResources.sh
+InDnCS55PlnsDebug = /Applications/Adobe InDesign CS5.5 Debug/Adobe InDesign CS5.5/Plug-Ins
+InDnCS55PlnsRelease = /Applications/Adobe InDesign CS5.5/Plug-Ins
+InCpCS55PlnsDebug = /Applications/Adobe InCopy CS5.5 Debug/Adobe InCopy CS5.5/Plug-Ins
+InCpCS55PlnsRelease = /build/InCopy CS5.5 Release/Adobe InCopy CS5.5 Release/Plug-Ins

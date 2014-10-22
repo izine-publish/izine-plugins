@@ -1,0 +1,487 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_TasksPanel.fri $
+//	$Revision: 4089 $
+//	$Date: 2012-10-30 06:59:29 +0100 (Tue, 30 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 23-9-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+#ifdef __ODFRC__
+
+type ZPTasksPanelWidget(kViewRsrcType) : PalettePanelWidget(ClassID = kZPUITasksPanelWidgetBoss)
+{
+	CPanelMenuData;
+};
+
+resource PanelList (kZPUITasksPanelResourceID)
+{
+	{
+		// 1st panel in the list
+		kZPUITasksPanelResourceID,		// Resource ID for this panel (use SDK default rsrc ID)
+		kIZPUIPluginID,					// ID of plug-in that owns this panel
+		kIsResizable,
+		kIZPTasksPanelWidgetActionID,	// Action ID to show/hide the panel		
+#if defined(InDnCS5) || defined(InDnCS5_5)
+		"",								// Shows up in the Window list.
+		"",								// Alternate menu path of the form "Main:Foo" if you want your palette menu item in a second place
+#else
+		kIZPUIPluginsMenuKey ":" kIZPTasksPanelTitleKey,	// Shows up in the Window list.
+		"",								// Alternate menu path of the form "Main:Foo" if you want your palette menu item in a second place
+#endif		
+		601,							// Alternate Menu position Alternate Menu position for determining menu order
+		0,0,							// Rsrc ID, Plugin ID for a PNG icon resource to use for this palette
+		c_Panel
+	}
+};
+
+resource LocaleIndex (kZPUITasksPanelResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUITasksPanelResourceID + index_enUS
+	}
+};
+
+//Disable filtering. Redmine#1764, all filtering controls & columns are made hidden.
+#define ShowFilteringControls	kFalse
+
+#if ShowFilteringControls
+#define ZPTasksPanelWidth			(ZPTasksPanelPopAsgnToUsr_R)
+#else
+#define ZPTasksPanelWidth			565
+#endif
+#define ZPTasksPanelHeight			250
+
+#define ZPTasksPanelLeftMargin			10
+#define ZPTasksPanelRightMargin			10
+#define ZPTasksPanelTopMargin			10
+#define ZPTasksPanelBottomMargin		10
+#define ZPTasksPanelLblRightMarign		5
+#define ZPTasksPanelCtrlVMarign			5
+#define ZPTasksPanelCtrlHMarign			10
+#define ZPTasksPanelCtrlLblHeight		18
+#define ZPTasksPanelCtrlTxtHeight		20
+#define ZPTasksPanelCtrlPopHeight		20
+#define ZPTasksPanelCtrlBtnHeight		20
+
+//Top Bottom calculations
+#define ZPTasksPanelPopTitle_T				ZPTasksPanelTopMargin
+#define ZPTasksPanelLblStatus_T				(ZPTasksPanelPopTitle_T + ZPTasksPanelCtrlPopHeight + ZPTasksPanelCtrlVMarign )
+#if ShowFilteringControls
+#define ZPTasksPanelHdrTasks_T				(ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlPopHeight + ZPTasksPanelCtrlVMarign )
+#else
+#define ZPTasksPanelHdrTasks_T				(ZPTasksPanelPopTitle_T + ZPTasksPanelCtrlPopHeight + ZPTasksPanelCtrlVMarign + 2 )
+#endif
+#define ZPTasksPanelLstTasks_T				(ZPTasksPanelHdrTasks_T + 19 )
+#define ZPTasksPanelLstTasks_B				(ZPTasksPanelHeight - ZPTasksPanelBottomMargin )
+#if ShowFilteringControls
+#define ZPTasksPanelDescription_B			(ZPTasksPanelBtnRefresh_T - ZPTasksPanelCtrlVMarign )
+#else
+#define ZPTasksPanelDescription_B			(ZPTasksPanelHdrTasks_T + 100 )
+#endif
+
+//Left Right calculations
+	//First Row
+#define ZPTasksPanelPopTitle_L				ZPTasksPanelLeftMargin
+#define ZPTasksPanelPopTitle_R				(ZPTasksPanelPopTitle_L + 150 )
+#define ZPTasksPanelPopEdition_L			(ZPTasksPanelPopTitle_R + ZPTasksPanelCtrlHMarign )
+#define ZPTasksPanelPopEdition_R			(ZPTasksPanelPopEdition_L + 150 )
+#define ZPTasksPanelPopAsgnToDoc_L			(ZPTasksPanelPopEdition_R + ZPTasksPanelCtrlHMarign )
+#define ZPTasksPanelPopAsgnToDoc_R			(ZPTasksPanelPopAsgnToDoc_L + 180 )
+#define ZPTasksPanelLblAsgnToUsr_L			(ZPTasksPanelPopAsgnToDoc_R + ZPTasksPanelCtrlHMarign )
+#define ZPTasksPanelLblAsgnToUsr_R			(ZPTasksPanelLblAsgnToUsr_L + 70 )
+#define ZPTasksPanelPopAsgnToUsr_L			(ZPTasksPanelLblAsgnToUsr_R + 5)
+#define ZPTasksPanelPopAsgnToUsr_R			(ZPTasksPanelPopAsgnToUsr_L + 150 )
+
+	//Second Row
+#define ZPTasksPanelLblStatus_L				ZPTasksPanelLeftMargin
+#define ZPTasksPanelLblStatus_R				(ZPTasksPanelLblStatus_L + 40 )
+#define ZPTasksPanelPopStatus_L				(ZPTasksPanelLblStatus_R + 5 )
+#define ZPTasksPanelPopStatus_R				(ZPTasksPanelPopStatus_L + 100 )
+#define ZPTasksPanelLblCategory_L			(ZPTasksPanelPopStatus_R + ZPTasksPanelCtrlHMarign )
+#define ZPTasksPanelLblCategory_R			(ZPTasksPanelLblCategory_L + 55 )
+#define ZPTasksPanelPopCategory_L			(ZPTasksPanelLblCategory_R + 5 )
+#define ZPTasksPanelPopCategory_R			(ZPTasksPanelPopCategory_L + 100 )
+#define ZPTasksPanelLblSpread_L				(ZPTasksPanelPopCategory_R + ZPTasksPanelCtrlHMarign )
+#define ZPTasksPanelLblSpread_R				(ZPTasksPanelLblSpread_L + 50 )
+#define ZPTasksPanelTxtSpread_L				(ZPTasksPanelLblSpread_R + ZPTasksPanelCtrlHMarign )
+#define ZPTasksPanelTxtSpread_R				(ZPTasksPanelTxtSpread_L + 100 )
+#define ZPTasksPanelLblPage_L				(ZPTasksPanelTxtSpread_R + ZPTasksPanelCtrlHMarign )
+#define ZPTasksPanelLblPage_R				(ZPTasksPanelLblPage_L + 50 )
+#define ZPTasksPanelTxtPage_L				(ZPTasksPanelLblPage_R + 5 )
+#define ZPTasksPanelTxtPage_R				(ZPTasksPanelTxtPage_L + 100 )
+
+	//List
+#define ZPTasksPanelHdrTasks_L				ZPTasksPanelLeftMargin
+#if ShowFilteringControls
+#define ZPTasksPanelHdrTasks_R				(ZPTasksPanelTxtDescription_L - ZPTasksPanelCtrlHMarign )
+#else
+#define ZPTasksPanelHdrTasks_R				(ZPTasksPanelWidth - ZPTasksPanelCtrlHMarign )
+#endif
+#define ZPTasksPanelLstTasks_L				ZPTasksPanelHdrTasks_L
+#define ZPTasksPanelLstTasks_R				ZPTasksPanelHdrTasks_R
+#define ZPTasksPanelTxtDescription_L		(ZPTasksPanelTxtDescription_R - 250 )
+#if ShowFilteringControls
+#define ZPTasksPanelTxtDescription_R		(ZPTasksPanelWidth)
+#else	//Patch: When this control is visible false, then still on panel resize it's vertical scroll bars gets visible.
+#define ZPTasksPanelTxtDescription_R		(ZPTasksPanelWidth + 100)
+#endif
+
+
+#define ZPTasksPanelBtnHistory_L			(ZPTasksPanelBtnHistory_R - 100 )
+#define ZPTasksPanelBtnHistory_R			(ZPTasksPanelBtnRefresh_L - ZPTasksPanelCtrlHMarign )
+#if ShowFilteringControls
+#define ZPTasksPanelBtnRefresh_T			(ZPTasksPanelHeight - ZPTasksPanelCtrlBtnHeight )
+#else
+#define ZPTasksPanelBtnRefresh_T			(ZPTasksPanelTopMargin )
+#endif
+#define ZPTasksPanelBtnRefresh_L			(ZPTasksPanelBtnRefresh_R - 100 )
+#define ZPTasksPanelBtnRefresh_R			(ZPTasksPanelWidth - ZPTasksPanelCtrlHMarign)
+
+#define ZPTasksPanelVBind_1		kBindTop
+#define ZPTasksPanelVBind_2		kBindTop
+#define ZPTasksPanelVBind_3		kBindTop | kBindBottom
+#define ZPTasksPanelVBind_4		kBindBottom
+
+/*	PanelView definition.
+	The view is not currently localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IZP_enUS.fr etc.).
+*/
+resource ZPTasksPanelWidget(kZPUITasksPanelResourceID + index_enUS)
+{
+	__FILE__, __LINE__,					// Localization macro
+	kZPUITasksPanelWidgetID,			// WidgetID
+	kPMRsrcID_None,						// RsrcID
+	kBindAll,							// Binding (0=none)
+	0, 0, ZPTasksPanelWidth + ZPTasksPanelRightMargin, ZPTasksPanelHeight + ZPTasksPanelBottomMargin,	// Frame: left, top, right, bottom.
+	kTrue, kFalse,						// Visible, Enabled
+	kTrue,								// Erase background
+	kInterfacePaletteFill,				// Erase to color
+	kFalse,								// Draw dropshadow
+	kIZPTasksPanelTitleKey,				// Panel name
+	{
+	//First Row
+		//Title
+		ZPTitlesDropdownWidget
+		(
+			kZPUITasksPanelTitleDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPTasksPanelVBind_1,	// Binding
+			Frame(ZPTasksPanelPopTitle_L, ZPTasksPanelPopTitle_T, ZPTasksPanelPopTitle_R, ZPTasksPanelPopTitle_T + ZPTasksPanelCtrlPopHeight),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+		
+		//Edition
+		ZPEditionsDropdownWidget
+		(
+			kZPUITasksPanelEditionDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPTasksPanelVBind_1,	// Binding
+			Frame(ZPTasksPanelPopEdition_L, ZPTasksPanelPopTitle_T, ZPTasksPanelPopEdition_R, ZPTasksPanelPopTitle_T + ZPTasksPanelCtrlPopHeight),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+		
+		// Assigned to Document
+		ZPEditionAssetsDropdownWidget
+		(
+			kZPUITasksPanelPopAsgnToDocWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPTasksPanelVBind_1,	// Binding
+			Frame(ZPTasksPanelPopAsgnToDoc_L, ZPTasksPanelPopTitle_T, ZPTasksPanelPopAsgnToDoc_R, ZPTasksPanelPopTitle_T + ZPTasksPanelCtrlPopHeight),
+			ShowFilteringControls, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+				kIZPPopupItemAllKey,
+				kIZPPopupItemAnyKey,
+				kIZPPopupItemNoneKey,
+				"-",
+			}
+		),
+
+		//Assigned to user
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPTasksPanelVBind_1,	// Binding
+			Frame(ZPTasksPanelLblAsgnToUsr_L, ZPTasksPanelPopTitle_T, ZPTasksPanelLblAsgnToUsr_R, (ZPTasksPanelPopTitle_T + ZPTasksPanelCtrlLblHeight))
+			ShowFilteringControls, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPTasksPanelLblAsgnToUsrKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		ZPTitleUsersDropdownWidget
+		(
+			kZPUITasksPanelPopAsgnToUserWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPTasksPanelVBind_1,	// Binding
+			Frame(ZPTasksPanelPopAsgnToUsr_L, ZPTasksPanelPopTitle_T, ZPTasksPanelPopAsgnToUsr_R, ZPTasksPanelPopTitle_T + ZPTasksPanelCtrlPopHeight),
+			ShowFilteringControls, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+				kIZPPopupItemSelfKey,
+				kIZPPopupItemAllKey,
+				kIZPPopupItemAnyKey,
+				kIZPPopupItemNoneKey,
+				"-",
+			}
+		),
+
+	//Second Row
+		//Status
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelLblStatus_L, ZPTasksPanelLblStatus_T, ZPTasksPanelLblStatus_R, (ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlLblHeight))
+			ShowFilteringControls, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPTasksPanelLblStatusKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		ZPTaskStatusDropdownWidget
+		(
+			kZPUITasksPanelPopStatusWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelPopStatus_L, ZPTasksPanelLblStatus_T, ZPTasksPanelPopStatus_R, ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlPopHeight),
+			ShowFilteringControls, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+				kIZPPopupItemAnyKey,
+				"-",
+			}
+		),
+
+		//Category
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelLblCategory_L, ZPTasksPanelLblStatus_T, ZPTasksPanelLblCategory_R, (ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlLblHeight))
+			ShowFilteringControls, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPTasksPanelLblCategoryKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		ZPTaskCategoryDropdownWidget
+		(
+			kZPUITasksPanelPopCategoryWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelPopCategory_L, ZPTasksPanelLblStatus_T, ZPTasksPanelPopCategory_R, ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlPopHeight),
+			ShowFilteringControls, kTrue,
+			{{
+			}},
+			{									//FixedItemListControlData
+				kIZPPopupItemAllKey,
+				kIZPPopupItemAnyKey,
+				kIZPPopupItemNoneKey,
+				"-",
+			}
+		),
+
+		//Spread
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelLblSpread_L, ZPTasksPanelLblStatus_T, ZPTasksPanelLblSpread_R, (ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlLblHeight))
+			ShowFilteringControls, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPTasksPanelLblSpreadKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		TextEditBoxWidget
+		(
+			kZPUITasksPanelTxtSpreadWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelTxtSpread_L, ZPTasksPanelLblStatus_T, ZPTasksPanelTxtSpread_R, (ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlTxtHeight))
+			ShowFilteringControls, kTrue,				// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+		
+		//Page
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelLblPage_L, ZPTasksPanelLblStatus_T, ZPTasksPanelLblPage_R, (ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlLblHeight))
+			ShowFilteringControls, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPTasksPanelLblPageKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		TextEditBoxWidget
+		(
+			kZPUITasksPanelTxtPageWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | ZPTasksPanelVBind_2,	// Binding
+			Frame(ZPTasksPanelTxtPage_L, ZPTasksPanelLblStatus_T, ZPTasksPanelTxtPage_R, (ZPTasksPanelLblStatus_T + ZPTasksPanelCtrlTxtHeight))
+			ShowFilteringControls, kTrue,				// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+
+	//Third Row
+		//Task List Header
+		ZPTVHeaderWidget
+		(
+			kZPUITasksPanelHdrTasksWidgetID, // widget ID
+			kPMRsrcID_None,					// PMRsrc ID
+			kBindLeft | kBindTop | kBindRight,	// frame binding
+			#if defined(InDnCS5) || defined(InDnCS5_5)
+			Frame(ZPTasksPanelHdrTasks_L - 1, ZPTasksPanelHdrTasks_T, ZPTasksPanelHdrTasks_R, ZPTasksPanelLstTasks_T-1)			// Frame
+			#else
+			Frame(ZPTasksPanelHdrTasks_L, ZPTasksPanelHdrTasks_T, ZPTasksPanelHdrTasks_R, ZPTasksPanelLstTasks_T-1)			// Frame
+			#endif
+			kTrue,							// visible
+			kTrue,							// enabled
+			1,								//Tree Type - Tasks
+			kZPUITasksPanelLstTasksWidgetID,//Associated Tree WidgetID
+			{
+				GenericPanelWidget
+				(
+					kZPUITVHdrControlStripWidgetID, // widget ID
+					kPMRsrcID_None,					// PMRsrc ID
+					kBindLeft | kBindTop,			// frame binding
+					Frame(0, 0, ZPTasksPanelHdrTasks_R - ZPTasksPanelHdrTasks_L, ZPTasksPanelLstTasks_T - ZPTasksPanelHdrTasks_T)			// Frame
+					kTrue,							// visible
+					kTrue,							// enabled
+					"",
+					{
+					}
+				),
+			},
+		),
+		//Task List
+		ZPTasksListTreeViewWidget
+		(
+			// CControlView properties
+			kZPUITasksPanelLstTasksWidgetID, // widget ID
+			kPMRsrcID_None,					// PMRsrc ID
+			kBindAll,						// frame binding
+			#if defined(InDnCS5) || defined(InDnCS5_5)
+			Frame(ZPTasksPanelLstTasks_L, ZPTasksPanelLstTasks_T + 1, ZPTasksPanelLstTasks_R, ZPTasksPanelLstTasks_B + 1)			// Frame
+			#else
+			Frame(ZPTasksPanelLstTasks_L, ZPTasksPanelLstTasks_T, ZPTasksPanelLstTasks_R, ZPTasksPanelLstTasks_B)			// Frame
+			#endif
+			kTrue,							// visible
+			kTrue,							// enabled
+			kTrue,							// fEraseBeforeDraw
+			kInterfacePaletteFill,			// InterfaceColor to erase to
+			// CTextControlData properties
+			"",								// control label
+			// TreeAttributes properties
+			kFalse,							// fShouldDisplayRootNode
+			kTrue,							// fShouldUseHScrollBar
+			kTrue,							// fShouldUseVScrollBar
+			20,								// fVScrollButtonIncrement
+			1,								// fVThumbScrollIncrement
+			20,								// fHScrollButtonIncrement
+			1,								// fHThumbScrollIncrement
+			// TreeViewController properties
+			1,								// Items selectable, 0 = No Selection, 1 = Single Selection, 2 = Multiple Selection
+			kFalse,//kFalse,				// fShouldAllowChildrenFromMultipleParentsSelected
+			kTrue,//kFalse,					// fShouldAllowDiscontiguousSelection
+			{								// CPanelControlData Children
+			},
+			kZPUITasksPanelHdrTasksWidgetID
+		),
+		//Description
+		MultilineTextEditBoxWidget
+		(
+			kZPUITasksPanelTxtDescriptionWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,					// RsrcId
+			kBindRight | ZPTasksPanelVBind_3,		// Binding
+			Frame(ZPTasksPanelTxtDescription_L, ZPTasksPanelHdrTasks_T, ZPTasksPanelTxtDescription_R, ZPTasksPanelDescription_B )
+			ShowFilteringControls, kTrue,			// Visible, Enabled
+			0, 0, 0,							// Widget id of nudge , Small, Large
+			0,									// max num chars( 0 = no limit)
+			kFalse,								// is read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// range checking enabled
+			kTrue,								// blank entry allowed
+			0,0,								// upper/lower bounds
+			"",
+		),
+
+		ButtonWidget
+		(
+			// CControlView properties
+			kZPUITasksPanelBtnHistoryWidgetID,		// widget ID
+			kSysButtonPMRsrcId,						// PMRsrc ID
+#if ShowFilteringControls
+			kBindRight | ZPTasksPanelVBind_4,		// Binding
+#else
+			kBindRight | ZPTasksPanelVBind_1,		// Binding
+#endif
+			Frame(ZPTasksPanelBtnHistory_L, ZPTasksPanelBtnRefresh_T, ZPTasksPanelBtnHistory_R, ZPTasksPanelBtnRefresh_T+ZPTasksPanelCtrlBtnHeight)
+			kTrue, kTrue,							// Visible, Enabled
+			kIZPAssetsPanelHistoryButtonKey,		// control label
+		),
+		//Refresh button
+		DefaultButtonWidget
+		(
+			kZPUITasksPanelRefreshButtonWidgetID,	// WidgetID
+			kSysButtonPMRsrcId,						// Icon resource ID
+#if ShowFilteringControls
+			kBindRight | ZPTasksPanelVBind_4,		// Binding
+#else
+			kBindRight | ZPTasksPanelVBind_1,		// Binding
+#endif
+			Frame(ZPTasksPanelBtnRefresh_L, ZPTasksPanelBtnRefresh_T, ZPTasksPanelBtnRefresh_R, ZPTasksPanelBtnRefresh_T+ZPTasksPanelCtrlBtnHeight),
+			kTrue, kTrue,							// Visible, Enabled
+			kIZPAssetsPanelRefreshButtonKey,
+		),
+	},
+
+	kIZPTasksPanelInternalMenuPath		// Popup menu name (internal)
+};
+#endif // __ODFRC__

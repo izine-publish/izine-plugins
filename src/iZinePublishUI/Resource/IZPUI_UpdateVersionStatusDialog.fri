@@ -1,0 +1,180 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_UpdateVersionStatusDialog.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Aman Alam
+//	Created: 16-6-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+#ifdef __ODFRC__
+
+resource LocaleIndex (kZPUIUpdateVersionStatusDialogResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUIUpdateVersionStatusDialogResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPUpdateVersionStatusDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZPUpdateVersionStatusDialogBoss)
+{
+};
+
+#define ZPUpdateVersionStatusDlgPanelWidth			ZPUpdateVersionStatusDlgBtnOk_R
+#define ZPUpdateVersionStatusDlgPanelHeight		ZPUpdateVersionStatusDlgBtnOk_B
+
+#define ZPUpdateVersionStatusDlgLeftMargin			10
+#define ZPUpdateVersionStatusDlgRightMargin		10
+#define ZPUpdateVersionStatusDlgTopMargin			10
+#define ZPUpdateVersionStatusDlgBottomMargin		10
+#define ZPUpdateVersionStatusDlgLblRightMarign		5
+#define ZPUpdateVersionStatusDlgLblTopMarign		10
+#define ZPUpdateVersionStatusDlgCtrlLblHeight		18
+#define ZPUpdateVersionStatusDlgCtrlLblWidth		90
+#define ZPUpdateVersionStatusDlgCtrlTxtHeight		20
+#define ZPUpdateVersionStatusDlgCtrlMutlTxtHeight	90
+#define ZPUpdateVersionStatusDlgCtrlTxtWidth		270
+#define ZPUpdateVersionStatusDlgCtrlPopHeight		20
+#define ZPUpdateVersionStatusDlgCtrlPopWidth		270
+#define ZPUpdateVersionStatusDlgCtrlBtnHeight		20
+#define ZPUpdateVersionStatusDlgCtrlBtnWidth		70
+#define ZPUpdateVersionStatusDlgCtrlTopMarign		10
+#define ZPUpdateVersionStatusDlgCtrlLeftMarign		10
+
+#define ZPUpdateVersionStatusDlgLblDescription_L		ZPUpdateVersionStatusDlgLeftMargin
+#define ZPUpdateVersionStatusDlgLblDescription_R		ZPUpdateVersionStatusDlgLblDescription_L + ZPUpdateVersionStatusDlgCtrlLblWidth
+#define ZPUpdateVersionStatusDlgLblDescription_T		ZPUpdateVersionStatusDlgTopMargin
+#define ZPUpdateVersionStatusDlgLblDescription_B		ZPUpdateVersionStatusDlgLblDescription_T + ZPUpdateVersionStatusDlgCtrlLblHeight
+
+#define ZPUpdateVersionStatusDlgTxtDescription_L		ZPUpdateVersionStatusDlgLblDescription_R + ZPUpdateVersionStatusDlgLblRightMarign
+#define ZPUpdateVersionStatusDlgTxtDescription_R		ZPUpdateVersionStatusDlgTxtDescription_L + ZPUpdateVersionStatusDlgCtrlTxtWidth
+#define ZPUpdateVersionStatusDlgTxtDescription_T		ZPUpdateVersionStatusDlgLblDescription_T
+#define ZPUpdateVersionStatusDlgTxtDescription_B		ZPUpdateVersionStatusDlgTxtDescription_T + ZPUpdateVersionStatusDlgCtrlMutlTxtHeight
+
+#define ZPUpdateVersionStatusDlgLblStatus_L			ZPUpdateVersionStatusDlgLblDescription_L
+#define ZPUpdateVersionStatusDlgLblStatus_R			ZPUpdateVersionStatusDlgLblStatus_L + ZPUpdateVersionStatusDlgCtrlLblWidth
+#define ZPUpdateVersionStatusDlgLblStatus_T			ZPUpdateVersionStatusDlgTxtDescription_B + ZPUpdateVersionStatusDlgLblTopMarign
+#define ZPUpdateVersionStatusDlgLblStatus_B			ZPUpdateVersionStatusDlgLblStatus_T + ZPUpdateVersionStatusDlgCtrlLblHeight
+
+#define ZPUpdateVersionStatusDlgPopStatus_L			ZPUpdateVersionStatusDlgLblStatus_R + ZPUpdateVersionStatusDlgLblRightMarign
+#define ZPUpdateVersionStatusDlgPopStatus_R			ZPUpdateVersionStatusDlgPopStatus_L + ZPUpdateVersionStatusDlgCtrlPopWidth
+#define ZPUpdateVersionStatusDlgPopStatus_T			ZPUpdateVersionStatusDlgLblStatus_T
+#define ZPUpdateVersionStatusDlgPopStatus_B			ZPUpdateVersionStatusDlgPopStatus_T + ZPUpdateVersionStatusDlgCtrlPopHeight
+
+#define ZPUpdateVersionStatusDlgBtnCancel_L			ZPUpdateVersionStatusDlgBtnCancel_R - ZPUpdateVersionStatusDlgCtrlBtnWidth
+#define ZPUpdateVersionStatusDlgBtnCancel_R			ZPUpdateVersionStatusDlgBtnOk_L - ZPUpdateVersionStatusDlgCtrlLeftMarign
+#define ZPUpdateVersionStatusDlgBtnCancel_T			ZPUpdateVersionStatusDlgPopStatus_B + ZPUpdateVersionStatusDlgCtrlTopMarign
+#define ZPUpdateVersionStatusDlgBtnCancel_B			ZPUpdateVersionStatusDlgBtnCancel_T + ZPUpdateVersionStatusDlgCtrlBtnHeight
+
+#define ZPUpdateVersionStatusDlgBtnOk_L				ZPUpdateVersionStatusDlgBtnOk_R - ZPUpdateVersionStatusDlgCtrlBtnWidth
+#define ZPUpdateVersionStatusDlgBtnOk_R				ZPUpdateVersionStatusDlgPopStatus_R
+#define ZPUpdateVersionStatusDlgBtnOk_T				ZPUpdateVersionStatusDlgPopStatus_B + ZPUpdateVersionStatusDlgCtrlTopMarign
+#define ZPUpdateVersionStatusDlgBtnOk_B				ZPUpdateVersionStatusDlgBtnOk_T + ZPUpdateVersionStatusDlgCtrlBtnHeight
+
+// Vertical binding defined for each row controls. Labels can take binding from one row top/bottom.
+#define ZPUpdateVersionStatusDlgVBind_1		kBindTop
+#define ZPUpdateVersionStatusDlgVBind_2		kBindTop | kBindBottom
+#define ZPUpdateVersionStatusDlgVBind_3		kBindBottom
+
+/*  Dialog definition.
+*/
+resource ZPUpdateVersionStatusDialogWidget (kZPUIUpdateVersionStatusDialogResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUIStatusUpdateDlgWidgetID,		// WidgetID
+	kPMRsrcID_None,					// RsrcID
+	kBindAll,						// Binding
+	1, 0, ZPUpdateVersionStatusDlgPanelWidth + ZPUpdateVersionStatusDlgRightMargin, ZPUpdateVersionStatusDlgPanelHeight + ZPUpdateVersionStatusDlgBottomMargin,	// Frame (l,t,r,b)
+	kTrue, kTrue,					// Visible, Enabled
+	kIZPUpdateVersionStatusDialogTitleKey,	// Dialog name
+	{
+		//Decription
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPUpdateVersionStatusDlgVBind_1,	// Binding
+			Frame(ZPUpdateVersionStatusDlgLblDescription_L, ZPUpdateVersionStatusDlgLblDescription_T, ZPUpdateVersionStatusDlgLblDescription_R, ZPUpdateVersionStatusDlgLblDescription_B)
+			kTrue, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPUpdateVersionStatusDlgLblDescriptionKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		MultilineTextEditBoxWidget
+		(
+			kZPUIStatusUpdateDlgTxtDescriptionWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,					// RsrcId
+			kBindLeft | kBindRight | ZPUpdateVersionStatusDlgVBind_2,	// Binding
+			Frame(ZPUpdateVersionStatusDlgTxtDescription_L, ZPUpdateVersionStatusDlgTxtDescription_T, ZPUpdateVersionStatusDlgTxtDescription_R, ZPUpdateVersionStatusDlgTxtDescription_B)
+			kTrue, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Widget id of nudge , Small, Large
+			0,									// max num chars( 0 = no limit)
+			kFalse,								// is read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// range checking enabled
+			kTrue,								// blank entry allowed
+			0,0,								// upper/lower bounds
+			"",
+		),
+
+		//Status
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPUpdateVersionStatusDlgVBind_1,	// Binding
+			Frame(ZPUpdateVersionStatusDlgLblStatus_L, ZPUpdateVersionStatusDlgLblStatus_T, ZPUpdateVersionStatusDlgLblStatus_R, ZPUpdateVersionStatusDlgLblStatus_B)
+			kTrue, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPUpdateVersionStatusDlgLblStatusKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		//Status
+		ZPTitleStatusDropdownWidget
+		(
+			kZPUIStatusUpdateDlgPopStatusWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | ZPUpdateVersionStatusDlgVBind_3,	// Binding
+			Frame(ZPUpdateVersionStatusDlgPopStatus_L, ZPUpdateVersionStatusDlgPopStatus_T, ZPUpdateVersionStatusDlgPopStatus_R, ZPUpdateVersionStatusDlgPopStatus_B)
+			kTrue, kTrue,
+			{{
+			}}
+		),
+		
+		CancelButtonWidget
+		(
+			kCancelButton_WidgetID,	// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindRight | ZPUpdateVersionStatusDlgVBind_3,	// Binding
+			ZPUpdateVersionStatusDlgBtnCancel_L, ZPUpdateVersionStatusDlgBtnCancel_T, ZPUpdateVersionStatusDlgBtnCancel_R, ZPUpdateVersionStatusDlgBtnCancel_B,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kSDKDefCancelButtonApplicationKey,	// Button name
+			kFalse,					// Change to Reset on option-click.
+		),
+
+		//Default Buttons
+		DefaultButtonWidget
+		(
+			kOKButtonWidgetID,		// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindRight | ZPUpdateVersionStatusDlgVBind_3,	// Binding
+			ZPUpdateVersionStatusDlgBtnOk_L, ZPUpdateVersionStatusDlgBtnOk_T, ZPUpdateVersionStatusDlgBtnOk_R, ZPUpdateVersionStatusDlgBtnOk_B,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kIZPUpdateVersionStatusDlgOkBtnKey,	// Button text
+		),
+	},
+};
+#endif

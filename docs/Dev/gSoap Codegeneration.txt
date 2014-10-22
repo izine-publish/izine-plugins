@@ -1,0 +1,57 @@
+
+//Following settings are working
+-----------------------------------------------
+
+ws/typemap.dat
+xsd__string = | wchar_t* | wchar_t*
+
+cd gsoap/bin/win32
+
+wsdl2h -egxy -s -o server.h -I ../../WS http://192.168.1.19/iZINE.Web.MVC/server.svc?wsdl
+
+server.h:
+#import "WS-Header.h"
+#import "wsse.h"
+#import "xop.h" 
+#import "xmlmime.h"
+#import "dom.h"
+
+soapcpp2 -x -w -C -s -L -I ../../import server.h
+
+-----------------------------------------------
+
+
+-----------------------------------------------
+	command sent by Remco
+-----------------------------------------------
+wsdl2h.exe http://localhost:4401/FivePublishers.Web/service.asmx?wsdl -o service.h -s -t ../../WS/typemap.dat
+
+soapcpp2.exe -I"c:\temp\idsdk5\gsoap-2.7\gsoap\import" service.h 
+ 
+-----------------------------------------------
+bin\win32\wsdl2h -cegxy http://redv106/izine/server.svc?wsdl -o server.h -s -I WS
+bin\win32\soapcpp2 -I import -x -w -C -s server.h -L
+
+server.h:
+#import "WS-Header.h"
+#import "wsse.h"
+#import "xop.h" 
+#import "xmlmime.h"
+#import "dom.h"
+
+ws/typemap.dat
+xsd__string = | wchar_t* | wchar_t*
+
+-----------------------------------------------
+	Rajkumar Machine settings
+-----------------------------------------------
+cd G:\Projects\izine.ui\External\gsoap-2.7\gsoap\bin\win32
+G:
+
+wsdl2h -egxy -o wsse.h -t ../../WS/WS-typemap.dat ../../WS/wsse.xsd
+wsdl2h -egxy -o ds.h -t ../../WS/WS-typemap.dat ../../WS/ds.xsd
+wsdl2h -egxy -o wsu.h -t ../../WS/WS-typemap.dat ../../WS/wsu.xsd
+
+wsdl2h.exe http://192.168.1.19/iZINE.Web.MVC/server.svc?wsdl -o service.h -s -t ../../WS/typemap.dat
+
+soapcpp2.exe -I"G:\Projects\izine.ui\External\gsoap-2.7\gsoap\import" service.h -C -L -x

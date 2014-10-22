@@ -1,0 +1,29 @@
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Project/iZineExportCS3Debug.xcconfig $
+//	$Revision: 3952 $
+//	$Date: 2012-02-27 07:22:45 +0100 (Mon, 27 Feb 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Nov 29
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Configuration file for iZineExport CS3 Debug target
+
+#include "../../InDesignCommonCS3.xcconfig"
+
+BUILT_PRODUCTS_DIR = $(InDnCS3PlnsDebug)
+DSTROOT = $(InDnCS3PlnsDebug)
+
+DebugOrReleaseFolder = debug
+
+DEAD_CODE_STRIPPING = YES
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) DEBUG InDnCS3 RVExport IZExport
+GCC_THREADSAFE_STATICS = NO
+GCC_TREAT_WARNINGS_AS_ERRORS = NO
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+OTHER_REZFLAGS = -d __GNUC__ -d DEBUG -d MACINTOSH  -d InDnCS3 -d RVExport -d IZExport
+ODFRCArg2 = -d DEBUG -d InDnCS3 -d RVExport -d IZExport

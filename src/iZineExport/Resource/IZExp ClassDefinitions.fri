@@ -1,0 +1,47 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp%20ClassDefinitions.fri $
+//	$Revision: 3976 $
+//	$Date: 2012-03-06 12:56:58 +0100 (Tue, 06 Mar 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/* Boss class definition.
+*/
+resource ClassDescriptionTable(kSDKDefClassDescriptionTableResourceID)
+{{{
+
+#include "IZExp ClassDefinitions_Auto.fri"
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			//IID_IIZPAMDEBUGHELPER,			kIZPAMDebugHelperImpl,
+		}
+	},
+
+
+	Class
+	{
+		kZExpExpanderRollOverIconBtnWidgetBoss,
+		kRollOverIconButtonBoss,
+		{
+			IID_IZEXPDISCLOSURETRIANGLEOPTIONS,	kZExpDisclosureTriAngleOptionsImpl,
+			IID_IZEXPISEXPANDED,	kFalseInitPersistBoolDataImpl,
+			IID_IOBSERVER,	kZExpDisclosureTriAngleObserverImpl,
+		}
+	},
+}}};
+
+ 
+#endif // __ODFRC__=======

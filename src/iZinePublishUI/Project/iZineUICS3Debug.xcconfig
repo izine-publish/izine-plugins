@@ -1,0 +1,28 @@
+//	$HeadURL: $
+//	$Revision: $
+//	$Date: $
+//	$Author: $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 May 13
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Configuration file for iZinePublish CS3 Debug target
+
+#include "../../InDesignCommonCS3.xcconfig"
+
+BUILT_PRODUCTS_DIR = $(InDnCS3PlnsDebug)
+DSTROOT = $(InDnCS3PlnsDebug)
+
+DebugOrReleaseFolder = debug
+
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) DEBUG INDESIGN_CS3 InDnCS3
+GCC_THREADSAFE_STATICS = NO
+GCC_TREAT_WARNINGS_AS_ERRORS = NO
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+OTHER_REZFLAGS = -d __GNUC__ -d DEBUG -d MACINTOSH  -d INDESIGN_CS3 -d InDnCS3
+ODFRCArg2 = -d DEBUG -d INDESIGN_CS3 -d InDnCS3

@@ -1,0 +1,169 @@
+/*
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP%20Schema.fri $
+
+//	Owner: Rajkumar Sehrawat
+//	Created: 2010 Feb 01
+
+//	$Date: 2011-07-25 09:28:27 +0200 (Mon, 25 Jul 2011) $
+
+//	$Revision: 3534 $
+
+//	$Author: aman.alam $
+
+//	Description: .
+
+//	$Copyright: 2008-2010 iZine Solutions. All rights reserved. $
+*/
+
+#include "Schema.fh"
+#include "ZPPresistDefaults.h"
+
+
+#ifdef __ODFRC__
+
+// You might want to increment a plug-in's format number in the PluginVersion resource,
+// even though you did not change the data format.
+// In this case, you can perform a null conversion to tell the content manager about the new format number.
+resource SchemaFormatNumber(1)
+{
+	{
+		{ kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber }
+		{ kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber_1 }	//No format change from 3.0 to 3.1
+	}
+};
+
+//Schema for format number 
+//{kIZPFirstMajorFormatNumber, kIZPFirstMinorFormatNumber},
+resource SchemaList(1)
+{{
+	//Schema
+	//{
+	//	kAssetDataImpl,
+	//	{kIZPFirstMajorFormatNumber, kIZPFirstMinorFormatNumber},
+	//	{
+	//		{PMString {0x0001, ""}},	// id
+	//		{PMString {0x0002, ""}},	// name
+	//		{PMString {0x0003, ""}},	// description
+	//		{PMString {0x0004, ""}},	// versionid
+	//		{PMString {0x0005, ""}},	// status
+	//		{PMString {0x0006, ""}},	// statusid
+	//		{PMString {0x0007, ""}},	// title
+	//		{PMString {0x0008, ""}},	// titleid
+	//		{PMString {0x0009, ""}},	// shelve
+	//		{PMString {0x000A, ""}},	// shelveid
+	//		{PMString {0x000B, ""}},	// typeid
+	//	}
+	//},
+}}
+
+	//Schema for format kIZPThirdMinorFormatNumber 
+//{kIZPThirdMajorFormatNumber, kIZPFirstMinorFormatNumber},
+resource SchemaList(3)
+{{
+	Schema
+	{
+		kZPWSConfigPersistImpl,
+		{kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber},
+		{
+			{PMString	{0x0001, ""}},		// URL
+			{Bool16		{0x0002, kZPWSConfigDefault_UseProxy }},	// Use Proxy
+			{Int32		{0x0003, kZPWSConfigDefault_ProxyPort }},	// Proxy Port
+			{PMString	{0x0004, ""}},		// Proxy Server
+		}
+	},
+
+	Schema
+	{
+		kZPAssetDataPersistImpl,
+		{kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber},
+		{
+			{PMString {0x0001, ""}},	// Asset id
+			{PMString {0x0002, ""}},	// title id
+			{PMString {0x0003, ""}},	// edition id
+		}
+	},
+
+	Schema
+	{
+		kZPAssetLocalInfoImpl,
+		{kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber},
+		{
+			{PMString	{0x0001, ""}},		// File Path
+			{Int32		{0x0002, 0}},		// Version
+			{Bool16		{0x0003, kFalse}},	// Locally Modified
+		}
+	},
+	
+	Schema
+	{
+		kZPUserCredentialsPersistImpl,
+		{kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber},
+		{
+			{PMString	{0x0001, ""}},		// User ID
+			{PMString	{0x0002, ""}},		// Password		24 June 2011. #1893
+		}
+	},
+
+	Schema
+	{
+		kZPPrefsPersistImpl,
+		{ kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber },
+		{
+			{Int32	{0x001, kZPPrefDefault_AssetFetchInterval } },		//Asset Monitor fetch interval.
+			{Bool16	{0x002, kZPPrefDefault_AutoUpdateLinkedStories }},	// Auto update linked stories on opening.
+		}
+	},
+
+	Schema
+	{
+		kZPPrefsPersistImpl,
+		{ kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber_1 },
+		{
+			{Int32	{0x001, kZPPrefDefault_AssetFetchInterval } },		//Asset Monitor fetch interval.
+			{Bool16	{0x002, kZPPrefDefault_AutoUpdateLinkedStories }},	// Auto update linked stories on opening.
+			{Bool16	{0x003, kZPPrefDefault_AutoUnlockLinkedStories}},	// Auto unlock stories on opening.
+			{Bool16	{0x004, kZPPrefDefault_CreateAssignmentOnStoryImport}},	// Create assignment on story import.
+			{Bool16	{0x005, kZPPrefDefault_IncludeAllAssignmentsOnDocumentCheckin}},	// Checkin all assignments on document checkin
+			{Bool16	{0x006, kZPPrefDefault_RemoveStyles}},	// Auto unlock stories on opening.
+		}
+	},
+}};
+
+//Resource to indicate indesign that plugin prefix has changed.
+// {RemoveClass{kSomeBoss, {1, 2}} }, 
+// {RemoveImplementation{kMyBoss, kMyDataImpl, {2, 1}} }, 
+// {RemoveAllImplementation {kMyDeadImpl, {4, 2}} },
+// {ReplaceClass {kOldBossID, kNewBossID, {5, 2}} }, 
+// {ReplaceImplementation {kSomeBoss, kOldImplID, kNewImplID, {4, 12}} }, 
+// {ReplaceAllImplementation {kOldImplID, kNewImplID, {4, 12}} },
+resource DirectiveList (1)
+{{										//Types defined in Schema.fh
+	//Directive
+	//(
+	//	RenumberPlugin						// Renumbering an entire plugin
+	//	{
+	//		{ kIZPSecondMajorFormatNumber, kIZPSecondMinorFormatNumber },						//	Format number when the renumbering happened
+	//		{ kIZPOldPrefix, {kIZPFirstMajorFormatNumber ,kIZPFirstMinorFormatNumber} },		//	Old plugin and last format number
+	//		{ kIZPPrefixNumber, {kIZPSecondMajorFormatNumber, kIZPSecondMinorFormatNumber} },	//	New plugin and first format number
+	//		
+	//		//Classes
+	//		//Mention only the classes that had persisted implementations.
+	//		//Don't mentions the Add-ins.
+	//		{								//	Old ClassID, New ClassID
+	//			kIZPOldPrefix + 44,		kIZPDataLinkBoss,
+	//			kIZPOldPrefix + 75,		kIZPUpdateAssetDataCmdBoss,
+	//			kIZPOldPrefix + 81,		kIZPUpdateAssignmentDataCmdBoss,
+	//		},
+	//		//Impls
+	//		//Mention only the persisted implementations.
+	//		{								//	Old ImplementationID, New Implementation ID
+	//			kIZPOldPrefix + 36,		kAssetDataImpl,
+	//			kIZPOldPrefix + 71,		kIZPDataLinkImpl,
+	//			kIZPOldPrefix + 75,		kIZPPrefsDataPersistImpl,
+	//			kIZPOldPrefix + 144,	kIZPAssignmentDataPersistImpl,
+	//		},
+	//	}
+	//)
+}};
+
+#endif // __ODFRC__

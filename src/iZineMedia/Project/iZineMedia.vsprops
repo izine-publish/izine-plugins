@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!--
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Project/iZineMedia.vsprops $
+//	$Revision: 2751 $
+//	$Date: 2011-04-08 11:36:28 +0200 (Fri, 08 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description: Visual Studio property sheet for InDesign project.
+-->
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="iZine">
+	
+	<Tool
+		Name="VCCLCompilerTool"
+		PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE;STRICT;ZMBuild"
+		AdditionalIncludeDirectories="
+			&quot;$(ZMediaSDKDir)\Public&quot;;
+			&quot;$(ZMediaSDKDir)\Public\App&quot;;
+			&quot;$(ZMediaSDKDir)\Public\ZMData&quot;;
+			&quot;$(ZMediaSDKDir)\Public\ZMDataMgr&quot;;
+			&quot;$(ZMediaSDKDir)\Public\Utils&quot;;
+			&quot;$(ZMediaSourceDir)&quot;;
+			&quot;$(ZMediaSourceDir)\Plugin&quot;;
+			&quot;$(ZMediaSourceDir)\Service&quot;;
+			&quot;$(ZMediaSourceDir)\Utils&quot;;
+			&quot;$(ZMediaSourceDir)\Data&quot;;
+			&quot;$(ZMediaSourceDir)\Controls&quot;;
+			&quot;$(ZMediaSourceDir)\Controls\AdsTreeView&quot;;
+			&quot;$(ZMediaSourceDir)\Controls\TreeViewHeader&quot;;
+			&quot;$(ZMediaSourceDir)\Dialogs&quot;;
+			&quot;..\Resource&quot;;
+			&quot;$(ZPCommonDir)&quot;;
+			&quot;$(ZPCommonDir)\IdleTask&quot;;
+			&quot;$(ZPCommonDir)\String&quot;;
+			&quot;$(ZPCommonDir)\Utils&quot;;
+			&quot;$(ZPCommonDir)\Utils\Logs&quot;;
+      &quot;$(ZMediaSourceDir)\FromIDSdk&quot;
+		"
+		UsePrecompiledHeader="2"
+		PrecompiledHeaderThrough="VCPlugInHeaders.h"
+		PrecompiledHeaderFile="$(IntDir)/$(ProjectName).pch"
+		AssemblerListingLocation="$(IntDir)/"
+		ObjectFile="$(IntDir)/"
+		ProgramDataBaseFileName="$(IntDir)/"
+		DisableSpecificWarnings="4819"
+		AdditionalOptions="/vmg "
+		StringPooling="true"
+		SuppressStartupBanner="true"
+		TreatWChar_tAsBuiltInType="true"
+		ForceConformanceInForLoopScope="true"
+		WarnAsError="false"
+	/>
+	
+	<Tool
+		Name="VCLinkerTool"
+		ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+		ImportLibrary="$(OutDir)/$(ProjectName).lib"
+		TargetMachine="1"
+		SuppressStartupBanner="true"
+		SubSystem="2"
+		DataExecutionPrevention="0"
+	/>
+	
+	<Tool
+		Name="VCResourceCompilerTool"
+		PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
+		Culture="1033"
+		AdditionalIncludeDirectories="
+			$(ZMediaSourceDir);
+			..\Resource;
+			&quot;$(ZMediaSourceDir)\Plugin&quot;;
+			&quot;$(ZMediaSDKDir)\Public&quot;;
+		"
+	/>
+	
+	
+	<Tool
+		Name="VCMIDLTool"
+		PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
+		MkTypLibCompatible="true"
+		SuppressStartupBanner="true"
+		TargetEnvironment="1"
+		TypeLibraryName="$(OutDir)$(ProjectName)/$(ProjectName).tlb"
+		HeaderFileName=""
+	/>
+
+	<UserMacro Name="PrjODFRCPaths"
+		Value="
+		-i &quot;$(ZMediaSourceDir)&quot;
+		-i &quot;$(ZMediaSourceDir)\Plugin&quot;
+		-i &quot;..\Resources&quot;
+		-i &quot;$(ZMediaSDKDir)\Public&quot;
+		"	/>
+	<!--
+	 Make sure following settings are done for all configurations.
+	 fr file command line 
+		$(ODFRCCommand) "$(InputPath)" $(ODFRCArgs) $(ODFRCDefines) $(ODFRCIncludes)
+			
+	 fr file outputs
+		$(IntDir)\$(InputName).fres
+			
+	 fr file additional dependencies
+		$(IntDir)\TriggerResourceDeps.obj;
+	 -->
+	
+	
+	<UserMacro Name="PluginName"
+		Value="iZineMedia"	/>
+	<UserMacro Name="BuildRootDir"
+		Value="$(ProjectDir)..\..\Build"	/>
+	<UserMacro Name="ZMediaRootDir"
+		Value=".."	/>
+	<UserMacro Name="ZPCommonDir"
+		Value="$(ProjectDir)..\..\Common"	/>
+	<UserMacro Name="ZMediaSDKDir"
+		Value="$(ZMediaRootDir)\SDK"	/>
+	<UserMacro Name="ZMediaSourceDir"
+		Value="$(ZMediaRootDir)\Source"	/>
+	
+	<UserMacro Name="PrjExternalDir"
+		Value="..\..\..\..\..\iZine.ui\External"	/>
+	
+</VisualStudioPropertySheet>

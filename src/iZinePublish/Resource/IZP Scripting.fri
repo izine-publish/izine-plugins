@@ -1,0 +1,210 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP%20Scripting.fri $
+//	$Revision: 4093 $
+//	$Date: 2012-12-19 12:18:48 +0100 (Wed, 19 Dec 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#include "ZPScriptingDefs.h"
+
+resource VersionedScriptElementInfo(1)
+{
+	//Contexts
+	{
+		//kFiredrakeScriptVersion, kCoreScriptManagerBoss, kWildFS, k_Wild,
+		//kFiredrakeScriptVersion, kINXScriptManagerBoss, kWildFS, k_Wild,
+		//kCobaltScriptVersion, kCoreScriptManagerBoss, kWildFS, k_Wild,
+#if defined(InDnCS5) || defined(InDnCS5_5)
+		kCS5ScriptVersion, kINXScriptManagerBoss, kWildFS, k_Wild,		
+#else
+		kCobaltScriptVersion, kINXScriptManagerBoss, kWildFS, k_Wild,
+#endif
+	}
+
+	//Elements
+	{
+		Suite
+		{
+			kZPSuiteScriptElement,
+			s_ZPSuite,
+			"iZinePublish",
+			"iZine Publish suite",
+		}
+
+#if 0	//Someday: Enable when asset data property is treated as an object
+		Object
+		{
+			kZPAssetDataObjectScriptElement,			// this object's script element ID
+			c_ZPAssetData,								// ScriptID
+			"ZPAssetData",								// name
+			"Stores info for assetid, title & edition",	// description
+			kIZPAssetData_CLSID,						// Windows CLSID
+			NoPluralInfo,								// CollectionElementType (scriptID, name, descr, CLSID)
+			kNonIDBasedObjectScriptElement,				// base object script element ID
+			kBasicSuiteScriptElement,					// suite script element ID
+		},
+
+		Property
+		{
+			kZPAssetDataPropertyScriptElement,
+			p_ZPAssetData,
+			"zpAssetData",
+			"iZinePublish Asset Data",
+			ObjectType( kZPAssetDataObjectScriptElement ),
+			{}
+			kNoAttributeClass,
+		}
+#else
+		Property
+		{
+			kZPAssetDataPropertyScriptElement,
+			p_ZPAssetData,
+			"zpAssetData",
+			"iZinePublish Asset Data",
+			VariableArrayType( kVariableLength ){ StringType, StringType, StringType },
+			{PermitTypeChange}
+			kNoAttributeClass,
+		}
+#endif
+
+		Property
+		{
+			kZPAssetIDPropertyScriptElement,
+			p_ZPAssetID,
+			"zpAssetID",
+			"iZinePublish Asset ID",
+			StringType,
+			{}
+			kNoAttributeClass,
+		}
+
+		Property
+		{
+			kZPTitleIDPropertyScriptElement,
+			p_ZPTitleID,
+			"zpTitleID",
+			"iZinePublish Title ID",
+			StringType,
+			{}
+			kNoAttributeClass,
+		}
+
+		Property
+		{
+			kZPEditionIDPropertyScriptElement,
+			p_ZPEditionID,
+			"zpEditionID",
+			"iZinePublish Edition ID",
+			StringType,
+			{}
+			kNoAttributeClass,
+		}
+		
+		//////Metadata
+		//////{
+		//////	{
+		//////		// Elements
+		//////		kIZPDataLinkObjectScriptElement,
+		//////	}
+		//////	{
+		//////		// Metadata
+		//////		m_INXTreatAsLink, Int32Value(e_RelinkRequiredLink),
+		//////			m_INXSnippetAttrImportState, Int32Value(e_SetElementAttributes),
+				////////m_INXMatchProperty, Int32Value(p_ZPAssetData)
+		//////	}
+
+		//////}
+
+#if defined(InDnCS5) || defined(InDnCS5_5)	//TODO: CS5 Porting
+		Metadata
+		{
+			kAssetDataINXPoliciesMetadataScriptElement
+			{
+				// Gracefully handle when we place a missing link from library
+				// or INDS snippet from desktop (say)
+				kZPAssetDataPropertyScriptElement,
+			}
+			{
+				// Do not worry if the value does not appear to have
+				// been set correctly on import.
+				m_INXIgnoreDefaultValueCheck, NoValue,
+			}
+		}		
+#else
+		Metadata
+		{			
+			{
+				// Gracefully handle when we place a missing link from library
+				// or INDS snippet from desktop (say)
+				kZPAssetDataPropertyScriptElement,
+			}
+			{
+				// Do not worry if the value does not appear to have
+				// been set correctly on import.
+				m_INXIgnoreDefaultValueCheck, NoValue,
+			}
+		}
+#endif
+
+		//////// This is what the existing datalink does
+		//////Metadata
+		//////{
+		//////	{
+		//////		// Gracefully handle when we place a missing link from library
+		//////		// or INDS snippet from desktop (say)
+		//////		kIZPDataLinkInfoPropertyScriptElement,
+		//////	}
+		//////	{
+		//////		// Do not worry if the value does not appear to have
+		//////		// been set correctly on import.
+		//////		m_INXIgnoreDefaultValueCheck, NoValue,
+		//////	}
+		//////}
+		
+		Provider
+		{
+#if 0	//Someday: Enable when asset data property is treated as an object
+			kZPAssetDataScriptProviderBoss,
+			{
+				Parent{ kLinkObjectScriptElement },
+				Parent{ kDocumentObjectScriptElement },
+				Parent{ kAssignmentObjectScriptElement },
+				//Parent{ kLinkMetadataObjectScriptElement },
+				
+				//TODO: should this be RepresentObject, Object is used to added info to already defined objects
+				// RepresentObject will require IScript interface to be implemented on the object.
+				Object { kZPAssetDataObjectScriptElement },
+				
+				//access this object from parent via property
+				ParentProperty{ kZPAssetDataPropertyScriptElement, kReadWrite },
+
+				//Properties that this object have
+				Property{ kZPAssetIDPropertyScriptElement, kReadWrite },
+				Property{ kZPTitleIDPropertyScriptElement, kReadWrite },
+				Property{ kZPEditionIDPropertyScriptElement, kReadWrite },
+			}
+#else
+			kZPAssetDataScriptProviderBoss,
+			{
+				Object{ kLinkObjectScriptElement },
+				Object{ kDocumentObjectScriptElement },
+				Object{ kAssignmentObjectScriptElement },
+				//Object{ kLinkMetadataObjectScriptElement },
+				
+				Property{ kZPAssetDataPropertyScriptElement, kReadWrite },
+			}
+#endif
+		}
+	}
+};
+
+#endif // __ODFRC__=======

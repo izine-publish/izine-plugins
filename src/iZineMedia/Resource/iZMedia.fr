@@ -1,0 +1,129 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMedia.fr $
+//	$Revision: 2818 $
+//	$Date: 2011-04-20 10:10:33 +0200 (Wed, 20 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 25-03-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#include "VCPlugInHeaders.h"
+
+// General includes:
+#include "ActionDefs.h"
+#include "ActionID.h"
+#include "AdobeMenuPositions.h"
+#include "AppFrameworkID.h"
+#include "BuildNumber.h"
+#include "ErrorTableTypes.h"
+#include "DragDropID.h"
+#include "IControlViewDefs.h"
+#include "InterfaceColorDefines.h"
+#include "LocaleIndex.h"
+#include "ObjectModelTypes.fh"
+#include "PMLocaleIds.h"
+#include "SysControlIDs.h"
+#include "WorkspaceID.h"
+#include "XmlParserID.h"
+
+#include "ActionDef.fh"
+#include "MenuDef.fh"
+#include "IDList.fh"
+#include "IDListPair.fh"
+#include "PanelList.fh"
+#include "StringTable.fh"
+#include "Widgets.fh"	// for PalettePanelWidget or DialogBoss
+
+// Project includes:
+#include "IZMediaID.h"
+
+#ifdef __ODFRC__
+
+#define kInDesignProductAndServerFS	( kInDesignProductFS | kInDesignServerProductFS | kAllLanguagesFS)
+
+/*
+// User Error Table resource
+// To be coupled with an IErrorStringService implementation and
+// string translations (see localized .fr files)
+// Note: that the string provided in the UserErrorTable is not localized
+*/
+resource UserErrorTable(kSDKDefErrorStringResourceID)	//id is used in service, don't change
+{
+	{
+		kIZMInvalidXMLFileError, kIZMediaInvalidXMLFileErrorCodeStringKey,
+}
+};
+
+#pragma mark -
+// You do not need to mark any IDs that do not appear in the document 
+resource IgnoreTags(1)
+{
+	kImplementationIDSpace,
+	{
+		//kZPWSConfigPersistImpl,
+	}
+};
+
+resource IgnoreTags(2)
+{
+	kClassIDSpace,
+	{
+		//kZPAssetLocalInfoBoss,
+	}
+};
+
+/*
+	The following resource asks the InDesign to warn the user that the data$
+	to the document is critical, if this plug-in is missing when
+	InDesign tries to open a document that contains the data.
+	Continuing opening the document opens the copy of document and not the original.
+*/
+
+resource CriticalTags(1)
+{
+	kImplementationIDSpace,
+	{
+//		kZPAssetDataPersistImpl,
+	}
+};
+/*
+resource CriticalTags(2)
+{
+	kClassIDSpace,
+	{
+//		kDocDataBoss,
+	}
+};
+*/
+
+/*	Implementation definition.
+*/
+resource FactoryList (kSDKDefFactoryListResourceID)
+{
+	kImplementationIDSpace,
+	{
+		#include "IZMediaFactoryList.h"
+	}
+};
+
+#include "IZMedia Version.fri"
+#include "IZMedia Aliases.fri"
+#include "IZMedia ClassDefinitions.fri"
+#include "IZMedia Addins.fri"
+#include "IZMedia Menu.fri"
+#include "IZMedia Images.fri"
+//#include "IZMedia Scripting.fri"
+#include "IZMedia Strings.fri"
+#include "IZMedia Schema.fri"
+
+#include "iZMediaUI Controls.fri"
+#include "iZMediaUI_PrefsDialog.fri"
+#include "iZMUI_AdsPanel.fri"
+
+
+#endif // __ODFRC__=======

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iZinePublishUI", "iZinePublishUI\Project\IZINEUI.vcproj", "{8D5EC2F7-2455-4D45-A2BD-27788067926B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A} = {477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iZinePublish", "iZinePublish\Project\IZINE.vcproj", "{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D5EC2F7-2455-4D45-A2BD-27788067926B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D5EC2F7-2455-4D45-A2BD-27788067926B}.Debug|Win32.Build.0 = Debug|Win32
+		{8D5EC2F7-2455-4D45-A2BD-27788067926B}.Release|Win32.ActiveCfg = Release|Win32
+		{8D5EC2F7-2455-4D45-A2BD-27788067926B}.Release|Win32.Build.0 = Release|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.Debug|Win32.Build.0 = Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.Release|Win32.ActiveCfg = Release|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

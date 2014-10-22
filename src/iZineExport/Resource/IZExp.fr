@@ -1,0 +1,159 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp.fr $
+//	$Revision: 4011 $
+//	$Date: 2012-05-22 14:35:46 +0200 (Tue, 22 May 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#include "VCPlugInHeaders.h"
+
+// General includes:
+#include "ActionDef.fh"
+#include "ActionDefs.h"
+#include "ActionID.h"
+#include "AdobeMenuPositions.h"
+#include "AppFrameworkID.h"
+//#include "AssignmentID.h"
+#include "BuildNumber.h"
+//#include "CommandID.h"
+#include "DocFrameworkID.h"
+#include "DragDropID.h"
+#include "ErrorTableTypes.h"
+//#include "EPSID.h" // for kEPS...
+//#include "GenericID.h" // IID_IADORN...
+#include "IControlViewDefs.h"
+#include "IDList.fh"
+#include "IDListPair.fh"
+//#include "InCopyBridgeID.h"
+//#include "InCopyBridgeUIID.h"
+//#include "InCopyExportID.h"
+#include "InterfaceColorDefines.h"
+//#include "INXCoreID.h"	// for kINXScriptManagerBoss
+//#include "INXMetadataDefs.h"
+//#include "LayoutUIID.h"
+//#include "LinksID.h" // kDataLinkBoss
+//#include "LinksPanelID.h"
+#include "LocaleIndex.h"
+#include "MenuDef.fh"
+//#include "MovieID.h" // kMovie...
+#include "ObjectModelTypes.fh"
+//#include "PageItemScrapID.h"
+#include "PanelList.fh"
+#include "PMLocaleIds.h"
+//#include "ScriptInfoTypes.fh"
+//#include "ShuksanID.h"
+//#include "SoundID.h" // kSound...
+#include "StringTable.fh"
+#include "SysControlIDs.h"
+//#include "TextID.h"
+//#include "TextScriptID.h"	// kStory...
+//#include "WidgetID.h"
+#include "Widgets.fh"	// for PalettePanelWidget or DialogBoss
+#include "workgroupid.h"
+#include "WorkspaceID.h"
+//#include "WritingModeID2.h"
+//#include "XMLID.h" // kXML...
+
+// Project includes:
+#include "IZExpID.h"
+
+#ifdef __ODFRC__
+
+#define kInDesignProductAndServerFS	( kInDesignProductFS | kInDesignServerProductFS | kAllLanguagesFS)
+
+/*
+// User Error Table resource
+// To be coupled with an IErrorStringService implementation and
+// string translations (see localized .fr files)
+*/
+/*
+resource UserErrorTable(kSDKDefErrorStringResourceID)
+{
+	{
+		kFrmLblFailureErrorCode, kFrmLblFailureErrorCodeStringKey,
+	}
+};
+*/
+
+#pragma mark -
+// You do not need to mark any IDs that do not appear in the document 
+resource IgnoreTags(1)
+{
+	kImplementationIDSpace,
+	{
+		//kZPWSConfigPersistImpl,
+	}
+};
+
+resource IgnoreTags(2)
+{
+	kClassIDSpace,
+	{
+		//kZPAssetLocalInfoBoss,
+	}
+};
+
+/*
+	The following resource asks the InDesign to warn the user that the data$
+	to the document is critical, if this plug-in is missing when
+	InDesign tries to open a document that contains the data.
+	Continuing opening the document opens the copy of document and not the original.
+*/
+
+resource CriticalTags(1)
+{
+	kImplementationIDSpace,
+	{
+//		kZPAssetDataPersistImpl,
+	}
+};
+/*
+resource CriticalTags(2)
+{
+	kClassIDSpace,
+	{
+//		kDocDataBoss,
+	}
+};
+*/
+
+/*	Implementation definition.
+*/
+resource FactoryList (kSDKDefFactoryListResourceID)
+{
+	kImplementationIDSpace,
+	{
+		#include "IZExpFactoryList.h"
+	}
+};
+
+#ifdef InDnCS5
+#define			ConvertAmpersandsTrue	kTrue,							// Convert ampersands
+#define			ConvertAmpersandsFalse	kFalse,							// Convert ampersands
+#else
+#define			ConvertAmpersandsTrue
+#define			ConvertAmpersandsFalse
+#endif
+
+#include "IZExp Version.fri"
+#include "IZExp Aliases.fri"
+#include "IZExp ClassDefinitions.fri"
+#include "IZExp Addins.fri"
+#include "IZExp Menu.fri"
+#include "IZExp Images.fri"
+//#include "IZExp Scripting.fri"
+#include "IZExp Strings.fri"
+#include "IZExp_Errors.fri"
+#include "IZExp Schema.fri"
+
+#include "IZExp_PrefsDialog.fri"
+#include "IZExp_ExportDialog.fri"
+
+#endif // __ODFRC__=======

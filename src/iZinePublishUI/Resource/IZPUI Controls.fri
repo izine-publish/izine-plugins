@@ -1,0 +1,527 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI%20Controls.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 27-4-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+//Types
+	//Assets TreeView
+type ZPAssetsPanelTreeViewWidget(kViewRsrcType) :	TreeViewWidget(ClassID = kZPAssetsTreeViewWidgetBoss)
+{
+	LinkedWidgetAttributes;	//Widget ID for associated tree header
+};
+		//Status TreeView node
+type ZPAssetsTVStatusNodeWidget(kViewRsrcType) : PrimaryResourcePanelWidget(ClassID = kZPAssetsTVStatusNodeWidgetBoss)
+{
+};
+
+		//Asset TreeView node
+type ZPAssetsTVAssetNodeWidget(kViewRsrcType) : PrimaryResourcePanelWidget(ClassID = kZPAssetsTVAssetNodeWidgetBoss)
+{
+};
+
+			//Column widget, save
+type ZPAssetsPanelTreeViewNodeSaveRollOverIconButtonWidget(kViewRsrcType) : RollOverIconButtonWidget (ClassID = kZPAssetsTVAssetNodeSaveRollOverIconBtnWidgetBoss)
+{
+}
+	//Tasks List
+type ZPTasksListTreeViewWidget(kViewRsrcType) : TreeViewWidget( ClassID = kZPTasksListTreeViewWidgetBoss )
+{
+	LinkedWidgetAttributes;	//Widget ID for associated tree header
+}
+		//Tasks TreeView node
+type ZPTasksTVNodeWidget(kViewRsrcType) : PrimaryResourcePanelWidget(ClassID = kZPTasksTVNodeWidgetBoss)
+{
+};
+
+	//TreeView Header
+type ZPTreeTypeAttribute: Interface (IID = IID_IZPINTDATA)
+{
+	longint;		// Integer data
+};
+
+type ZPTVHeaderWidget( kViewRsrcType ) : Widget( ClassID = kZPTVHeaderWidgetBoss )
+{
+	CControlView;
+	ZPTreeTypeAttribute;	//Tree Type, 1 Tasks, 2 Assets
+	LinkedWidgetAttributes;	//Widget ID for associated tree
+	CPanelControlData;
+};
+
+type ZPTVHeaderColumnHeaderTxtWidget(kViewRsrcType) :
+					InfoStaticTextWidget(ClassID = kInfoStaticTextWidgetBoss)
+{
+};
+
+	//Tree Column Widgets
+type ZPTVColumnTxtWidget(kViewRsrcType) : InfoStaticTextWidget(ClassID = kInfoStaticTextWidgetBoss)
+{
+};
+
+type ZPTVColumnIconWidget(kViewRsrcType) : IconSuiteWidget(ClassID = kIconSuiteWidgetBoss)
+{
+};
+
+type ZPTVColumnRollOverIconButtonWidget(kViewRsrcType) : RollOverIconButtonWidget (ClassID = kZPTVColumnRollOverIconButtonWidgetBoss )
+{
+};
+
+type ZPExpanderOptions : Interface (IID = IID_IZPDISCLOSURETRIANGLEOPTIONS)
+{
+	PMRsrcID;		// fRsrcId, fRsrcPlugin of expander icon when node is collapsed
+	PMRsrcID;		// fRsrcId, fRsrcPlugin of expander icon when node is expanded
+};
+
+type ZPExpanderIsExpanded : Interface (IID = IID_IZPISEXPANDED )
+{
+	integer;		// is Expanded
+};
+
+type ZPExpanderRollOverIconButtonWidget(kViewRsrcType) : RollOverIconButtonWidget (ClassID = kZPExpanderRollOverIconBtnWidgetBoss )
+{
+	ZPExpanderOptions;
+	ZPExpanderIsExpanded;
+};
+
+#pragma mark -
+	//Document Preview
+type ZPAssetsPanelPreviewPanelWidget(kViewRsrcType) : GenericPanelWidget(ClassID = kZPDocumentPreviewWidgetBoss)
+{
+};
+
+#pragma mark -
+type FixedItemListControlData : DropDownListControlData (IID = IID_IZPPOPFIXEDITEMSTRINGDATA)
+{
+};
+
+	//Titles dropdown
+type ZPTitlesDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZPUIPopTitleListBoss)
+{
+};
+	//Editions dropdown
+type ZPEditionsDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZPUIPopEditionsListBoss)
+{
+};
+
+	// Title Status dropdown
+type ZPTitleStatusDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZPUIPopTitleStatusListBoss)
+{
+};
+
+	// Title Users dropdown
+type ZPTitleUsersDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZPUIPopTitleUsersListBoss)
+{
+	FixedItemListControlData;
+};
+
+	// Edition Assets dropdown
+type ZPEditionAssetsDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZPUIPopEditionAssetsListBoss)
+{
+	FixedItemListControlData;
+};
+
+	// Task Status dropdown
+type ZPTaskStatusDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZPUIPopTaskStatusListBoss)
+{
+	FixedItemListControlData;
+};
+	// Task Category dropdown
+type ZPTaskCategoryDropdownWidget(kViewRsrcType) : DropDownListWidget (ClassID = kZPUIPopTaskCategoryListBoss)
+{
+	FixedItemListControlData;
+};
+
+#pragma mark -
+//Resources
+	//TreeView node - Status
+resource LocaleIndex (kIZPAssetsTVStatusNodeWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kIZPAssetsTVStatusNodeWidgetRsrcID + index_enUS
+	}
+};
+
+resource ZPAssetsTVStatusNodeWidget (kIZPAssetsTVStatusNodeWidgetRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUIAssetsTVStatusNodeWidgetID,
+	kPMRsrcID_None,		// WidgetId, RsrcId
+	kBindLeft | kBindRight,				// Frame binding
+	Frame(0,0,600,20),						// Frame (left, top, right, bottom)
+	kTrue, kTrue,							// Visible, Enabled
+	"",										// Panel name
+	{
+		// Drop down arrow
+		TreeExpanderWidget
+		(
+			kTreeNodeExpanderWidgetID,		// WidgetId
+			kTreeBranchCollapsedRsrcID,		// RsrcId for collapsed node icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed node icon
+			kBindNone,						// Frame binding
+			Frame(0,3,10,18),				// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			kTreeBranchExpandedRsrcID, 		// RsrcId for expanded node icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for expanded node icon
+			kTrue,							// Cmd-Click expands/collapses children
+			kFalse,							// Scroll to show children when expanded
+			kIconNoCentering,
+			kIconRaisedLook,		// Sets the icon look -- (kIconRaisedLook | kIconFlushLook)
+			kFalse					// Bool integer sets whether the icon draws a well.
+		),
+		GenericPanelWidget
+		(
+			kZPUITVGroupElementWidgetID,		// WidgetId
+			kPMRsrcID_None,					// RsrcId
+			kBindLeft | kBindRight,			// Frame binding
+			Frame(11,0,600,19)				// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			"",
+			{
+				IconSuiteWidget
+				(
+						kZPUIAssetsTVNodeIconWidgetID,
+						kPMRsrcID_None,
+						kBindLeft,
+						Frame(0,1,18,18),
+						kTrue, kTrue,
+						kIconCentering,
+						kIconRaisedLook,
+						kFalse,
+						0,
+				),
+
+				InfoStaticTextWidget
+				(
+					kZPUIAssetsTVNodeNameWidgetID,			// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(76,1,178,18),				// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					ConvertAmpersandsTrue
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+			}
+		),
+	}
+}
+
+#pragma mark -
+	//TreeView node - Asset
+resource LocaleIndex (kIZPAssetsTVAssetNodeWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kIZPAssetsTVAssetNodeWidgetRsrcID + index_enUS
+	}
+};
+
+resource ZPAssetsTVAssetNodeWidget (kIZPAssetsTVAssetNodeWidgetRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUIAssetsTVAssetNodeWidgetID,
+	kPMRsrcID_None,		// WidgetId, RsrcId
+	kBindLeft | kBindRight,				// Frame binding
+	Frame(0,0,600,20),						// Frame (left, top, right, bottom)
+	kTrue, kTrue,							// Visible, Enabled
+	"",										// Panel name
+	{
+#if 0
+		//GenericPanelWidget
+		//(
+		//	kZPUITVGroupElementWidgetID,	// WidgetId
+		//	kPMRsrcID_None,					// RsrcId
+		//	kBindLeft | kBindRight,			// Frame binding
+		//	Frame(13,0,600-13,18)				// Frame
+		//	kTrue, kTrue,					// Visible, Enabled
+		//	"",
+		//	{
+				IconSuiteWidget
+				(
+						kZPUIAssetsTVNodeIconWidgetID,
+						kPMRsrcID_None,
+						kBindLeft,
+						Frame(0,3,18,19),
+						kTrue, kTrue,
+						kIconCentering,
+						kIconRaisedLook,
+						kFalse,
+						0,
+				),
+				IconSuiteWidget
+				(
+						kZPUIAssetsTVNodeTypeIconWidgetID,
+						kPMRsrcID_None,
+						kBindLeft,
+						Frame(57, 3, 75, 19),
+						kTrue, kTrue,
+						kIconCentering,
+						kIconRaisedLook,
+						kFalse,
+						0,
+				),
+				IconSuiteWidget
+				(
+						kZPUIAssetsTVNodeLockIconWidgetID,
+						kPMRsrcID_None,
+						kBindLeft,
+						Frame(76, 3, 94, 19),
+						kTrue, kTrue,
+						kIconCentering,
+						kIconRaisedLook,
+						kFalse,
+						0,
+				),
+				
+				ZPAssetsPanelTreeViewNodeSaveRollOverIconButtonWidget
+				(
+						kZPUIAssetsTVNodeSaveRollOverIconButtonWidgetID, // WidgetID
+						kNewObjectButtonIconRollOver,		// Icon resource ID
+						0,						// Plug-in ID
+						kBindNone,
+						Frame(19,3,37,19),
+						kTrue, kTrue,							// Visible, Enabled
+						kADBEIconSuiteButtonDrawWellType,
+				),
+				
+				ZPAssetsPanelTreeViewNodeDeleteRollOverIconButtonWidget
+				(
+						kZPUIAssetsTVNodeDeleteRollOverIconButtonWidgetID, // WidgetID
+						kDeleteObjectButtonIconRollOver,		// Icon resource ID
+						0,						// Plug-in ID
+						kBindNone,
+						Frame(38,3,56,19),
+						kTrue, kTrue,							// Visible, Enabled
+						kADBEIconSuiteButtonDrawWellType,
+				),
+					
+				InfoStaticTextWidget
+				(
+					kZPUIAssetsTVNodeNameWidgetID,			// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(95,3,289,19),				// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+
+
+				InfoStaticTextWidget
+				(
+					kZPUIAssetsTVNodeDocumentWidgetID,			// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(290,3,469,19),			// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+				
+				InfoStaticTextWidget
+				(
+					kZPUIAssetsTVNodeVersionNumberWidgetID,			// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(470, 3, 489, 19),			// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+				InfoStaticTextWidget
+				(
+					kZPUIAssetsTVNodeVersionAuthorWidgetID,			// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(490, 3, 589, 19),			// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+				InfoStaticTextWidget
+				(
+					kZPUIAssetsTVNodeVersionDateWidgetID,			// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(590, 3, 679, 19),			// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+				
+				//Someday: Unsed widget?
+				InfoStaticTextWidget
+				(
+					kZPUIAssetsTVNodeDescriptionWidgetID,			// WidgetId
+					kPMRsrcID_None,					// RsrcId
+					kBindLeft,						// Frame binding
+					Frame(511,3,600,19),			// Frame
+					kFalse, kTrue,					// Visible, Enabled
+					kAlignLeft,						// Alignment
+					kDontEllipsize,					// Ellipsize style
+					"",								// Text Control Data
+					0,								// WidgetId for associated control for shortcut focus
+					kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+				),
+//			}
+//		),
+#endif
+	}
+}
+
+#pragma mark -
+//Resources
+	//TreeView node - Status
+resource LocaleIndex (kIZPTasksTVTaskNodeWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kIZPTasksTVTaskNodeWidgetRsrcID + index_enUS
+	}
+};
+
+resource ZPTasksTVNodeWidget (kIZPTasksTVTaskNodeWidgetRsrcID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUITasksTVNodeWidgetID,
+	kPMRsrcID_None,		// WidgetId, RsrcId
+	kBindLeft,				// Frame binding
+	Frame(0,0,600,20),						// Frame (left, top, right, bottom)
+	kTrue, kTrue,							// Visible, Enabled
+	"",										// Panel name
+	{
+		InfoStaticTextWidget
+		(
+			kZPUITasksTVNodeSubjectWidgetID,// WidgetId
+			kPMRsrcID_None,					// RsrcId
+			kBindLeft,						// Frame binding
+			Frame(1,0,300, 20),				// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			kAlignLeft,						// Alignment
+			kDontEllipsize,					// Ellipsize style
+			ConvertAmpersandsTrue
+			"",								// Text Control Data
+			0,								// WidgetId for associated control for shortcut focus
+			kPaletteWindowSystemScriptFontId, kPaletteWindowSystemScriptFontId,
+		),
+	}
+}
+#pragma mark -
+	//TreeView header - column header widget
+resource LocaleIndex (kZPUITVHeaderColumnWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kZPUITVHeaderColumnWidgetRsrcID + index_enUS
+	}
+};
+resource ZPTVHeaderColumnHeaderTxtWidget(kZPUITVHeaderColumnWidgetRsrcID + index_enUS)
+{
+	kInvalidWidgetID,	// WidgetId
+	kPMRsrcID_None,		// RsrcId
+	kBindLeft,			// Frame binding
+	Frame( 0, 0, 150, 18),
+	kTrue, kTrue,		// Visible, Enabled
+	kAlignLeft,		// Alignment
+	kEllipsizeEnd,		// Ellipsize style
+	ConvertAmpersandsTrue
+	"",					// Text Control Data
+	0,					// associated WidgetId
+	kDocWindowFontId,
+	kDocWindowFontId,
+}
+
+#pragma mark -
+	//Tree Column Widgets
+resource LocaleIndex (kZPUITVColumnTxtWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kZPUITVColumnTxtWidgetRsrcID + index_enUS
+	}
+};
+resource ZPTVColumnTxtWidget(kZPUITVColumnTxtWidgetRsrcID + index_enUS)
+{
+	kInvalidWidgetID,	// WidgetId
+	kPMRsrcID_None,		// RsrcId
+	kBindLeft,			// Frame binding
+	Frame( 0, 0, 150, 18),
+	kTrue, kTrue,		// Visible, Enabled
+	kAlignLeft,			// Alignment
+	kDontEllipsize,		// Ellipsize style
+	ConvertAmpersandsTrue
+	"",					// Text Control Data
+	0,					// associated WidgetId
+	kDocWindowFontId,
+	kDocWindowFontId,
+}
+
+resource LocaleIndex (kZPUITVColumnIconWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kZPUITVColumnIconWidgetRsrcID + index_enUS
+	}
+};
+
+resource ZPTVColumnIconWidget(kZPUITVColumnIconWidgetRsrcID + index_enUS)
+{
+	kInvalidWidgetID,
+	kPMRsrcID_None,
+	kBindLeft,
+	Frame(0, 0, 18, 18),
+	kTrue, kTrue,
+	kIconCentering,
+	kIconRaisedLook,
+	kFalse,
+	0,
+}
+
+resource LocaleIndex (kZPUITVColumnRollOverIconButtonWidgetRsrcID)
+{
+	kViewRsrcType,
+	{
+		kWildFS, k_Wild, kZPUITVColumnRollOverIconButtonWidgetRsrcID + index_enUS
+	}
+}
+
+resource ZPTVColumnRollOverIconButtonWidget(kZPUITVColumnRollOverIconButtonWidgetRsrcID + index_enUS)
+{
+	kInvalidWidgetID,				// WidgetID
+	0,								// Icon resource ID
+	0,								// Plug-in ID
+	kBindNone,						
+	Frame(0, 0, 18, 19),			
+	kTrue, kTrue,					// Visible, Enabled
+	kADBEIconSuiteButtonDrawWellType,
+}
+#endif

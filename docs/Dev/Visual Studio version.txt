@@ -1,0 +1,20 @@
+Current version of iZine.ui plugin uses Visual Studio 2005.
+
+
+Using Visual Studio 2005:-
+-------------------------
+1. Compile OpenSSL using visual studio 2005 command prompt.
+2. Modify iZineUICS3Debug.vsprops and iZineUICS3Release.vsprops to link Zlib from "vc8" folder
+3. Open iZineUI.sln in Visual Studio 2005
+4. Make sure you copy the proper dlls while running InDesign.
+
+
+
+Using Visual Studio 2008:-
+-------------------------
+1. Compile OpenSSL using visual studio 2008 command prompt.
+2. Modify iZineUICS3Debug.vsprops and iZineUICS3Release.vsprops to link Zlib from "vc9" folder
+3. Open iZineUI.sln in Visual Studio 2008
+4. Make sure you copy the proper dlls while running InDesign.
+
+

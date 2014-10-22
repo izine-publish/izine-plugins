@@ -1,0 +1,700 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI%20ClassDefinitions_Auto.fri $
+//	$Revision: 4088 $
+//	$Date: 2012-10-26 14:24:55 +0200 (Fri, 26 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 29-3-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: This is auto generated file. Any change made to it will be lost. Generated
+//	from excel sheet macro.
+//========================================================================================
+
+
+	AddIn
+	{
+		kSessionBoss,
+		kInvalidClass,
+		{
+			IID_IZPUIASSETDNDOBSERVER,	kZPUIAssetDnDObserverImpl,	// observers zp asset node drop
+			IID_IZPUICURRDOCSELCHANGEOBSERVER,	kZPUICurrDocSelChangeObserverImpl,	// Observes current document selection change
+			IID_IZPUISTORYCHECKOUTEVENTWATCHER,	kZPUIStoryCheckoutEventWatcherImpl,	// Hook for check-out ID template on typing
+		}
+	},
+
+	AddIn
+	{
+		kWorkspaceBoss,
+		kInvalidClass,
+		{
+			IID_IZPUIACTIONFILTERDATA,	kZPUIActionFilterDataImpl,	// persists, stores old action handlers
+		}
+	},
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			IID_IZPUIDIALOGFACADE,	kZPUIDialogFacadeImpl,	// dialog creation helper
+		}
+	},
+
+	Class
+	{
+		kZPUIStartupShutdownBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kCStartupShutdownProviderImpl,	// default impl for startup shutdown
+#if defined(InDnCS5) || defined(InDnCS5_5)
+			IID_ISTARTUPSHUTDOWN,	kZPUIStartupShutdownImpl,
+#else
+			IID_IAPPSTARTUPSHUTDOWN,	kZPUIStartupShutdownImpl,
+#endif
+		}
+	},
+
+	Class
+	{
+		kZPUIConversionProviderBoss,
+		kInvalidClass,
+		{
+//			IID_IK2SERVICEPROVIDER,	kConversionServiceImpl,	// Uncomment when a schema or directive is added
+			IID_ICONVERSIONPROVIDER,	kSchemaBasedConversionImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUILoginDlgServiceBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kZPLoginUIServiceProviderImpl,	// kZPLoginUIService provider
+			IID_IZPLOGINDLGCREATOR,	kZPLoginDlgCreatorImpl,	// create and display login dialog
+		}
+	},
+
+	Class
+	{
+		kZPUIAppActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAppActionComponentImpl,	// Handle application's actions
+		}
+	},
+
+	Class
+	{
+		kZPUIDebugActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPDebugActionComponentImpl,	// Handles debug build menu actions
+//			IID_IACTIONIDTOUIDDATA,	kActionIDToUIDDataImpl,
+//			IID_IDYNAMICMENU,	kZPDynamicMenuImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUITasksActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPTasksActionComponentImpl,	// Handle tasks related actions
+		}
+	},
+
+	Class
+	{
+		kZPUIAMActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAMActionComponentImpl,	// Handle Asset Mgmt actions
+			IID_IACTIONIDTOUIDDATA,	kActionIDToUIDDataImpl,
+//			IID_IDYNAMICMENU,	kZPDynamicMenuImpl,	// Not used yet
+		}
+	},
+
+	Class
+	{
+		kZPUIAMAddLayerToAssignmentActionComponentBoss,
+		kAddLayerToAssignmentMenuBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAMAddLayerToAssignmentActionComponentImpl,	// Add stories on current layer to assignment
+			IID_IZPACTIONCOMPONENTDELEGATE,	kAddLayerToAssignmentMenuComponentImpl,
+			IID_IEXPORTPROVIDER,	kZPICExportLayerStoriesImpl,
+			IID_IDYNAMICMENU,	kZPAddLayerToAssignmentDynamicMenuImpl,	// To Add this menu to Assignment panel
+			IID_IZPDYNAMICMENUDELEGATE,	kAddLayerToAssignmentDynMenuImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUIAMAddAllStoriesToAssignmentActionComponentBoss,
+		kAddAllStoriesToAssignmentMenuBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAMAddAllStoriesToAssignmentActionComponentImpl,
+			IID_IZPACTIONCOMPONENTDELEGATE,	kAddAllStoriesToAssignmentMenuComponentImpl,
+			IID_IEXPORTPROVIDER,	kZPICExportAllStoriesImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUIAMAddSelToAssignmentActionComponentBoss,
+		kAddSelToAssignmentMenuBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAMAddSelToAssignmentActionComponentImpl,
+			IID_IZPACTIONCOMPONENTDELEGATE,	kAddSelToAssignmentMenuComponentImpl,
+			IID_IEXPORTPROVIDER,	kZPICExportSelectionStoriesImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUIAMAddSelToAssignmentLayoutContextActionComponentBoss,
+		kAddSelToAssignmentLayoutContextMenuBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAMAddSelToAssignmentActionComponentImpl,
+			IID_IZPACTIONCOMPONENTDELEGATE,	kAddSelToAssignmentLayoutContextMenuComponentImpl,
+			IID_IEXPORTPROVIDER,	kZPICExportSelectionStoriesImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUIAMAddToAssignmentActionComponentBoss,
+		kAddToAssignmentMenuBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAMAddSelToAssignmentActionComponentImpl,
+			IID_IZPACTIONCOMPONENTDELEGATE,	kAddToAssignmentMenuComponentImpl,
+			IID_IEXPORTPROVIDER,	kZPICExportSelectionStoriesImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUIActionFilterBoss,
+		kInvalidClass,
+		{
+			IID_IACTIONFILTER,	kZPUIActionFilterImpl,	// filter actions
+			IID_IK2SERVICEPROVIDER,	kActionFilterProviderImpl,
+			IID_IPMPERSIST,	kPMPersistImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUISuppressActionsBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kSuppressedUIServiceProviderImpl,
+			IID_ISUPPRESSEDUI,	kZPUISuppressedActionsImpl,	// suppress action ids
+		}
+	},
+
+	Class
+	{
+		kZPUIIteratorRegisterBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kContentIteratorRegisterServiceImpl,
+			IID_ICONTENTITERATORREGISTER,	kZPUIContentIteratorRegisterImpl,
+		}
+	},
+
+	Class
+	{
+		kZPTVHeaderActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPTVHeaderActionComponentImpl,
+			IID_IDYNAMICMENU,	kZPTVHeaderDynamicMenuImpl,	// shown on right click on tree view header
+		}
+	},
+
+	Class
+	{
+		kZPAssetsTVActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZPAssetsTVActionComponentImpl,
+		}
+	},
+
+	AddIn
+	{
+		kZPAMSPDocumentBoss,
+		kInvalidClass,
+		{
+			IID_IAMUISERVICEPROVIDER,	kZPAMUIDocumentServiceProviderImpl,
+		}
+	},
+
+	AddIn
+	{
+		kZPAMSPAssignmentBoss,
+		kInvalidClass,
+		{
+			IID_IAMUISERVICEPROVIDER,	kZPAMUIAssignmentServiceProviderImpl,
+		}
+	},
+
+	AddIn
+	{
+		kZPAMSPLinkedStoryBoss,
+		kInvalidClass,
+		{
+			IID_IAMUISERVICEPROVIDER,	kZPAMUILinkedStoryServiceProviderImpl,
+		}
+	},
+
+	/* Base class for all AM UI Services */
+	Class
+	{
+		kZPAMUIServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IINTDATA,	kIntDataImpl,	// 0=Doc, 1=Asssignment, 2 = ID Story
+		}
+	},
+
+	Class
+	{
+		kZPAMUISaveAlertServiceBoss,
+		kZPAMUIServiceBoss,
+		{
+			IID_IAMUISERVICE,	kZPAMUISaveAlertServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMUISaveAsDialogServiceBoss,
+		kZPAMUIServiceBoss,
+		{
+			IID_IAMUISERVICE,	kZPAMUISaveAsDialogServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMUIGetVersionCommentsServiceBoss,
+		kZPAMUIServiceBoss,
+		{
+			IID_IAMUISERVICE,	kZPAMUIGetVersionCommentsServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMUIRevertServiceBoss,
+		kZPAMUIServiceBoss,
+		{
+			IID_IAMUISERVICE,	kZPAMUIRevertServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMUINewAssignmentServiceBoss,
+		kZPAMUIServiceBoss,
+		{
+			IID_IAMUISERVICE,	kZPAMUINewAssignmentServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMUIUpdateVersionStatusServiceBoss,
+		kZPAMUIServiceBoss,
+		{
+			IID_IAMUISERVICE,	kZPAMUIUpdateVersionStatusServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUILoginDialogBoss,
+		kDialogBoss,
+		{
+			IID_IDIALOGCONTROLLER,	kZPUILoginDialogControllerImpl,
+			IID_IOBSERVER,	kZPUILoginDialogObserverImpl,
+			IID_IBOOLDATA,	kFalseInitBoolDataImpl,	// result, true if OK was pressed
+			IID_IZPWSCONFIG,	kZPWSConfigImpl,	// server info
+			IID_IZPUSERCREDENTIALS,	kZPUserCredentialsImpl,	// user name/pwd
+		}
+	},
+
+	Class
+	{
+		kZPSaveToRepositoryDialogBoss,
+		kDialogBoss,
+		{
+			IID_IDIALOGCONTROLLER,	kZPUISaveToRepDialogControllerImpl,
+			IID_IOBSERVER,	kZPUISaveToRepDialogObserverImpl,
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Asset name, description, status
+			IID_IZPASSETDATA,	kZPAssetDataImpl,	// Asset title, edition
+			IID_IZPASSETTYPE,	kIntDataImpl,	// enum enAssetType value
+			IID_IBOOLDATA,	kFalseInitBoolDataImpl,	// True if OK was pressed
+			IID_IZPISNEWVERSION,	kFalseInitBoolDataImpl,	// True if using this as checkin comments dlg
+			IID_IZPPARENTASSETID,	kStringDataImpl,	// Parent AssetID, used for new assignment
+		}
+	},
+
+	Class
+	{
+		kZPPrefsDialogBoss,
+		kPrimaryResourcePanelWidgetBoss,
+		{
+			IID_IK2SERVICEPROVIDER,	kDialogPanelServiceImpl,
+			IID_IPANELCREATOR,	kZPUIPrefsPanelCreatorImpl,
+			IID_IDIALOGCONTROLLER,	kZPUIPrefsDialogControllerImpl,
+//			IID_IOBSERVER,	kZPUIPrefsDialogObserverImpl,
+		}
+	},
+
+	Class
+	{
+		kZPCreateTaskDialogBoss,
+		kResizeDialogBoss,
+		{
+			IID_IDIALOGCONTROLLER,	kZPCreateTaskDialogControllerImpl,
+			IID_IOBSERVER,	kZPCreateTaskDialogObserverImpl,
+			IID_IZPTASKINFO,	kZPTaskInfoImpl,	// task details
+			IID_IZPDATAID,	kZPDataIDStringDataImpl,	// Task ID, if updating task
+			IID_IZPDATANAME,	kZPDataNameStringDataImpl,	// task subject
+			IID_IZPEDITIONIDSTRINGDATA,	kZPDataIDStringData1Impl,	// Edition of task being updated
+		}
+	},
+
+	/* Dialog to show status for a title */
+	Class
+	{
+		kZPUpdateVersionStatusDialogBoss,
+		kDialogBoss,
+		{
+			IID_IDIALOGCONTROLLER,	kZPUpdateVersionStatusDialogControllerImpl,
+			IID_IOBSERVER,	kZPUpdateVersionStatusDialogObserverImpl,
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Description & Status
+			IID_IZPTITLEIDSTRINGDATA,	kZPDataIDStringData1Impl,	// title for which status is shown
+			IID_IBOOLDATA,	kFalseInitBoolDataImpl,	// True if OK was pressed
+		}
+	},
+
+	Class
+	{
+		kZPRenameAssetDialogBoss,
+		kDialogBoss,
+		{
+			IID_IDIALOGCONTROLLER,	kZPRenameAssetDialogControllerImpl,
+			IID_IOBSERVER,	kZPRenameAssetDialogObserverImpl,
+			IID_IZPDATANAME,	kZPDataNameStringDataImpl,
+			IID_IBOOLDATA,	kFalseInitBoolDataImpl,	// True if OK was pressed
+			IID_IZPDATAID,	kStringDataImpl,	// AssetID
+		}
+	},
+
+	Class
+	{
+		kZPAlertDialogBoss,
+		kDialogBoss,
+		{
+			IID_IDIALOGCONTROLLER,	kZPUIAlertDialogControllerImpl,
+			IID_IOBSERVER,	kZPUIAlertDialogObserverImpl,
+			IID_IINTDATA,	kIntDataImpl,	// Default Button (1/2/3/4),  result on return
+			IID_IZPUIINTDATA,	kZPIntDataAliasImpl,	// Cancel button, used for esc. (1/2/3/4)
+			IID_ISTRINGDATA,	kStringDataImpl,	// Message
+			IID_ISTRINGLISTDATA,	kStringListDataImpl,	// Button labels, max 4 used
+		}
+	},
+
+	Class
+	{
+		kZPUIAssetsPanelWidgetBoss,
+		kPalettePanelWidgetBoss,
+		{
+			IID_IPANELMENUDATA,	kCPanelMenuDataImpl,
+			IID_IOBSERVER,	kZPAssetsPanelObserverImpl,
+			IID_ICONTROLVIEW,	kZPAssetsPanelControlViewImpl,
+//			IID_IDOCLISTOBSERVER,	kZPAssetsPanelDocListObserverImpl,
+//			IID_IAMSTATUSLISTENER,	kZPDocumentsPanelAMStatusListenerImpl,
+			IID_IZPASSETSPANELHELPER,	kZPAssetsPanelHelperImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUITasksPanelWidgetBoss,
+		kPalettePanelWidgetBoss,
+		{
+			IID_IPANELMENUDATA,	kCPanelMenuDataImpl,
+			IID_ICONTROLVIEW,	kZPTasksPanelControlViewImpl,
+			IID_IOBSERVER,	kZPTasksPanelObserverImpl,
+			IID_IZPTASKSPANELHELPER,	kZPTasksPanelHelperImpl,
+		}
+	},
+
+	/* Note: This is non- InDesign/InCopy panel */
+	Class
+	{
+		kZPUITasksHistoryPanelBoss,
+		kInvalidClass,
+		{
+			IID_IZPUIHISTORYPANELCONTROLLER,	kZPUITaskHistoryPanelControllerImpl,	// Controls history panel
+			IID_IOBSERVER,	kZPUITaskHistoryPanelObserverImpl,	// List to task updates
+		}
+	},
+
+	Class
+	{
+		kZPUIDBObjPopupBoss,
+		kDropDownListWidgetBoss,
+		{
+			IID_IZPUISELECTEDID,	kZPDataIDStringDataImpl,	// ID that should be selected when filled, may not be the current selection
+			IID_IZPUIOBJIDSSTRINGLISTDATA,	kZPStringListDataImpl,	// Should we copy the IDs?
+//			IID_IZPDBOBJPOPUPCONTROLLER,	kZPDBObjPopupControllerImpl,	// Base class only, no default impl
+		}
+	},
+
+	Class
+	{
+		kZPUIPopTitleListBoss,
+		kZPUIDBObjPopupBoss,
+		{
+			IID_IOBSERVER,	kZPTitlePopupObserverImpl,
+			IID_IZPDBOBJPOPUPCONTROLLER,	kZPTitlePopupControllerImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUIPopEditionsListBoss,
+		kZPUIDBObjPopupBoss,
+		{
+			IID_IOBSERVER,	kZPEditionPopupObserverImpl,
+			IID_IZPDBOBJPOPUPCONTROLLER,	kZPEditionPopupControllerImpl,
+			IID_IZPTITLEIDSTRINGDATA,	kZPDataIDStringData1Impl,	// Title ID for which it has editions
+		}
+	},
+
+	Class
+	{
+		kZPUIPopTitleStatusListBoss,
+		kZPUIDBObjPopupBoss,
+		{
+			IID_IOBSERVER,	kZPTitleStatusPopupObserverImpl,
+			IID_IZPDBOBJPOPUPCONTROLLER,	kZPTitleStatusPopupControllerImpl,
+			IID_IZPTITLEIDSTRINGDATA,	kZPDataIDStringData1Impl,	// Title ID for which it has editions
+		}
+	},
+
+	Class
+	{
+		kZPUIDBObjPopupWithFixedValuesBoss,
+		kZPUIDBObjPopupBoss,
+		{
+			IID_IZPPOPFIXEDITEMSTRINGDATA,	kZPStringListControlDataImpl,	// Store list of fixed items in popup, alias impl
+		}
+	},
+
+	Class
+	{
+		kZPUIPopEditionAssetsListBoss,
+		kZPUIDBObjPopupWithFixedValuesBoss,
+		{
+			IID_IOBSERVER,	kZPEditionAssetsPopupObserverImpl,
+			IID_IZPDBOBJPOPUPCONTROLLER,	kZPEditionAssetsPopupControllerImpl,
+			IID_IZPEDITIONIDSTRINGDATA,	kZPDataIDStringData1Impl,	// Edition for which assets to list
+		}
+	},
+
+	Class
+	{
+		kZPUIPopTitleUsersListBoss,
+		kZPUIDBObjPopupWithFixedValuesBoss,
+		{
+			IID_IOBSERVER,	kZPTitleUsersPopupObserverImpl,
+			IID_IZPDBOBJPOPUPCONTROLLER,	kZPTitleUsersPopupControllerImpl,
+			IID_IZPTITLEIDSTRINGDATA,	kZPDataIDStringData1Impl,	// Title ID for which it has users
+		}
+	},
+
+	Class
+	{
+		kZPUIPopTaskCategoryListBoss,
+		kZPUIDBObjPopupWithFixedValuesBoss,
+		{
+			IID_IOBSERVER,	kZPTaskCategoryPopupObserverImpl,
+			IID_IZPDBOBJPOPUPCONTROLLER,	kZPTaskCategoryPopupControllerImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUIPopTaskStatusListBoss,
+		kZPUIDBObjPopupWithFixedValuesBoss,
+		{
+			IID_IOBSERVER,	kZPTaskStatusPopupObserverImpl,
+			IID_IZPDBOBJPOPUPCONTROLLER,	kZPTaskStatusPopupControllerImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAssetsTreeViewWidgetBoss,
+		kTreeViewWidgetBoss,
+		{
+			IID_ITREEVIEWHIERARCHYADAPTER,	kZPAssetsTVHierarchyAdapterImpl,
+			IID_ITREEVIEWWIDGETMGR,	kZPAssetsTVWidgetManagerImpl,
+			IID_IOBSERVER,	kZPAssetsTVObserverImpl,
+			IID_IZPASSETSTVDATAMODEL,	kZPAssetsTVDataModelImpl,
+			IID_ILINKEDWIDGETATTRIBUTES,	kAssociatedWidgetAttributesImpl,	// Linked TV Header widget ID
+			IID_ITREEVIEWMGR,	kZPTreeViewMgrImpl,	// Sync header with tree scrolling
+		}
+	},
+
+	/* Base class for tree view nodes */
+	Class
+	{
+		kZPUIDBObjTVNodeWidgetBoss,
+		kTreeNodeWidgetBoss,
+		{
+//			IID_IZPUITVNODEDATA,	kZPTVNodeDataImpl,	// Derived objects must implement this interface
+//			IID_IZPUITVNODEWIDGETMGR,	kZPTVNodeWidgetMgrImpl,	// Derived objects must implement this interface
+		}
+	},
+
+	Class
+	{
+		kZPAssetsTVStatusNodeWidgetBoss,
+		kZPUIDBObjTVNodeWidgetBoss,
+		{
+			IID_IZPUITVNODEDATA,	kZPAssetsTVStatusNodeDataImpl,	// stores status data shown by node
+			IID_IZPUITVNODEWIDGETMGR,	kZPAssetsTVStatusNodeWidgetMgrImpl,
+			IID_IEVENTHANDLER,	kZPAssetsTVStatusNodeEHImpl,
+			IID_IZPOLDEVENTHANDLER,	kTreeNodeEventHandlerImpl,
+			IID_IDRAGDROPTARGET,	kZPAssetsTVStatusDropTargetImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAssetsTVAssetNodeWidgetBoss,
+		kZPUIDBObjTVNodeWidgetBoss,
+		{
+			IID_IZPUITVNODEDATA,	kZPAssetsTVAssetNodeDataImpl,	// stores asset data shown by node
+			IID_IZPUITVNODEWIDGETMGR,	kZPAssetsTVAssetNodeWidgetMgrImpl,
+			IID_IEVENTHANDLER,	kZPAssetsTVAssetNodeEHImpl,
+			IID_IZPOLDEVENTHANDLER,	kTreeNodeEventHandlerImpl,
+			IID_IOBSERVER,	kZPAssetsTVAssetNodeObserverImpl,
+			IID_IDRAGDROPSOURCE,	kZPAssetsTVAssetNodeDragDropSourceImpl,
+			IID_IINTDATA,	kIntDataImpl,	// Stores last version of header when repositioned columns
+		}
+	},
+
+	Class
+	{
+		kZPTVColumnRollOverIconButtonWidgetBoss,
+		kRollOverIconButtonBoss,
+		{
+			IID_IOBSERVER,	kZPTVColumnRollOverIconButtonObserverImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAssetsTVAssetNodeSaveRollOverIconBtnWidgetBoss,
+		kRollOverIconButtonBoss,
+		{
+			IID_IOBSERVER,	kZPAssetsTVNodeSaveBtnObserverImpl,
+		}
+	},
+
+	Class
+	{
+		kZPExpanderRollOverIconBtnWidgetBoss,
+		kRollOverIconButtonBoss,
+		{
+			IID_IZPDISCLOSURETRIANGLEOPTIONS,	kZPDisclosureTriAngleOptionsImpl,
+			IID_IZPISEXPANDED,	kFalseInitPersistBoolDataImpl,
+			IID_IOBSERVER,	kZPDisclosureTriAngleObserverImpl,
+		}
+	},
+
+	Class
+	{
+		kZPTasksListTreeViewWidgetBoss,
+		kTreeViewWidgetBoss,
+		{
+			IID_ITREEVIEWHIERARCHYADAPTER,	kZPTasksTVHierarchyAdapterImpl,
+			IID_ITREEVIEWWIDGETMGR,	kZPTasksTVWidgetManagerImpl,
+			IID_IOBSERVER,	kZPTasksTVObserverImpl,
+			IID_IZPTASKSTVDATAMODEL,	kZPTasksTVDataModelImpl,
+			IID_ILINKEDWIDGETATTRIBUTES,	kAssociatedWidgetAttributesImpl,	// Linked TV Header widget ID
+			IID_ITREEVIEWMGR,	kZPTreeViewMgrImpl,	// Sync header with tree scrolling
+		}
+	},
+
+	Class
+	{
+		kZPTasksTVNodeWidgetBoss,
+		kZPUIDBObjTVNodeWidgetBoss,
+		{
+			IID_IZPUITVNODEDATA,	kZPTasksTVNodeDataImpl,
+			IID_IZPUITVNODEWIDGETMGR,	kZPTasksTVNodeWidgetMgrImpl,
+			IID_IEVENTHANDLER,	kZPTasksTVNodeEHImpl,
+			IID_IZPOLDEVENTHANDLER,	kTreeNodeEventHandlerImpl,
+			IID_IINTDATA,	kIntDataImpl,	// Stores last version of header when repositioned columns
+		}
+	},
+
+	Class
+	{
+		kZPTVHeaderWidgetBoss,
+		kGenericPanelWithBorderWidgetBoss,
+		{
+			IID_IZPTVHEADERCONTROLLER,	kZPTVHeaderControllerImpl,	// Controls the header & TV columns
+			IID_IZPTVCOLUMNSINFO,	kZPTVColumnsInfoImpl,	// Give info which columns are defined for tree
+			IID_IZPTVCOLUMNSPREF,	kZPTVColumnsPrefPersistImpl,	// Persist, Current size & position info
+			IID_IOBSERVER,	kZPTVHeaderObserverImpl,
+			IID_ILINKEDWIDGETATTRIBUTES,	kAssociatedWidgetAttributesImpl,	// Linked TV widget ID
+			IID_IZPINTDATA,	kPersistIntDataImpl,	// TreeType, 1 tasks, 2 assets
+			IID_IEVENTHANDLER,	kZPTVHeaderEHImpl,	// show popup on right click
+//			IID_IZPOLDEVENTHANDLER,	kPanelEventHandlerImpl,
+		}
+	},
+
+	Class
+	{
+		kZPDocumentPreviewWidgetBoss,
+		kGenericPanelWidgetBoss,
+		{
+			IID_ICONTROLVIEW,	kZPDocumentPreviewControlViewImpl,
+			IID_ISYSFILEDATA,	kSysFileDataImpl,
+		}
+	},
+
+	Class
+	{
+		kZPDnDCustomFlavorHelperBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kTextDataExchHandlerHelperProviderImpl,
+			IID_IDRAGDROPTARGETFLAVORHELPER,	kZPDnDCustomFlavorHelperImpl,
+		}
+	},
+
+	Class
+	{
+		kZPDnDCustomFlavorHandlerBoss,
+		kInvalidClass,
+		{
+			IID_IPMPERSIST,	kPMPersistImpl,
+			IID_IDATAEXCHANGEHANDLER,	kZPDnDDataExchangeHandlerImpl,
+			IID_IZPDATAID,	kStringDataImpl,	// AssetID
+		}
+	},
+

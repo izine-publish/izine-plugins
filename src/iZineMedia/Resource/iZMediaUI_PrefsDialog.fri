@@ -1,0 +1,161 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMediaUI_PrefsDialog.fri $
+//	$Revision: 2861 $
+//	$Date: 2011-04-27 15:19:02 +0200 (Wed, 27 Apr 2011) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 1-4-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/*
+// Selectable dialog ID lists
+// IDList is a list of selectable dialog IDs that we want our panel to appear in.
+*/
+resource IDList (kSDKDefIDListPairResourceID)
+{
+	{
+		kGlobalPrefsDialogServiceImpl,		// Impl ID for Preferences Selectable Dialog
+	},
+};
+
+/*
+// IDListPair resource specifies which resource to use in creating the panel,
+// depending upon which dialog the panel is going into.
+*/
+resource IDListPair (kSDKDefIDListPairResourceID)
+{
+	{
+		kGlobalPrefsDialogServiceImpl,	// ID of Target Selectable Dialog (InDesign's)
+		kZMUIPrefsPanelResourceID,		// ID of Panel Resource to be added (Mine)
+		kIZMediaPluginID				// Plug-in ID that "owns" the Panel Resource to be added
+	},
+};
+
+resource LocaleIndex (kZMUIPrefsPanelResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZMUIPrefsPanelResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPPrefsDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZMPrefsDialogBoss)
+{
+};
+
+#define ZPPrefsDlgPanelWidth	460
+#define ZPPrefsDlgPanelHeight	400
+
+#define ZPPrefsDlgLeftMargin		10
+#define ZPPrefsDlgRepoPath_T		10
+#define ZPPrefsDlgRepoPath_B		(ZPPrefsDlgRepoPath_T + 20 )
+#define ZPPrefsDlgRepoPathLbl_L		ZPPrefsDlgLeftMargin
+#define ZPPrefsDlgRepoPathLbl_R		(ZPPrefsDlgRepoPathLbl_L + 150)
+#define ZPPrefsDlgRepoPathTxt_L		(ZPPrefsDlgRepoPathLbl_R + 10 )
+#define ZPPrefsDlgRepoPathTxt_R		(ZPPrefsDlgRepoPathTxt_L + 200)
+#define ZPPrefsDlgRepoPathBtn_L		(ZPPrefsDlgRepoPathTxt_R + 1 )
+#define ZPPrefsDlgRepoPathBtn_R		(ZPPrefsDlgRepoPathBtn_L + 50 )
+
+resource ZPPrefsDialogWidget (kZMUIPrefsPanelResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZMPrefsPanelWidgetID,
+	kPMRsrcID_None,
+	kBindNone,
+	// Frame: left, top, right, bottom
+	Frame(0,0, ZPPrefsDlgPanelWidth, ZPPrefsDlgPanelHeight),
+	kTrue,
+	kTrue,
+	kZMPrefsPanelPanelTitleKey,
+	{
+	//AM Refresh Duration
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZPPrefsDlgRepoPathLbl_L, ZPPrefsDlgRepoPath_T, ZPPrefsDlgRepoPathLbl_R, ZPPrefsDlgRepoPath_B)	// left, top, right, bottom
+			kTrue, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+				// CTextControlData properties
+			kZMPrefsPanelRepositoryPathKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+		TextEditBoxWidget
+		(
+			kZMPrefsRepositoryPathEditBoxWidgetID,		// WidgetId
+			kSysEditBoxPMRsrcId,		// RsrcId
+			kBindNone,					// Frame binding
+			Frame(ZPPrefsDlgRepoPathTxt_L, ZPPrefsDlgRepoPath_T, ZPPrefsDlgRepoPathTxt_R, ZPPrefsDlgRepoPath_B)	// left, top, right, bottom
+			kTrue, kTrue				// Visible, Enabled
+			0,							// Widget id of nudge button (0 so we dont get one)
+			0, 0,						// small,large nudge amount
+			0,							// max num chars( 0 = no limit)
+			kTrue,						// is read only
+			kFalse,						//**new in InDesign 2.0: should notify each key stroke
+			kFalse,						// range checking enabled
+			kTrue,						// blank entry allowed
+			0,							// Upper bounds
+			0,							// Lower bounds
+			"",							// Initial text
+			),
+			
+		ButtonWidget
+		(
+			kZMPrefsBrowseBtnWidgetID,				// WidgetID
+			kSysButtonPMRsrcId,						// RsrcID
+			kBindNone,								// Binding
+			Frame(ZPPrefsDlgRepoPathBtn_L, ZPPrefsDlgRepoPath_T, ZPPrefsDlgRepoPathBtn_R, ZPPrefsDlgRepoPath_B)	// left, top, right, bottom
+			kTrue,
+			kTrue,									// Visible, Enabled
+			kZMPrefsBrowseBtnKey,					// Button name
+		),
+
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZPPrefsDlgRepoPathLbl_L, ZPPrefsDlgRepoPath_T + 25, ZPPrefsDlgRepoPathLbl_R, ZPPrefsDlgRepoPath_B + 25)	// left, top, right, bottom
+			kTrue, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+				// CTextControlData properties
+			kZMPrefsPanelAdFileNamePrefixKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+		TextEditBoxWidget
+		(
+			kZMPrefsAdFileNamePrefixEditBoxWidgetID,		// WidgetId
+			kSysEditBoxPMRsrcId,		// RsrcId
+			kBindNone,					// Frame binding
+			Frame(ZPPrefsDlgRepoPathTxt_L, ZPPrefsDlgRepoPath_T + 25, ZPPrefsDlgRepoPathTxt_R, ZPPrefsDlgRepoPath_B + 25)	// left, top, right, bottom
+			kTrue, kTrue				// Visible, Enabled
+			0,							// Widget id of nudge button (0 so we dont get one)
+			0, 0,						// small,large nudge amount
+			20,							// max num chars( 0 = no limit)
+			kFalse,						// is read only
+			kFalse,						//**new in InDesign 2.0: should notify each key stroke
+			kFalse,						// range checking enabled
+			kTrue,						// blank entry allowed
+			0,							// Upper bounds
+			0,							// Lower bounds
+			"",							// Initial text
+			),
+	}
+};
+#endif //_h_IZPUI_PrefsDialog_

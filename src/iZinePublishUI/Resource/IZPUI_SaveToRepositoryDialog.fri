@@ -1,0 +1,281 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_SaveToRepositoryDialog.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 1-6-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/*  Dialog LocaleIndex.
+*/
+resource LocaleIndex (kZPUISaveToRepDialogResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUISaveToRepDialogResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPSaveToRepDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZPSaveToRepositoryDialogBoss)
+{
+};
+
+
+/*  Dialog definition.
+	This view is not localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IZP_enUS.fr etc.) and
+	update your Dialog LocaleIndex accordingly.
+*/
+resource ZPSaveToRepDialogWidget (kZPUISaveToRepDialogResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUISaveToRepDialogWidgetID,		// WidgetID
+	kPMRsrcID_None,					// RsrcID
+	kBindNone,						// Binding
+	0, 0, 470, 240,					// Frame (l,t,r,b)
+	kTrue, kTrue,					// Visible, Enabled
+	kZPUISaveToRepDialogTitleKey,		// Dialog name
+	{
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(10, 10, 120, 30)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kZPUISaveToRepNameKey,
+			kInvalidWidgetID,
+		),
+		
+		TextEditBoxWidget
+		(
+			kZPUISaveToRepNameEditBoxWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindNone,							// Binding
+			130, 10, 455, 30,						// Frame (l,t,r,b)
+			kTrue, kTrue,						// Visible, Enabled
+			0,									// Nudge control widget ID(0 = no control)
+			0,									// Small nudge amount
+			0,									// Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(10, 40, 120, 60)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kZPUISaveToRepDescriptionKey,
+			kInvalidWidgetID,
+		),
+		MultilineTextEditBoxWidget
+		(
+			kZPUISaveToRepDescriptionEditBoxWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,					// RsrcID
+			kBindNone,								// Binding
+			130, 40, 455, 100,							// Frame (l,t,r,b)
+			kTrue, kTrue,							// Visible, Enabled
+			0,										// Nudge control widget ID(0 = no control)
+			0,										// Small nudge amount
+			0,										// Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,									// read only
+			kFalse,									// should notify each key stroke
+			kFalse,									// Range checking enabled
+			kTrue,									// blank allowed
+			0, 0,									// upper/lower bounds
+			"",										// Initial text
+		),
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(10, 110, 120, 130)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kZPUISaveToRepPublicationKey,
+			kInvalidWidgetID,
+		),
+		ZPTitlesDropdownWidget
+		(
+			kZPUISaveToRepPublicationDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindNone,
+			Frame(129, 110, 454, 130),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+		
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(10, 140, 120, 160)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kZPUISaveToRepEditionKey,
+			kInvalidWidgetID,
+		),
+		ZPEditionsDropdownWidget
+		(
+			kZPUISaveToRepEditionDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindNone,
+			Frame(129, 140, 454, 160),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+		
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(10, 170, 120, 190)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kZPUISaveToRepStatusKey,
+			kInvalidWidgetID,
+		),
+
+		ZPTitleStatusDropdownWidget
+		(
+			kZPUISaveToRepStatusDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindNone,
+			Frame(129, 170, 454, 190),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+
+		CheckBoxWidget
+		(
+				// CControlView properties
+				kZPUISaveToRepIsTemplateCheckBoxWidgetID, // widget ID
+				kSysCheckBoxPMRsrcId, // PMRsrc ID
+				kBindNone, // frame binding
+				Frame(12, 205, 92, 225)
+				kTrue, // visible
+				kTrue, // enabled
+				// TriStateControlAttributes properties
+				kAlignLeft, // alignment
+				// CTextControlData properties
+				kZPUISaveToRepTemplateKey, // control label
+		),
+		
+		//RJK: it is not being used.
+		//////StaticTextWidget
+		//////(
+		//////	kInvalidWidgetID,
+		//////	kSysStaticTextPMRsrcId,
+		//////	kBindNone,
+		//////	Frame(10, 170, 120, 190)
+		//////	kFalse,
+		//////	kTrue,
+		//////	kAlignLeft,
+		//////	kDontEllipsize,
+		//////	kZPUISaveToRepStoriesKey,
+		//////	kInvalidWidgetID,
+		//////),
+		
+		//////IZPStoriesListBox
+		//////(
+		//////	kZPUISaveToRepStoriesListBoxWidgetID,				// WidgetId,
+		//////	kSysOwnerDrawListBoxPMRsrcId,						// RsrcId
+		//////	kBindAll,											// Frame binding
+		//////	Frame(130, 170, 454, 320)									// Frame
+		//////	kFalse, kTrue,										// Visible, Enabled
+		//////	1,0,												// List dimensions
+		//////	19,													// Cell height
+		//////	1,													// Border width
+		//////	kFalse,kTrue,										// Has scroll bar (h,v)
+		//////	kFalse,												// Multiselection
+		//////	kFalse,												// List items can be reordered
+		//////	kFalse,												// Draggable to new/delete buttons
+		//////	kFalse,												// Drag/Dropable to other windows
+		//////	kFalse,												// An item always has to be selected
+		//////	kFalse,												// Don't notify on reselect
+		//////	kIZPStoriesListElementRsrcID						// Fill list box with widgets with this ID (default is 0)
+		//////	{
+		//////		CellPanelWidget
+		//////		(
+		//////			kCellPanelWidgetID, kPMRsrcID_None,			// WidgetId, RsrcId
+		//////			kBindAll,									// Frame binding
+		//////			Frame(-1,1, 280, 130)						// Frame
+		//////			kTrue, kTrue								// Visible, Enabled
+		//////			{
+		//////				// ----- This is the CPanelControlData that holds the widgets
+		//////				//		 that are items in the list box. They are not persistent
+		//////				//		 and so are not specified as part of the resource. [amb]
+		//////			}
+		//////		)
+		//////	},
+		//////),
+	
+		DefaultButtonWidget
+		(
+			kOKButtonWidgetID,		// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindNone,				// Binding
+			361, 200, 451, 220,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kZPUISaveToRepUploadKey,	// Button text
+		),
+		
+		CancelButtonWidget
+		(
+			kCancelButton_WidgetID,	// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindNone,				// Binding
+			261, 200, 351, 220,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kSDKDefCancelButtonApplicationKey,	// Button name
+			kTrue,					// Change to Reset on option-click.
+		),
+
+	//</FREDDYWIDGETDEFLISTUS>
+
+	},
+};
+
+#endif // __ODFRC__

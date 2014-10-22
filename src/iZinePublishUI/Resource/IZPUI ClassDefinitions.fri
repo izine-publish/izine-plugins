@@ -1,0 +1,35 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI%20ClassDefinitions.fri $
+//	$Revision: 914 $
+//	$Date: 2010-03-29 05:07:23 +0200 (Mon, 29 Mar 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/* Boss class definition.
+*/
+resource ClassDescriptionTable(kSDKDefClassDescriptionTableResourceID)
+{{{
+
+#include "IZPUI ClassDefinitions_Auto.fri"
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			//IID_IIZPAMDEBUGHELPER,			kIZPAMDebugHelperImpl,
+		}
+	},
+}}};
+
+ 
+#endif // __ODFRC__=======

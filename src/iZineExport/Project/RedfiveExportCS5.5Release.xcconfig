@@ -1,0 +1,21 @@
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Project/RedfiveExportCS5.5Release.xcconfig $
+//	$Revision: 4033 $
+//	$Date: 2012-05-30 09:26:10 +0200 (Wed, 30 May 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2011 Aug 19
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+
+//	Description: Configuration file for RedfiveExport CS5 Release target
+
+#include "RedfiveExportCS5Release.xcconfig"
+
+BUILT_PRODUCTS_DIR = $(InDnCS55PlnsRelease)
+DSTROOT = $(InDnCS55PlnsRelease)
+
+//Paths
+InDesignSDKDir = $(IDCS55SDK)
+
+//Copy it from RedfiveExportCS5Release, as $(GCC_PREPROCESSOR_DEFINITIONS) is not taking proper values from RedfiveExportCS5Release
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) NDEBUG InDnCS5 RVExport InDnCS55

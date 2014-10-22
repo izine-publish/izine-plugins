@@ -1,0 +1,29 @@
+
+Guidelines for modifying the iZinePublish plugins on Mac.
+
+1. Don't modify the following files manually, these can be modified only on windows:-
+	"IZP ClassDefinitions_Auto.fri" & "IZP ClassDefinitions_Auto.fri", use the "Design Details.xlsm" to update this.
+	"IZPFactoryList_Auto.h" & "IZPUIFactoryList_Auto.h", use the visual studio macro "UpdateIntefaceFactories" defined in  svn at "iZinePlns\Docs\Dev\VSMacros\RJK_InDn\RJK_InDn.vsmproj".
+
+2. Following files are shown as red(missing) by XCode, don't modify these, as this setting is done intentionally:-
+	InDesignModel.framework
+	IZP.fr.rsrc
+	InDesignModelAndUI.framework
+	IZPUI.fr.rsrc
+
+3. The target names can be set to anything
+
+4. To create a new target
+	Create a new xcconfig file by copying the similar one.
+	Modify the new xcconfig file.
+	Duplicate any existing target, and set the dependent on xcconfig.
+	No other change is required.
+
+5. To modify any setting, make chagnes in the xcconfig file only. Project file contains only the file list and build rules. When "Get info" is viewed on Project/Target, then "defined at this level" list must be empty.
+
+6. To compile on a new machine, specify the local paths in "InDnLocalPaths.xcconfig" present at svn/iZinePlns/Codebase/trunk
+
+7. "svn/iZinePlns/Codebase/trunk/iZinePublishPlns.xcodeproj" can be used to compile both the plugins in one click.
+
+Note: As the UI plugin uses some global variables from model pln, so to link the UI plugin, output of both the plugins must be in same directory.
+

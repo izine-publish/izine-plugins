@@ -1,0 +1,27 @@
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/InDesignCommonCS3.xcconfig $
+//	$Revision: 4084 $
+//	$Date: 2012-10-12 15:13:16 +0200 (Fri, 12 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 May 13
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Common file to be added to all InDesign CS3 plugin projects.
+
+#include "InDesignCommon.xcconfig"
+
+
+//General settings
+
+//InDesign specific settings
+
+//Paths 
+InDesignSDKDir = $(IDCS3SDK)
+ZPCommonSDKDir=$(ZPCommonDir)/AdobeInDnSDK
+
+HEADER_SEARCH_PATHS = $(HEADER_SEARCH_PATHS) $(InDnCPPPaths) $(INDNCS3_HEADER_PATHS) $(InDesignSDK_Source)/sdksamples/InCopyExport $(InDesignSDK_Source)/sdksamples/InCopyExportUI
+LIBRARY_SEARCH_PATHS = $(inherited) $(LIBRARY_SEARCH_PATHS_IDLibs)
+
+GCC_MODEL_TUNING = G3
+MACOSX_DEPLOYMENT_TARGET = 10.4

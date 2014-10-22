@@ -1,0 +1,45 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP%20Addins.fri $
+//	$Revision: 1735 $
+//	$Date: 2010-07-14 10:37:32 +0200 (Wed, 14 Jul 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/* Boss class definition.
+*/
+resource ClassDescriptionTable(kSDKDefClassDescriptionTableResourceID+1)
+{{{
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			//IID_IIZPAMDEBUGHELPER,			kIZPAMDebugHelperImpl,
+		}
+	},
+
+
+	//Addins for Debugging only.
+#ifdef DEBUG
+	AddIn
+	{
+		kICBridgeExportDialogCmdBoss,
+		kInvalidClass,
+		{
+		//	IID_IZPStringDataDelegate,			kZPStringDataDelegateImpl,
+		}
+	},
+#endif
+}}};
+
+#endif // __ODFRC__=======

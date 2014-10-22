@@ -1,0 +1,372 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_enUS.fri $
+//	$Revision: 4096 $
+//	$Date: 2013-04-01 09:20:00 +0200 (Mon, 01 Apr 2013) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+// English string table is defined here
+
+resource StringTable (kSDKDefStringsResourceID + index_enUS)
+{
+		k_enUS,									// Locale Id
+		kEuropeanWinToMacEncodingConverter,		// Character encoding converter (irp) I made this WinToMac as we have a bias to generate on Win...
+		{
+			 // ----- Menu strings
+				kIZPUICompanyKey,						kIZPUICompanyValue,
+				kIZPUIAboutMenuKey,						kIZPUIPluginName "...",
+				kIZPUIPluginsMenuKey,					"iZINE",
+				
+				kZPUIActionArea,						"iZine",
+				kZPUITasksActionArea,					"Tasks",
+				kZPUIAssetsActionArea,					"Assets",
+
+		//		kIZPDialogMenuItemKey,					"Show dialog[US]",
+		//		kIZPSaveVersionMenuItemKey,				"Save Version",
+		//		kIZPSaveCopyMenuItemKey,				"Save Copy",
+		//		kIZPOpenFromRepositoryMenuItemKey,		"Open from iZINE...",
+				kIZPPreferencesPanelMenuItemKey,		"iZINE",
+				kIZPMainMenuRefreshMenuKey,				"Refresh",
+		//		kIZPMainMenuCheckInMenuItemKey,			"Check In",
+		//		kIZPMainMenuExportMenuItemKey,			"Export",
+		//		kIZPMainMenuCheckOutMenuItemKey,		"Check Out",
+		//		kIZPMainMenuCancelCheckOutMenuItemKey,	"Cancel Check Out",
+		//		kIZPMainMenuUnlinkMenuItemKey,			"Unlink",
+		//		kIZPMainMenuUpdateMenuItemKey,			"Update",
+		//		kIZPMainMenuSaveMenuItemKey,			"Save",
+		//		kIZPCheckOutAllMenuItemKey,		"Check Out All",
+		//		kIZPMainMenuExportAllMenuItemKey,			"Export all",
+		//		kIZPApplyTagsMenuItemKey,				"Apply Tags",
+		//		
+				kIZPLoginMenuKey,						"Login",
+				kIZPLogoffMenuKey,						"Logoff",
+				kIZPCreateTaskMenuKey,					"Create task",
+		//		kIZPExportAssetDialogTitleKey,			"Export Asset",
+		//		
+
+				//Assets panel menu
+				kIZPUpdatedSelectedAssetStatusMenuKey,	"Update asset status",
+
+				//Assignment panel menu
+				kIZPCheckoutAllAssignmentStoriesMenuKey, "Checkout all stories",
+				kIZPAddLayerToAssignmentMenuKey,		 "Add &Layer to Assignment",
+
+				//Task panel menu
+				kIZPDuplicateTaskMenuKey,				"Duplicate task",
+				kIZPDeleteTaskMenuKey,					"Delete task",
+				kIZPOpenTaskDocumentMenuKey,			"Open assigned document",
+				
+			//Debug Menu
+				kIZPDebugMenuKey,						"Debug",
+				kIZPDbgMenuWSUploadVersionMenuKey,		"WS : Upload Version",
+				kIZPDbgMenuWSDownloadVersionMenuKey,	"WS : Download Version",
+				kIZPDbgMenuWSUpdateStatusMenuKey,		"WS : Update Status",
+				kIZPDbgLogsMenuKey,						"Logs",
+					//Logs
+				kIZPDbgMenuLogsDisableAllMenuKey,				"Disable All",
+				kIZPDbgMenuLogsEnableAllMenuKey,				"Enable All",
+					//Logs General
+				kIZPDbgMenuLogsSeparator1MenuKey,				"-",
+				kIZPDbgMenuLogsEnableLMAAppMenuKey,				"App",
+				kIZPDbgMenuLogsEnableLMAIdleMenuKey,			"Idle",
+				kIZPDbgMenuLogsEnableLMAScriptingMenuKey,		"Scripting",
+				kIZPDbgMenuLogsEnableLMACommandsMenuKey,		"Commands",
+				kIZPDbgMenuLogsEnableLMAResponderMenuKey,		"Responder",
+				kIZPDbgMenuLogsEnableLMAWSMenuKey,				"WS",
+				kIZPDbgMenuLogsEnableLMADBObjectsMenuKey,		"DBObjects",
+					//Logs Asset Management
+				kIZPDbgMenuLogsSeparator2MenuKey,				"-",
+				kIZPDbgMenuLogsEnableLMAAMSysPMenuKey,			"AM SysP",
+				kIZPDbgMenuLogsEnableLMAAMSrvPMenuKey,			"AM SrvP",
+				kIZPDbgMenuLogsEnableLMAAMUISrvPMenuKey,		"AM UISrvP",
+				kIZPDbgMenuLogsEnableLMAAMServiceMenuKey,		"AM Service",
+				kIZPDbgMenuLogsEnableLMAAMUIServiceMenuKey,		"AM UIService",
+				kIZPDbgMenuLogsEnableLMAAssetMonitorMenuKey,	"AssetMonitor",
+				kIZPDbgMenuLogsEnableLMAAMMenuKey,				"AM",
+					//Logs Utils
+				kIZPDbgMenuLogsSeparator3MenuKey,				"-",
+				kIZPDbgMenuLogsEnableLMAICExportMenuKey,		"ICExport",
+				kIZPDbgMenuLogsEnableLMAUtilsMenuKey,			"Utils",
+				kIZPDbgMenuLogsEnableLMAStoryMenuKey,			"Story",
+					//Logs UI
+				kIZPDbgMenuLogsSeparator4MenuKey,				"-",
+				kIZPDbgMenuLogsEnableLMAActionComponentMenuKey,	"ActionComponent",
+				kIZPDbgMenuLogsEnableLMADialogsMenuKey,			"Dialogs",
+				kIZPDbgMenuLogsEnableLMAUIMenuKey,				"UI",
+				kIZPDbgMenuLogsEnableLMADnDMenuKey,				"DnD",
+				kIZPDbgMenuLogsEnableLMAPanelAssetsMenuKey,		"PanelAssets",
+				kIZPDbgMenuLogsEnableLMAPanelTasksMenuKey,		"PanelTasks",
+				kIZPDbgMenuLogsEnableLMAAssetsTVMenuKey,		"AssetsTV",
+				kIZPDbgMenuLogsEnableLMATasksTVMenuKey,			"TasksTV",
+				kIZPDbgMenuLogsEnableLMATVHeaderMenuKey,		"TVHeader",
+
+
+				//TV Header dynamic menu
+				kIZPTVHeaderMenuPath,					"ZPTV Header Menu",
+				kIZPTVHdrVisibleColumnsMenuKey,			"Columns",
+
+				//Asset TV dynamic menu
+				kIZPAssetsTVMenuPath,					"Assets TV Menu",
+				kIZPRenameAssetMenuKey,					"Rename Asset",
+
+		//		// Prefs Panel
+				kZPPrefsPanelPanelTitleKey,				"iZINE",
+				kZPPrefsAssetMonitorRefreshDurationTitleKey, "Auto Refresh Duration(seconds)",
+				kZPPrefsAutoUpdateLinksOnOpeningDocumentKey, "Update linked stories on opening",
+				kZPPrefsAutoUnlockStoriesKey,			"Unlock stories on opening assignment",
+				kZPPrefsCreateAssignmentOnStoryImportKey, "Create assignment on story import.",
+				kZPPrefsIncludeAllAssignmentsOnDocumentCheckinKey, "Include all assignments on document checkin.",
+				kZPPrefsGrpDocumentOptionsKey,			"Document options",
+				kZPPrefsGrpServerCredentialsKey,		"Server credentials",
+				kZPPrefsRemoveStylesKey,				"Remove styles during opening new document",
+		//		kIZPPrefsWebServicelTitleKey,			"Web Service Settings",
+		//		kIZPPrefsUserNameKey,					"User Name:",
+		//		kIZPPrefsPasswordKey,					"Password:",
+		//		kIZPPrefsProjectPathKey,				"Project Path:",
+		//		kIZPPrefsWebServiceURLKey,				"Web Service URL:",
+		//		kIZPPrefsProjectPathTextWidgetKey,		"Project Path",
+				kSDKDefAboutThisPlugInMenuKey,			kSDKDefAboutThisPlugInMenuValue_enUS,
+		//		kIZPPrefsProjectFolderTextBoxKey,		"Folder",
+		//		kIZPPrefsBrowseButtonTextBoxKey,		"Browse...",
+		//		kIZPDocumentsPanelUpdateButtonKey,		"Update",
+		//		
+	//				// ----- Command strings
+
+	//				// ----- Window strings
+
+	//				// ----- Panel/dialog strings
+	//				kIZPDocumentsPanelTitleKey,				"Documents",
+	//				kIZPStaticTextKey,						"iZINE",
+		//		
+		//		// Save to Repository Dialog
+				kZPUISaveToRepDialogTitleKey,			"Save",
+				kZPUISaveToRepNameKey,					"Name",
+				kZPUISaveToRepDescriptionKey,			"Description",
+				kZPUISaveToRepUploadKey,				"Save",
+				kZPUISaveToRepPublicationKey,			"Title",
+				kZPUISaveToRepEditionKey,				"Edition",
+				kZPUISaveToRepStatusKey,				"Status",
+				kZPUISaveToRepTemplateKey,				"&Template",
+		//		kIZPSaveToRepStoriesKey,				"Stories",
+		
+				kZPUISaveToRepDialogTitle_NoneKey,			"Save",
+				kZPUISaveToRepDialogTitle_IDDocumentKey,	"Save InDesign Document",
+				kZPUISaveToRepDialogTitle_IDTemplateKey,	"Save InDesign Template",
+				kZPUISaveToRepDialogTitle_ICTemplateKey,	"Save InCopy Template",
+				kZPUISaveToRepDialogTitle_ICDocumentKey,	"Save InCopy Document",
+				kZPUISaveToRepDialogTitle_ICAssignmentKey,	"Save Assignment",
+				kZPUISaveToRepDialogTitle_IDStoryKey,		"Save InDesign Story",
+				
+		//		
+		//		// Open from Repository Dialog
+		//		kIZPOpenFromRepDialogTitleKey,			"Open",
+		//		kIZPOpenFromRepOpenKey,					"Open",
+		//		
+		//		// Comments Dialog
+		//		kIZPEnterCommentTitleKey,				"Enter Comments",
+		//		kIZPCommentsDialogTitleKey,				"Check-In Comments",
+		//		kIZPCommentsDialogStatusKey,			"Status",
+		//		kIZPCommentsDialogDescriptionKey,		"Description",
+
+		//		// History Panel
+		//		kIZPHistoryPanelTitleKey,				"History",
+		//		kIZPHistoryPanelUpdateButtonKey,		"Update",
+		//		kIZPHistoryCol_DateKey,					"Date",
+		//		kIZPHistoryCol_UserKey,					"User",
+		//		kIZPHistoryCol_DocumentKey,				"Document",
+		//		kIZPHistoryCol_CommentKey,				"Comment",
+		//		
+		//		// Document Info Panel
+		//		kIZPDocumentsPanelIDStaticTextKey,			"ID: ",
+		//		kIZPDocumentsPanelPublicationStaticTextKey,	"Publication: ",
+		//		kIZPDocumentsPanelNameStaticTextKey,		"Name: ",
+
+		//		// Asset Info Panel
+				kIZPAssetsPanelTitleKey,					"Assets",
+		//		kIZPAssetsPanelUpdateButtonKey,				"Update",
+		//		kIZPAssetsPanelIDStaticTextKey, 			"",
+		//		kIZpAssetsPanelPublicationStaticTextKey,	"",
+		//		kIZPAssetsPanelNameStaticTextKey,			"",
+				kIZPAssetsPanelUserKey,						"User:",
+
+				kIZPAssetsColHeaderLinkTypeIconKey,			"",
+				kIZpAssetsColHeaderLockIconKey,				"",
+				kIZPAssetsColHeaderSaveKey,					"S",
+				kIZPAssetsColHeaderDeleteKey,				"Del",
+				kIZPAssetsColHeaderAssetNameKey,			"Name",
+				kIZPAssetsColHeaderDocumentKey,				"Document",
+				kIZPAssetsColHeaderVersionNumKey,			"Ver.",
+				kIZpAssetsColHeaderVersionAuthorKey,		"Updated By",
+				kIZPAssetsColHeaderVersionDateKey,			"Updated On",
+				kIZPAssetsColHeaderLocalStateKey,			"Local state",
+				kIZPAssetsColHeaderDescriptionKey,			"Description",
+
+				kIZpAssetsColHeaderMenuLinkTypeIconKey,		"Link (icon)",
+				kIZpAssetsColHeaderMenuLockIconKey,			"Lock state (icon)",
+				kIZpAssetsColHeaderMenuSaveIconKey,			"Save",
+				kIZpAssetsColHeaderMenuDeleteIconKey,		"Delete",
+				kIZpAssetsColHeaderMenuVersionNumberIconKey,"Asset version number",
+
+				//Local asset state values
+				kIZpAssetsLocalStateNotFetchedKey,			"Not fetched",
+				kIZpAssetsLocalStateLocallyModifiedKey,		"Locally modified",
+				kIZpAssetsLocalStateUptoDateKey,			"Upto date",
+				kIZpAssetsLocalStateOutOfDateKey,			"Out of date",
+
+				// Login Dialog
+				kIZPLoginDialogTitleKey,					"Login",
+				kIZPLoginButtonKey,							"Login",
+				kIZPLoginDialogWebServiceURLKey,			"Server",
+				kIZPLoginDialogUsernameKey,					"Username",
+				kIZPLoginDialogPasswordKey,					"Password",
+				kIZPLoginDialogErrorMessageKey,				"Incorrect username or password.",
+				kIZPLoginDialogUseProxyServerCheckBoxKey,	"Use Proxy Server",
+				kIZPLoginDialogProxyServerKey,				"Proxy Server",
+				kIZPLoginDialogProxyPortKey,				"Port",
+				kIZPLoginDialogAdvancedSettingKey,			"Advanced settings",
+				
+				// Create Task Dialog
+				kIZPCreateTaskDialogTitleKey,				"Create Task",
+				kIZPUpdateTaskDialogTitleKey,				"Update Task",
+				kIZPCreateTaskDlgCreateBtnKey,				"Create",
+				kIZPCreateTaskDlgUpdateBtnKey,				"Update",
+				kIZPCTaskDlgLblSubjectKey,					"Subject",
+				kIZPCTaskDlgLblDescriptionKey,				"Description",
+				kIZPCTaskDlgLblAsgnToDocKey,				"Document",
+				kIZPCTaskDlgLblSpreadKey,					"Spread",
+				kIZPCTaskDlgLblPageKey,						"Page",
+				kIZPCTaskDlgLblStatusKey,					"Status",
+				kIZPCTaskDlgLblCategoryKey,					"Category",
+				kIZPCTaskDlgLblAsgnToUsrKey,				"Assigned To",
+				kIZPCTaskDlgLblCmntKey,						"Comments",
+
+				// Status Update Dialog
+				kIZPUpdateVersionStatusDialogTitleKey,			"Update Status",
+				kIZPUpdateVersionStatusDlgLblDescriptionKey,	"Description",
+				kIZPUpdateVersionStatusDlgLblStatusKey,			"Status",
+				kIZPUpdateVersionStatusDlgOkBtnKey,				"Ok",
+
+				//Rename Asset dialog
+				kIZPRenameAssetDialogTitleKey,				"Rename Asset",
+				kIZPRenameAssetDlgLblNewNameKey,			"Name",
+
+				// Tasks Panel
+				kIZPTasksPanelTitleKey,						"Tasks",
+
+				kIZPTasksColHeaderSubjectKey,				"  Description",
+				kIZPTasksColHeaderStatusKey,				"Status",
+				kIZPTasksColHeaderAssignedToKey,			"Assigned To",
+				kIZPTasksColHeaderDocumentKey,				"Document",
+				kIZPTasksColHeaderCategoryKey,				"Category",
+				kIZPTasksColHeaderSpreadKey,				"Spread",
+				kIZPTasksColHeaderPageKey,					"Page",
+				kIZPTasksColHeaderUpdatedByKey,				"Updated By",
+				kIZPTasksColHeaderUpdatedOnKey,				"Updated On",
+				kIZPTasksColHeaderCreatorKey,				"Creator",
+				kIZPTasksColHeaderCreationDateKey,			"Creation Date",
+
+		//		kIZPExportAssetDialogStatusKey,				"Status",
+		//		
+		//		kIZPAssignmentDialogCaptionKey,				"Assignment",
+		//		kIZPAssignmentDialogGroupTitleKey,			"Assignment",
+		//		kIZPAssignmentDialogNameKey,				"Name",
+		//		kIZPAssignmentDialogAssignedToKey,			"Assigned To",
+		//		kIZPAssignmentDialogColorKey,				"Color",
+		//		kIZPAssignmentDialogStatusKey,				"Status",
+		//		kIZPAssignmentDialogTitleKey,				"Titel",
+		//		kIZPAssignmentDialogShelveKey,				"Editie",
+
+		//		kIZPAssignmentsPanelTitleKey,				"Assignments",
+		//		
+		//// ----- Misc strings
+					kIZPAboutBoxStringKey,						kIZPPluginName " , version " kIZPVersion " by " kIZPAuthor "\n\n" kIZPCopyrightValue "\n\n" kIZPSupportURL,
+	//				kIZPDocServiceProviderKey,					"Document Service Provider",
+	//				kIZPProgressBarOpenDocumentKey,				"Open Document",
+	//				kIZPProgressBarSavingDocumentKey,			"Saving Document",
+	//				kIZPDocAlreadyExistKey,						"The Document Already Exists",
+	//				kIZPErrorOccuredWhileDownlodingVersionKey,	"EnsureLatestVersion: Error occured while downloading version",
+	//				kIZPErrorOoccuredDuringCheckoutOfStoryKey,	"Error occured during Checkout of Story",
+	//				kIZPErrorCouldNotRetrieveAssetPropertiesKey,"EnsureLatestVersion: Could not retrieve asset properties",
+	//				kIZPProgressBarUpdateDocumentKey,			"Update Document",
+		//		kIZPProgressBarUpdateLinksKey,				"Update Links",
+		//		kIZPProgressBarUploadDocumentKey,			"Uploaden document",
+		//		kIZPProgressBarUpdatePagesKey,				"Bijwerken pagina's",
+		//		kIZPProgressBarUpdatePdfKey,				"Bijwerken pdf",
+		//		kIZPProgressBarCheckFilesKey,				"Check Files",
+		//		
+		//	// ----- Moved to InCopySharedStrings_enUS.fr
+		//	//"InCopyStory",		"InCopy Story",
+		//	"Export Seq Name", 		"Export InCopy Story",
+		//	"Graphic",				"Graphic", // append "Graphic" to export name on a graphic item
+		//	"Text",					"Text", // append "Text" to export name on a text story
+		//	
+		//	// ----- Export options dialog strings
+		//	"InCopyExportOptions",	"Adobe InCopy Export Options",
+		//	"ExportOptions_DataType",	"&Encoding:",
+		//	"ExportOptions_UTF16",	"UTF16",
+		//	"ExportOptions_UTF8",	"UTF8",
+		//	"ExportOptions_DataOptions",	"Options:",
+		//	"ExportOptions_StyleTable",	"Include &Style Table",
+		//	"ExportOptions_SwatchList",	"Include S&watch List",
+		//	"ExportOptions_XMPData",	"Include XMP &Information",
+		//	"ExportOptions_StoryLabel",	"Story &Label:",
+
+		//	//menu
+		//	"ExportMenu",				"E&xport",
+		//	"kExportLayerToIC",			"&Layer...",
+		//	"kExportAllStoriesToIC",	"All Sto&ries...",
+		//	"kExportAllGraphicsToIC",	"All &Graphics...",
+		//	"kExportAllItemsToIC",		"&All Graphics and Stories...",
+
+		//	"INCDFeatureLost",	"This story may contain features that are not supported by this file format. Those features will be lost when this story is updated.",
+
+			kIZPAssetsPanelRefreshButtonKey,		"Refresh",
+			kIZPAssetsPanelHistoryButtonKey,		"History",
+		//	
+		//	// Error Strings
+		//	kIZPAssetErrorDataKey,					"Error occured retrieving asset data.",
+		//	kIZPLockInfoErrorKey,					"Error occured retrieving lock info.",
+		//	kIZPLoginErrorKey,						"Error during login.",
+		//	
+		//	// Alerts
+			kIZPSaveAlertKey,						"Save changes to the Adobe InDesign document \"^1\" before closing?",
+			kIZPRevertAlertKey,						"Adobe InDesign document \"^1\".\nRevert unsaved changes or revert to last check-in version?",
+			kIZPManualDeleteAssetAlertKey,			"Are you sure to delete the asset?",
+		//		
+		//	kIZPConflictAlertKey,						"\"",
+		//	kIZPConflictAlertContinuationKey,			"\" has been changed. Checking out the content will automatically update to the latest version. Do you want to continue?",
+
+		//	kIZPLiveEditConflictAlertKey,						"\"",
+		//	kIZPLiveEditConflictAlertContinuationKey,			"\" has been changed. Checking out the content will automatically update to the latest version. Do you want to continue?",
+
+		kIZPSaveVersionBtnKey,					"Check-In",
+		kIZPRevertBtnKey,						"Revert",
+		kIZPRevertToVersionBtnKey,				"RevertVersion",
+
+		kIZPPopupItemAllKey,					"All",
+		kIZPPopupItemAnyKey,					"Any",
+		kIZPPopupItemNoneKey,					"None",
+		kIZPPopupItemSelfKey,					"Self",
+		kIZPPopupItemEmptyKey,					"",
+		
+		#if defined(InDnCS5) || defined(InDnCS5_5)
+		kIZPAssetConversionKey,					"iZine Asset Conversion",
+		kIZPExportAssignmentKey,				"Exporting Assignments",
+		kIZPExportStoriesKey,					"Exporting Stories",
+		#endif
+		}
+
+};
+
+
+#endif // __ODFRC__
+

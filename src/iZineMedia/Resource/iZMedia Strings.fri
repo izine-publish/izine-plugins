@@ -1,0 +1,64 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMedia%20Strings.fri $
+//	$Revision: 2636 $
+//	$Date: 2011-03-30 09:38:59 +0200 (Wed, 30 Mar 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 25-03-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+resource LocaleIndex ( kSDKDefStringsResourceID)
+{
+	kStringTableRsrcType,
+	{
+		kWildFS, k_enUS, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_enGB, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_deDE, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_frFR, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_esES, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_ptBR, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_svSE, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_daDK, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_itIT, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_noNO, kSDKDefStringsResourceID + index_enUS
+		//kWildFS, k_fiFI, kSDKDefStringsResourceID + index_enUS
+		kWildFS, k_nlNL, kSDKDefStringsResourceID + index_nlNL
+		kInDesignJapaneseFS, k_jaJP, kSDKDefStringsResourceID + index_jaJP
+		kWildFS, k_Wild, kSDKDefStringsResourceID + index_enUS
+	}
+};
+
+resource LocaleIndex (kSDKDefStringsNoTransResourceID)
+{
+	kStringTableRsrcType,
+	{
+		kWildFS, k_Wild, kSDKDefStringsNoTransResourceID + index_enUS
+	}
+};
+
+
+resource StringTable (kSDKDefStringsNoTransResourceID + index_enUS)
+{
+	k_enUS,									// Locale Id
+	kEuropeanMacToWinEncodingConverter,		// Character encoding converter
+	{
+		// No-Translate strings go here:
+
+		//kIZPInternalPopupMenuNameKey,	kIZPInternalPopupMenuNameKey,		// No need to translate, internal menu name.
+		//kIZMXMLFormatStringKey,			"iZine XML",
+
+	}
+};
+
+#include "iZMedia_enUS.fri"
+#include "iZMedia_nlNL.fri"
+#include "iZMedia_jaJP.fri"
+
+#endif // __ODFRC__=======

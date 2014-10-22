@@ -1,0 +1,129 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp%20ClassDefinitions_Auto.fri $
+//	$Revision: 4014 $
+//	$Date: 2012-05-23 07:42:13 +0200 (Wed, 23 May 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: This is auto generated file. Any change made to it will be lost. Generated
+//	from excel sheet macro.
+//========================================================================================
+
+
+	AddIn
+	{
+		kSessionBoss,
+		kInvalidClass,
+		{
+			IID_IZEXPGLOBALDATA,	kZExpGlobalDataImpl,	// Stores prefs that are not persisted. Some are taken from WS call
+		}
+	},
+
+	AddIn
+	{
+		kWorkspaceBoss,
+		kInvalidClass,
+		{
+			IID_IZEXPPREFS,	kZExpPrefsPersistImpl,
+		}
+	},
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			IID_IZEXPXMLWRITEFACADE,	kZExpXMLWriteFacadeImpl,	// Writes documents to xml
+			IID_IZEXPPAGEITEMUTILS,	kZExpPageItemUtilsImpl,	// Utility for page items
+			IID_IZEXPTEXTFRAMEUTILS,	kZExpTextFrameUtilsImpl,	// Utility for accessing text frames
+			IID_IZEXPSTORYUTILS,	kZExpStoryUtilsImpl,	// text model handling
+			IID_IZEXPDOCUTILS,	kZExpDocUtilsImpl,	// doc handling utils
+			IID_IZEXPFILEUTILS,	kZExpFileUtilsImpl,	// file system handling utils
+			IID_IZEXPWSFACADE,	kZExpWSFacadeImpl,	// calls WS methods
+			IID_IZEXPINDNUTILS,	kZExpInDnUtilsImpl,	// Common utils for InDesign/InCopy/Server
+		}
+	},
+
+	Class
+	{
+		kZExpStartupShutdownBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kCStartupShutdownProviderImpl,	// default impl for startup shutdown
+#ifdef InDnCS5
+			IID_ISTARTUPSHUTDOWN,	kZExpStartupShutdownImpl,
+#else
+			IID_IAPPSTARTUPSHUTDOWN,	kZExpStartupShutdownImpl,
+#endif
+		}
+	},
+
+	/* Handles main actions added by this plugin */
+	Class
+	{
+		kZExpAppActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZExpActionComponentImpl,
+		}
+	},
+
+	Class
+	{
+		kZExpXMLExportProviderBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kExportServiceImpl,
+			IID_IEXPORTPROVIDER,	kZExpDocXMLExportProviderImpl,	// Exports document as XML
+		}
+	},
+
+	Class
+	{
+		kZExpErrorStringServiceBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kErrorStringProviderImpl,
+			IID_IERRORSTRINGSERVICE,	kZExpErrorStringServiceImpl,	// Resource based error string provider
+		}
+	},
+
+	Class
+	{
+		kZExpSavePrefsCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZExpSavePrefsCmdImpl,
+			IID_IZEXPPREFS,	kZExpPrefsImpl,	// Non persist impl
+		}
+	},
+
+	Class
+	{
+		kZExpPrefsDialogBoss,
+		kPrimaryResourcePanelWidgetBoss,
+		{
+			IID_IK2SERVICEPROVIDER,	kDialogPanelServiceImpl,
+			IID_IPANELCREATOR,	kZExpPrefsPanelCreatorImpl,
+			IID_IDIALOGCONTROLLER,	kZExpPrefsDialogControllerImpl,
+			IID_IOBSERVER,	kZExpPrefsDialogObserverImpl,
+		}
+	},
+
+	Class
+	{
+		kZExpExportDialogBoss,
+		kDialogBoss,
+		{
+			IID_IDIALOGCONTROLLER,	kZExpExportDialogControllerImpl,
+			IID_IOBSERVER,	kZExpExportDialogObserverImpl,
+			IID_IBOOLDATA,	kFalseInitBoolDataImpl,
+			IID_IZEXPSERVERDATA,	kZExpServerDataImpl,	// Store title/edition list fetched from server
+			IID_IZEXPEXPORTDLGHELPER,	kZExpExportDlgHelperImpl,	// To ease manipulation of controls
+		}
+	},
+

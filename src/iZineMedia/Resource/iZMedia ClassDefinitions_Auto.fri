@@ -1,0 +1,171 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMedia%20ClassDefinitions_Auto.fri $
+//	$Revision: 2901 $
+//	$Date: 2011-04-29 14:32:58 +0200 (Fri, 29 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 29-3-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description: This is auto generated file. Any change made to it will be lost. Generated
+//	from excel sheet macro.
+//========================================================================================
+
+
+	AddIn
+	{
+		kSessionBoss,
+		kInvalidClass,
+		{
+			IID_IZMAPP,	kZMAppImpl,	// Host pointer to global objects
+			IID_IZMMODELCONTROLLER,	kZMModelControllerImpl,	// controls data mgr
+			IID_IZMAPPOBSERVER,	kZMAppObserverImpl,	// Observer for global tasks
+		}
+	},
+
+	AddIn
+	{
+		kWorkspaceBoss,
+		kInvalidClass,
+		{
+			IID_IZMPREFS,	kZMPrefsPersistImpl,	// Persist perferences on session workspace
+		}
+	},
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			IID_IZMFILEUTILS,	kZMFileUtilsImpl,	// Utililty for directory & file handling
+			IID_IZMCOMMANDFACADE,	kZMCommandFacadeImpl,	// to ease create & process commands
+			IID_IZMADFILEFACADE,	kZMAdFileFacadeImpl,	// Ad file parsing helpers
+			IID_IZMPAGEITEMUTILS,	kZMPageItemUtilsImpl,	// Handling of page items on document
+		}
+	},
+
+	Class
+	{
+		kZMStartupShutdownBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kCStartupShutdownProviderImpl,	// default impl for startup shutdown
+			IID_IAPPSTARTUPSHUTDOWN,	kZMStartupShutdownImpl,
+		}
+	},
+
+	Class
+	{
+		kZMDataMgrBoss,
+		kInvalidClass,
+		{
+			IID_ISUBJECT,	kCSubjectImpl,
+			IID_IZMTITLEMGR,	kZMTitleMgrImpl,	// caches objects of ZMDataTitle
+			IID_IZMEDITIONMGR,	kZMEditionMgrImpl,	// caches objects of ZMDataTitleEdition
+			IID_IZMADFILEMGR,	kZMAdFileMgrImpl,	// caches objects of ZMAdFileContent
+			IID_IZMADMGR,	kZMAdMgrImpl,
+		}
+	},
+
+	Class
+	{
+		kZMConversionProviderBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kConversionServiceImpl,
+			IID_ICONVERSIONPROVIDER,	kSchemaBasedConversionImpl,
+		}
+	},
+
+	Class
+	{
+		kZMSAXAdContentHandlerBoss,
+		kInvalidClass,
+		{
+			IID_ISAXCONTENTHANDLER,	kZMSAXAdContentHandlerImpl,	// Parses an Ad XML file.
+			IID_IZMADFILEDATA,	kZMAdFileDataImpl,	// Holds data parsed by this content handler
+//			IID_IZMPUBLICATIONINFO,	kZMPublicationInfoImpl,	// publication info extracted from xml
+//			IID_IZMFILEINFO,	kZMFileInfoImpl,	// Last modified date when last parsed etc.
+		}
+	},
+
+	Class
+	{
+		kZMErrorStringServiceBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kErrorStringProviderImpl,
+			IID_IERRORSTRINGSERVICE,	kZMErrorStringServiceImpl,	// Resource based error string provider
+		}
+	},
+
+	Class
+	{
+		kZMSavePrefsCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZMSavePrefsCmdImpl,
+			IID_IZMPREFS,	kZMPrefsImpl,
+		}
+	},
+
+	Class
+	{
+		kZMDataObjectBoss,
+		kInvalidClass,
+		{
+			IID_ISUBJECT,	kCSubjectImpl,
+			IID_IZMDATAID,	kZMDataIDStringDataImpl,
+			IID_IZMDATANAME,	kZMDataNameStringDataImpl,
+			IID_IZMCACHEMGRCOUNT,	kIntDataImpl,	// Used by cache manager to keep its reference count. Not used by title mgr
+			IID_IZMDATAOBJCONTROLLER,	kZMDataObjControllerImpl,	// request update, can be used to mark dirty
+		}
+	},
+
+	/* Represent DB object - title */
+	Class
+	{
+		kZMDataTitleBoss,
+		kZMDataObjectBoss,
+		{
+			IID_IZMEDITIONLIST,	kZMEditionListImpl,	// list of edition ids
+			IID_IZMDATAOBJCONTROLLER,	kZMTitleObjControllerImpl,
+		}
+	},
+
+	/* Represent DB object - Edition */
+	Class
+	{
+		kZMDataTitleEditionBoss,
+		kZMDataObjectBoss,
+		{
+			IID_IZMADFILELIST,	kZMAdFileListImpl,	// list of ad xml files, ids of ZMDataXMLFileContent
+			IID_IZMDATAOBJCONTROLLER,	kZMEditionObjControllerImpl,
+		}
+	},
+
+	Class
+	{
+		kZMAdFileContentBoss,
+		kZMDataObjectBoss,
+		{
+			IID_IZMADLIST,	kZMAdListImpl,	// list of Ad IDs
+//			IID_IZMPUBLICATIONINFO,	kZMPublicationInfoImpl,	// Info about the publication tag in xml file
+			IID_IZMFILEINFO,	kZMFileInfoImpl,	// Store last modified date, to easy comparing rescan
+			IID_IZMDATAOBJCONTROLLER,	kZMAdFileObjControllerImpl,
+		}
+	},
+
+	/* Represent xml file object - ad */
+	Class
+	{
+		kZMDataAdBoss,
+		kZMDataObjectBoss,
+		{
+			IID_IZMADINFO,	kZMAdInfoImpl,	// detail info of ad, updated from ad xml file.
+			IID_IZMADFILEID,	kZMDataID1StringDataImpl,	// stores ad file ID
+		}
+	},
+

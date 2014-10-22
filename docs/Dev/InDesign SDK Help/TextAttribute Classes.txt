@@ -1,0 +1,262 @@
+-:Description:-
+(0) + color: [Black]~ Boss kTextAttrColorBoss 
+(1) + Regular~ Boss kTextAttrFontStyleBoss 
+(2) + size: 12 pt~ Boss kTextAttrPointSizeBoss 
+(3) + char width: 100%~ Boss kTextAttrXGlyphScaleBoss 
+(4) + pair kern method: Metrics~ Boss kTextAttrPairKernMethodBoss 
+(5) + ligatures~ Boss kTextAttrLigaturesBoss 
+(6)current~ Boss kTextAttrPageNumberTypeBoss 
+(7) + stroke: 1 pt~ Boss kTextAttrOutlineBoss 
+(8) + tracking: 0~ Boss kTextAttrTrackKernBoss 
+(9) + composer:  Adobe Paragraph Composer~ Boss kTextAttrComposerBoss 
+(10) + drop cap characters:  0~ Boss kTextAttrDropCapCharsBoss 
+(11) + drop cap lines:  0~ Boss kTextAttrDropCapLinesBoss 
+(12) + not shifted~ Boss kTextAttrBLShiftBoss 
+(13) - caps~ Boss kTextAttrCapitalModeBoss 
+(14) + stroke color: [None]~ Boss kTextAttrStrokeColorBoss 
+(15) + pair kern: auto~ Boss kTextAttrPairKernBoss 
+(16) + consecutive hyphens: 3~ Boss kTextAttrHyphenLadderBoss 
+(17) + char height: 100%~ Boss kTextAttrYGlyphScaleBoss 
+(18) + left indent: 0 pt~ Boss kTextAttrIndentBLBoss 
+(19) + right indent: 0 pt~ Boss kTextAttrIndentBRBoss 
+(20) + first indent: 0 pt~ Boss kTextAttrIndent1LBoss 
+(21) + autoleading: 120%~ Boss kTextAttrAutoLeadBoss 
+(22) + leading: auto~ Boss kTextAttrLeadBoss 
+(23) + language: English: USA~ Boss kTextAttrLanguageBoss
+(24) + hyphenation~ Boss kTextAttrHyphenModeBoss 
+(25) + min before: 2~ Boss kTextAttrMinBeforeBoss 
+(26) + min after: 2~ Boss kTextAttrMinAfterBoss 
+(27) + hyphenate capitalized~ Boss kTextAttrHyphenCapBoss 
+(28) + shortest word: 5~ Boss kTextAttrShortestWordBoss 
+(29) - no break~ Boss kTextAttrNoBreakBoss 
+(30) + hyphenation zone:  36 pt~ Boss kTextAttrHyphenZoneBoss 
+(31) + space before: 0 pt~ Boss kTextAttrSpaceBeforeBoss 
+(32) + space after: 0 pt~ Boss kTextAttrSpaceAfterBoss 
+(33) + tabs: none~ Boss kTextAttrTabsBoss 
+(34) - underline~ Boss kTextAttrUnderlineBoss 
+(35) + Times New Roman~ Boss kTextAttrFontUIDBoss 
+(36) + default figure style~ Boss kTextAttrFigureStyleBoss 
+(37) + desired wordspace: 100%~ Boss kTextAttrWordspaceDesBoss 
+(38) + max. wordspace: 133%~ Boss kTextAttrWordspaceMaxBoss 
+(39) + min. wordspace: 80%~ Boss kTextAttrWordspaceMinBoss 
+(40) + desired letterspace: 0%~ Boss kTextAttrLetterspaceDesBoss 
+(41) + max. letterspace: 0%~ Boss kTextAttrLetterspaceMaxBoss 
+(42) + min. letterspace: 0%~ Boss kTextAttrLetterspaceMinBoss 
+(43) + desired glyph scaling:  100%~ Boss kTextAttrGlyphscaleDesBoss 
+(44) + max. glyph scaling:  100%~ Boss kTextAttrGlyphscaleMaxBoss 
+(45) + min. glyph scaling:   100%~ Boss kTextAttrGlyphscaleMinBoss 
+(46)~ Boss kTextAttrILGShiftBoss 
+(47) - start anywhere~ Boss kTextAttrBreakBeforeBoss 
+(48) + keep at start/end of paragraph~ Boss kTextAttrKeepTogetherBoss 
+(49) + keep next:  0~ Boss kTextAttrKeepWithNextBoss 
+(50) + keep first:  2~ Boss kTextAttrKeepFirstNLinesBoss 
+(51) + keep last:  2~ Boss kTextAttrKeepLastNLinesBoss 
+(52) + position: normal~ Boss kTextAttrPositionModeBoss 
+(53) - strikethrough~ Boss kTextAttrStrikethruBoss 
+(54) + Character Alignment:  EmCenter~ Boss kTextAttrCharacterHangBoss 
+(55)~ Boss kTextAttrAlternateCharBoss 
+(56) - keep lines~ Boss kTextAttrKeepLinesBoss 
+(57) + stroke tint: 100%~ Boss kTextAttrStrokeTintBoss 
+(58) + tint: 100%~ Boss kTextAttrTintBoss 
+(59) - stroke overprint~ Boss kTextAttrStrokeOverprintBoss 
+(60) - overprint~ Boss kTextAttrOverprintBoss 
+(61) + stroke gradient angle: 0°~ Boss kTextAttrStrokeGradAngleBoss 
+(62) + gradient angle: 0°~ Boss kTextAttrGradAngleBoss
+(63) + stroke gradient length: -1 pt~ Boss kTextAttrStrokeGradLengthBoss
+(64) + gradient length: -1 pt~ Boss kTextAttrGradLengthBoss 
+(65)~ Boss kTextAttrStrokeGradCenterBoss 
+(66)~ Boss kTextAttrGradCenterBoss
+(67) + skew angle: 0°~ Boss kTextAttrSkewAngleBoss
+(68) + rule above color: (Text Color)~ Boss kTextAttrPRAColorBoss
+(69) + rule above weight: 1 pt~ Boss kTextAttrPRAStrokeBoss 
+(70) + rule above tint: -1%~ Boss kTextAttrPRATintBoss
+(71) + rule above offset: 0 pt~ Boss kTextAttrPRAOffsetBoss
+(72) + rule above left indent: 0 pt~ Boss kTextAttrPRAIndentLBoss
+(73) + rule above right indent: 0 pt~ Boss kTextAttrPRAIndentRBoss
+(74) + column width rule above~ Boss kTextAttrPRAModeBoss 
+(75) + rule below color: (Text Color)~ Boss kTextAttrPRBColorBoss
+(76) + rule below weight: 1 pt~ Boss kTextAttrPRBStrokeBoss
+(77) + rule below tint: -1%~ Boss kTextAttrPRBTintBoss
+(78) + rule below offset: 0 pt~ Boss kTextAttrPRBOffsetBoss
+(79) + rule below left indent: 0 pt~ Boss kTextAttrPRBIndentLBoss 
+(80) + rule below right indent: 0 pt~ Boss kTextAttrPRBIndentRBoss
+(81) + column width rule below~ Boss kTextAttrPRBModeBoss
+(82) - rule above overprint~ Boss kTextAttrPRAOverprintBoss
+(83) - rule below overprint~ Boss kTextAttrPRBOverprintBoss
+(84) - rule above~ Boss kTextAttrPRARuleOnBoss 
+(85) - rule below~ Boss kTextAttrPRBRuleOnBoss
+(86)~ Boss kTextAttrSpecialGlyphBoss
+(87) + highlight angle: 0°~ Boss kTextAttrHiliteAngleBoss
+(88) + highlight length: 1 pt~ Boss kTextAttrHiliteLengthBoss
+(89) + stroke highlight angle: 0°~ Boss kTextAttrStrokeHiliteAngleBoss 
+(90) + stroke highlight length: 1 pt~ Boss kTextAttrStrokeHiliteLengthBoss
+(91) + force vertical glyphs~ Boss kTextAttrForceVerticalGlyphsBoss
+(92) + last line right indent: 0 pt~ Boss kTextAttrIndentLastRightBoss
+(93) + hyphenate last word~ Boss kTextAttrHyphenLastBoss
+(94)~ Boss kTextAttrGotoNextXBoss 
+(95) + single: force-justified~ Boss kTextAttrAlignSingleBoss
+(96) - OT ordinal~ Boss kTextAttrOTFOrdinalBoss
+(97) - OT fractions~ Boss kTextAttrOTFFractionBoss
+(98) - OT discretionary ligatures~ Boss kTextAttrOTFDiscLigBoss
+(99) - OT titling~ Boss kTextAttrOTFTitlingBoss 
+(100) + rule above stroke type: Solid~ Boss kTextAttrPRAStrokeTypeBoss
+(101) + rule below stroke type: Solid~ Boss kTextAttrPRBStrokeTypeBoss
+(102) + balance: off~ Boss kTextAttrBalancedLinesBoss
+(103) + dropcap style: none + nested styles: none~ Boss kTextAttrRunInStylesBoss
+(104) + rule above gap color: [None]~ Boss kTextAttrPRAGapColorBoss 
+(105) + rule above gap tint: -1%~ Boss kTextAttrPRAGapTintBoss
+(106) - rule above gap overprint: ~ Boss kTextAttrPRAGapOverprintBoss
+(107)~ Boss kTextAttrOTFStylisticAltBoss
+(108) + rule below gap color: [None]~ Boss kTextAttrPRBGapColorBoss
+(109) + rule below gap tint: -1%~ Boss kTextAttrPRBGapTintBoss 
+(110) - rule below gap overprint: ~ Boss kTextAttrPRBGapOverprintBoss
+(111) + align: flush left~ Boss kTextAttrAlignmentBoss
+(112) - drop cap align left edge - drop cap scale descenders~ Boss kDropCapDetailBoss
+(113) - OT general positioning forms~ Boss kOTPositionalFormsBoss
+(114) + OT mark positioning~ Boss kOTMarkPositioningBoss 
+(115) + hyphen weight: 5~ Boss kTextAttrHyphenWeightBoss
+(116) + OT locale~ Boss kOTLocaleFeatureBoss
+(117) + hyphenate across frames~ Boss kTextAttrCrossFrameHyphenBoss
+(118) - keep rule above in frame~ Boss kTextAttrPRAKeepInFrameBoss
+(119) + honor optical margin~ Boss kTextAttrIgnoreEdgeAlignBoss 
+(120) - OT slashed zero~ Boss kSlashedZeroOTFBoss
+(121) - OT stylistic sets~ Boss kStylisticSetsOTFBoss
+(122) - OT historical~ Boss kHistoricalOTFBoss
+(123) + OT contextual alternates~ Boss kTextAttrOTFContextAltBoss
+(124) + underline color: (Text Color)~ Boss kTextAttrCharUnderlineColorBoss 
+(125) + underline gap color: [None]~ Boss kTextAttrCharUnderlineGapColorBoss
+(126) - underline gap overprint: ~ Boss kTextAttrCharUnderlineGapOverprintBoss
+(127) + underline gap tint: -1%~ Boss kTextAttrCharUnderlineGapTintBoss
+(128) + underline offset: Auto~ Boss kTextAttrCharUnderlineOffsetBoss
+(129) - underline overprint: ~ Boss kTextAttrCharUnderlineOverprintBoss 
+(130) + underline tint: -1%~ Boss kTextAttrCharUnderlineTintBoss
+(131) + underline weight: Auto~ Boss kTextAttrCharUnderlineWeightOffsetBoss
+(132) + underline stroke type: Solid~ Boss kTextAttrCharUnderlineTypeBoss
+(133) + strikethrough color: (Text Color)~ Boss kTextAttrCharStrikeThroughColorBoss
+(134) + strikethrough gap color: [None]~ Boss kTextAttrCharStrikeThroughGapColorBoss 
+(135) - strikethrough gap overprint: ~ Boss kTextAttrCharStrikeThroughGapOverprintBoss
+(136) + strikethrough gap tint: -1%~ Boss kTextAttrCharStrikeThroughGapTintBoss
+(137) + strikethrough offset: Auto~ Boss kTextAttrCharStrikeThroughOffsetBoss
+(138) - strikethrough overprint: ~ Boss kTextAttrCharStrikeThroughOverprintBoss
+(139) + strikethrough tint: -1%~ Boss kTextAttrCharStrikeThroughTintBoss 
+(140) + strikethrough stroke type: Solid~ Boss kTextAttrCharStrikeThroughTypeBoss
+(141) + strikethrough weight: Auto~ Boss kTextAttrCharStrikeThroughWeightOffsetBoss
+(142) - OT swash~ Boss kTextAttrOTFSwashBoss
+(143) + Tsume:  0%~ Boss kTATsumeBoss
+(144) + Mojikumi:  ~ Boss kTAMojikumiTableBoss 
+(145) + Aki before char:  automatic~ Boss kTAMojikumiForceBeforeSpacingBoss
+(146) + Aki after char:  automatic~ Boss kTAMojikumiForceAfterSpacingBoss
+(147) + Kinsoku:  No Kinsoku~ Boss kTAKinsokuTableBoss
+(148) + Kinsoku Type:  KinsokuPushInFirst~ Boss kTAKinsokuTypeBoss
+(149) + Hang Type:  KinsokuNoHang~ Boss kTACJKHangingBoss 
+(150) + Bunri-Kinshi~ Boss kTABunriKinshiBoss
+(151)~ Boss kTATsumeTableBoss
+(152) + Ruby Open Type Pro~ Boss kTARubyOTProBoss
+(153)~ Boss kTARubyAttrBoss
+(154)~ Boss kTARubyStringBoss 
+(155) + Ruby Point Size:  Auto~ Boss kTARubyPointSizeBoss
+(156)~ Boss kTARubyRelativeSizeBoss
+(157) + Ruby Alignment:  1-2-1
+(JIS) rule~ Boss kTARubyAlignmentBoss
+(158) + Ruby Type:  Per-Character Ruby~ Boss kTAMojiRubyBoss
+(159) + Ruby Font:  ~ Boss kTARubyFontUIDBoss 
+(160) + Regular~ Boss kTARubyFontStyleBoss
+(161) + Spacing:1-2-1 aki~ Boss kTARubyAdjustParentBoss
+(162) + Ruby X Scale:  100%~ Boss kTARubyXScaleBoss
+(163) + Ruby Y Scale:  100%~ Boss kTARubyYScaleBoss
+(164) + Ruby X Offset:  0 pt~ Boss kTARubyXOffsetBoss 
+(165) + Ruby Y Offset:  0 pt~ Boss kTARubyYOffsetBoss
+(166) + Ruby Position:  Above/Right~ Boss kTARubyPositionBoss
+(167) + Ruby Auto Align~ Boss kTARubyEdgeSpaceBoss
+(168) + Ruby Overhang:  Up to 1 Ruby Character~ Boss kTARubyOverhangBoss
+(169) - Ruby Overhang~ Boss kTARubyOverhangFlagBoss 
+(170) - Ruby Auto Scaling~ Boss kTARubyAutoScalingBoss
+(171) + Ruby AutoScale Min:  66%~ Boss kTARubyAutoScaleMinBoss
+(172) + Ruby Color:  Auto~ Boss kTARubyColorBoss
+(173) + Ruby Tint:  Auto~ Boss kTARubyTintBoss
+(174) + Ruby Fill OverprintAuto~ Boss kTARubyOverprintBoss 
+(175) + Ruby Stroke Color:  Auto~ Boss kTARubyStrokeColorBoss
+(176) + Ruby Stroke Tint:  Auto~ Boss kTARubyStrokeTintBoss
+(177) + Ruby Stroke OverprintAuto~ Boss kTARubyStrokeOverprintBoss
+(178) + Ruby Outline:  Auto~ Boss kTARubyOutlineBoss
+(179) + Kenten Kind:  None~ Boss kTAKentenKindBoss 
+(180) + Kenten Size:  Auto~ Boss kTAKentenSizeBoss
+(181) + Kenten Related Size:  1 pt~ Boss kTAKentenRelatedSizeBoss
+(182) + Kenten Font:  ~ Boss kTAKentenFontFamilyBoss
+(183)~ Boss kTAKentenFontStyleBoss
+(184) + Kenten X Scale:  100%~ Boss kTAKentenXScaleBoss 
+(185) + Kenten Y Scale:  100%~ Boss kTAKentenYScaleBoss
+(186) + Kenten Placement:  0 pt~ Boss kTAKentenYOffsetBoss
+(187) + Kenten Alignment:  Center~ Boss kTAKentenAlignmentBoss
+(188) + Kenten Position:  Above/Right~ Boss kTAKentenPositionBoss
+(189) + Kenten Character:  ~ Boss kTAKentenCharacterBoss 
+(190)~ Boss kTAKentenCharacterSetBoss
+(191) + Kenten Color:  Auto~ Boss kTAKentenColorBoss
+(192) + Kenten Tint:  Auto~ Boss kTAKentenTintBoss
+(193)Kenten OverprintAuto~ Boss kTAKentenOverprintBoss
+(194) + Kenten Stroke Color:  Auto~ Boss kTAKentenStrokeColorBoss 
+(195) + Kenten Stroke Tint:  Auto~ Boss kTAKentenStrokeTintBoss
+(196)Kenten Stroke OverprintAuto~ Boss kTAKentenStrokeOverprintBoss
+(197) + Kenten Outline:  Auto~ Boss kTAKentenOutlineBoss
+(198) - Tatechuyoko~ Boss kTATatechuyokoAttrBoss
+(199) + Tatechuyoko X Offset:  0 pt~ Boss kTATatechuyokoXOffsetBoss 
+(200) + Tatechuyoko Y Offset:  0 pt~ Boss kTATatechuyokoYOffsetBoss
+(201) + Kumi Number:  0~ Boss kTAKumiNumberReportBoss
+(202) - Kumi Number with Roman~ Boss kTAKumiNumberWithRomanReportBoss
+(203) + Jidori:  0~ Boss kTAGridJidoriReportBoss
+(204) + Grid Gyoudori:  0~ Boss kTAGridGyoudoriReportBoss 
+(205) - Only Align First Line to Grid~ Boss kTAGridAlignOnlyFirstLineReportBoss
+(206) + Grid Alignment:  None~ Boss kTextAttrGridAlignmentBoss
+(207) + Character Rotation:  0°~ Boss kTACharRotateAngleReportBoss
+(208) - Rotate Roman~ Boss kTARotateRomanBoss
+(209)~ Boss kTAMojikumiRomanWidthBoss 
+(210)~ Boss kTAMojikumiFullAdjustBoss
+(211)~ Boss kTAMojikumiAdjustPeriodBoss
+(212) + Rensuuji~ Boss kTAMojikumiRensuujiBoss
+(213) + Shatai Percentage:  0%~ Boss kTAShataiMagnificationBoss
+(214) + Shatai Angle:  45°~ Boss kTAShataiAngleBoss 
+(215) + Shatai Adjust Tsume~ Boss kTAShataiAdjustTsumeBoss
+(216) - Shatai Adjust Rotation~ Boss kTAShataiAdjustRotationBoss
+(217) - Warichu~ Boss kTAWarichuAttrBoss
+(218) + Warichu lines: 2~ Boss kTAWarichuNumOfLineBoss
+(219) + Warichu size: 50%~ Boss kTAWarichuRelativeSizeBoss 
+(220) + Warichu line gap: 0 pt~ Boss kTAWarichuLineSpacingBoss
+(221) + Warichu:AlignAuto~ Boss kTAWarichuAlignmentBoss
+(222) + Warichu minimum characters before: 2~ Boss kTAWarichuMinCharsBeforeBreakBoss
+(223) + Warichu minimum characters after: 2~ Boss kTAWarichuMinCharsAfterBreakBoss
+(224) + ~ Boss kTAWarichuAutoResizeParenBoss 
+(225) - OTF Use H or V Kana~ Boss kTAOTFHVKanaBoss
+(226) - OTF Use Proportional Metrics~ Boss kTAOTFProportionalBoss
+(227) - OTF Use Roman Italics~ Boss kTAOTFRomanItalicsBoss
+(228) + Leading Model:  Aki Below~ Boss kTALeadingModelBoss
+(229)~ Boss kTAIMECompModeBoss 
+(230) - Adjust Line Height with Char Scale~ Boss kTAScaleAffectsLineHeightBoss
+(231) - Use Paragraph Gyoudori~ Boss kTAParaGyoudoriBoss
+(232) - Adjust Tracking with CJK Grid~ Boss kTACJKGridTrackingBoss
+(233) + Glyph Form:  Default form~ Boss kTextAttrGlyphFormBoss
+(234) + OpenType Feature:  ~ Boss kTextAttrOTFeatureListBoss 
+(235) + Ruby AutoTCY Num Digits0~ Boss kTARubyAutoTCYNumDigitsBoss
+(236) - Ruby AutoTCY Include Roman~ Boss kTARubyAutoTCYIncludeRomanBoss
+(237) + Ruby AutoTCY Auto Scale~ Boss kTARubyAutoTCYAutoScaleBoss
+(238) - Index Marker~ Boss kTAIndexMarkBoss
+(239) Hyperlink[0x0]~ Boss kHyperlinkAttributeBoss 
+(240) HyperlinkEnd[0x0]~ Boss kHyperlinkEndAttributeBoss
+(241) +  list: none~ Boss kBNListTypeBoss
+(242)***INVALID IAttrReport***~ Boss kBNColorBoss
+(243) +  bullet: u8226~ Boss kBNBulletCharacterBoss
+(244) +  list start value: 1~ Boss kBNNumberStartAtBoss 
+(245) +  list number format: 1, 2, 3, 4...~ Boss kBNNumberingStyleBoss
+(246) +  bullet font: text font~ Boss kBNBulletFontUIDBoss
+(247) +  bullet face: text face~ Boss kBNBulletFontStyleBoss
+(248)***INVALID IAttrReport***~ Boss kBNNumberingFontUIDBoss
+(249) +  list name: [Default]~ Boss kBNListStyleBoss 
+(250) +  level: 1~ Boss kBNListLevelBoss
+(251) +  continue from previous: yes~ Boss kBNNumberingCFPreviousBoss
+(252) +  should restart: yes~ Boss kBNShouldRestartBoss
+(253) +  restart policy: any previous level~ Boss kBNRestartPolicyBoss
+(254) +  bullet character style: [None]~ Boss kBNBulletCharStyleBoss 
+(255) +  numbering character style: [None]~ Boss kBNNumberCharStyleBoss
+(256) +  bullet alignment: left~ Boss kBNBulletAlignmentBoss
+(257) +  numbering alignment: left~ Boss kBNNumberAlignmentBoss
+(258) +  number: ^#.^t~ Boss kBNNumberingNumberBoss
+(259) +  text after: ^t~ Boss kBNBulletTextAfterBoss 

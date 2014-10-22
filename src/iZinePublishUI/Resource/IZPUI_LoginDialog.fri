@@ -1,0 +1,329 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_LoginDialog.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 12-4-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+resource LocaleIndex (kZPUILoginDialogResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUILoginDialogResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPLoginDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZPUILoginDialogBoss)
+{
+};
+
+/*  Dialog definition.
+	This view is not localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IZP_enUS.fr etc.) and
+	update your Dialog LocaleIndex accordingly.
+*/
+resource ZPLoginDialogWidget (kZPUILoginDialogResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUILoginDlgWidgetID,	// WidgetID
+	kPMRsrcID_None,					// RsrcID
+	kBindNone,						// Binding
+	1, 0, 500, 250,					// Frame (l,t,r,b)
+	kTrue, kTrue,					// Visible, Enabled
+	kIZPLoginDialogTitleKey,	// Dialog name
+	{
+		IconSuiteWidget
+		(
+				kZPUILoginDlgLogoPictureWidgetID,
+				kIZPLogoIconRsrcID,
+				kIZPUIPluginID,
+				kBindNone,
+				Frame(15, 20, 102, 105),
+				kTrue,kTrue,
+				kADBEIconSuiteButtonType,0,
+		),
+				
+
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(110, 20, 220, 40)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPLoginDialogWebServiceURLKey,
+			kInvalidWidgetID,
+		),
+		
+		TextEditBoxWidget
+		(
+			kZPUILoginDlgWebserviceURLEditBoxWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindNone,							// Binding
+			225, 20, 490, 40,						// Frame (l,t,r,b)
+			kTrue, kTrue,						// Visible, Enabled
+			0,									// Nudge control widget ID(0 = no control)
+			0,									// Small nudge amount
+			0,									// Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(110, 50, 220, 70)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPLoginDialogUsernameKey,
+			kInvalidWidgetID,
+		),
+		
+		TextEditBoxWidget
+		(
+			kZPUILoginDlgUsernameEditBoxWidgetID,
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindNone,							// Binding
+			225, 50, 490, 70,						// Frame (l,t,r,b)
+			kTrue, kTrue,						// Visible, Enabled
+			0,									// Nudge control widget ID(0 = no control)
+			0,									// Small nudge amount
+			0,									// Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(110, 80, 220, 100)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPLoginDialogPasswordKey,
+			kInvalidWidgetID,
+		),
+		
+		PasswordEditBoxWidget
+		(
+			kZPUILoginDlgPasswordEditBoxWidgetID,
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindNone,							// Binding
+			225, 80, 490, 100,						// Frame (l,t,r,b)
+			kTrue, kTrue,						// Visible, Enabled
+			0,									// Nudge control widget ID(0 = no control)
+			0,									// Small nudge amount
+			0,									// Large Nudge amount
+			255,									// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+		InfoStaticTextWidget
+		(
+			kZPUILoginDlgErrorStaticTextWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(10, 100, 120, 120)
+			kFalse,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			"",
+			kInvalidWidgetID,
+			kPaletteWindowSystemScriptFontId,
+			kPaletteWindowSystemScriptHiliteFontId,
+		),
+		
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindNone,
+			Frame(10, 115, 490, 135)		//(L,T,R,B)
+			kTrue,
+			kTrue,
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPLoginDialogAdvancedSettingKey,
+			kInvalidWidgetID,
+		),
+
+		ZPExpanderRollOverIconButtonWidget
+		(
+			kZPUILoginDlgProxyExpanderWidgetID,		// WidgetId
+			kTreeBranchCollapsedRsrcID,		// RsrcId for collapsed icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed icon
+			kBindNone,						// Frame binding
+			Frame(90,115 + 20,100,130  + 20),			// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			kADBEIconSuiteButtonNoCenteringType /*kADBEIconSuiteButtonType*/,		// PNGIconAttributes, new for InDesign 3.0
+			kTreeBranchCollapsedRsrcID,		// RsrcId for collapsed icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed icon
+			kTreeBranchExpandedRsrcID,		// RsrcId for expanded icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed icon
+			kFalse,							//IsExpanded false
+		),
+		SeparatorWidget
+		(
+			kZPUILoginDlgProxySperatorWidgetID,	// WidgetId 
+			kPMRsrcID_None,		// RsrcId
+			kBindNone,
+			Frame(110,122 + 20,490,127 + 20)	// Frame
+			kTrue, kTrue,			// Visible, Enabled
+		),
+		GroupPanelWidget
+		(
+			// CControlView properties
+			kZPUILoginDlgProxyGroupWidgetID,
+			kPMRsrcID_None,
+			kBindNone,
+			Frame(110, 120 + 20, 490, 200 + 20)
+			kTrue,
+			kTrue,
+			kZPUILoginDlgUseProxyCheckBoxWidgetID,
+			{
+				CheckBoxWidget
+				(
+					kZPUILoginDlgUseProxyCheckBoxWidgetID,
+					kSysCheckBoxPMRsrcId,
+					kBindNone,
+					Frame(5, -5, 120, 10),						//(L,T,R,B)
+					kTrue,
+					kTrue,
+					kAlignLeft,
+					kIZPLoginDialogUseProxyServerCheckBoxKey,
+				),
+				StaticTextWidget
+				(
+					kInvalidWidgetID,
+					kSysStaticTextPMRsrcId,
+					kBindNone,
+					Frame(10, 15, 110, 35)
+					kTrue,
+					kTrue,
+					kAlignLeft,
+					kDontEllipsize,
+					ConvertAmpersandsTrue
+					kIZPLoginDialogProxyServerKey,
+					kInvalidWidgetID,
+				),
+				
+				TextEditBoxWidget
+				(
+					kZPUILoginDlgProxyServerEditBoxWidgetID,
+					kSysEditBoxPMRsrcId,				// RsrcID
+					kBindNone,							// Binding
+					115, 15, 370, 35,						// Frame (l,t,r,b)
+					kTrue, kTrue,						// Visible, Enabled
+					0,									// Nudge control widget ID(0 = no control)
+					0,									// Small nudge amount
+					0,									// Large Nudge amount
+					255,								// Max # chars (0 = no limit)
+					kFalse,								// read only
+					kFalse,								// should notify each key stroke
+					kFalse,								// Range checking enabled
+					kTrue,								// blank allowed
+					0, 0,								// upper/lower bounds
+					"",									// Initial text
+				),
+				StaticTextWidget
+				(
+					kInvalidWidgetID,
+					kSysStaticTextPMRsrcId,
+					kBindNone,
+					Frame(10, 45, 110, 65)
+					kTrue,
+					kTrue,
+					kAlignLeft,
+					kDontEllipsize,
+					ConvertAmpersandsTrue
+					kIZPLoginDialogProxyPortKey,
+					kInvalidWidgetID,
+				),
+				
+				IntEditBoxWidget
+				(
+					kZPUILoginDlgProxyPortEditBoxWidgetID,
+					kSysEditBoxPMRsrcId,
+					kBindNone,
+					115, 45, 180, 65,						// Frame (l,t,r,b)
+					kTrue, kTrue
+					0,										// Widget id of nudge button (0 so we dont get one)
+					0,0,									// small,large nudge amount
+					5,										// max num chars( 0 = no limit)
+					kFalse,									// is read only
+					kFalse,									//**new in InDesign 2.0: should notify each key stroke
+					kTrue,									// range checking enabled
+					kFalse,									// blank entry allowed
+					65535,									// Upper bounds
+					0,										// Lower bounds
+					"",										// Initial text
+				),
+			},
+		),
+
+		DefaultButtonWidget
+		(
+			kOKButtonWidgetID,		// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindNone,				// Binding
+			395, 220 + 20, 485, 240 + 20,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kIZPLoginButtonKey,	// Button text
+		),
+		CancelButtonWidget
+		(
+			kCancelButton_WidgetID,	// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindNone,				// Binding
+			295, 220 + 20, 385, 240 + 20,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kSDKDefCancelButtonApplicationKey,	// Button name
+			kTrue,					// Change to Reset on option-click.
+		),
+
+	//</FREDDYWIDGETDEFLISTUS>
+
+	},
+};
+
+
+#endif // __ODFRC__

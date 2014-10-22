@@ -1,0 +1,41 @@
+//	$HeadURL: $
+//	$Revision: $
+//	$Date: $
+//	$Author: $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 May 13
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Configuration file for iZinePublish CS3 Release target
+
+#include "../../InDesignCommonCS3.xcconfig"
+
+BUILT_PRODUCTS_DIR = $(InDnCS3PlnsRelease)
+DSTROOT = $(InDnCS3PlnsRelease)
+
+DebugOrReleaseFolder = release
+
+GCC_GENERATE_DEBUGGING_SYMBOLS = NO
+GCC_OPTIMIZATION_LEVEL = 3
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) INDESIGN_CS3 InDnCS3
+GCC_THREADSAFE_STATICS = NO
+GCC_MODEL_TUNING = G5
+
+ARCHS = ppc i386
+DEAD_CODE_STRIPPING = YES
+
+PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES
+
+OTHER_REZFLAGS = -d __GNUC__ -d MACINTOSH -d INDESIGN_CS3 -d InDnCS3
+ODFRCArg2 = -d RELEASE -d INDESIGN_CS3 -d InDnCS3
+
+//setting below this line are for debugging Release build, comment if not being debugging.
+//ARCHS = $(NATIVE_ARCH)
+//COPY_PHASE_STRIP = NO
+
+//GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+GCC_OPTIMIZATION_LEVEL = 0
+//GCC_DEBUGGING_SYMBOLS = full
+
+//DEBUG_INFORMATION_FORMAT = dwarf-with-dsym

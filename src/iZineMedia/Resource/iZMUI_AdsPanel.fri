@@ -1,0 +1,234 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMUI_AdsPanel.fri $
+//	$Revision: 2779 $
+//	$Date: 2011-04-11 14:33:53 +0200 (Mon, 11 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 6-4-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+#ifdef __ODFRC__
+
+type iZMAdsPanelWidget(kViewRsrcType) : PalettePanelWidget(ClassID = kZMUIAdsPanelWidgetBoss)
+{
+	CPanelMenuData;
+};
+
+resource PanelList (kZMUIAdsPanelResourceID)
+{
+	{
+		// 1st panel in the list
+		kZMUIAdsPanelResourceID,		// Resource ID for this panel (use SDK default rsrc ID)
+		kIZMediaPluginID,					// ID of plug-in that owns this panel
+		isResizable,
+		kIZMAdsPanelWidgetActionID,	// Action ID to show/hide the panel
+		kIZMUIPluginsMenuKey ":" kIZMAdsPanelTitleKey,	// Shows up in the Window list.
+		"",								// Alternate menu path of the form "Main:Foo" if you want your palette menu item in a second place
+		2001,							// Alternate Menu position Alternate Menu position for determining menu order
+		0,0,							// Rsrc ID, Plugin ID for a PNG icon resource to use for this palette
+		c_Panel
+	}
+};
+
+resource LocaleIndex (kZMUIAdsPanelResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZMUIAdsPanelResourceID + index_enUS
+	}
+};
+
+#define ZMAdsPnlWidth		911
+#define ZMAdsPnlHeight		185
+
+#define ZMAdsPnlLeftMargin			10
+#define ZMAdsPnlRightMargin			10
+#define ZMAdsPnlTopMargin			10
+#define ZMAdsPnlBottomMargin		10
+#define ZMAdsPnlLblRightMarign		5
+#define ZMAdsPnlCtrlVMarign			5
+#define ZMAdsPnlCtrlHMarign			10
+#define ZMAdsPnlCtrlLblHeight		18
+#define ZMAdsPnlCtrlTxtHeight		20
+#define ZMAdsPnlCtrlPopHeight		20
+#define ZMAdsPnlCtrlBtnHeight		18
+
+//Top Bottom calculations
+#define ZMAdsPnlPopTitle_T			ZMAdsPnlTopMargin
+#define ZMAdsPnlHdrAds_T			(ZMAdsPnlPopTitle_T + ZMAdsPnlCtrlPopHeight + ZMAdsPnlCtrlVMarign)
+#define ZMAdsPnlLstAds_T			(ZMAdsPnlHdrAds_T + 19)
+#define ZMAdsPnlLstAds_B			(ZMAdsPnlTxtUser_T - ZMAdsPnlCtrlVMarign )
+#define ZMAdsPnlTxtUser_T			(ZMAdsPnlTxtUser_B - ZMAdsPnlCtrlTxtHeight )
+#define ZMAdsPnlTxtUser_B			(ZMAdsPnlHeight - ZMAdsPnlBottomMargin )
+
+
+//Left Right calculations
+	//First Row
+#define ZMAdsPnlPopTitle_L			ZMAdsPnlLeftMargin
+#define ZMAdsPnlPopTitle_R			(ZMAdsPnlPopTitle_L + 150 )
+#define ZMAdsPnlPopEdition_L		(ZMAdsPnlPopTitle_R + ZMAdsPnlCtrlHMarign )
+#define ZMAdsPnlPopEdition_R		(ZMAdsPnlPopEdition_L + 150 )
+#define ZMAdsPnlBtnRefresh_L		(ZMAdsPnlPopEdition_R + ZMAdsPnlCtrlHMarign )
+#define ZMAdsPnlBtnRefresh_R		(ZMAdsPnlBtnRefresh_L + 100 )
+
+	//Second Row
+#define ZMAdsPnlLblAdsName_L		ZMAdsPnlLeftMargin
+#define ZMAdsPnlLblAdsName_R		(ZMAdsPnlLblAdsName_L + 80 )
+#define ZMAdsPnlTxtAdsName_L		(ZMAdsPnlLblAdsName_R + 5 )
+#define ZMAdsPnlTxtAdsName_R		(ZMAdsPnlTxtAdsName_L + 100 )
+#define ZMAdsPnlLblAdsType_L		(ZMAdsPnlTxtAdsName_R + ZMAdsPnlCtrlHMarign )
+#define ZMAdsPnlLblAdsType_R		(ZMAdsPnlLblAdsType_L + 80 )
+#define ZMAdsPnlBtnPopAdsType_L		(ZMAdsPnlLblAdsType_R + 5 )
+#define ZMAdsPnlBtnPopAdsType_R		(ZMAdsPnlBtnPopAdsType_L + 20 )
+#define ZMAdsPnlLblLockedBy_L		(ZMAdsPnlBtnPopAdsType_R + ZMAdsPnlCtrlHMarign )
+#define ZMAdsPnlLblLockedBy_R		(ZMAdsPnlLblLockedBy_L + 80 )
+#define ZMAdsPnlPopLockedBy_L		(ZMAdsPnlLblLockedBy_R + 5 )
+#define ZMAdsPnlPopLockedBy_R		(ZMAdsPnlPopLockedBy_L + 100 )
+
+	//Third Row
+#define ZMAdsPnlHdrAds_L			ZMAdsPnlLeftMargin
+#define ZMAdsPnlHdrAds_R			(ZMAdsPnlWidth - ZMAdsPnlCtrlHMarign )
+
+	//Fourth Row
+#define ZMAdsPnlTxtCurrVersion_L	(ZMAdsPnlTxtCurrVersion_R - 100 )
+#define ZMAdsPnlTxtCurrVersion_R	(ZMAdsPnlWidth - ZMAdsPnlRightMargin )
+
+/*	PanelView definition.
+	The view is not currently localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IZP_enUS.fr etc.).
+*/
+resource iZMAdsPanelWidget(kZMUIAdsPanelResourceID + index_enUS)
+{
+	__FILE__, __LINE__,					// Localization macro
+	kZPMAdsPanelWidgetID,				// WidgetID
+	kPMRsrcID_None,						// RsrcID
+	kBindAll,							// Binding (0=none)
+	0, 0, ZMAdsPnlWidth, ZMAdsPnlHeight,	// Frame: left, top, right, bottom.
+	kTrue, kFalse,						// Visible, Enabled
+	kTrue,								// Erase background
+	kInterfacePaletteFill,				// Erase to color
+	kFalse,								// Draw dropshadow
+	kIZMAdsPanelTitleKey,				// Panel name
+	{
+	//First Row
+		ZMTitlesDropdownWidget
+		(
+			kZMUIAdsPanelTitleDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | kBindTop,
+			Frame(ZMAdsPnlPopTitle_L, ZMAdsPnlPopTitle_T, ZMAdsPnlPopTitle_R, ZMAdsPnlPopTitle_T + ZMAdsPnlCtrlPopHeight),
+			kTrue, kTrue,				// Visible, Enabled
+			{{
+			}}
+		),
+		
+		ZMEditionsDropdownWidget
+		//ZMEditionPlusDropdownWidget
+		(
+			kZMUIAdsPanelEditionDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | kBindTop,
+			Frame(ZMAdsPnlPopEdition_L, ZMAdsPnlPopTitle_T, ZMAdsPnlPopEdition_R, ZMAdsPnlPopTitle_T + ZMAdsPnlCtrlPopHeight),
+			kTrue, kTrue,				// Visible, Enabled
+			{{
+				
+			}},
+			//{
+			//	kIZMPopupItemAllKey,
+			//	"-"
+			//}
+		),
+		
+		//Refresh button
+		DefaultButtonWidget
+		(
+			kZMUIAdsPanelRefreshBtnWidgetID,	// WidgetID
+			kSysButtonPMRsrcId,					// Icon resource ID
+			kBindLeft | kBindTop,
+			Frame(ZMAdsPnlBtnRefresh_L, ZMAdsPnlPopTitle_T, ZMAdsPnlBtnRefresh_R, ZMAdsPnlPopTitle_T + ZMAdsPnlCtrlBtnHeight),
+			kTrue, kTrue,						// Visible, Enabled
+			kIZMAdsPanelRefreshBtnKey,
+		),
+		
+	//Second Row
+		//TODO:
+
+
+	//Third Row
+		ZMTVHeaderWidget
+		(
+			kZMUIAdsPanelHdrAdsWidgetID,		// widget ID
+			kPMRsrcID_None,						// PMRsrc ID
+			kBindLeft | kBindTop | kBindRight,	// frame binding
+			Frame(ZMAdsPnlHdrAds_L, ZMAdsPnlHdrAds_T, ZMAdsPnlHdrAds_R, ZMAdsPnlLstAds_T-1)	// Frame
+			kTrue, kTrue,						// Visible, Enabled
+			1,									//Tree Type - Ads
+			kZMUIAdsPanelLstAdsWidgetID,		//Associated Tree WidgetID
+			{
+				GenericPanelWidget
+				(
+					kZMUITVHdrControlStripWidgetID, // widget ID
+					kPMRsrcID_None,					// PMRsrc ID
+					kBindLeft | kBindTop,			// frame binding
+					Frame(0, 0, ZMAdsPnlHdrAds_R - ZMAdsPnlHdrAds_L, ZMAdsPnlLstAds_T - ZMAdsPnlHdrAds_T)			// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					"",
+					{
+					}
+				),
+			},
+		),
+
+		ZMAdsPanelTreeViewWidget
+		(
+			// CControlView properties
+			kZMUIAdsPanelLstAdsWidgetID,	// widget ID
+			kPMRsrcID_None,					// PMRsrc ID
+			kBindAll,						// frame binding
+			Frame(ZMAdsPnlHdrAds_L, ZMAdsPnlLstAds_T, ZMAdsPnlHdrAds_R, ZMAdsPnlLstAds_B)	// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			kTrue,							// fEraseBeforeDraw
+			kInterfacePaletteFill,			// InterfaceColor to erase to
+			// CTextControlData properties
+			"",								// control label
+			// TreeAttributes properties
+			kFalse,							// fShouldDisplayRootNode
+			kFalse,							// fShouldUseHScrollBar
+			kTrue,							// fShouldUseVScrollBar
+			20,								// fVScrollButtonIncrement
+			1,								// fVThumbScrollIncrement
+			20,								// fHScrollButtonIncrement
+			1,								// fHThumbScrollIncrement
+			// TreeViewController properties
+			1,								// Items selectable, 0 = No Selection, 1 = Single Selection, 2 = Multiple Selection
+			kFalse,//kFalse,				// fShouldAllowChildrenFromMultipleParentsSelected
+			kTrue,//kFalse,					// fShouldAllowDiscontiguousSelection
+			{								// CPanelControlData Children
+			},
+			kZMUIAdsPanelHdrAdsWidgetID
+		),
+
+		//Fourth Row
+		StaticTextWidget
+		(
+			kZMUIAdsPanelVersionWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindRight | kBindBottom,
+			Frame(ZMAdsPnlTxtCurrVersion_L, ZMAdsPnlTxtUser_T, ZMAdsPnlTxtCurrVersion_R, ZMAdsPnlTxtUser_T + ZMAdsPnlCtrlLblHeight )
+			kTrue, kTrue,					// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			"",
+			kInvalidWidgetID,
+		),
+	},
+
+	kIZMAdsPanelInternalMenuPath		// Popup menu name (internal)
+};
+#endif // __ODFRC__
+

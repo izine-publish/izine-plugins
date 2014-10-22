@@ -1,0 +1,90 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMedia%20Schema.fri $
+//	$Revision: 2860 $
+//	$Date: 2011-04-27 15:07:13 +0200 (Wed, 27 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 25-03-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#include "Schema.fh"
+
+#ifdef __ODFRC__
+
+// You might want to increment a plug-in's format number in the PluginVersion resource,
+// even though you did not change the data format.
+// In this case, you can perform a null conversion to tell the content manager about the new format number.
+resource SchemaFormatNumber(1)
+{
+	{
+		//{ kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber },
+//		{ kIZPThirdMajorFormatNumber, kIZPThirdMinorFormatNumber_1 },	//No format change from 3.0 to 3.1
+	}
+};
+
+//Schema for format number 
+//{kIZPFirstMajorFormatNumber, kIZPFirstMinorFormatNumber},
+resource SchemaList(1)
+{{
+	Schema
+	{
+		kZMPrefsPersistImpl,
+		{kIZMediaFirstMajorFormatNumber, kIZMediaFirstMinorFormatNumber},
+		{
+			{PMString {0x0001, ""}},	// repository path
+		}
+	},
+	Schema
+	{
+		kZMPrefsPersistImpl,
+		{kIZMediaFirstMajorFormatNumber, kIZMediaSecondMinorFormatNumber},
+		{
+			{PMString {0x0001, ""}},	// repository path
+			{PMString {0x0002, ""}},	// Ad file name prefix
+		}
+	},
+}}
+
+//Resource to indicate indesign that plugin prefix has changed.
+// {RemoveClass{kSomeBoss, {1, 2}} }, 
+// {RemoveImplementation{kMyBoss, kMyDataImpl, {2, 1}} }, 
+// {RemoveAllImplementation {kMyDeadImpl, {4, 2}} },
+// {ReplaceClass {kOldBossID, kNewBossID, {5, 2}} }, 
+// {ReplaceImplementation {kSomeBoss, kOldImplID, kNewImplID, {4, 12}} }, 
+// {ReplaceAllImplementation {kOldImplID, kNewImplID, {4, 12}} },
+resource DirectiveList (1)
+{{										//Types defined in Schema.fh
+	//Directive
+	//(
+	//	RenumberPlugin						// Renumbering an entire plugin
+	//	{
+	//		{ kIZPSecondMajorFormatNumber, kIZPSecondMinorFormatNumber },						//	Format number when the renumbering happened
+	//		{ kIZPOldPrefix, {kIZPFirstMajorFormatNumber ,kIZPFirstMinorFormatNumber} },		//	Old plugin and last format number
+	//		{ kIZMPrefixNumber, {kIZPSecondMajorFormatNumber, kIZPSecondMinorFormatNumber} },	//	New plugin and first format number
+	//		
+	//		//Classes
+	//		//Mention only the classes that had persisted implementations.
+	//		//Don't mentions the Add-ins.
+	//		{								//	Old ClassID, New ClassID
+	//			kIZPOldPrefix + 44,		kIZPDataLinkBoss,
+	//			kIZPOldPrefix + 75,		kIZPUpdateAssetDataCmdBoss,
+	//			kIZPOldPrefix + 81,		kIZPUpdateAssignmentDataCmdBoss,
+	//		},
+	//		//Impls
+	//		//Mention only the persisted implementations.
+	//		{								//	Old ImplementationID, New Implementation ID
+	//			kIZPOldPrefix + 36,		kAssetDataImpl,
+	//			kIZPOldPrefix + 71,		kIZPDataLinkImpl,
+	//			kIZPOldPrefix + 75,		kIZPPrefsDataPersistImpl,
+	//			kIZPOldPrefix + 144,	kIZPAssignmentDataPersistImpl,
+	//		},
+	//	}
+	//)
+}};
+
+#endif // __ODFRC__

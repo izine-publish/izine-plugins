@@ -1,0 +1,343 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp_ExportDialog.fri $
+//	$Revision: 4011 $
+//	$Date: 2012-05-22 14:35:46 +0200 (Tue, 22 May 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Aman Alam
+//	Created: 7-6-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/*  Dialog LocaleIndex.
+*/
+resource LocaleIndex (kZExpExportDialogResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZExpExportDialogResourceID + index_enUS
+	}
+};
+
+type ZExpExpanderOptions : Interface (IID = IID_IZEXPDISCLOSURETRIANGLEOPTIONS)
+{
+	PMRsrcID;		// fRsrcId, fRsrcPlugin of expander icon when node is collapsed
+	PMRsrcID;		// fRsrcId, fRsrcPlugin of expander icon when node is expanded
+};
+
+type ZExpExpanderIsExpanded : Interface (IID = IID_IZEXPISEXPANDED )
+{
+	integer;		// is Expanded
+};
+
+type ZExpExpanderRollOverIconButtonWidget(kViewRsrcType) : RollOverIconButtonWidget (ClassID = kZExpExpanderRollOverIconBtnWidgetBoss )
+{
+	ZExpExpanderOptions;
+	ZExpExpanderIsExpanded;
+};
+
+/*  Type definition.
+*/
+type ZExpExportDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZExpExportDialogBoss)
+{
+};
+
+#define ZExpExportDlgWidth		300
+#define ZExpExportDlgHeight		(ZExpExportDlgCancelButton_B + 20)
+
+#define ZExpExportDlgLeftMargin		5
+#define ZExpExportDlgRightMargin	10
+#define ZExpExportDlgVGap			15
+
+#define ZExpExportBtnGap			20
+
+#define ZExpExportBtnWidth			75
+
+#define ZExpExportDlgLblHeight		20
+#define ZExpExportBtnHeight			20
+#define ZExpExportDlgPopHeight		20
+#define ZExpExportDlgOptHeight		18
+
+#define ZExpExportDlgTitleLbl_L					ZExpExportDlgLeftMargin
+#define ZExpExportDlgTitleLbl_R					(ZExpExportDlgTitleLbl_L + 60)
+#define ZExpExportDlgTitleLbl_T					10
+#define ZExpExportDlgTitleLbl_B					(ZExpExportDlgTitleLbl_T + ZExpExportDlgLblHeight)
+
+#define ZExpExportDlgEditionLbl_L				ZExpExportDlgTitleLbl_L
+#define ZExpExportDlgEditionLbl_R				ZExpExportDlgTitleLbl_R
+#define ZExpExportDlgEditionLbl_T				(ZExpExportDlgTitleLbl_B + ZExpExportDlgVGap)
+#define ZExpExportDlgEditionLbl_B				(ZExpExportDlgEditionLbl_T + ZExpExportDlgLblHeight)
+
+#define ZExpExportDlgTitleDropDown_L			(ZExpExportDlgTitleLbl_R+5)
+#define ZExpExportDlgTitleDropDown_R			(ZExpExportDlgWidth - ZExpExportDlgRightMargin)
+#define ZExpExportDlgTitleDropDown_T			ZExpExportDlgTitleLbl_T
+#define ZExpExportDlgTitleDropDown_B			(ZExpExportDlgTitleDropDown_T + ZExpExportDlgPopHeight)
+
+#define ZExpExportDlgEditionDropDown_L			ZExpExportDlgTitleDropDown_L
+#define ZExpExportDlgEditionDropDown_R			ZExpExportDlgTitleDropDown_R
+#define ZExpExportDlgEditionDropDown_T			ZExpExportDlgEditionLbl_T
+#define ZExpExportDlgEditionDropDown_B			(ZExpExportDlgEditionDropDown_T + ZExpExportDlgPopHeight)
+
+#ifdef ExportWithAdvanceOptions
+#define ZExpExportDlgAdvOptionVGap				8
+#define ZExpExportDlgAdvOptionLbl_L				ZExpExportDlgLeftMargin
+#define ZExpExportDlgAdvOptionLbl_R				ZExpExportDlgTitleLbl_R
+#define ZExpExportDlgAdvOptionLbl_T				(ZExpExportDlgEditionDropDown_B + 15)
+#define ZExpExportDlgAdvOptionLbl_B				(ZExpExportDlgAdvOptionLbl_T + ZExpExportDlgLblHeight)
+
+#define ZExpExportDlgAdvOptionGrp_L				(ZExpExportDlgAdvOptionLbl_R + 10 )
+#define ZExpExportDlgAdvOptionGrp_R				(ZExpExportDlgWidth - ZExpExportDlgRightMargin)
+#define ZExpExportDlgAdvOptionGrp_T				ZExpExportDlgAdvOptionLbl_T
+#define ZExpExportDlgAdvOptionGrp_B				(ZExpExportDlgAdvOptionGrp_T + ZExpExportDlgAdvOptionOpt3_T + ZExpExportDlgOptHeight + ZExpExportDlgAdvOptionVGap )
+
+#define ZExpExportDlgAdvOptionOpt_L				ZExpExportDlgLeftMargin
+#define ZExpExportDlgAdvOptionOpt_R				(ZExpExportDlgAdvOptionGrp_R - ZExpExportDlgAdvOptionGrp_L - ZExpExportDlgRightMargin )
+
+#define ZExpExportDlgAdvOptionOpt1_T			ZExpExportDlgAdvOptionVGap
+#define ZExpExportDlgAdvOptionOpt2_T			(ZExpExportDlgAdvOptionOpt1_T + ZExpExportDlgOptHeight + ZExpExportDlgAdvOptionVGap )
+#define ZExpExportDlgAdvOptionOpt3_T			(ZExpExportDlgAdvOptionOpt2_T + ZExpExportDlgOptHeight + ZExpExportDlgAdvOptionVGap )
+
+#endif
+
+//#ifdef ExportWithAdvanceOptions
+//#define ZExpExportDlgCancelButton_T		(ZExpExportDlgAdvOptionGrp_B + 20)
+//#else
+#define ZExpExportDlgCancelButton_T			(ZExpExportDlgEditionDropDown_B + 20)
+//#endif
+#define ZExpExportDlgCancelButton_B			(ZExpExportDlgCancelButton_T + ZExpExportBtnHeight)
+#define ZExpExportDlgCancelButton_L			(ZExpExportDlgCancelButton_R - ZExpExportBtnWidth)
+#define ZExpExportDlgCancelButton_R			(ZExpExportDlgDefaultButton_L - ZExpExportBtnGap)
+
+#define ZExpExportDlgDefaultButton_L		(ZExpExportDlgDefaultButton_R - ZExpExportBtnWidth)
+#define ZExpExportDlgDefaultButton_R		(ZExpExportDlgWidth - ZExpExportDlgRightMargin)
+#define ZExpExportDlgDefaultButton_T		ZExpExportDlgCancelButton_T
+#define ZExpExportDlgDefaultButton_B		(ZExpExportDlgDefaultButton_T + ZExpExportBtnHeight)
+
+#define ZExpExportDlgVersionLbl_L			ZExpExportDlgLeftMargin
+#define ZExpExportDlgVersionLbl_R			(ZExpExportDlgCancelButton_L - 10)
+#define ZExpExportDlgVersionLbl_T			ZExpExportDlgDefaultButton_T
+#define ZExpExportDlgVersionLbl_B			(ZExpExportDlgVersionLbl_T + ZExpExportDlgLblHeight)
+
+/*  Dialog definition.
+	This view is not localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IZP_enUS.fr etc.) and
+	update your Dialog LocaleIndex accordingly.
+*/
+resource ZExpExportDialogWidget (kZExpExportDialogResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZExpExportDialogWidgetID,		// WidgetID
+	kPMRsrcID_None,					// RsrcID
+	kBindNone,						// Binding
+	0, 0, ZExpExportDlgWidth, ZExpExportDlgHeight,					// Frame (l,t,r,b)
+	kTrue, kTrue,					// Visible, Enabled
+	kZExpExportDialogTitleKey,		// Dialog name
+	{
+		//Title
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZExpExportDlgTitleLbl_L, ZExpExportDlgTitleLbl_T, ZExpExportDlgTitleLbl_R, ZExpExportDlgTitleLbl_B)	// left, top, right, bottom
+			kTrue, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+			ConvertAmpersandsTrue	// Convert ampersands
+				// CTextControlData properties
+			kZExpExportTitleKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+
+		DropDownListWidget
+		(
+			kZExpExportTitleDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindTop | kBindLeft,
+			Frame(ZExpExportDlgTitleDropDown_L, ZExpExportDlgTitleDropDown_T, ZExpExportDlgTitleDropDown_R, ZExpExportDlgTitleDropDown_B),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+
+		//Edition
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZExpExportDlgEditionLbl_L, ZExpExportDlgEditionLbl_T, ZExpExportDlgEditionLbl_R, ZExpExportDlgEditionLbl_B)	// left, top, right, bottom
+			kTrue, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+			ConvertAmpersandsTrue	// Convert ampersands
+				// CTextControlData properties
+			kZExpExportEditionKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+
+		DropDownListWidget
+		(
+			kZExpExportEditionDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindTop | kBindLeft,
+			Frame(ZExpExportDlgEditionDropDown_L, ZExpExportDlgEditionDropDown_T, ZExpExportDlgEditionDropDown_R, ZExpExportDlgEditionDropDown_B),
+			kTrue, kTrue,
+			{{
+			}}
+		),
+
+#ifdef ExportWithAdvanceOptions
+
+		//Options
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZExpExportDlgAdvOptionLbl_L, ZExpExportDlgAdvOptionLbl_T, ZExpExportDlgAdvOptionLbl_R, ZExpExportDlgAdvOptionLbl_B)	// left, top, right, bottom
+			kTrue, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+			ConvertAmpersandsTrue	// Convert ampersands
+				// CTextControlData properties
+			kZExpExportDlgAdvOptionGrpKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+
+		ZExpExpanderRollOverIconButtonWidget
+		(
+			kZExpExportDlgAdvOptionExpanderWidgetID,		// WidgetId
+			kTreeBranchCollapsedRsrcID,		// RsrcId for collapsed icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed icon
+			kBindTop | kBindLeft,						// Frame binding
+			Frame(ZExpExportDlgAdvOptionGrp_L-10, ZExpExportDlgAdvOptionGrp_T, ZExpExportDlgAdvOptionGrp_L,ZExpExportDlgAdvOptionGrp_T + 10),			// Frame
+			kTrue, kTrue,					// Visible, Enabled
+			kADBEIconSuiteButtonNoCenteringType /*kADBEIconSuiteButtonType*/,		// PNGIconAttributes, new for InDesign 3.0
+			kTreeBranchCollapsedRsrcID,		// RsrcId for collapsed icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed icon
+			kTreeBranchExpandedRsrcID,		// RsrcId for expanded icon
+			kApplicationRsrcPluginID,		// RsrcPlugin for collapsed icon
+			kFalse,							//IsExpanded false
+		),
+		SeparatorWidget
+		(
+			kZExpExportDlgAdvOptionSperatorWidgetID,	// WidgetId 
+			kPMRsrcID_None,		// RsrcId
+			kBindTop | kBindLeft | kBindRight,
+			Frame(ZExpExportDlgAdvOptionGrp_L, ZExpExportDlgAdvOptionGrp_T, ZExpExportDlgAdvOptionGrp_R, ZExpExportDlgAdvOptionGrp_T + 5),			// Frame
+			kTrue, kTrue,			// Visible, Enabled
+		),
+		GroupPanelWidget
+		(
+			// CControlView properties
+			kZExpExportDlgAdvOptionGroupWidgetID,
+			kPMRsrcID_None,
+			kBindTop | kBindLeft | kBindRight,
+			Frame(ZExpExportDlgAdvOptionGrp_L, ZExpExportDlgAdvOptionGrp_T, ZExpExportDlgAdvOptionGrp_R, ZExpExportDlgAdvOptionGrp_B)
+			kTrue, kTrue,			// Visible, Enabled
+			kInvalidWidgetID,
+			{
+				ClusterPanelWidget
+				(
+					// CControlView properties
+					kInvalidWidgetID,
+					kPMRsrcID_None,
+					kBindTop | kBindLeft | kBindRight | kBindBottom,
+					Frame(0, 0, ZExpExportDlgAdvOptionGrp_R - ZExpExportDlgAdvOptionGrp_L, ZExpExportDlgAdvOptionGrp_B - ZExpExportDlgAdvOptionGrp_T)
+					kTrue, kTrue,			// Visible, Enabled
+					"",//kInvalidWidgetID,
+					{
+						RadioButtonWidget
+						(
+							// CControlView properties
+							kZExpExportDlgAdvOptionBoth, // widget ID
+							kSysRadioButtonPMRsrcId, // PMRsrc ID
+							kBindTop | kBindLeft, // frame binding
+							Frame(ZExpExportDlgAdvOptionOpt_L, ZExpExportDlgAdvOptionOpt1_T, ZExpExportDlgAdvOptionOpt_R, ZExpExportDlgAdvOptionOpt1_T+ ZExpExportDlgOptHeight) //  left, top, right, bottom
+							kTrue, kTrue,			// Visible, Enabled
+							// CTextControlData properties
+							kZExpExportDlgAdvOptionBothKey, // control label
+						),
+						RadioButtonWidget
+						(
+							// CControlView properties
+							kZExpExportDlgAdvOptionSkipDataCreation, // widget ID
+							kSysRadioButtonPMRsrcId, // PMRsrc ID
+							kBindTop | kBindLeft, // frame binding
+							Frame(ZExpExportDlgAdvOptionOpt_L, ZExpExportDlgAdvOptionOpt2_T, ZExpExportDlgAdvOptionOpt_R, ZExpExportDlgAdvOptionOpt2_T+ ZExpExportDlgOptHeight) //  left, top, right, bottom
+							kTrue, kTrue,			// Visible, Enabled
+							// CTextControlData properties
+							kZExpExportDlgAdvOptionSkipCreateKey, // control label
+						),
+						RadioButtonWidget
+						(
+							// CControlView properties
+							kZExpExportDlgAdvOptionSkipUpload, // widget ID
+							kSysRadioButtonPMRsrcId, // PMRsrc ID
+							kBindTop | kBindLeft, // frame binding
+							Frame(ZExpExportDlgAdvOptionOpt_L, ZExpExportDlgAdvOptionOpt3_T, ZExpExportDlgAdvOptionOpt_R, ZExpExportDlgAdvOptionOpt3_T+ ZExpExportDlgOptHeight) //  left, top, right, bottom
+							kTrue, kTrue,			// Visible, Enabled
+							// CTextControlData properties
+							kZExpExportDlgAdvOptionSkipUploadKey, // control label
+						),
+					}
+				);
+			},
+		),
+
+#endif
+		DefaultButtonWidget
+		(
+			kOKButtonWidgetID,		// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindBottom | kBindRight,				// Binding
+			ZExpExportDlgDefaultButton_L, ZExpExportDlgDefaultButton_T, ZExpExportDlgDefaultButton_R, ZExpExportDlgDefaultButton_B,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kZExpExportButtonKey,	// Button text
+		),
+		
+		CancelButtonWidget
+		(
+			kCancelButton_WidgetID,	// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindBottom | kBindRight,				// Binding
+			ZExpExportDlgCancelButton_L, ZExpExportDlgCancelButton_T, ZExpExportDlgCancelButton_R, ZExpExportDlgCancelButton_B,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kSDKDefCancelButtonApplicationKey,	// Button name
+			kTrue,					// Change to Reset on option-click.
+		),
+		
+		//Version
+		StaticTextWidget
+		(		// CControlView properties
+			kZExpExportVersionWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindBottom | kBindLeft,	// frame binding
+			Frame(ZExpExportDlgVersionLbl_L, ZExpExportDlgVersionLbl_T, ZExpExportDlgVersionLbl_R, ZExpExportDlgVersionLbl_B)	// left, top, right, bottom
+			kTrue, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignLeft,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+			ConvertAmpersandsTrue	// Convert ampersands
+				// CTextControlData properties
+			"",		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),		
+	},
+};
+
+#endif // __ODFRC__

@@ -1,0 +1,1338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071043F7134EEC56003C9F4E /* CZMUIDialogFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 071043F5134EEC56003C9F4E /* CZMUIDialogFacade.cpp */; };
+		071043F8134EEC56003C9F4E /* CZMUIDialogFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 071043F5134EEC56003C9F4E /* CZMUIDialogFacade.cpp */; };
+		072006BB134DA4B60042541B /* ZMAdsTVAdNodeID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006B9134DA4B60042541B /* ZMAdsTVAdNodeID.cpp */; };
+		072006BC134DA4B60042541B /* ZMAdsTVAdNodeID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006B9134DA4B60042541B /* ZMAdsTVAdNodeID.cpp */; };
+		072006BF134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006BD134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp */; };
+		072006C0134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006BD134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp */; };
+		072006C4134DA5050042541B /* CZMAdsTVWidgetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006C1134DA5050042541B /* CZMAdsTVWidgetManager.cpp */; };
+		072006C5134DA5050042541B /* ZMAdsTVNodeID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006C2134DA5050042541B /* ZMAdsTVNodeID.cpp */; };
+		072006C6134DA5050042541B /* CZMAdsTVWidgetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006C1134DA5050042541B /* CZMAdsTVWidgetManager.cpp */; };
+		072006C7134DA5050042541B /* ZMAdsTVNodeID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006C2134DA5050042541B /* ZMAdsTVNodeID.cpp */; };
+		072006CD134DA55D0042541B /* CZMTreeViewMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006C8134DA55D0042541B /* CZMTreeViewMgr.cpp */; };
+		072006CE134DA55D0042541B /* CZMTreeViewMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006C8134DA55D0042541B /* CZMTreeViewMgr.cpp */; };
+		072006D7134DA58E0042541B /* CZMTVColumnsInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006CF134DA58E0042541B /* CZMTVColumnsInfo.cpp */; };
+		072006D8134DA58E0042541B /* CZMTVColumnsPref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D0134DA58E0042541B /* CZMTVColumnsPref.cpp */; };
+		072006D9134DA58E0042541B /* CZMTVHeaderController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D1134DA58E0042541B /* CZMTVHeaderController.cpp */; };
+		072006DA134DA58E0042541B /* CZMTVHeaderEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D2134DA58E0042541B /* CZMTVHeaderEH.cpp */; };
+		072006DB134DA58E0042541B /* CZMTVHeaderObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D3134DA58E0042541B /* CZMTVHeaderObserver.cpp */; };
+		072006DC134DA58E0042541B /* CZMTVColumnsInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006CF134DA58E0042541B /* CZMTVColumnsInfo.cpp */; };
+		072006DD134DA58E0042541B /* CZMTVColumnsPref.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D0134DA58E0042541B /* CZMTVColumnsPref.cpp */; };
+		072006DE134DA58E0042541B /* CZMTVHeaderController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D1134DA58E0042541B /* CZMTVHeaderController.cpp */; };
+		072006DF134DA58E0042541B /* CZMTVHeaderEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D2134DA58E0042541B /* CZMTVHeaderEH.cpp */; };
+		072006E0134DA58E0042541B /* CZMTVHeaderObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072006D3134DA58E0042541B /* CZMTVHeaderObserver.cpp */; };
+		072DF930134C979F0026B5DC /* CZMFileInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072DF92F134C979F0026B5DC /* CZMFileInfo.cpp */; };
+		072DF959134C9A690026B5DC /* CZMAdFileMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F3134C35A800BB22BF /* CZMAdFileMgr.cpp */; };
+		073B18A413530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073B18A213530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp */; };
+		073B18A513530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073B18A213530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp */; };
+		073B18A713530A820051AC20 /* CZMAdsTVDataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073B18A613530A820051AC20 /* CZMAdsTVDataModel.cpp */; };
+		073B18A813530A820051AC20 /* CZMAdsTVDataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073B18A613530A820051AC20 /* CZMAdsTVDataModel.cpp */; };
+		0751A79E134D754A00B17AFD /* AZMDataObjPopupController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A797134D754A00B17AFD /* AZMDataObjPopupController.cpp */; };
+		0751A79F134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A799134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp */; };
+		0751A7A0134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A79B134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp */; };
+		0751A7A1134D754A00B17AFD /* AZMDataObjPopupController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A797134D754A00B17AFD /* AZMDataObjPopupController.cpp */; };
+		0751A7A2134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A799134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp */; };
+		0751A7A3134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A79B134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp */; };
+		0751A7A6134D755D00B17AFD /* CZMTitlePopupController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A7A4134D755D00B17AFD /* CZMTitlePopupController.cpp */; };
+		0751A7A7134D755D00B17AFD /* CZMTitlePopupObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A7A5134D755D00B17AFD /* CZMTitlePopupObserver.cpp */; };
+		0751A7A8134D755D00B17AFD /* CZMTitlePopupController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A7A4134D755D00B17AFD /* CZMTitlePopupController.cpp */; };
+		0751A7A9134D755D00B17AFD /* CZMTitlePopupObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0751A7A5134D755D00B17AFD /* CZMTitlePopupObserver.cpp */; };
+		075ED92F134DBE4A00923D66 /* CZMFileInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072DF92F134C979F0026B5DC /* CZMFileInfo.cpp */; };
+		075ED96B134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075ED968134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp */; };
+		075ED96C134DC11E00923D66 /* CZMAdsTVObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075ED969134DC11E00923D66 /* CZMAdsTVObserver.cpp */; };
+		075ED96D134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075ED968134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp */; };
+		075ED96E134DC11E00923D66 /* CZMAdsTVObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075ED969134DC11E00923D66 /* CZMAdsTVObserver.cpp */; };
+		07A01977136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A01975136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp */; };
+		07A01978136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A01976136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp */; };
+		07A01979136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A01975136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp */; };
+		07A0197A136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A01976136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp */; };
+		07A0197E136AA6E30073BDD4 /* CZMErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A0197D136AA6E30073BDD4 /* CZMErrorStringService.cpp */; };
+		07A0197F136AA6E30073BDD4 /* CZMErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A0197D136AA6E30073BDD4 /* CZMErrorStringService.cpp */; };
+		07A6B657134F113E00053468 /* CZMAdFileObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B650134F113E00053468 /* CZMAdFileObjController.cpp */; };
+		07A6B658134F113E00053468 /* CZMAdInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B651134F113E00053468 /* CZMAdInfo.cpp */; };
+		07A6B659134F113E00053468 /* CZMDataObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B652134F113E00053468 /* CZMDataObjController.cpp */; };
+		07A6B65A134F113E00053468 /* CZMEditionObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B654134F113E00053468 /* CZMEditionObjController.cpp */; };
+		07A6B65B134F113E00053468 /* CZMTitleObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B655134F113E00053468 /* CZMTitleObjController.cpp */; };
+		07A6B65D134F113E00053468 /* CZMAdFileObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B650134F113E00053468 /* CZMAdFileObjController.cpp */; };
+		07A6B65E134F113E00053468 /* CZMAdInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B651134F113E00053468 /* CZMAdInfo.cpp */; };
+		07A6B65F134F113E00053468 /* CZMDataObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B652134F113E00053468 /* CZMDataObjController.cpp */; };
+		07A6B660134F113E00053468 /* CZMEditionObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B654134F113E00053468 /* CZMEditionObjController.cpp */; };
+		07A6B661134F113E00053468 /* CZMTitleObjController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A6B655134F113E00053468 /* CZMTitleObjController.cpp */; };
+		07A7259C134C312D00BB22BF /* iZMedia.fr in Sources */ = {isa = PBXBuildFile; fileRef = 07A7258F134C312D00BB22BF /* iZMedia.fr */; };
+		07A725B5134C325200BB22BF /* CZMApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B2134C325200BB22BF /* CZMApp.cpp */; };
+		07A725B6134C325200BB22BF /* CZMediaStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B3134C325200BB22BF /* CZMediaStartupShutdown.cpp */; };
+		07A725B7134C325200BB22BF /* iZMediaConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B4134C325200BB22BF /* iZMediaConstants.cpp */; };
+		07A725B9134C326D00BB22BF /* CZMediaAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B8134C326D00BB22BF /* CZMediaAppActionComponent.cpp */; };
+		07A725C5134C331000BB22BF /* CZMCommandFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725C4134C331000BB22BF /* CZMCommandFacade.cpp */; };
+		07A725C7134C332400BB22BF /* CZMSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725C6134C332400BB22BF /* CZMSavePrefsCmd.cpp */; };
+		07A725DF134C345000BB22BF /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725D9134C345000BB22BF /* StInDesignUtils.cpp */; };
+		07A725E0134C345000BB22BF /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725DB134C345000BB22BF /* StInDnXmlUtils.cpp */; };
+		07A725E1134C345000BB22BF /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725DD134C345000BB22BF /* StUtils.cpp */; };
+		07A725E5134C348A00BB22BF /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725E3134C348A00BB22BF /* iZPLog.cpp */; };
+		07A725F8134C35A800BB22BF /* CZMEditionMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F4134C35A800BB22BF /* CZMEditionMgr.cpp */; };
+		07A725F9134C35A800BB22BF /* CZMModelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F5134C35A800BB22BF /* CZMModelController.cpp */; };
+		07A725FA134C35A800BB22BF /* CZMTitleMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F6134C35A800BB22BF /* CZMTitleMgr.cpp */; };
+		07A72606134C362200BB22BF /* CZMAdFileList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72603134C362200BB22BF /* CZMAdFileList.cpp */; };
+		07A72607134C362200BB22BF /* CZMEditionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72604134C362200BB22BF /* CZMEditionList.cpp */; };
+		07A72612134C36A400BB22BF /* CZMUIPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7260F134C36A400BB22BF /* CZMUIPrefsDialogController.cpp */; };
+		07A72613134C36A400BB22BF /* CZMUIPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72610134C36A400BB22BF /* CZMUIPrefsDialogObserver.cpp */; };
+		07A72614134C36A400BB22BF /* CZMUIPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72611134C36A400BB22BF /* CZMUIPrefsPanelCreator.cpp */; };
+		07A7261C134C370800BB22BF /* MemoryXferBytes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7261A134C370800BB22BF /* MemoryXferBytes.cpp */; };
+		07A72626134C37B100BB22BF /* CZMPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72625134C37B100BB22BF /* CZMPrefs.cpp */; };
+		07A7262C134C37EA00BB22BF /* iZMediaID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72629134C37EA00BB22BF /* iZMediaID.cpp */; };
+		07A7262D134C37EA00BB22BF /* iZMediaNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7262A134C37EA00BB22BF /* iZMediaNoStrip.cpp */; };
+		07A7262E134C37EA00BB22BF /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7262B134C37EA00BB22BF /* TriggerResourceDeps.cpp */; };
+		07A72633134C387900BB22BF /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72632134C387900BB22BF /* SDKPlugInEntrypoint.cpp */; };
+		07A72639134C38D700BB22BF /* CZMAdFileData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72637134C38D700BB22BF /* CZMAdFileData.cpp */; };
+		07A7263B134C38EE00BB22BF /* CZMSAXAdContentHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7263A134C38EE00BB22BF /* CZMSAXAdContentHandler.cpp */; };
+		07A72641134C393000BB22BF /* SDKFileHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7263F134C393000BB22BF /* SDKFileHelper.cpp */; };
+		07A72647134C398B00BB22BF /* ZMAdFileFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72645134C398B00BB22BF /* ZMAdFileFacade.cpp */; };
+		07A72648134C398B00BB22BF /* ZMFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72646134C398B00BB22BF /* ZMFileUtils.cpp */; };
+		07A7266C134C3C8D00BB22BF /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7266B134C3C8D00BB22BF /* MacFileSystemIterator.cpp */; };
+		07A726C6134C3FFC00BB22BF /* CZMAdFileData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72637134C38D700BB22BF /* CZMAdFileData.cpp */; };
+		07A726C7134C3FFD00BB22BF /* CZMAdFileList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72603134C362200BB22BF /* CZMAdFileList.cpp */; };
+		07A726C9134C3FFE00BB22BF /* CZMAdFileMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F3134C35A800BB22BF /* CZMAdFileMgr.cpp */; };
+		07A726CA134C3FFF00BB22BF /* CZMApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B2134C325200BB22BF /* CZMApp.cpp */; };
+		07A726CB134C400000BB22BF /* CZMCommandFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725C4134C331000BB22BF /* CZMCommandFacade.cpp */; };
+		07A726CC134C400100BB22BF /* CZMediaAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B8134C326D00BB22BF /* CZMediaAppActionComponent.cpp */; };
+		07A726CD134C400200BB22BF /* CZMediaStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B3134C325200BB22BF /* CZMediaStartupShutdown.cpp */; };
+		07A726CE134C400200BB22BF /* CZMEditionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72604134C362200BB22BF /* CZMEditionList.cpp */; };
+		07A726CF134C400300BB22BF /* CZMEditionMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F4134C35A800BB22BF /* CZMEditionMgr.cpp */; };
+		07A726D0134C400300BB22BF /* CZMModelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F5134C35A800BB22BF /* CZMModelController.cpp */; };
+		07A726D1134C400400BB22BF /* CZMPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72625134C37B100BB22BF /* CZMPrefs.cpp */; };
+		07A726D2134C400400BB22BF /* CZMSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725C6134C332400BB22BF /* CZMSavePrefsCmd.cpp */; };
+		07A726D3134C400500BB22BF /* CZMSAXAdContentHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7263A134C38EE00BB22BF /* CZMSAXAdContentHandler.cpp */; };
+		07A726D4134C400600BB22BF /* CZMTitleMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725F6134C35A800BB22BF /* CZMTitleMgr.cpp */; };
+		07A726D5134C400600BB22BF /* CZMUIPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7260F134C36A400BB22BF /* CZMUIPrefsDialogController.cpp */; };
+		07A726D6134C400700BB22BF /* CZMUIPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72610134C36A400BB22BF /* CZMUIPrefsDialogObserver.cpp */; };
+		07A726D7134C400700BB22BF /* CZMUIPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72611134C36A400BB22BF /* CZMUIPrefsPanelCreator.cpp */; };
+		07A726D8134C400800BB22BF /* iZMediaConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725B4134C325200BB22BF /* iZMediaConstants.cpp */; };
+		07A726D9134C400900BB22BF /* iZMediaID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72629134C37EA00BB22BF /* iZMediaID.cpp */; };
+		07A726DA134C400900BB22BF /* iZMediaNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7262A134C37EA00BB22BF /* iZMediaNoStrip.cpp */; };
+		07A726DB134C400A00BB22BF /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725E3134C348A00BB22BF /* iZPLog.cpp */; };
+		07A726DC134C400B00BB22BF /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7266B134C3C8D00BB22BF /* MacFileSystemIterator.cpp */; };
+		07A726DD134C400C00BB22BF /* MemoryXferBytes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7261A134C370800BB22BF /* MemoryXferBytes.cpp */; };
+		07A726DE134C400D00BB22BF /* SDKFileHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7263F134C393000BB22BF /* SDKFileHelper.cpp */; };
+		07A726E0134C400F00BB22BF /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72632134C387900BB22BF /* SDKPlugInEntrypoint.cpp */; };
+		07A726E1134C400F00BB22BF /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725D9134C345000BB22BF /* StInDesignUtils.cpp */; };
+		07A726E2134C401000BB22BF /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725DB134C345000BB22BF /* StInDnXmlUtils.cpp */; };
+		07A726E3134C401100BB22BF /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A725DD134C345000BB22BF /* StUtils.cpp */; };
+		07A726E4134C401100BB22BF /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A7262B134C37EA00BB22BF /* TriggerResourceDeps.cpp */; };
+		07A726E6134C401300BB22BF /* ZMAdFileFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72645134C398B00BB22BF /* ZMAdFileFacade.cpp */; };
+		07A726E7134C401400BB22BF /* ZMFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A72646134C398B00BB22BF /* ZMFileUtils.cpp */; };
+		07A726EA134C402300BB22BF /* iZMedia.fr in Sources */ = {isa = PBXBuildFile; fileRef = 07A7258F134C312D00BB22BF /* iZMedia.fr */; };
+		07A7270E134C410A00BB22BF /* iZMedia.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = 07A7270D134C410A00BB22BF /* iZMedia.fr.rsrc */; };
+		07A7270F134C410A00BB22BF /* iZMedia.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = 07A7270D134C410A00BB22BF /* iZMedia.fr.rsrc */; };
+		07C28219134D9D0300F78F61 /* CZMEditionPopupController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07C28217134D9D0300F78F61 /* CZMEditionPopupController.cpp */; };
+		07C2821A134D9D0300F78F61 /* CZMEditionPopupObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07C28218134D9D0300F78F61 /* CZMEditionPopupObserver.cpp */; };
+		07C2821B134D9D0300F78F61 /* CZMEditionPopupController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07C28217134D9D0300F78F61 /* CZMEditionPopupController.cpp */; };
+		07C2821C134D9D0300F78F61 /* CZMEditionPopupObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07C28218134D9D0300F78F61 /* CZMEditionPopupObserver.cpp */; };
+		07D9F9A2134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F99F134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp */; };
+		07D9F9A3134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9A0134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp */; };
+		07D9F9A4134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9A1134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp */; };
+		07D9F9A5134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F99F134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp */; };
+		07D9F9A6134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9A0134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp */; };
+		07D9F9A7134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9A1134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp */; };
+		07D9F9B1134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AC134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp */; };
+		07D9F9B2134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AD134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp */; };
+		07D9F9B3134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AE134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp */; };
+		07D9F9B4134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AF134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp */; };
+		07D9F9B5134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9B0134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp */; };
+		07D9F9B6134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AC134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp */; };
+		07D9F9B7134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AD134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp */; };
+		07D9F9B8134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AE134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp */; };
+		07D9F9B9134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9AF134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp */; };
+		07D9F9BA134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9B0134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp */; };
+		4B05EF0008840EAB00D809E1 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05EEFF08840EAB00D809E1 /* Carbon.framework */; };
+		4B05EF0308840EAD00D809E1 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05EEFF08840EAB00D809E1 /* Carbon.framework */; };
+		E13B6996136AF25800A98D65 /* CZMAppObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E13B6995136AF25800A98D65 /* CZMAppObserver.cpp */; };
+		E13B6997136AF25800A98D65 /* CZMAppObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E13B6995136AF25800A98D65 /* CZMAppObserver.cpp */; };
+		E182A3CA11A1228600910465 /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182A3C911A1228600910465 /* InDesignModelAndUI.framework */; };
+		E182A3CB11A1228600910465 /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182A3C911A1228600910465 /* InDesignModelAndUI.framework */; };
+		E182A3CE11A122A700910465 /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182A3CD11A122A700910465 /* libPublicPlugIn.a */; };
+		E182A3CF11A122A700910465 /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182A3CD11A122A700910465 /* libPublicPlugIn.a */; };
+		E1B40B9C134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40B98134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp */; };
+		E1B40B9D134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40B99134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp */; };
+		E1B40B9E134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40B9A134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp */; };
+		E1B40B9F134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40B98134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp */; };
+		E1B40BA0134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40B99134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp */; };
+		E1B40BA1134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40B9A134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp */; };
+		E1B40BA5134C7A4A00C595D2 /* ZMDataHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40BA3134C7A4A00C595D2 /* ZMDataHelper.cpp */; };
+		E1B40BA6134C7A4A00C595D2 /* ZMDataHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B40BA3134C7A4A00C595D2 /* ZMDataHelper.cpp */; };
+		E1C7169B135344B700D4813E /* CZMAdMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C7169A135344B700D4813E /* CZMAdMgr.cpp */; };
+		E1C7169C135344B700D4813E /* CZMAdMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C7169A135344B700D4813E /* CZMAdMgr.cpp */; };
+		E1C7169E135344C600D4813E /* CZMAdList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C7169D135344C600D4813E /* CZMAdList.cpp */; };
+		E1C7169F135344C600D4813E /* CZMAdList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C7169D135344C600D4813E /* CZMAdList.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		0B44966A088C66F500230491 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		4B44966A088C66F500230491 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		6E3F07570E8F894000F92A3C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.4_0;
+			filePatterns = "*.nsmap";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		6EF267C90E930ECA0066BA45 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			filePatterns = "*.nsmap";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		071043F5134EEC56003C9F4E /* CZMUIDialogFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMUIDialogFacade.cpp; path = ../Source/Dialogs/CZMUIDialogFacade.cpp; sourceTree = SOURCE_ROOT; };
+		071043F6134EEC56003C9F4E /* IZMUIDialogFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMUIDialogFacade.h; path = ../Source/Dialogs/IZMUIDialogFacade.h; sourceTree = SOURCE_ROOT; };
+		072006B9134DA4B60042541B /* ZMAdsTVAdNodeID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZMAdsTVAdNodeID.cpp; path = ../Source/Controls/AdsTreeView/ZMAdsTVAdNodeID.cpp; sourceTree = SOURCE_ROOT; };
+		072006BA134DA4B60042541B /* ZMAdsTVAdNodeID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMAdsTVAdNodeID.h; path = ../Source/Controls/AdsTreeView/ZMAdsTVAdNodeID.h; sourceTree = SOURCE_ROOT; };
+		072006BD134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZMAdsTVAdFileNodeID.cpp; path = ../Source/Controls/AdsTreeView/ZMAdsTVAdFileNodeID.cpp; sourceTree = SOURCE_ROOT; };
+		072006BE134DA4D90042541B /* ZMAdsTVAdFileNodeID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMAdsTVAdFileNodeID.h; path = ../Source/Controls/AdsTreeView/ZMAdsTVAdFileNodeID.h; sourceTree = SOURCE_ROOT; };
+		072006C1134DA5050042541B /* CZMAdsTVWidgetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVWidgetManager.cpp; path = ../Source/Controls/AdsTreeView/CZMAdsTVWidgetManager.cpp; sourceTree = SOURCE_ROOT; };
+		072006C2134DA5050042541B /* ZMAdsTVNodeID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZMAdsTVNodeID.cpp; path = ../Source/Controls/AdsTreeView/ZMAdsTVNodeID.cpp; sourceTree = SOURCE_ROOT; };
+		072006C3134DA5050042541B /* ZMAdsTVNodeID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMAdsTVNodeID.h; path = ../Source/Controls/AdsTreeView/ZMAdsTVNodeID.h; sourceTree = SOURCE_ROOT; };
+		072006C8134DA55D0042541B /* CZMTreeViewMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTreeViewMgr.cpp; path = ../Source/Controls/CZMTreeViewMgr.cpp; sourceTree = SOURCE_ROOT; };
+		072006C9134DA55D0042541B /* IZMUITVNodeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMUITVNodeData.h; path = ../Source/Controls/IZMUITVNodeData.h; sourceTree = SOURCE_ROOT; };
+		072006CA134DA55D0042541B /* IZMUITVNodeWidgetMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMUITVNodeWidgetMgr.h; path = ../Source/Controls/IZMUITVNodeWidgetMgr.h; sourceTree = SOURCE_ROOT; };
+		072006CB134DA55D0042541B /* IZMUITVWithHdrNodeWidgetMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMUITVWithHdrNodeWidgetMgr.h; path = ../Source/Controls/IZMUITVWithHdrNodeWidgetMgr.h; sourceTree = SOURCE_ROOT; };
+		072006CC134DA55D0042541B /* ZMTreeNodePtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMTreeNodePtr.h; path = ../Source/Controls/ZMTreeNodePtr.h; sourceTree = SOURCE_ROOT; };
+		072006CF134DA58E0042541B /* CZMTVColumnsInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTVColumnsInfo.cpp; path = ../Source/Controls/TreeViewHeader/CZMTVColumnsInfo.cpp; sourceTree = SOURCE_ROOT; };
+		072006D0134DA58E0042541B /* CZMTVColumnsPref.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTVColumnsPref.cpp; path = ../Source/Controls/TreeViewHeader/CZMTVColumnsPref.cpp; sourceTree = SOURCE_ROOT; };
+		072006D1134DA58E0042541B /* CZMTVHeaderController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTVHeaderController.cpp; path = ../Source/Controls/TreeViewHeader/CZMTVHeaderController.cpp; sourceTree = SOURCE_ROOT; };
+		072006D2134DA58E0042541B /* CZMTVHeaderEH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTVHeaderEH.cpp; path = ../Source/Controls/TreeViewHeader/CZMTVHeaderEH.cpp; sourceTree = SOURCE_ROOT; };
+		072006D3134DA58E0042541B /* CZMTVHeaderObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTVHeaderObserver.cpp; path = ../Source/Controls/TreeViewHeader/CZMTVHeaderObserver.cpp; sourceTree = SOURCE_ROOT; };
+		072006D4134DA58E0042541B /* IZMTVColumnsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMTVColumnsInfo.h; path = ../Source/Controls/TreeViewHeader/IZMTVColumnsInfo.h; sourceTree = SOURCE_ROOT; };
+		072006D5134DA58E0042541B /* IZMTVColumnsPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMTVColumnsPref.h; path = ../Source/Controls/TreeViewHeader/IZMTVColumnsPref.h; sourceTree = SOURCE_ROOT; };
+		072006D6134DA58E0042541B /* IZMTVHeaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMTVHeaderController.h; path = ../Source/Controls/TreeViewHeader/IZMTVHeaderController.h; sourceTree = SOURCE_ROOT; };
+		072DF92E134C978F0026B5DC /* IZMFileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMFileInfo.h; path = ../SDK/Public/ZMData/IZMFileInfo.h; sourceTree = SOURCE_ROOT; };
+		072DF92F134C979F0026B5DC /* CZMFileInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMFileInfo.cpp; path = ../Source/Data/CZMFileInfo.cpp; sourceTree = SOURCE_ROOT; };
+		073B18A213530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMUITVWithHdrNodeWidgetMgr.cpp; path = ../Source/Controls/CZMUITVWithHdrNodeWidgetMgr.cpp; sourceTree = SOURCE_ROOT; };
+		073B18A313530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZMUITVWithHdrNodeWidgetMgr.h; path = ../Source/Controls/CZMUITVWithHdrNodeWidgetMgr.h; sourceTree = SOURCE_ROOT; };
+		073B18A613530A820051AC20 /* CZMAdsTVDataModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVDataModel.cpp; path = ../Source/Controls/AdsTreeView/CZMAdsTVDataModel.cpp; sourceTree = SOURCE_ROOT; };
+		0751A797134D754A00B17AFD /* AZMDataObjPopupController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AZMDataObjPopupController.cpp; path = ../Source/Controls/AZMDataObjPopupController.cpp; sourceTree = SOURCE_ROOT; };
+		0751A798134D754A00B17AFD /* AZMDataObjPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZMDataObjPopupController.h; path = ../Source/Controls/AZMDataObjPopupController.h; sourceTree = SOURCE_ROOT; };
+		0751A799134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AZMDataObjPopupWithFixedValController.cpp; path = ../Source/Controls/AZMDataObjPopupWithFixedValController.cpp; sourceTree = SOURCE_ROOT; };
+		0751A79A134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZMDataObjPopupWithFixedValController.h; path = ../Source/Controls/AZMDataObjPopupWithFixedValController.h; sourceTree = SOURCE_ROOT; };
+		0751A79B134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AZMUIDataObjDropDownObserver.cpp; path = ../Source/Controls/AZMUIDataObjDropDownObserver.cpp; sourceTree = SOURCE_ROOT; };
+		0751A79C134D754A00B17AFD /* AZMUIDataObjDropDownObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZMUIDataObjDropDownObserver.h; path = ../Source/Controls/AZMUIDataObjDropDownObserver.h; sourceTree = SOURCE_ROOT; };
+		0751A79D134D754A00B17AFD /* IZMDataObjPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMDataObjPopupController.h; path = ../Source/Controls/IZMDataObjPopupController.h; sourceTree = SOURCE_ROOT; };
+		0751A7A4134D755D00B17AFD /* CZMTitlePopupController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTitlePopupController.cpp; path = ../Source/Controls/TitlesPopup/CZMTitlePopupController.cpp; sourceTree = SOURCE_ROOT; };
+		0751A7A5134D755D00B17AFD /* CZMTitlePopupObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTitlePopupObserver.cpp; path = ../Source/Controls/TitlesPopup/CZMTitlePopupObserver.cpp; sourceTree = SOURCE_ROOT; };
+		075ED968134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVHierarchyAdapter.cpp; path = ../Source/Controls/AdsTreeView/CZMAdsTVHierarchyAdapter.cpp; sourceTree = SOURCE_ROOT; };
+		075ED969134DC11E00923D66 /* CZMAdsTVObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVObserver.cpp; path = ../Source/Controls/AdsTreeView/CZMAdsTVObserver.cpp; sourceTree = SOURCE_ROOT; };
+		075ED96A134DC11E00923D66 /* IZMAdsTVDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdsTVDataModel.h; path = ../Source/Controls/AdsTreeView/IZMAdsTVDataModel.h; sourceTree = SOURCE_ROOT; };
+		07A01975136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTVHeaderActionComponent.cpp; path = ../Source/Controls/TreeViewHeader/TVHeaderDynamicMenu/CZMTVHeaderActionComponent.cpp; sourceTree = SOURCE_ROOT; };
+		07A01976136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTVHeaderDynamicMenu.cpp; path = ../Source/Controls/TreeViewHeader/TVHeaderDynamicMenu/CZMTVHeaderDynamicMenu.cpp; sourceTree = SOURCE_ROOT; };
+		07A0197D136AA6E30073BDD4 /* CZMErrorStringService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMErrorStringService.cpp; path = ../Source/Service/CZMErrorStringService.cpp; sourceTree = SOURCE_ROOT; };
+		07A6B650134F113E00053468 /* CZMAdFileObjController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdFileObjController.cpp; path = ../Source/Data/CZMAdFileObjController.cpp; sourceTree = SOURCE_ROOT; };
+		07A6B651134F113E00053468 /* CZMAdInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdInfo.cpp; path = ../Source/Data/CZMAdInfo.cpp; sourceTree = SOURCE_ROOT; };
+		07A6B652134F113E00053468 /* CZMDataObjController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMDataObjController.cpp; path = ../Source/Data/CZMDataObjController.cpp; sourceTree = SOURCE_ROOT; };
+		07A6B653134F113E00053468 /* CZMDataObjController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZMDataObjController.h; path = ../Source/Data/CZMDataObjController.h; sourceTree = SOURCE_ROOT; };
+		07A6B654134F113E00053468 /* CZMEditionObjController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMEditionObjController.cpp; path = ../Source/Data/CZMEditionObjController.cpp; sourceTree = SOURCE_ROOT; };
+		07A6B655134F113E00053468 /* CZMTitleObjController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTitleObjController.cpp; path = ../Source/Data/CZMTitleObjController.cpp; sourceTree = SOURCE_ROOT; };
+		07A6B664134F11CF00053468 /* IZMAdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdInfo.h; path = ../SDK/Public/ZMData/IZMAdInfo.h; sourceTree = SOURCE_ROOT; };
+		07A6B665134F11CF00053468 /* IZMDataObjController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMDataObjController.h; path = ../SDK/Public/ZMData/IZMDataObjController.h; sourceTree = SOURCE_ROOT; };
+		07A72567134C302E00BB22BF /* iZMedia_ActionID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMedia_ActionID.h; path = ../SDK/Public/iZMedia_ActionID.h; sourceTree = SOURCE_ROOT; };
+		07A72568134C302E00BB22BF /* iZMedia_ClassDefID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMedia_ClassDefID.h; path = ../SDK/Public/iZMedia_ClassDefID.h; sourceTree = SOURCE_ROOT; };
+		07A72569134C302E00BB22BF /* iZMedia_ErrorID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMedia_ErrorID.h; path = ../SDK/Public/iZMedia_ErrorID.h; sourceTree = SOURCE_ROOT; };
+		07A7256A134C302E00BB22BF /* iZMedia_MessageID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMedia_MessageID.h; path = ../SDK/Public/iZMedia_MessageID.h; sourceTree = SOURCE_ROOT; };
+		07A7256B134C302E00BB22BF /* iZMedia_StringKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMedia_StringKeys.h; path = ../SDK/Public/iZMedia_StringKeys.h; sourceTree = SOURCE_ROOT; };
+		07A7256C134C302E00BB22BF /* iZMediaID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaID.h; path = ../SDK/Public/iZMediaID.h; sourceTree = SOURCE_ROOT; };
+		07A7256D134C302E00BB22BF /* iZMediaScriptingDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaScriptingDefs.h; path = ../SDK/Public/iZMediaScriptingDefs.h; sourceTree = SOURCE_ROOT; };
+		07A7256E134C302E00BB22BF /* iZMediaUI_ClassDefID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaUI_ClassDefID.h; path = ../SDK/Public/iZMediaUI_ClassDefID.h; sourceTree = SOURCE_ROOT; };
+		07A7256F134C302E00BB22BF /* iZMediaUI_MessageID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaUI_MessageID.h; path = ../SDK/Public/iZMediaUI_MessageID.h; sourceTree = SOURCE_ROOT; };
+		07A72570134C302E00BB22BF /* iZMediaUI_ResourceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaUI_ResourceID.h; path = ../SDK/Public/iZMediaUI_ResourceID.h; sourceTree = SOURCE_ROOT; };
+		07A72571134C302E00BB22BF /* iZMediaUI_StringKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaUI_StringKeys.h; path = ../SDK/Public/iZMediaUI_StringKeys.h; sourceTree = SOURCE_ROOT; };
+		07A72572134C302E00BB22BF /* iZMediaUI_WidgetID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaUI_WidgetID.h; path = ../SDK/Public/iZMediaUI_WidgetID.h; sourceTree = SOURCE_ROOT; };
+		07A72573134C304700BB22BF /* iZMediaFactoryList_Auto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaFactoryList_Auto.h; path = ../Source/Plugin/iZMediaFactoryList_Auto.h; sourceTree = SOURCE_ROOT; };
+		07A72574134C304700BB22BF /* iZMediaFactoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaFactoryList.h; path = ../Source/Plugin/iZMediaFactoryList.h; sourceTree = SOURCE_ROOT; };
+		07A72579134C307A00BB22BF /* iZMediaVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaVersion.h; path = ../Source/iZMediaVersion.h; sourceTree = SOURCE_ROOT; };
+		07A7257D134C30D000BB22BF /* iZMediaUI_PrefsDialog.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iZMediaUI_PrefsDialog.fri; path = ../Resource/iZMediaUI_PrefsDialog.fri; sourceTree = SOURCE_ROOT; };
+		07A7257F134C30F800BB22BF /* iZMedia_enUS.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iZMedia_enUS.fri; path = ../Resource/iZMedia_enUS.fri; sourceTree = SOURCE_ROOT; };
+		07A72580134C30F800BB22BF /* iZMedia_jaJP.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iZMedia_jaJP.fri; path = ../Resource/iZMedia_jaJP.fri; sourceTree = SOURCE_ROOT; };
+		07A72581134C30F800BB22BF /* iZMedia_nlNL.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iZMedia_nlNL.fri; path = ../Resource/iZMedia_nlNL.fri; sourceTree = SOURCE_ROOT; };
+		07A72585134C312D00BB22BF /* iZMedia Addins.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Addins.fri"; path = "../Resource/iZMedia Addins.fri"; sourceTree = SOURCE_ROOT; };
+		07A72586134C312D00BB22BF /* iZMedia Aliases.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Aliases.fri"; path = "../Resource/iZMedia Aliases.fri"; sourceTree = SOURCE_ROOT; };
+		07A72587134C312D00BB22BF /* iZMedia ClassDefinitions_Auto.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia ClassDefinitions_Auto.fri"; path = "../Resource/iZMedia ClassDefinitions_Auto.fri"; sourceTree = SOURCE_ROOT; };
+		07A72588134C312D00BB22BF /* iZMedia ClassDefinitions.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia ClassDefinitions.fri"; path = "../Resource/iZMedia ClassDefinitions.fri"; sourceTree = SOURCE_ROOT; };
+		07A72589134C312D00BB22BF /* iZMedia Images.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Images.fri"; path = "../Resource/iZMedia Images.fri"; sourceTree = SOURCE_ROOT; };
+		07A7258A134C312D00BB22BF /* iZMedia Menu.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Menu.fri"; path = "../Resource/iZMedia Menu.fri"; sourceTree = SOURCE_ROOT; };
+		07A7258B134C312D00BB22BF /* iZMedia Schema.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Schema.fri"; path = "../Resource/iZMedia Schema.fri"; sourceTree = SOURCE_ROOT; };
+		07A7258C134C312D00BB22BF /* iZMedia Scripting.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Scripting.fri"; path = "../Resource/iZMedia Scripting.fri"; sourceTree = SOURCE_ROOT; };
+		07A7258D134C312D00BB22BF /* iZMedia Strings.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Strings.fri"; path = "../Resource/iZMedia Strings.fri"; sourceTree = SOURCE_ROOT; };
+		07A7258E134C312D00BB22BF /* iZMedia Version.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMedia Version.fri"; path = "../Resource/iZMedia Version.fri"; sourceTree = SOURCE_ROOT; };
+		07A7258F134C312D00BB22BF /* iZMedia.fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iZMedia.fr; path = ../Resource/iZMedia.fr; sourceTree = SOURCE_ROOT; };
+		07A72590134C312D00BB22BF /* iZMedia.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iZMedia.rc; path = ../Resource/iZMedia.rc; sourceTree = SOURCE_ROOT; };
+		07A72591134C312D00BB22BF /* iZMediaUI ClassDefinitions_Auto.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "iZMediaUI ClassDefinitions_Auto.fri"; path = "../Resource/iZMediaUI ClassDefinitions_Auto.fri"; sourceTree = SOURCE_ROOT; };
+		07A725B2134C325200BB22BF /* CZMApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMApp.cpp; path = ../Source/App/CZMApp.cpp; sourceTree = SOURCE_ROOT; };
+		07A725B3134C325200BB22BF /* CZMediaStartupShutdown.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMediaStartupShutdown.cpp; path = ../Source/App/CZMediaStartupShutdown.cpp; sourceTree = SOURCE_ROOT; };
+		07A725B4134C325200BB22BF /* iZMediaConstants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iZMediaConstants.cpp; path = ../Source/App/iZMediaConstants.cpp; sourceTree = SOURCE_ROOT; };
+		07A725B8134C326D00BB22BF /* CZMediaAppActionComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMediaAppActionComponent.cpp; path = ../Source/ActionComponent/CZMediaAppActionComponent.cpp; sourceTree = SOURCE_ROOT; };
+		07A725BB134C329C00BB22BF /* IZMApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMApp.h; path = ../SDK/Public/App/IZMApp.h; sourceTree = SOURCE_ROOT; };
+		07A725BC134C329C00BB22BF /* iZMediaConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMediaConstants.h; path = ../SDK/Public/App/iZMediaConstants.h; sourceTree = SOURCE_ROOT; };
+		07A725BD134C329C00BB22BF /* ZMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMConstants.h; path = ../SDK/Public/App/ZMConstants.h; sourceTree = SOURCE_ROOT; };
+		07A725C2134C32E400BB22BF /* ZMTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMTypes.h; path = ../SDK/Public/ZMTypes.h; sourceTree = SOURCE_ROOT; };
+		07A725C4134C331000BB22BF /* CZMCommandFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMCommandFacade.cpp; path = ../Source/Utils/CZMCommandFacade.cpp; sourceTree = SOURCE_ROOT; };
+		07A725C6134C332400BB22BF /* CZMSavePrefsCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMSavePrefsCmd.cpp; path = ../Source/Commands/CZMSavePrefsCmd.cpp; sourceTree = SOURCE_ROOT; };
+		07A725C9134C334700BB22BF /* IZMCommandFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMCommandFacade.h; path = ../SDK/Public/Utils/IZMCommandFacade.h; sourceTree = SOURCE_ROOT; };
+		07A725CB134C337600BB22BF /* ZPSmartPtrVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPSmartPtrVector.h; path = ../../Common/ZPSmartPtrVector.h; sourceTree = SOURCE_ROOT; };
+		07A725D0134C33B100BB22BF /* ZPString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZPString.cpp; path = ../../Common/String/ZPString.cpp; sourceTree = SOURCE_ROOT; };
+		07A725D1134C33B100BB22BF /* ZPString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPString.h; path = ../../Common/String/ZPString.h; sourceTree = SOURCE_ROOT; };
+		07A725D3134C33C900BB22BF /* ZPStringUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZPStringUtils.cpp; path = ../../Common/Utils/ZPStringUtils.cpp; sourceTree = SOURCE_ROOT; };
+		07A725D4134C33C900BB22BF /* ZPStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPStringUtils.h; path = ../../Common/Utils/ZPStringUtils.h; sourceTree = SOURCE_ROOT; };
+		07A725D9134C345000BB22BF /* StInDesignUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StInDesignUtils.cpp; path = ../../Common/Utils/StInDesignUtils.cpp; sourceTree = SOURCE_ROOT; };
+		07A725DA134C345000BB22BF /* StInDesignUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StInDesignUtils.h; path = ../../Common/Utils/StInDesignUtils.h; sourceTree = SOURCE_ROOT; };
+		07A725DB134C345000BB22BF /* StInDnXmlUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StInDnXmlUtils.cpp; path = ../../Common/Utils/StInDnXmlUtils.cpp; sourceTree = SOURCE_ROOT; };
+		07A725DC134C345000BB22BF /* StInDnXmlUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StInDnXmlUtils.h; path = ../../Common/Utils/StInDnXmlUtils.h; sourceTree = SOURCE_ROOT; };
+		07A725DD134C345000BB22BF /* StUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StUtils.cpp; path = ../../Common/Utils/StUtils.cpp; sourceTree = SOURCE_ROOT; };
+		07A725DE134C345000BB22BF /* StUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StUtils.h; path = ../../Common/Utils/StUtils.h; sourceTree = SOURCE_ROOT; };
+		07A725E3134C348A00BB22BF /* iZPLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iZPLog.cpp; path = ../../Common/Utils/Logs/iZPLog.cpp; sourceTree = SOURCE_ROOT; };
+		07A725E4134C348A00BB22BF /* iZPLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZPLog.h; path = ../../Common/Utils/Logs/iZPLog.h; sourceTree = SOURCE_ROOT; };
+		07A725F3134C35A800BB22BF /* CZMAdFileMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdFileMgr.cpp; path = ../Source/DataMgr/CZMAdFileMgr.cpp; sourceTree = SOURCE_ROOT; };
+		07A725F4134C35A800BB22BF /* CZMEditionMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMEditionMgr.cpp; path = ../Source/DataMgr/CZMEditionMgr.cpp; sourceTree = SOURCE_ROOT; };
+		07A725F5134C35A800BB22BF /* CZMModelController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMModelController.cpp; path = ../Source/DataMgr/CZMModelController.cpp; sourceTree = SOURCE_ROOT; };
+		07A725F6134C35A800BB22BF /* CZMTitleMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMTitleMgr.cpp; path = ../Source/DataMgr/CZMTitleMgr.cpp; sourceTree = SOURCE_ROOT; };
+		07A725FB134C35C600BB22BF /* IZMAdFileMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdFileMgr.h; path = ../SDK/Public/ZMDataMgr/IZMAdFileMgr.h; sourceTree = SOURCE_ROOT; };
+		07A725FC134C35C600BB22BF /* IZMEditionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMEditionMgr.h; path = ../SDK/Public/ZMDataMgr/IZMEditionMgr.h; sourceTree = SOURCE_ROOT; };
+		07A725FD134C35C600BB22BF /* IZMTitleMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMTitleMgr.h; path = ../SDK/Public/ZMDataMgr/IZMTitleMgr.h; sourceTree = SOURCE_ROOT; };
+		07A72601134C35EC00BB22BF /* IZMModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMModelController.h; path = ../SDK/Public/App/IZMModelController.h; sourceTree = SOURCE_ROOT; };
+		07A72603134C362200BB22BF /* CZMAdFileList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdFileList.cpp; path = ../Source/Data/CZMAdFileList.cpp; sourceTree = SOURCE_ROOT; };
+		07A72604134C362200BB22BF /* CZMEditionList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMEditionList.cpp; path = ../Source/Data/CZMEditionList.cpp; sourceTree = SOURCE_ROOT; };
+		07A72609134C365B00BB22BF /* IZMAdFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdFileList.h; path = ../SDK/Public/ZMData/IZMAdFileList.h; sourceTree = SOURCE_ROOT; };
+		07A7260A134C365B00BB22BF /* IZMEditionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMEditionList.h; path = ../SDK/Public/ZMData/IZMEditionList.h; sourceTree = SOURCE_ROOT; };
+		07A7260F134C36A400BB22BF /* CZMUIPrefsDialogController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMUIPrefsDialogController.cpp; path = ../Source/Dialogs/Preferences/CZMUIPrefsDialogController.cpp; sourceTree = SOURCE_ROOT; };
+		07A72610134C36A400BB22BF /* CZMUIPrefsDialogObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMUIPrefsDialogObserver.cpp; path = ../Source/Dialogs/Preferences/CZMUIPrefsDialogObserver.cpp; sourceTree = SOURCE_ROOT; };
+		07A72611134C36A400BB22BF /* CZMUIPrefsPanelCreator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMUIPrefsPanelCreator.cpp; path = ../Source/Dialogs/Preferences/CZMUIPrefsPanelCreator.cpp; sourceTree = SOURCE_ROOT; };
+		07A72615134C36D500BB22BF /* FileSystemIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSystemIterator.h; path = ../Source/FromIDSdk/FileSystemIterator.h; sourceTree = SOURCE_ROOT; };
+		07A72616134C36D500BB22BF /* PlatformFileSystemIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatformFileSystemIterator.h; path = ../Source/FromIDSdk/PlatformFileSystemIterator.h; sourceTree = SOURCE_ROOT; };
+		07A7261A134C370800BB22BF /* MemoryXferBytes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryXferBytes.cpp; path = ../../Common/Utils/MemoryXferBytes.cpp; sourceTree = SOURCE_ROOT; };
+		07A7261B134C370800BB22BF /* MemoryXferBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryXferBytes.h; path = ../../Common/Utils/MemoryXferBytes.h; sourceTree = SOURCE_ROOT; };
+		07A72625134C37B100BB22BF /* CZMPrefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMPrefs.cpp; path = ../Source/Data/CZMPrefs.cpp; sourceTree = SOURCE_ROOT; };
+		07A72627134C37C500BB22BF /* iZMPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZMPrefs.h; path = ../SDK/Public/ZMData/iZMPrefs.h; sourceTree = SOURCE_ROOT; };
+		07A72629134C37EA00BB22BF /* iZMediaID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iZMediaID.cpp; path = ../Source/Plugin/iZMediaID.cpp; sourceTree = SOURCE_ROOT; };
+		07A7262A134C37EA00BB22BF /* iZMediaNoStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iZMediaNoStrip.cpp; path = ../Source/Plugin/iZMediaNoStrip.cpp; sourceTree = SOURCE_ROOT; };
+		07A7262B134C37EA00BB22BF /* TriggerResourceDeps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TriggerResourceDeps.cpp; path = ../Source/Plugin/TriggerResourceDeps.cpp; sourceTree = SOURCE_ROOT; };
+		07A72632134C387900BB22BF /* SDKPlugInEntrypoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDKPlugInEntrypoint.cpp; path = ./sdksamples/common/SDKPlugInEntrypoint.cpp; sourceTree = InDesignSDK_Source; };
+		07A72637134C38D700BB22BF /* CZMAdFileData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdFileData.cpp; path = ../Source/Service/CZMAdFileData.cpp; sourceTree = SOURCE_ROOT; };
+		07A72638134C38D700BB22BF /* IZMAdFileData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdFileData.h; path = ../Source/Service/IZMAdFileData.h; sourceTree = SOURCE_ROOT; };
+		07A7263A134C38EE00BB22BF /* CZMSAXAdContentHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMSAXAdContentHandler.cpp; path = ../Source/Utils/CZMSAXAdContentHandler.cpp; sourceTree = SOURCE_ROOT; };
+		07A7263D134C391200BB22BF /* IZMAdFileFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdFileFacade.h; path = ../SDK/Public/Utils/IZMAdFileFacade.h; sourceTree = SOURCE_ROOT; };
+		07A7263E134C391200BB22BF /* IZMFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMFileUtils.h; path = ../SDK/Public/Utils/IZMFileUtils.h; sourceTree = SOURCE_ROOT; };
+		07A7263F134C393000BB22BF /* SDKFileHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDKFileHelper.cpp; path = ./sdksamples/common/SDKFileHelper.cpp; sourceTree = InDesignSDK_Source; };
+		07A72640134C393000BB22BF /* SDKFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDKFileHelper.h; path = ./sdksamples/common/SDKFileHelper.h; sourceTree = InDesignSDK_Source; };
+		07A72645134C398B00BB22BF /* ZMAdFileFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZMAdFileFacade.cpp; path = ../Source/Utils/ZMAdFileFacade.cpp; sourceTree = SOURCE_ROOT; };
+		07A72646134C398B00BB22BF /* ZMFileUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZMFileUtils.cpp; path = ../Source/Utils/ZMFileUtils.cpp; sourceTree = SOURCE_ROOT; };
+		07A7264D134C3ACC00BB22BF /* CZMStringListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZMStringListData.h; path = ../SDK/Public/ZMData/CZMStringListData.h; sourceTree = SOURCE_ROOT; };
+		07A7266B134C3C8D00BB22BF /* MacFileSystemIterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MacFileSystemIterator.cpp; path = ../Source/FromIDSdk/MacFileSystemIterator.cpp; sourceTree = SOURCE_ROOT; };
+		07A7266D134C3CA300BB22BF /* MacFileSystemIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacFileSystemIterator.h; path = ../Source/FromIDSdk/MacFileSystemIterator.h; sourceTree = SOURCE_ROOT; };
+		07A7270D134C410A00BB22BF /* iZMedia.fr.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; name = iZMedia.fr.rsrc; path = ./iZMedia.fr.rsrc; sourceTree = REZ_COLLECTOR_DIR; };
+		07C28217134D9D0300F78F61 /* CZMEditionPopupController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMEditionPopupController.cpp; path = ../Source/Controls/EditionsPopup/CZMEditionPopupController.cpp; sourceTree = SOURCE_ROOT; };
+		07C28218134D9D0300F78F61 /* CZMEditionPopupObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMEditionPopupObserver.cpp; path = ../Source/Controls/EditionsPopup/CZMEditionPopupObserver.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F99F134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdFileNodeData.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAdFile/CZMAdsTVAdFileNodeData.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F9A0134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdFileNodeEH.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAdFile/CZMAdsTVAdFileNodeEH.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F9A1134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdFileNodeWidgetMgr.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAdFile/CZMAdsTVAdFileNodeWidgetMgr.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F9AC134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdNodeData.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAd/CZMAdsTVAdNodeData.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F9AD134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdNodeDragDropSource.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAd/CZMAdsTVAdNodeDragDropSource.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F9AE134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdNodeEH.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAd/CZMAdsTVAdNodeEH.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F9AF134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdNodeObserver.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAd/CZMAdsTVAdNodeObserver.cpp; sourceTree = SOURCE_ROOT; };
+		07D9F9B0134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsTVAdNodeWidgetMgr.cpp; path = ../Source/Controls/AdsTreeView/TVNodeAd/CZMAdsTVAdNodeWidgetMgr.cpp; sourceTree = SOURCE_ROOT; };
+		4B05EEBA08840E8D00D809E1 /* iZineMedia.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iZineMedia.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B05EEC208840E8D00D809E1 /* iZineMedia.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iZineMedia.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B05EEFF08840EAB00D809E1 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		E13B6995136AF25800A98D65 /* CZMAppObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAppObserver.cpp; path = ../Source/App/CZMAppObserver.cpp; sourceTree = SOURCE_ROOT; };
+		E148AEA4119C08D900370A3A /* InDnLocalPaths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = InDnLocalPaths.xcconfig; path = ../../InDnLocalPaths.xcconfig; sourceTree = SOURCE_ROOT; };
+		E148AEA5119C08E700370A3A /* InDesignCommonCS3.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = InDesignCommonCS3.xcconfig; path = ../../InDesignCommonCS3.xcconfig; sourceTree = SOURCE_ROOT; };
+		E148AEA6119C0C3100370A3A /* iZineMedia.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineMedia.xcconfig; sourceTree = "<group>"; };
+		E148AEA7119C0C3100370A3A /* iZineMediaCS3Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineMediaCS3Debug.xcconfig; sourceTree = "<group>"; };
+		E148AEA8119C0C3100370A3A /* iZineMediaCS3Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineMediaCS3Release.xcconfig; sourceTree = "<group>"; };
+		E182A3C911A1228600910465 /* InDesignModelAndUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InDesignModelAndUI.framework; path = ./InDesignModelAndUI.framework; sourceTree = InDesignSDK_AppDir; };
+		E182A3CD11A122A700910465 /* libPublicPlugIn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPublicPlugIn.a; path = ./Libs/libPublicPlugIn.a; sourceTree = InDesignSDK_AppDir; };
+		E19D6CB7119CE2E00070A3EB /* InDesignCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = InDesignCommon.xcconfig; path = ../../InDesignCommon.xcconfig; sourceTree = SOURCE_ROOT; };
+		E1B40B98134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsPanelControlView.cpp; path = ../Source/Panels/Ads/CZMAdsPanelControlView.cpp; sourceTree = SOURCE_ROOT; };
+		E1B40B99134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsPanelHelper.cpp; path = ../Source/Panels/Ads/CZMAdsPanelHelper.cpp; sourceTree = SOURCE_ROOT; };
+		E1B40B9A134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdsPanelObserver.cpp; path = ../Source/Panels/Ads/CZMAdsPanelObserver.cpp; sourceTree = SOURCE_ROOT; };
+		E1B40B9B134C7A2F00C595D2 /* IZMAdsPanelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdsPanelHelper.h; path = ../Source/Panels/Ads/IZMAdsPanelHelper.h; sourceTree = SOURCE_ROOT; };
+		E1B40BA3134C7A4A00C595D2 /* ZMDataHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZMDataHelper.cpp; path = ../Source/Utils/ZMDataHelper.cpp; sourceTree = SOURCE_ROOT; };
+		E1B40BA4134C7A4A00C595D2 /* ZMDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMDataHelper.h; path = ../Source/Utils/ZMDataHelper.h; sourceTree = SOURCE_ROOT; };
+		E1C716981353448800D4813E /* IZMAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdList.h; path = ../SDK/Public/ZMData/IZMAdList.h; sourceTree = SOURCE_ROOT; };
+		E1C716991353449D00D4813E /* IZMAdMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZMAdMgr.h; path = ../SDK/Public/ZMDataMgr/IZMAdMgr.h; sourceTree = SOURCE_ROOT; };
+		E1C7169A135344B700D4813E /* CZMAdMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdMgr.cpp; path = ../Source/DataMgr/CZMAdMgr.cpp; sourceTree = SOURCE_ROOT; };
+		E1C7169D135344C600D4813E /* CZMAdList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZMAdList.cpp; path = ../Source/Data/CZMAdList.cpp; sourceTree = SOURCE_ROOT; };
+		E1D7607811A23D5700ADAE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B05EEB708840E8D00D809E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B05EF0008840EAB00D809E1 /* Carbon.framework in Frameworks */,
+				E182A3CA11A1228600910465 /* InDesignModelAndUI.framework in Frameworks */,
+				E182A3CE11A122A700910465 /* libPublicPlugIn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B05EEBF08840E8D00D809E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B05EF0308840EAD00D809E1 /* Carbon.framework in Frameworks */,
+				E182A3CB11A1228600910465 /* InDesignModelAndUI.framework in Frameworks */,
+				E182A3CF11A122A700910465 /* libPublicPlugIn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A7257A134C309B00BB22BF /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
+		07A7257B134C30A800BB22BF /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				07A7257D134C30D000BB22BF /* iZMediaUI_PrefsDialog.fri */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		07A725A3134C318B00BB22BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E1B40BA3134C7A4A00C595D2 /* ZMDataHelper.cpp */,
+				E1B40BA4134C7A4A00C595D2 /* ZMDataHelper.h */,
+				07A7263D134C391200BB22BF /* IZMAdFileFacade.h */,
+				07A7263E134C391200BB22BF /* IZMFileUtils.h */,
+				07A7263F134C393000BB22BF /* SDKFileHelper.cpp */,
+				07A72640134C393000BB22BF /* SDKFileHelper.h */,
+				07A72645134C398B00BB22BF /* ZMAdFileFacade.cpp */,
+				07A72646134C398B00BB22BF /* ZMFileUtils.cpp */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		07A725A4134C319400BB22BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				07A0197D136AA6E30073BDD4 /* CZMErrorStringService.cpp */,
+				07A72637134C38D700BB22BF /* CZMAdFileData.cpp */,
+				07A7263A134C38EE00BB22BF /* CZMSAXAdContentHandler.cpp */,
+				07A72638134C38D700BB22BF /* IZMAdFileData.h */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		07A725A5134C319D00BB22BF /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				07A72629134C37EA00BB22BF /* iZMediaID.cpp */,
+				07A7262A134C37EA00BB22BF /* iZMediaNoStrip.cpp */,
+				07A72632134C387900BB22BF /* SDKPlugInEntrypoint.cpp */,
+				07A7262B134C37EA00BB22BF /* TriggerResourceDeps.cpp */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		07A725A6134C31A500BB22BF /* PersistData */ = {
+			isa = PBXGroup;
+			children = (
+				07A72625134C37B100BB22BF /* CZMPrefs.cpp */,
+				07A72627134C37C500BB22BF /* iZMPrefs.h */,
+			);
+			name = PersistData;
+			sourceTree = "<group>";
+		};
+		07A725A7134C31B300BB22BF /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				07A72623134C378C00BB22BF /* Ads */,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
+		07A725A8134C31BB00BB22BF /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				07A72615134C36D500BB22BF /* FileSystemIterator.h */,
+				07A7261A134C370800BB22BF /* MemoryXferBytes.cpp */,
+				07A7261B134C370800BB22BF /* MemoryXferBytes.h */,
+				07A72616134C36D500BB22BF /* PlatformFileSystemIterator.h */,
+				07A7266D134C3CA300BB22BF /* MacFileSystemIterator.h */,
+				07A7266B134C3C8D00BB22BF /* MacFileSystemIterator.cpp */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		07A725A9134C31C500BB22BF /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				07A7260E134C368F00BB22BF /* Preferences */,
+				071043F5134EEC56003C9F4E /* CZMUIDialogFacade.cpp */,
+				071043F6134EEC56003C9F4E /* IZMUIDialogFacade.h */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		07A725AA134C31CD00BB22BF /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				07A72603134C362200BB22BF /* CZMAdFileList.cpp */,
+				E1C7169D135344C600D4813E /* CZMAdList.cpp */,
+				07A6B650134F113E00053468 /* CZMAdFileObjController.cpp */,
+				07A6B651134F113E00053468 /* CZMAdInfo.cpp */,
+				07A6B652134F113E00053468 /* CZMDataObjController.cpp */,
+				07A6B653134F113E00053468 /* CZMDataObjController.h */,
+				07A72604134C362200BB22BF /* CZMEditionList.cpp */,
+				07A6B654134F113E00053468 /* CZMEditionObjController.cpp */,
+				072DF92F134C979F0026B5DC /* CZMFileInfo.cpp */,
+				07A6B655134F113E00053468 /* CZMTitleObjController.cpp */,
+				072DF92E134C978F0026B5DC /* IZMFileInfo.h */,
+				07A7264D134C3ACC00BB22BF /* CZMStringListData.h */,
+				07A72609134C365B00BB22BF /* IZMAdFileList.h */,
+				E1C716981353448800D4813E /* IZMAdList.h */,
+				07A6B665134F11CF00053468 /* IZMDataObjController.h */,
+				07A7260A134C365B00BB22BF /* IZMEditionList.h */,
+				07A6B664134F11CF00053468 /* IZMAdInfo.h */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		07A725AB134C31D500BB22BF /* DataMgr */ = {
+			isa = PBXGroup;
+			children = (
+				07A725F3134C35A800BB22BF /* CZMAdFileMgr.cpp */,
+				E1C7169A135344B700D4813E /* CZMAdMgr.cpp */,
+				07A725F4134C35A800BB22BF /* CZMEditionMgr.cpp */,
+				07A725F5134C35A800BB22BF /* CZMModelController.cpp */,
+				07A725F6134C35A800BB22BF /* CZMTitleMgr.cpp */,
+				07A725FB134C35C600BB22BF /* IZMAdFileMgr.h */,
+				E1C716991353449D00D4813E /* IZMAdMgr.h */,
+				07A725FC134C35C600BB22BF /* IZMEditionMgr.h */,
+				07A72601134C35EC00BB22BF /* IZMModelController.h */,
+				07A725FD134C35C600BB22BF /* IZMTitleMgr.h */,
+			);
+			name = DataMgr;
+			sourceTree = "<group>";
+		};
+		07A725AC134C31DD00BB22BF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				07A725ED134C34FB00BB22BF /* AdsTreeView */,
+				07A725EC134C34F000BB22BF /* EditionsPopup */,
+				07A725EB134C34E700BB22BF /* Popup */,
+				07A725EA134C34DE00BB22BF /* TitlePopup */,
+				07A725E9134C34D200BB22BF /* TreeView */,
+				07A725E8134C34BC00BB22BF /* TVColumnWidgets */,
+				07A725E6134C34A400BB22BF /* TVHeader */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		07A725AD134C31E600BB22BF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		07A725AE134C31EE00BB22BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				07A725CE134C338C00BB22BF /* IDUtils */,
+				07A725CD134C338500BB22BF /* String */,
+				07A725CC134C337C00BB22BF /* Utils */,
+				07A725CB134C337600BB22BF /* ZPSmartPtrVector.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		07A725AF134C31F500BB22BF /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				07A725C4134C331000BB22BF /* CZMCommandFacade.cpp */,
+				07A725C6134C332400BB22BF /* CZMSavePrefsCmd.cpp */,
+				07A725C9134C334700BB22BF /* IZMCommandFacade.h */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		07A725B0134C31FE00BB22BF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E13B6995136AF25800A98D65 /* CZMAppObserver.cpp */,
+				07A725B2134C325200BB22BF /* CZMApp.cpp */,
+				07A725B8134C326D00BB22BF /* CZMediaAppActionComponent.cpp */,
+				07A725B3134C325200BB22BF /* CZMediaStartupShutdown.cpp */,
+				07A725BB134C329C00BB22BF /* IZMApp.h */,
+				07A725B4134C325200BB22BF /* iZMediaConstants.cpp */,
+				07A725BC134C329C00BB22BF /* iZMediaConstants.h */,
+				07A725BD134C329C00BB22BF /* ZMConstants.h */,
+				07A725C2134C32E400BB22BF /* ZMTypes.h */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		07A725CC134C337C00BB22BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07A725E2134C346B00BB22BF /* Logs */,
+				07A725D9134C345000BB22BF /* StInDesignUtils.cpp */,
+				07A725DA134C345000BB22BF /* StInDesignUtils.h */,
+				07A725DB134C345000BB22BF /* StInDnXmlUtils.cpp */,
+				07A725DC134C345000BB22BF /* StInDnXmlUtils.h */,
+				07A725DD134C345000BB22BF /* StUtils.cpp */,
+				07A725DE134C345000BB22BF /* StUtils.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		07A725CD134C338500BB22BF /* String */ = {
+			isa = PBXGroup;
+			children = (
+				07A725D0134C33B100BB22BF /* ZPString.cpp */,
+				07A725D1134C33B100BB22BF /* ZPString.h */,
+				07A725D3134C33C900BB22BF /* ZPStringUtils.cpp */,
+				07A725D4134C33C900BB22BF /* ZPStringUtils.h */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		07A725CE134C338C00BB22BF /* IDUtils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = IDUtils;
+			sourceTree = "<group>";
+		};
+		07A725E2134C346B00BB22BF /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				07A725E3134C348A00BB22BF /* iZPLog.cpp */,
+				07A725E4134C348A00BB22BF /* iZPLog.h */,
+			);
+			name = Logs;
+			sourceTree = "<group>";
+		};
+		07A725E6134C34A400BB22BF /* TVHeader */ = {
+			isa = PBXGroup;
+			children = (
+				07A725EF134C355200BB22BF /* TVHeaderDynamicMenu */,
+				072006CF134DA58E0042541B /* CZMTVColumnsInfo.cpp */,
+				072006D0134DA58E0042541B /* CZMTVColumnsPref.cpp */,
+				072006D1134DA58E0042541B /* CZMTVHeaderController.cpp */,
+				072006D2134DA58E0042541B /* CZMTVHeaderEH.cpp */,
+				072006D3134DA58E0042541B /* CZMTVHeaderObserver.cpp */,
+				072006D4134DA58E0042541B /* IZMTVColumnsInfo.h */,
+				072006D5134DA58E0042541B /* IZMTVColumnsPref.h */,
+				072006D6134DA58E0042541B /* IZMTVHeaderController.h */,
+			);
+			name = TVHeader;
+			sourceTree = "<group>";
+		};
+		07A725E8134C34BC00BB22BF /* TVColumnWidgets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TVColumnWidgets;
+			sourceTree = "<group>";
+		};
+		07A725E9134C34D200BB22BF /* TreeView */ = {
+			isa = PBXGroup;
+			children = (
+				072006C8134DA55D0042541B /* CZMTreeViewMgr.cpp */,
+				072006C9134DA55D0042541B /* IZMUITVNodeData.h */,
+				072006CA134DA55D0042541B /* IZMUITVNodeWidgetMgr.h */,
+				072006CB134DA55D0042541B /* IZMUITVWithHdrNodeWidgetMgr.h */,
+				072006CC134DA55D0042541B /* ZMTreeNodePtr.h */,
+			);
+			name = TreeView;
+			sourceTree = "<group>";
+		};
+		07A725EA134C34DE00BB22BF /* TitlePopup */ = {
+			isa = PBXGroup;
+			children = (
+				0751A7A4134D755D00B17AFD /* CZMTitlePopupController.cpp */,
+				0751A7A5134D755D00B17AFD /* CZMTitlePopupObserver.cpp */,
+			);
+			name = TitlePopup;
+			sourceTree = "<group>";
+		};
+		07A725EB134C34E700BB22BF /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				0751A797134D754A00B17AFD /* AZMDataObjPopupController.cpp */,
+				0751A798134D754A00B17AFD /* AZMDataObjPopupController.h */,
+				0751A799134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp */,
+				0751A79A134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.h */,
+				0751A79B134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp */,
+				0751A79C134D754A00B17AFD /* AZMUIDataObjDropDownObserver.h */,
+				0751A79D134D754A00B17AFD /* IZMDataObjPopupController.h */,
+			);
+			name = Popup;
+			sourceTree = "<group>";
+		};
+		07A725EC134C34F000BB22BF /* EditionsPopup */ = {
+			isa = PBXGroup;
+			children = (
+				07C28217134D9D0300F78F61 /* CZMEditionPopupController.cpp */,
+				07C28218134D9D0300F78F61 /* CZMEditionPopupObserver.cpp */,
+			);
+			name = EditionsPopup;
+			sourceTree = "<group>";
+		};
+		07A725ED134C34FB00BB22BF /* AdsTreeView */ = {
+			isa = PBXGroup;
+			children = (
+				07A725F1134C357300BB22BF /* TVNodeAd */,
+				07A725F0134C356900BB22BF /* TVNodeAdFile */,
+				073B18A613530A820051AC20 /* CZMAdsTVDataModel.cpp */,
+				075ED968134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp */,
+				075ED969134DC11E00923D66 /* CZMAdsTVObserver.cpp */,
+				072006C1134DA5050042541B /* CZMAdsTVWidgetManager.cpp */,
+				073B18A213530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp */,
+				073B18A313530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.h */,
+				075ED96A134DC11E00923D66 /* IZMAdsTVDataModel.h */,
+				072006C2134DA5050042541B /* ZMAdsTVNodeID.cpp */,
+				072006C3134DA5050042541B /* ZMAdsTVNodeID.h */,
+			);
+			name = AdsTreeView;
+			sourceTree = "<group>";
+		};
+		07A725EF134C355200BB22BF /* TVHeaderDynamicMenu */ = {
+			isa = PBXGroup;
+			children = (
+				07A01975136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp */,
+				07A01976136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp */,
+			);
+			name = TVHeaderDynamicMenu;
+			sourceTree = "<group>";
+		};
+		07A725F0134C356900BB22BF /* TVNodeAdFile */ = {
+			isa = PBXGroup;
+			children = (
+				07D9F99F134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp */,
+				07D9F9A0134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp */,
+				07D9F9A1134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp */,
+				072006BD134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp */,
+				072006BE134DA4D90042541B /* ZMAdsTVAdFileNodeID.h */,
+			);
+			name = TVNodeAdFile;
+			sourceTree = "<group>";
+		};
+		07A725F1134C357300BB22BF /* TVNodeAd */ = {
+			isa = PBXGroup;
+			children = (
+				07D9F9AC134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp */,
+				07D9F9AD134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp */,
+				07D9F9AE134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp */,
+				07D9F9AF134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp */,
+				07D9F9B0134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp */,
+				072006B9134DA4B60042541B /* ZMAdsTVAdNodeID.cpp */,
+				072006BA134DA4B60042541B /* ZMAdsTVAdNodeID.h */,
+			);
+			name = TVNodeAd;
+			sourceTree = "<group>";
+		};
+		07A7260E134C368F00BB22BF /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				07A7260F134C36A400BB22BF /* CZMUIPrefsDialogController.cpp */,
+				07A72610134C36A400BB22BF /* CZMUIPrefsDialogObserver.cpp */,
+				07A72611134C36A400BB22BF /* CZMUIPrefsPanelCreator.cpp */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		07A72623134C378C00BB22BF /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				E1B40B98134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp */,
+				E1B40B99134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp */,
+				E1B40B9A134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp */,
+				E1B40B9B134C7A2F00C595D2 /* IZMAdsPanelHelper.h */,
+			);
+			name = Ads;
+			sourceTree = "<group>";
+		};
+		0B050A610883839D00D809E1 /* InDesign Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E182A3CD11A122A700910465 /* libPublicPlugIn.a */,
+			);
+			name = "InDesign Libraries";
+			sourceTree = "<group>";
+		};
+		4B05EEAD08840E8D00D809E1 = {
+			isa = PBXGroup;
+			children = (
+				E19D6D79119CFEDE0070A3EB /* Header Files */,
+				4B05EED008840E9400D809E1 /* Resource Files */,
+				4B05EEC708840E8D00D809E1 /* Source Files */,
+				4B05EED308840E9600D809E1 /* Libraries */,
+				4B05EEFC08840EAB00D809E1 /* Frameworks */,
+				7F52248408AFCE1F00139994 /* xcconfig */,
+				4B05EEBB08840E8D00D809E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B05EEBB08840E8D00D809E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EB5652C0EAB985E00C13419 /* Debug */,
+				6EB5652D0EAB986200C13419 /* Release */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B05EEC708840E8D00D809E1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A725B0134C31FE00BB22BF /* App */,
+				07A725AF134C31F500BB22BF /* Commands */,
+				07A725AE134C31EE00BB22BF /* Common */,
+				07A725AD134C31E600BB22BF /* Constants */,
+				07A725AC134C31DD00BB22BF /* Controls */,
+				07A725AB134C31D500BB22BF /* DataMgr */,
+				07A725AA134C31CD00BB22BF /* DataModel */,
+				07A725A9134C31C500BB22BF /* Dialogs */,
+				07A725A8134C31BB00BB22BF /* Externals */,
+				07A725A7134C31B300BB22BF /* Panels */,
+				07A725A6134C31A500BB22BF /* PersistData */,
+				07A725A5134C319D00BB22BF /* Plugin */,
+				07A725A4134C319400BB22BF /* Services */,
+				07A725A3134C318B00BB22BF /* Utils */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4B05EED008840E9400D809E1 /* Resource Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A7270D134C410A00BB22BF /* iZMedia.fr.rsrc */,
+				07A7257B134C30A800BB22BF /* Dialogs */,
+				07A7257A134C309B00BB22BF /* Panels */,
+				E19D6D87119CFF850070A3EB /* Translations */,
+				07A72585134C312D00BB22BF /* iZMedia Addins.fri */,
+				07A72586134C312D00BB22BF /* iZMedia Aliases.fri */,
+				07A72587134C312D00BB22BF /* iZMedia ClassDefinitions_Auto.fri */,
+				07A72588134C312D00BB22BF /* iZMedia ClassDefinitions.fri */,
+				07A72589134C312D00BB22BF /* iZMedia Images.fri */,
+				07A7258A134C312D00BB22BF /* iZMedia Menu.fri */,
+				07A7258B134C312D00BB22BF /* iZMedia Schema.fri */,
+				07A7258C134C312D00BB22BF /* iZMedia Scripting.fri */,
+				07A7258D134C312D00BB22BF /* iZMedia Strings.fri */,
+				07A7258E134C312D00BB22BF /* iZMedia Version.fri */,
+				07A7258F134C312D00BB22BF /* iZMedia.fr */,
+				07A72590134C312D00BB22BF /* iZMedia.rc */,
+				07A72591134C312D00BB22BF /* iZMediaUI ClassDefinitions_Auto.fri */,
+				E1D7607811A23D5700ADAE63 /* Info.plist */,
+			);
+			name = "Resource Files";
+			sourceTree = "<group>";
+		};
+		4B05EED308840E9600D809E1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0B050A610883839D00D809E1 /* InDesign Libraries */,
+				4B05EED408840E9600D809E1 /* API */,
+				4B05EED908840E9C00D809E1 /* Compiler */,
+				4B05EEE008840EA300D809E1 /* System */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		4B05EED408840E9600D809E1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4B05EED508840E9600D809E1 /* Debug */,
+				4B05EED708840E9900D809E1 /* Release */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		4B05EED508840E9600D809E1 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		4B05EED708840E9900D809E1 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		4B05EED908840E9C00D809E1 /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				4B05EEDA08840E9C00D809E1 /* Debug */,
+				4B05EEDD08840EA000D809E1 /* Release */,
+			);
+			name = Compiler;
+			sourceTree = "<group>";
+		};
+		4B05EEDA08840E9C00D809E1 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		4B05EEDD08840EA000D809E1 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		4B05EEE008840EA300D809E1 /* System */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		4B05EEFC08840EAB00D809E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E182A3C911A1228600910465 /* InDesignModelAndUI.framework */,
+				4B05EEFF08840EAB00D809E1 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EB5652C0EAB985E00C13419 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				4B05EEBA08840E8D00D809E1 /* iZineMedia.InDesignPlugin */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		6EB5652D0EAB986200C13419 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				4B05EEC208840E8D00D809E1 /* iZineMedia.InDesignPlugin */,
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		7F52248408AFCE1F00139994 /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				E148AEA4119C08D900370A3A /* InDnLocalPaths.xcconfig */,
+				E148AEA6119C0C3100370A3A /* iZineMedia.xcconfig */,
+				E19D6CB7119CE2E00070A3EB /* InDesignCommon.xcconfig */,
+				E148AEA5119C08E700370A3A /* InDesignCommonCS3.xcconfig */,
+				E148AEA7119C0C3100370A3A /* iZineMediaCS3Debug.xcconfig */,
+				E148AEA8119C0C3100370A3A /* iZineMediaCS3Release.xcconfig */,
+			);
+			name = xcconfig;
+			sourceTree = "<group>";
+		};
+		E19D6D79119CFEDE0070A3EB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A72567134C302E00BB22BF /* iZMedia_ActionID.h */,
+				07A72568134C302E00BB22BF /* iZMedia_ClassDefID.h */,
+				07A72569134C302E00BB22BF /* iZMedia_ErrorID.h */,
+				07A7256A134C302E00BB22BF /* iZMedia_MessageID.h */,
+				07A7256B134C302E00BB22BF /* iZMedia_StringKeys.h */,
+				07A72574134C304700BB22BF /* iZMediaFactoryList.h */,
+				07A72573134C304700BB22BF /* iZMediaFactoryList_Auto.h */,
+				07A7256C134C302E00BB22BF /* iZMediaID.h */,
+				07A7256D134C302E00BB22BF /* iZMediaScriptingDefs.h */,
+				07A7256E134C302E00BB22BF /* iZMediaUI_ClassDefID.h */,
+				07A7256F134C302E00BB22BF /* iZMediaUI_MessageID.h */,
+				07A72570134C302E00BB22BF /* iZMediaUI_ResourceID.h */,
+				07A72571134C302E00BB22BF /* iZMediaUI_StringKeys.h */,
+				07A72572134C302E00BB22BF /* iZMediaUI_WidgetID.h */,
+				07A72579134C307A00BB22BF /* iZMediaVersion.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E19D6D87119CFF850070A3EB /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				07A7257F134C30F800BB22BF /* iZMedia_enUS.fri */,
+				07A72580134C30F800BB22BF /* iZMedia_jaJP.fri */,
+				07A72581134C30F800BB22BF /* iZMedia_nlNL.fri */,
+			);
+			name = Translations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B05EEB908840E8D00D809E1 /* CS3 Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B05EEC308840E8D00D809E1 /* Build configuration list for PBXNativeTarget "CS3 Debug" */;
+			buildPhases = (
+				4B05EEB508840E8D00D809E1 /* Sources */,
+				4B05EEB708840E8D00D809E1 /* Frameworks */,
+				4B05EEB808840E8D00D809E1 /* Rez */,
+				4B05EEB608840E8D00D809E1 /* Resources */,
+			);
+			buildRules = (
+				6E3F07570E8F894000F92A3C /* PBXBuildRule */,
+				4B44966A088C66F500230491 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "CS3 Debug";
+			productName = Debug;
+			productReference = 4B05EEBA08840E8D00D809E1 /* iZineMedia.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B05EEC108840E8D00D809E1 /* CS3 Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B05EEC508840E8D00D809E1 /* Build configuration list for PBXNativeTarget "CS3 Release" */;
+			buildPhases = (
+				4B05EEBD08840E8D00D809E1 /* Sources */,
+				4B05EEBF08840E8D00D809E1 /* Frameworks */,
+				4B05EEC008840E8D00D809E1 /* Rez */,
+				4B05EEBE08840E8D00D809E1 /* Resources */,
+			);
+			buildRules = (
+				6EF267C90E930ECA0066BA45 /* PBXBuildRule */,
+				0B44966A088C66F500230491 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "CS3 Release";
+			productName = Release;
+			productReference = 4B05EEC208840E8D00D809E1 /* iZineMedia.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B05EEAF08840E8D00D809E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = NO;
+			};
+			buildConfigurationList = 4B05EEB008840E8D00D809E1 /* Build configuration list for PBXProject "iZineMedia" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 4B05EEAD08840E8D00D809E1;
+			productRefGroup = 4B05EEBB08840E8D00D809E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B05EEB908840E8D00D809E1 /* CS3 Debug */,
+				4B05EEC108840E8D00D809E1 /* CS3 Release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B05EEB608840E8D00D809E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B05EEBE08840E8D00D809E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		4B05EEB808840E8D00D809E1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A7270E134C410A00BB22BF /* iZMedia.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B05EEC008840E8D00D809E1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A7270F134C410A00BB22BF /* iZMedia.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B05EEB508840E8D00D809E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A7259C134C312D00BB22BF /* iZMedia.fr in Sources */,
+				07A725B5134C325200BB22BF /* CZMApp.cpp in Sources */,
+				07A725B6134C325200BB22BF /* CZMediaStartupShutdown.cpp in Sources */,
+				07A725B7134C325200BB22BF /* iZMediaConstants.cpp in Sources */,
+				07A725B9134C326D00BB22BF /* CZMediaAppActionComponent.cpp in Sources */,
+				07A725C5134C331000BB22BF /* CZMCommandFacade.cpp in Sources */,
+				07A725C7134C332400BB22BF /* CZMSavePrefsCmd.cpp in Sources */,
+				07A725DF134C345000BB22BF /* StInDesignUtils.cpp in Sources */,
+				07A725E0134C345000BB22BF /* StInDnXmlUtils.cpp in Sources */,
+				07A725E1134C345000BB22BF /* StUtils.cpp in Sources */,
+				07A725E5134C348A00BB22BF /* iZPLog.cpp in Sources */,
+				07A725F8134C35A800BB22BF /* CZMEditionMgr.cpp in Sources */,
+				07A725F9134C35A800BB22BF /* CZMModelController.cpp in Sources */,
+				07A725FA134C35A800BB22BF /* CZMTitleMgr.cpp in Sources */,
+				07A72606134C362200BB22BF /* CZMAdFileList.cpp in Sources */,
+				07A72607134C362200BB22BF /* CZMEditionList.cpp in Sources */,
+				07A72612134C36A400BB22BF /* CZMUIPrefsDialogController.cpp in Sources */,
+				07A72613134C36A400BB22BF /* CZMUIPrefsDialogObserver.cpp in Sources */,
+				07A72614134C36A400BB22BF /* CZMUIPrefsPanelCreator.cpp in Sources */,
+				07A7261C134C370800BB22BF /* MemoryXferBytes.cpp in Sources */,
+				07A72626134C37B100BB22BF /* CZMPrefs.cpp in Sources */,
+				07A7262C134C37EA00BB22BF /* iZMediaID.cpp in Sources */,
+				07A7262D134C37EA00BB22BF /* iZMediaNoStrip.cpp in Sources */,
+				07A7262E134C37EA00BB22BF /* TriggerResourceDeps.cpp in Sources */,
+				07A72633134C387900BB22BF /* SDKPlugInEntrypoint.cpp in Sources */,
+				07A72639134C38D700BB22BF /* CZMAdFileData.cpp in Sources */,
+				07A7263B134C38EE00BB22BF /* CZMSAXAdContentHandler.cpp in Sources */,
+				07A72641134C393000BB22BF /* SDKFileHelper.cpp in Sources */,
+				07A72647134C398B00BB22BF /* ZMAdFileFacade.cpp in Sources */,
+				07A72648134C398B00BB22BF /* ZMFileUtils.cpp in Sources */,
+				07A7266C134C3C8D00BB22BF /* MacFileSystemIterator.cpp in Sources */,
+				E1B40B9C134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp in Sources */,
+				E1B40B9D134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp in Sources */,
+				E1B40B9E134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp in Sources */,
+				E1B40BA5134C7A4A00C595D2 /* ZMDataHelper.cpp in Sources */,
+				072DF930134C979F0026B5DC /* CZMFileInfo.cpp in Sources */,
+				072DF959134C9A690026B5DC /* CZMAdFileMgr.cpp in Sources */,
+				0751A79E134D754A00B17AFD /* AZMDataObjPopupController.cpp in Sources */,
+				0751A79F134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp in Sources */,
+				0751A7A0134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp in Sources */,
+				0751A7A6134D755D00B17AFD /* CZMTitlePopupController.cpp in Sources */,
+				0751A7A7134D755D00B17AFD /* CZMTitlePopupObserver.cpp in Sources */,
+				07C28219134D9D0300F78F61 /* CZMEditionPopupController.cpp in Sources */,
+				07C2821A134D9D0300F78F61 /* CZMEditionPopupObserver.cpp in Sources */,
+				072006BB134DA4B60042541B /* ZMAdsTVAdNodeID.cpp in Sources */,
+				072006BF134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp in Sources */,
+				072006C4134DA5050042541B /* CZMAdsTVWidgetManager.cpp in Sources */,
+				072006C5134DA5050042541B /* ZMAdsTVNodeID.cpp in Sources */,
+				072006CD134DA55D0042541B /* CZMTreeViewMgr.cpp in Sources */,
+				072006D7134DA58E0042541B /* CZMTVColumnsInfo.cpp in Sources */,
+				072006D8134DA58E0042541B /* CZMTVColumnsPref.cpp in Sources */,
+				072006D9134DA58E0042541B /* CZMTVHeaderController.cpp in Sources */,
+				072006DA134DA58E0042541B /* CZMTVHeaderEH.cpp in Sources */,
+				072006DB134DA58E0042541B /* CZMTVHeaderObserver.cpp in Sources */,
+				075ED96B134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp in Sources */,
+				075ED96C134DC11E00923D66 /* CZMAdsTVObserver.cpp in Sources */,
+				07D9F9A2134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp in Sources */,
+				07D9F9A3134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp in Sources */,
+				07D9F9A4134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp in Sources */,
+				07D9F9B1134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp in Sources */,
+				07D9F9B2134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp in Sources */,
+				07D9F9B3134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp in Sources */,
+				07D9F9B4134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp in Sources */,
+				07D9F9B5134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp in Sources */,
+				071043F7134EEC56003C9F4E /* CZMUIDialogFacade.cpp in Sources */,
+				07A6B657134F113E00053468 /* CZMAdFileObjController.cpp in Sources */,
+				07A6B658134F113E00053468 /* CZMAdInfo.cpp in Sources */,
+				07A6B659134F113E00053468 /* CZMDataObjController.cpp in Sources */,
+				07A6B65A134F113E00053468 /* CZMEditionObjController.cpp in Sources */,
+				07A6B65B134F113E00053468 /* CZMTitleObjController.cpp in Sources */,
+				073B18A413530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp in Sources */,
+				073B18A713530A820051AC20 /* CZMAdsTVDataModel.cpp in Sources */,
+				E1C7169B135344B700D4813E /* CZMAdMgr.cpp in Sources */,
+				E1C7169E135344C600D4813E /* CZMAdList.cpp in Sources */,
+				07A01977136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp in Sources */,
+				07A01978136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp in Sources */,
+				07A0197E136AA6E30073BDD4 /* CZMErrorStringService.cpp in Sources */,
+				E13B6996136AF25800A98D65 /* CZMAppObserver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B05EEBD08840E8D00D809E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A726EA134C402300BB22BF /* iZMedia.fr in Sources */,
+				07A726C6134C3FFC00BB22BF /* CZMAdFileData.cpp in Sources */,
+				07A726C7134C3FFD00BB22BF /* CZMAdFileList.cpp in Sources */,
+				07A726C9134C3FFE00BB22BF /* CZMAdFileMgr.cpp in Sources */,
+				07A726CA134C3FFF00BB22BF /* CZMApp.cpp in Sources */,
+				07A726CB134C400000BB22BF /* CZMCommandFacade.cpp in Sources */,
+				07A726CC134C400100BB22BF /* CZMediaAppActionComponent.cpp in Sources */,
+				07A726CD134C400200BB22BF /* CZMediaStartupShutdown.cpp in Sources */,
+				07A726CE134C400200BB22BF /* CZMEditionList.cpp in Sources */,
+				07A726CF134C400300BB22BF /* CZMEditionMgr.cpp in Sources */,
+				07A726D0134C400300BB22BF /* CZMModelController.cpp in Sources */,
+				07A726D1134C400400BB22BF /* CZMPrefs.cpp in Sources */,
+				07A726D2134C400400BB22BF /* CZMSavePrefsCmd.cpp in Sources */,
+				07A726D3134C400500BB22BF /* CZMSAXAdContentHandler.cpp in Sources */,
+				07A726D4134C400600BB22BF /* CZMTitleMgr.cpp in Sources */,
+				07A726D5134C400600BB22BF /* CZMUIPrefsDialogController.cpp in Sources */,
+				07A726D6134C400700BB22BF /* CZMUIPrefsDialogObserver.cpp in Sources */,
+				07A726D7134C400700BB22BF /* CZMUIPrefsPanelCreator.cpp in Sources */,
+				07A726D8134C400800BB22BF /* iZMediaConstants.cpp in Sources */,
+				07A726D9134C400900BB22BF /* iZMediaID.cpp in Sources */,
+				07A726DA134C400900BB22BF /* iZMediaNoStrip.cpp in Sources */,
+				07A726DB134C400A00BB22BF /* iZPLog.cpp in Sources */,
+				07A726DC134C400B00BB22BF /* MacFileSystemIterator.cpp in Sources */,
+				07A726DD134C400C00BB22BF /* MemoryXferBytes.cpp in Sources */,
+				07A726DE134C400D00BB22BF /* SDKFileHelper.cpp in Sources */,
+				07A726E0134C400F00BB22BF /* SDKPlugInEntrypoint.cpp in Sources */,
+				07A726E1134C400F00BB22BF /* StInDesignUtils.cpp in Sources */,
+				07A726E2134C401000BB22BF /* StInDnXmlUtils.cpp in Sources */,
+				07A726E3134C401100BB22BF /* StUtils.cpp in Sources */,
+				07A726E4134C401100BB22BF /* TriggerResourceDeps.cpp in Sources */,
+				07A726E6134C401300BB22BF /* ZMAdFileFacade.cpp in Sources */,
+				07A726E7134C401400BB22BF /* ZMFileUtils.cpp in Sources */,
+				E1B40B9F134C7A2F00C595D2 /* CZMAdsPanelControlView.cpp in Sources */,
+				E1B40BA0134C7A2F00C595D2 /* CZMAdsPanelHelper.cpp in Sources */,
+				E1B40BA1134C7A2F00C595D2 /* CZMAdsPanelObserver.cpp in Sources */,
+				E1B40BA6134C7A4A00C595D2 /* ZMDataHelper.cpp in Sources */,
+				0751A7A1134D754A00B17AFD /* AZMDataObjPopupController.cpp in Sources */,
+				0751A7A2134D754A00B17AFD /* AZMDataObjPopupWithFixedValController.cpp in Sources */,
+				0751A7A3134D754A00B17AFD /* AZMUIDataObjDropDownObserver.cpp in Sources */,
+				0751A7A8134D755D00B17AFD /* CZMTitlePopupController.cpp in Sources */,
+				0751A7A9134D755D00B17AFD /* CZMTitlePopupObserver.cpp in Sources */,
+				07C2821B134D9D0300F78F61 /* CZMEditionPopupController.cpp in Sources */,
+				07C2821C134D9D0300F78F61 /* CZMEditionPopupObserver.cpp in Sources */,
+				072006BC134DA4B60042541B /* ZMAdsTVAdNodeID.cpp in Sources */,
+				072006C0134DA4D90042541B /* ZMAdsTVAdFileNodeID.cpp in Sources */,
+				072006C6134DA5050042541B /* CZMAdsTVWidgetManager.cpp in Sources */,
+				072006C7134DA5050042541B /* ZMAdsTVNodeID.cpp in Sources */,
+				072006CE134DA55D0042541B /* CZMTreeViewMgr.cpp in Sources */,
+				072006DC134DA58E0042541B /* CZMTVColumnsInfo.cpp in Sources */,
+				072006DD134DA58E0042541B /* CZMTVColumnsPref.cpp in Sources */,
+				072006DE134DA58E0042541B /* CZMTVHeaderController.cpp in Sources */,
+				072006DF134DA58E0042541B /* CZMTVHeaderEH.cpp in Sources */,
+				072006E0134DA58E0042541B /* CZMTVHeaderObserver.cpp in Sources */,
+				075ED92F134DBE4A00923D66 /* CZMFileInfo.cpp in Sources */,
+				075ED96D134DC11E00923D66 /* CZMAdsTVHierarchyAdapter.cpp in Sources */,
+				075ED96E134DC11E00923D66 /* CZMAdsTVObserver.cpp in Sources */,
+				07D9F9A5134DE9C500C5DE51 /* CZMAdsTVAdFileNodeData.cpp in Sources */,
+				07D9F9A6134DE9C500C5DE51 /* CZMAdsTVAdFileNodeEH.cpp in Sources */,
+				07D9F9A7134DE9C500C5DE51 /* CZMAdsTVAdFileNodeWidgetMgr.cpp in Sources */,
+				07D9F9B6134DEA2500C5DE51 /* CZMAdsTVAdNodeData.cpp in Sources */,
+				07D9F9B7134DEA2500C5DE51 /* CZMAdsTVAdNodeDragDropSource.cpp in Sources */,
+				07D9F9B8134DEA2500C5DE51 /* CZMAdsTVAdNodeEH.cpp in Sources */,
+				07D9F9B9134DEA2500C5DE51 /* CZMAdsTVAdNodeObserver.cpp in Sources */,
+				07D9F9BA134DEA2500C5DE51 /* CZMAdsTVAdNodeWidgetMgr.cpp in Sources */,
+				071043F8134EEC56003C9F4E /* CZMUIDialogFacade.cpp in Sources */,
+				07A6B65D134F113E00053468 /* CZMAdFileObjController.cpp in Sources */,
+				07A6B65E134F113E00053468 /* CZMAdInfo.cpp in Sources */,
+				07A6B65F134F113E00053468 /* CZMDataObjController.cpp in Sources */,
+				07A6B660134F113E00053468 /* CZMEditionObjController.cpp in Sources */,
+				07A6B661134F113E00053468 /* CZMTitleObjController.cpp in Sources */,
+				073B18A513530A6A0051AC20 /* CZMUITVWithHdrNodeWidgetMgr.cpp in Sources */,
+				073B18A813530A820051AC20 /* CZMAdsTVDataModel.cpp in Sources */,
+				E1C7169C135344B700D4813E /* CZMAdMgr.cpp in Sources */,
+				E1C7169F135344C600D4813E /* CZMAdList.cpp in Sources */,
+				07A01979136AA6D10073BDD4 /* CZMTVHeaderActionComponent.cpp in Sources */,
+				07A0197A136AA6D10073BDD4 /* CZMTVHeaderDynamicMenu.cpp in Sources */,
+				07A0197F136AA6E30073BDD4 /* CZMErrorStringService.cpp in Sources */,
+				E13B6997136AF25800A98D65 /* CZMAppObserver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B05EEB108840E8D00D809E1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E148AEA6119C0C3100370A3A /* iZineMedia.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		4B05EEC408840E8D00D809E1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E148AEA7119C0C3100370A3A /* iZineMediaCS3Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		4B05EEC608840E8D00D809E1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E148AEA8119C0C3100370A3A /* iZineMediaCS3Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B05EEB008840E8D00D809E1 /* Build configuration list for PBXProject "iZineMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B05EEB108840E8D00D809E1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Default;
+		};
+		4B05EEC308840E8D00D809E1 /* Build configuration list for PBXNativeTarget "CS3 Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B05EEC408840E8D00D809E1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4B05EEC508840E8D00D809E1 /* Build configuration list for PBXNativeTarget "CS3 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B05EEC608840E8D00D809E1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B05EEAF08840E8D00D809E1 /* Project object */;
+}

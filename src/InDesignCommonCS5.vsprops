@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!--
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/InDesignCommonCS5.vsprops $
+//	$Revision: 4082 $
+//	$Date: 2012-10-12 08:56:51 +0200 (Fri, 12 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2011 Aug 16
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+
+//	Description: Visual Studio property sheet for InDesign project.
+-->
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="InDesign Common CS5"
+	InheritedPropertySheets="InDnLocalPaths.vsprops"
+	>
+	
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalOptions="/MP"
+		PreprocessorDefinitions="_VC80_UPGRADE=0x0710;_SECURE_SCL=0;_HAS_ITERATOR_DEBUGGING=0;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;InDnCS5"
+		AdditionalIncludeDirectories="$(InDnCPPPaths) &quot;$(ZPCommonSDKDir)&quot;"
+		BufferSecurityCheck="false"
+	/>
+	
+	<Tool
+		Name="VCLinkerTool"
+		RandomizedBaseAddress="1"
+		DataExecutionPrevention="0"
+	/>
+	
+	<Tool
+		Name="VCResourceCompilerTool"
+		PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE;InDnCS5"
+		Culture="1033"
+		AdditionalIncludeDirectories="
+			&quot;$(InDesignSDK_Source)\precomp\msvc&quot;;
+			&quot;$(InDesignSDK_Source)\public\includes&quot;;
+			&quot;$(InDesignSDK_Source)\sdksamples\common&quot;      
+		"
+	/>
+	
+	<UserMacro Name="InDesignSDKDir"
+		Value="$(IDCS5SDK)" />
+	<UserMacro Name="InDesignSDK_Source"
+		Value="$(InDesignSDKDir)\source" />
+  <UserMacro Name="ZPCommonSDKDir"
+		Value="$(ZPCommonDir)\AdobeInDnSDKCS5" />  
+
+  <UserMacro Name="InDnCPPPaths"
+		Value="
+		&quot;$(InDesignSDK_Source)\precomp\msvc&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\xmedia&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\ui&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\tables&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\text&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\graphics&quot;;
+		&quot;$(InDesignSDK_Source)\public\libs\widgetbin\includes&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\workgroup&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\interactive&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\interactive\ui&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\colormgmt&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\utils&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\incopy&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\layout&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\architecture&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\cjk&quot;;
+		&quot;$(InDesignSDK_Source)\public\interfaces\preflight&quot;;
+		&quot;$(InDesignSDK_Source)\public\facades\graphics&quot;;
+		&quot;$(InDesignSDK_Source)\public\facades\text&quot;;
+		&quot;$(InDesignSDK_Source)\public\facades\layout&quot;;
+		&quot;$(InDesignSDK_Source)\precomp\common&quot;;
+		&quot;$(InDesignSDK_Source)\public\includes&quot;;
+		&quot;$(InDesignSDK_Source)\public\libs\publiclib\plugins&quot;;
+		&quot;$(InDesignSDK_Source)\public\libs\publiclib\files&quot;;
+		&quot;$(InDesignSDK_Source)\public\libs\publiclib\objectmodel&quot;;
+		&quot;$(InDesignSDK_Source)\sdksamples\common&quot;;
+		&quot;$(InDesignSDK_Source)\open\components\incopyexport&quot;;
+		&quot;$(InDesignSDK_Source)\open\components\incopyexportUI&quot;;
+		&quot;$(InDesignSDKDir)\external\afl\includes&quot;;
+		&quot;$(InDesignSDKDir)\external\asl\boost_libraries&quot;;
+		&quot;$(InDesignSDKDir)\external\asl\adobe_source_libraries&quot;;
+		&quot;$(InDesignSDKDir)\external\asl\intel_tbb_libraries\include&quot;;
+		&quot;$(InDesignSDKDir)\external\bibxmp\include&quot;;
+		&quot;$(InDesignSDKDir)\external\icu\include&quot;;
+    &quot;$(ZPRootDir)\Source\SelectionSuite&quot;;    
+		"	/>
+
+	<UserMacro Name="InDnODFRCPaths"
+		Value="
+		-i &quot;$(InDesignSDK_Source)\precomp\msvc&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\xmedia&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\ui&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\tables&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\text&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\graphics&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\workgroup&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\interactive&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\interactive\ui&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\colormgmt&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\utils&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\incopy&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\layout&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\architecture&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\cjk&quot;
+		-i &quot;$(InDesignSDK_Source)\public\interfaces\preflight&quot;
+		-i &quot;$(InDesignSDK_Source)\public\facades\text&quot;
+		-i &quot;$(InDesignSDK_Source)\public\facades\graphics&quot;
+		-i &quot;$(InDesignSDK_Source)\public\facades\layout&quot;
+		-i &quot;$(InDesignSDK_Source)\precomp\common&quot;
+		-i &quot;$(InDesignSDK_Source)\public\includes&quot;
+		-i &quot;$(InDesignSDK_Source)\public\widget\includes&quot;
+		-i &quot;$(InDesignSDK_Source)\public\libs\widgetbin\includes&quot;
+		-i &quot;$(InDesignSDK_Source)\public\libs\publiclib\plugins&quot;
+		-i &quot;$(InDesignSDK_Source)\public\libs\publiclib\files&quot;
+		-i &quot;$(InDesignSDK_Source)\public\libs\publiclib\objectmodel&quot;
+		-i &quot;$(InDesignSDK_Source)\sdksamples\common&quot;
+		-i &quot;$(InDesignSDK_Source)\open\components\incopyexport&quot;
+		-i &quot;$(InDesignSDK_Source)\open\components\incopyexportUI&quot;"/>
+
+
+	<UserMacro Name="ODFRCCommand"
+		Value="&quot;$(InDesignSDKDir)\DevTools\bin\odfrc.exe&quot; -d InDnCS5"	/>
+</VisualStudioPropertySheet>

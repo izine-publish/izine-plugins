@@ -1,0 +1,456 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_PrefsDialog.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 13-9-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/*
+// Selectable dialog ID lists
+// IDList is a list of selectable dialog IDs that we want our panel to appear in.
+*/
+resource IDList (kSDKDefIDListPairResourceID)
+{
+	{
+		kGlobalPrefsDialogServiceImpl,		// Impl ID for Preferences Selectable Dialog
+	},
+};
+
+/*
+// IDListPair resource specifies which resource to use in creating the panel,
+// depending upon which dialog the panel is going into.
+*/
+resource IDListPair (kSDKDefIDListPairResourceID)
+{
+	{
+		kGlobalPrefsDialogServiceImpl,	// ID of Target Selectable Dialog (InDesign's)
+		kZPUIPrefsPanelResourceID,		// ID of Panel Resource to be added (Mine)
+		kIZPUIPluginID					// Plug-in ID that "owns" the Panel Resource to be added
+	},
+};
+
+resource LocaleIndex (kZPUIPrefsPanelResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUIPrefsPanelResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPPrefsDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZPPrefsDialogBoss)
+{
+};
+
+#define ZPPrefsDlgPanelWidth	460
+#define ZPPrefsDlgPanelHeight	400
+
+#define ZPPrefsDlgLeftMargin	10
+#define ZPPrefsDlgItemGapMargin	10
+#define ZPPrefsDlgGroupPanelGapMargin	10
+
+#define ZPPrefsDlgGrpDocumentOptions_T		10
+#define ZPPrefsDlgGrpDocumentOptions_L		ZPPrefsDlgLeftMargin
+#define ZPPrefsDlgAMRefreshDuration_T		(ZPPrefsDlgGroupPanelGapMargin + 5)
+#define ZPPrefsDlgAMRefreshDuration_B		(ZPPrefsDlgAMRefreshDuration_T + 20)
+#define ZPPrefsDlgAMRefreshLbl_L			(ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgAMRefreshLbl_R			(ZPPrefsDlgAMRefreshLbl_L + 200)
+#define ZPPrefsDlgAMRefreshNudge_L			(ZPPrefsDlgAMRefreshLbl_R + 10 )
+#define ZPPrefsDlgAMRefreshNudge_R			(ZPPrefsDlgAMRefreshNudge_L + 16)
+#define ZPPrefsDlgAMRefreshEdt_L			(ZPPrefsDlgAMRefreshNudge_R + 1 )
+#define ZPPrefsDlgAMRefreshEdt_R			(ZPPrefsDlgAMRefreshEdt_L + 50 )
+
+#define ZPPrefsDlgAutoRefreshLinks_L		(ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgAutoRefreshLinks_R		(ZPPrefsDlgAutoRefreshLinks_L + 350)
+#define ZPPrefsDlgAutoRefreshLinks_T		(ZPPrefsDlgAMRefreshDuration_B + ZPPrefsDlgItemGapMargin )
+#define ZPPrefsDlgAutoRefreshLinks_B		(ZPPrefsDlgAutoRefreshLinks_T + 20 )
+
+#define ZPPrefsDlgAutoUnlockStories_T		(ZPPrefsDlgAutoRefreshLinks_B + ZPPrefsDlgItemGapMargin)
+#define ZPPrefsDlgAutoUnlockStories_B		(ZPPrefsDlgAutoUnlockStories_T + 20)
+#define ZPPrefsDlgAutoUnlockStories_L		(ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgAutoUnlockStories_R		(ZPPrefsDlgAutoUnlockStories_L + 350)
+
+#define ZPPrefsDlgCreateAssignmentOnStoryImport_T		(ZPPrefsDlgAutoUnlockStories_B + ZPPrefsDlgItemGapMargin)
+#define ZPPrefsDlgCreateAssignmentOnStoryImport_B		(ZPPrefsDlgCreateAssignmentOnStoryImport_T + 20)
+#define ZPPrefsDlgCreateAssignmentOnStoryImport_L		(ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgCreateAssignmentOnStoryImport_R		(ZPPrefsDlgCreateAssignmentOnStoryImport_L + 350)
+
+#define ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_T		(ZPPrefsDlgCreateAssignmentOnStoryImport_B + ZPPrefsDlgItemGapMargin)
+#define ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_B		(ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_T + 20)
+#define ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_L		(ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_R		(ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_L + 350)
+
+#define ZPPrefsDlgRemoveStyles_T			(ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_B + ZPPrefsDlgItemGapMargin)
+#define ZPPrefsDlgRemoveStyles_B			(ZPPrefsDlgRemoveStyles_T + 20)
+#define ZPPrefsDlgRemoveStyles_L			(ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgRemoveStyles_R			(ZPPrefsDlgRemoveStyles_L + 350)
+
+#define ZPPrefsDlgGrpDocumentOptions_B	(ZPPrefsDlgGrpDocumentOptions_T + ZPPrefsDlgRemoveStyles_B + ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgGrpDocumentOptions_R	(ZPPrefsDlgPanelWidth - 10)
+
+#define ZPPrefsDlgGrpUserNamePassword_T		(ZPPrefsDlgGrpDocumentOptions_B + ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgGrpUserNamePassword_L		ZPPrefsDlgGrpDocumentOptions_L
+
+#define ZPPrefsDlgUserNameLbl_T				(ZPPrefsDlgGroupPanelGapMargin + 5)
+#define ZPPrefsDlgUserNameLbl_B				(ZPPrefsDlgUserNameLbl_T + 20)
+#define ZPPrefsDlgUserNameLbl_L				(ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgUserNameLbl_R				(ZPPrefsDlgUserNameLbl_L + 100)
+
+#define ZPPrefsDlgUserNameTxt_L				(ZPPrefsDlgUserNameLbl_R + 10)
+#define ZPPrefsDlgUserNameTxt_R				(ZPPrefsDlgUserNameTxt_L + 200)
+
+#define ZPPrefsDlgPasswordLbl_T				(ZPPrefsDlgUserNameLbl_B + 10)
+#define ZPPrefsDlgPasswordLbl_B				(ZPPrefsDlgPasswordLbl_T + 20)
+#define ZPPrefsDlgPasswordLbl_L				ZPPrefsDlgUserNameLbl_L
+#define ZPPrefsDlgPasswordLbl_R				(ZPPrefsDlgPasswordLbl_L + 100)
+
+#define ZPPrefsDlgPasswordTxt_L				(ZPPrefsDlgPasswordLbl_R + 10)
+#define ZPPrefsDlgPasswordTxt_R				(ZPPrefsDlgPasswordTxt_L + 200)
+
+#define ZPPrefsDlgGrpUserNamePassword_B		(ZPPrefsDlgGrpUserNamePassword_T + ZPPrefsDlgPasswordLbl_B + ZPPrefsDlgGroupPanelGapMargin)
+#define ZPPrefsDlgGrpUserNamePassword_R		(ZPPrefsDlgPanelWidth - 10)
+
+#define ZPPrefsDlgGrpDocumentOptionsLbl_R	150
+#define ZPPrefsDlgGrpUserNamePasswordLbl_R	150
+
+resource ZPPrefsDialogWidget (kZPUIPrefsPanelResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kIZPPrefsPanelWidgetID,
+	kPMRsrcID_None,
+	kBindNone,
+	// Frame: left, top, right, bottom
+	Frame(0,0, ZPPrefsDlgPanelWidth, ZPPrefsDlgPanelHeight),
+	kTrue,
+	kTrue,
+	kZPPrefsPanelPanelTitleKey,
+	{
+		GroupPanelWidget
+		(
+			// CControlView properties
+			kInvalidWidgetID,
+			kPMRsrcID_None,
+			kBindNone,
+			Frame(ZPPrefsDlgGrpDocumentOptions_L, ZPPrefsDlgGrpDocumentOptions_T, ZPPrefsDlgGrpDocumentOptions_R, ZPPrefsDlgGrpDocumentOptions_B)
+			kTrue,
+			kTrue,
+			kZPUIPrefsGrpDocumentOptionsWidgetID,
+			{
+				//AM Refresh Duration
+					StaticTextWidget
+					(		// CControlView properties
+						kInvalidWidgetID,		// widget ID
+						kSysStaticTextPMRsrcId,	// PMRsrc ID
+						kBindTop | kBindLeft,	// frame binding
+						Frame(ZPPrefsDlgAMRefreshLbl_L, ZPPrefsDlgAMRefreshDuration_T, ZPPrefsDlgAMRefreshLbl_R, ZPPrefsDlgAMRefreshDuration_B)	// left, top, right, bottom
+						kTrue, kTrue,			// visible, enabled
+							// StaticTextAttributes properties
+						kAlignLeft,			// Alignment
+						kDontEllipsize,			// Ellipsize style
+						ConvertAmpersandsTrue
+							// CTextControlData properties
+						kZPPrefsAssetMonitorRefreshDurationTitleKey,		// control label
+							// AssociatedWidgetAttributes properties
+						kInvalidWidgetID,		// associated widget ID
+					),
+					NudgeControlWidget
+					(		// CControlView properties
+						kZPUIPrefsAMRefreshDurationNudgeWidgetID, // widget ID
+						kSysButtonPMRsrcId,					// PMRsrc ID
+						kBindTop | kBindLeft,				// frame binding
+						Frame(ZPPrefsDlgAMRefreshNudge_L, ZPPrefsDlgAMRefreshDuration_T, ZPPrefsDlgAMRefreshNudge_R, ZPPrefsDlgAMRefreshDuration_B)	// left, top, right, bottom
+						kTrue, kTrue,						// visible, enabled
+					),
+					IntEditBoxWidget
+					(		// CControlView properties
+						kZPUIPrefsAMRefreshDurationEditBoxWidgetID,	// widget ID
+						kSysEditBoxPMRsrcId,				// PMRsrc ID
+						kBindTop | kBindLeft,				// frame binding
+						Frame(ZPPrefsDlgAMRefreshEdt_L, ZPPrefsDlgAMRefreshDuration_T, ZPPrefsDlgAMRefreshEdt_R, ZPPrefsDlgAMRefreshDuration_B)	// left, top, right, bottom
+						kTrue, kTrue,						// visible, enabled
+							// CEditBoxAttributes
+						kZPUIPrefsAMRefreshDurationNudgeWidgetID,	// nudgeWidgetId (0 if no nudge
+						1.0,								// small nudge amount
+						5.0,								// large nudge amount
+						3,									// max num chars
+						kFalse,								// read only flag
+						kFalse,								// should notify on each key stroke
+							// TextDataValidation properties
+						kTrue,								// range checking enabled
+						kFalse,								// blank entry allowed
+						300, 10,							// upper, lower limit
+							// CTextControlData properties
+						"",									// control label
+					),
+
+				//Auto Update linked stories on opening.
+				CheckBoxWidget
+				(		// CControlView properties
+					kZPUIPrefsAutoUpdateLinkedStoriesCheckBoxWidgetID, // widget ID
+					kSysCheckBoxPMRsrcId,				// PMRsrc ID
+					kBindTop | kBindLeft,				// frame binding
+					Frame(ZPPrefsDlgAutoRefreshLinks_L, ZPPrefsDlgAutoRefreshLinks_T, ZPPrefsDlgAutoRefreshLinks_R, ZPPrefsDlgAutoRefreshLinks_B) //  left, top, right, bottom
+					kTrue, kTrue,						// visible, enabled
+						// TriStateControlAttributes properties
+					kAlignLeft,							// alignment
+						// CTextControlData properties
+					kZPPrefsAutoUpdateLinksOnOpeningDocumentKey, // control label
+				),
+
+				CheckBoxWidget
+				(		// CControlView properties
+					kZPUIPrefsAutoUnlockStoriesCheckBoxWidgetID, // widget ID
+					kSysCheckBoxPMRsrcId,				// PMRsrc ID
+					kBindTop | kBindLeft,				// frame binding
+					Frame(ZPPrefsDlgAutoUnlockStories_L, ZPPrefsDlgAutoUnlockStories_T, ZPPrefsDlgAutoUnlockStories_R, ZPPrefsDlgAutoUnlockStories_B) //  left, top, right, bottom
+					kTrue, kTrue,						// visible, enabled
+						// TriStateControlAttributes properties
+					kAlignLeft,							// alignment
+						// CTextControlData properties
+					kZPPrefsAutoUnlockStoriesKey, // control label
+				),
+
+				CheckBoxWidget
+				(		// CControlView properties
+					kZPUIPrefsCreateAssignmentOnStoryImportCheckBoxWidgetID, // widget ID
+					kSysCheckBoxPMRsrcId,				// PMRsrc ID
+					kBindTop | kBindLeft,				// frame binding
+					Frame(ZPPrefsDlgCreateAssignmentOnStoryImport_L, ZPPrefsDlgCreateAssignmentOnStoryImport_T, ZPPrefsDlgCreateAssignmentOnStoryImport_R, ZPPrefsDlgCreateAssignmentOnStoryImport_B) //  left, top, right, bottom
+					kTrue, kTrue,						// visible, enabled
+						// TriStateControlAttributes properties
+					kAlignLeft,							// alignment
+						// CTextControlData properties
+					kZPPrefsCreateAssignmentOnStoryImportKey, // control label
+				),
+
+				CheckBoxWidget
+				(		// CControlView properties
+					kZPUIPrefsIncludeAllAssignmentsOnDocumentCheckinCheckBoxWidgetID, // widget ID
+					kSysCheckBoxPMRsrcId,				// PMRsrc ID
+					kBindTop | kBindLeft,				// frame binding
+					Frame(ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_L, ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_T, ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_R, ZPPrefsDlgIncludeAllAssignmentsOnDocumentCheckin_B) //  left, top, right, bottom
+					kTrue, kTrue,						// visible, enabled
+						// TriStateControlAttributes properties
+					kAlignLeft,							// alignment
+						// CTextControlData properties
+					kZPPrefsIncludeAllAssignmentsOnDocumentCheckinKey, // control label
+				),
+
+				FittedStaticTextWidget
+				(
+					// CControlView properties
+					kZPUIPrefsGrpDocumentOptionsWidgetID, // widget ID
+					kSysStaticTextPMRsrcId, // PMRsrc ID
+					kBindNone, // frame binding
+					Frame(10.0, -8.0, ZPPrefsDlgGrpDocumentOptionsLbl_R , 10.0) //  left, top, right, bottom
+					kTrue, kTrue, // visible, enabled
+					10, 
+					// StaticTextAttributes properties
+					kAlignCenter, // Alignment
+					kDontEllipsize, // Ellipsize style
+					ConvertAmpersandsTrue
+					// CTextControlData properties
+					kZPPrefsGrpDocumentOptionsKey, // control label
+					// AssociatedWidgetAttributes properties
+					0, // associated widget ID
+				),
+				CheckBoxWidget
+				(		// CControlView properties
+					kZPUIPrefsRemoveStylesCheckBoxWidgetID, // widget ID
+					kSysCheckBoxPMRsrcId,				// PMRsrc ID
+					kBindTop | kBindLeft,				// frame binding
+					Frame(ZPPrefsDlgRemoveStyles_L, ZPPrefsDlgRemoveStyles_T, ZPPrefsDlgRemoveStyles_R, ZPPrefsDlgRemoveStyles_B) //  left, top, right, bottom
+					kTrue, kTrue,						// visible, enabled
+						// TriStateControlAttributes properties
+					kAlignLeft,							// alignment
+						// CTextControlData properties
+					kZPPrefsRemoveStylesKey, // control label
+				),
+			},
+		),
+
+		GroupPanelWidget
+		(
+			// CControlView properties
+			kInvalidWidgetID,
+			kPMRsrcID_None,
+			kBindNone,
+			Frame(ZPPrefsDlgGrpUserNamePassword_L, ZPPrefsDlgGrpUserNamePassword_T, ZPPrefsDlgGrpUserNamePassword_R, ZPPrefsDlgGrpUserNamePassword_B)
+			kTrue,
+			kTrue,
+			kZPUIPrefsGrpServerCredentialsWidgetID,
+			{
+				//UserName
+				StaticTextWidget
+				(		// CControlView properties
+					kInvalidWidgetID,		// widget ID
+					kSysStaticTextPMRsrcId,	// PMRsrc ID
+					kBindTop | kBindLeft,	// frame binding
+					Frame(ZPPrefsDlgUserNameLbl_L, ZPPrefsDlgUserNameLbl_T, ZPPrefsDlgUserNameLbl_R, ZPPrefsDlgUserNameLbl_B)	// left, top, right, bottom
+					kTrue, kTrue,			// visible, enabled
+						// StaticTextAttributes properties
+					kAlignLeft,			// Alignment
+					kDontEllipsize,			// Ellipsize style
+					ConvertAmpersandsTrue
+						// CTextControlData properties
+					kIZPLoginDialogUsernameKey,		// control label
+						// AssociatedWidgetAttributes properties
+					kInvalidWidgetID,		// associated widget ID
+				),
+
+				TextEditBoxWidget
+				(
+					kZPUIPrefsUserNameWidgetID,	// WidgetID
+					kSysEditBoxPMRsrcId,				// RsrcID
+					kBindLeft | kBindRight,	// Binding
+					Frame(ZPPrefsDlgUserNameTxt_L, ZPPrefsDlgUserNameLbl_T, ZPPrefsDlgUserNameTxt_R, ZPPrefsDlgUserNameLbl_B)	// left, top, right, bottom
+					kTrue, kTrue,						// Visible, Enabled
+					0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+					255,								// Max # chars (0 = no limit)
+					kFalse,								// read only
+					kFalse,								// should notify each key stroke
+					kFalse,								// Range checking enabled
+					kTrue,								// blank allowed
+					0, 0,								// upper/lower bounds
+					"",									// Initial text
+				),
+
+				//Password
+				StaticTextWidget
+				(		// CControlView properties
+					kInvalidWidgetID,		// widget ID
+					kSysStaticTextPMRsrcId,	// PMRsrc ID
+					kBindTop | kBindLeft,	// frame binding
+					Frame(ZPPrefsDlgPasswordLbl_L, ZPPrefsDlgPasswordLbl_T, ZPPrefsDlgPasswordLbl_R, ZPPrefsDlgPasswordLbl_B)	// left, top, right, bottom
+					kTrue, kTrue,			// visible, enabled
+						// StaticTextAttributes properties
+					kAlignLeft,			// Alignment
+					kDontEllipsize,			// Ellipsize style
+					ConvertAmpersandsTrue
+						// CTextControlData properties
+					kIZPLoginDialogPasswordKey,		// control label
+						// AssociatedWidgetAttributes properties
+					kInvalidWidgetID,		// associated widget ID
+				),
+
+				PasswordEditBoxWidget
+				(
+					kZPUIPrefsPasswordWidgetID,	// WidgetID
+					kSysEditBoxPMRsrcId,				// RsrcID
+					kBindLeft | kBindRight,	// Binding
+					Frame(ZPPrefsDlgPasswordTxt_L, ZPPrefsDlgPasswordLbl_T, ZPPrefsDlgPasswordTxt_R, ZPPrefsDlgPasswordLbl_B)	// left, top, right, bottom
+					kTrue, kTrue,						// Visible, Enabled
+					0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+					255,								// Max # chars (0 = no limit)
+					kFalse,								// read only
+					kFalse,								// should notify each key stroke
+					kFalse,								// Range checking enabled
+					kTrue,								// blank allowed
+					0, 0,								// upper/lower bounds
+					"",									// Initial text
+				),
+
+				FittedStaticTextWidget
+				(
+					// CControlView properties
+					kZPUIPrefsGrpServerCredentialsWidgetID, // widget ID
+					kSysStaticTextPMRsrcId, // PMRsrc ID
+					kBindNone, // frame binding
+					Frame(10.0 , -8.0 , ZPPrefsDlgGrpUserNamePasswordLbl_R , 10.0) //  left, top, right, bottom
+					kTrue, kTrue, // visible, enabled
+					10, 
+					// StaticTextAttributes properties
+					kAlignCenter, // Alignment
+					kDontEllipsize, // Ellipsize style
+					ConvertAmpersandsTrue
+					// CTextControlData properties
+					kZPPrefsGrpServerCredentialsKey, // control label
+					// AssociatedWidgetAttributes properties
+					0, // associated widget ID
+				),
+			},
+		),
+
+		// Global Preferences
+		//////GroupPanelWidget
+		//////(
+		//////	// CControlView properties
+		//////	kInvalidWidgetID,
+		//////	kPMRsrcID_None,
+		//////	kBindNone,
+		//////	Frame(10, 20, 450, 80),
+		//////	kTrue,
+		//////	kTrue,
+		//////	kIZPPrefsProjectPathTitleTextWidgetID,
+		//////	{
+		//////		FittedStaticTextWidget
+		//////		(
+		//////			kIZPPrefsProjectPathTitleTextWidgetID,
+		//////			kSysStaticTextPMRsrcId,
+		//////			kBindNone,
+		//////			Frame(5, -10, 80, 10),
+		//////			kTrue,
+		//////			kTrue,
+		//////			10,
+		//////			kAlignCenter,
+		//////			kDontEllipsize,
+		//////			kIZPPrefsProjectPathTextWidgetKey,
+		//////			kInvalidWidgetID,
+		//////		),
+		//////		StaticTextWidget
+		//////		(
+		//////			kIZPPrefsProjectFolderTextWidgetID,
+		//////			kSysStaticTextPMRsrcId,
+		//////			kBindNone,
+		//////			Frame(10, 20, 50, 40),
+		//////			kTrue,
+		//////			kTrue,
+		//////			kAlignLeft,
+		//////			kDontEllipsize,
+		//////			kIZPPrefsProjectFolderTextBoxKey,
+		//////			kInvalidWidgetID,
+		//////		),
+		//////		TextEditBoxWidget
+		//////		(
+		//////			kIZPPrefsProjectFolderTextEditBoxWidgetID,		// WidgetId
+		//////			kSysEditBoxPMRsrcId,		// RsrcId
+		//////			kBindNone,					// Frame binding
+		//////			60,20,320,40,				//(L,T,R,B)
+		//////			kTrue, kTrue				// Visible, Enabled
+		//////			0,							// Widget id of nudge button (0 so we dont get one)
+		//////			0, 0,						// small,large nudge amount
+		//////			0,							// max num chars( 0 = no limit)
+		//////			kTrue,						// is read only
+		//////			kFalse,						//**new in InDesign 2.0: should notify each key stroke
+		//////			kFalse,						// range checking enabled
+		//////			kTrue,						// blank entry allowed
+		//////			0,							// Upper bounds
+		//////			0,							// Lower bounds
+		//////			"",							// Initial text
+	 //////			),
+	 //////			
+	 //////			ButtonWidget
+		//////		(
+		//////			kIZPProjectFolderBrowseButtonWidgetID,	// WidgetID
+		//////			kSysButtonPMRsrcId,						// RsrcID
+		//////			kBindNone,								// Binding
+		//////			330,20,420,40,							//(L,T,R,B)
+		//////			kTrue,
+		//////			kTrue,									// Visible, Enabled
+		//////			kIZPPrefsBrowseButtonTextBoxKey,							// Button name
+		//////		),
+		//////	}
+		//////),
+	}
+};
+#endif //_h_IZPUI_PrefsDialog_

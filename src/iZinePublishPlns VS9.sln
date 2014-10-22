@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iZinePublish", "iZinePublish\Project\IZINE VS9.vcproj", "{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iZinePublishUI", "iZinePublishUI\Project\IZINEUI VS9.vcproj", "{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A} = {477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CS3Debug|Win32 = CS3Debug|Win32
+		CS3Release|Win32 = CS3Release|Win32
+		CS5_5Debug|Win32 = CS5_5Debug|Win32
+		CS5_5Release|Win32 = CS5_5Release|Win32
+		CS5Debug|Win32 = CS5Debug|Win32
+		CS5Release|Win32 = CS5Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS3Debug|Win32.ActiveCfg = CS3Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS3Debug|Win32.Build.0 = CS3Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS3Release|Win32.ActiveCfg = CS3Release|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS3Release|Win32.Build.0 = CS3Release|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5_5Debug|Win32.ActiveCfg = CS5_5Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5_5Debug|Win32.Build.0 = CS5_5Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5_5Release|Win32.ActiveCfg = CS5_5Release|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5_5Release|Win32.Build.0 = CS5_5Release|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5Debug|Win32.ActiveCfg = CS5Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5Debug|Win32.Build.0 = CS5Debug|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5Release|Win32.ActiveCfg = CS5Release|Win32
+		{477891EB-E2B4-4A02-B2AF-DDBA4A1A615A}.CS5Release|Win32.Build.0 = CS5Release|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS3Debug|Win32.ActiveCfg = CS3Debug|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS3Debug|Win32.Build.0 = CS3Debug|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS3Release|Win32.ActiveCfg = CS3Release|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS3Release|Win32.Build.0 = CS3Release|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5_5Debug|Win32.ActiveCfg = CS5_5Debug|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5_5Debug|Win32.Build.0 = CS5_5Debug|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5_5Release|Win32.ActiveCfg = CS5_5Release|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5_5Release|Win32.Build.0 = CS5_5Release|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5Debug|Win32.ActiveCfg = CS5Debug|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5Debug|Win32.Build.0 = CS5Debug|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5Release|Win32.ActiveCfg = CS5Release|Win32
+		{B989F6A3-EB43-4937-86A2-7C4CB3C67F9B}.CS5Release|Win32.Build.0 = CS5Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

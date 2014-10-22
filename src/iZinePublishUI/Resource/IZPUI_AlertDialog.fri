@@ -1,0 +1,145 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_AlertDialog.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-7-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+resource LocaleIndex (kZPUIAlertDialogResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUIAlertDialogResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPAlertDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZPAlertDialogBoss)
+{
+};
+
+#define ZPAlertDlg_Width	450
+#define ZPAlertDlg_Height	150
+
+#define ZPAlertDlg_BtnHeight	20
+#define ZPAlertDlg_BtnTop		(ZPAlertDlg_Height - ZPAlertDlg_BtnHeight - 10 )
+
+#define ZPAlertDlgGrp_Left		10
+#define ZPAlertDlgGrp_Top		15
+#define ZPAlertDlgGrp_Width		(ZPAlertDlg_Width - 10 - ZPAlertDlgGrp_Left)
+#define ZPAlertDlgGrp_Height	(ZPAlertDlg_BtnTop - 10 -ZPAlertDlgGrp_Top)
+#define ZPAlertDlgScroll_Width	20
+#define ZPAlertDlgBtn1_Left		ZPAlertDlgGrp_Left
+#define ZPAlertDlgBtn2_Left		(ZPAlertDlgBtn1_Left + 100 + 10)
+#define ZPAlertDlgBtn3_Left		(ZPAlertDlgBtn2_Left + 100 + 10)
+#define ZPAlertDlgBtn4_Left		(ZPAlertDlgBtn3_Left + 100 + 10)
+
+
+/*  Dialog definition.
+	This view is not localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IZP_enUS.fr etc.) and
+	update your Dialog LocaleIndex accordingly.
+*/
+resource ZPAlertDialogWidget (kZPUIAlertDialogResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUIAlertDlgWidgetID,			// WidgetID
+	kPMRsrcID_None,					// RsrcID
+	kBindNone,						// Binding
+	0, 0, ZPAlertDlg_Width, ZPAlertDlg_Height,					// Frame (l,t,r,b)
+	kTrue, kTrue,					// Visible, Enabled
+	"",		// Dialog name
+	{
+		
+		GenericPanelWithBorderWidget
+		(
+			0, kPMRsrcID_None,		// WidgetId, RsrcId
+			kBindAll,
+			Frame(ZPAlertDlgGrp_Left, ZPAlertDlgGrp_Top, (ZPAlertDlgGrp_Width + ZPAlertDlgGrp_Left ), (ZPAlertDlgGrp_Height + ZPAlertDlgGrp_Top ))
+			kTrue, kTrue,			// Visible, Enabled
+			"",
+			{
+				StaticMultiLineTextWidget
+				(
+					kZPUIAlertDlgMessageWidgetID,
+					kPMRsrcID_None,
+					kBindAll,
+					Frame(1, 1, (ZPAlertDlgGrp_Width - 1 -ZPAlertDlgScroll_Width ), ZPAlertDlgGrp_Height -1)
+					kTrue,kTrue,						//Visible,Enabled
+					// Static Text Attributes
+					kAlignLeft,							// Alignment
+					kDontEllipsize,						// Ellipsize style
+					ConvertAmpersandsTrue
+					kZPUIAlertDlgMessageScrollWidgetID,	//WidgetID of scrollbar
+					kDialogWindowHiliteFontId,			//InterfaceFontID
+					3,									//Number of pixels between lines
+					1,0,								//Inset amount
+					"",									//Initial text
+				),
+				ScrollBarWidget
+				(
+					kZPUIAlertDlgMessageScrollWidgetID,
+					kSysVScrollBarPMRsrcId,
+					kBindRight | kBindBottom,
+					Frame((ZPAlertDlgGrp_Width - 1 -ZPAlertDlgScroll_Width +1 ), 1, (ZPAlertDlgGrp_Width - 1 ), ZPAlertDlgGrp_Height -1)
+					kTrue,kTrue,					//Visible,Enabled
+					0, 100, 0, 1, 1,				// CCounterControlData
+					0, 0, 0, // not accelerate ( threshold, max,increment)
+				)
+			}
+		),
+		
+		ButtonWidget
+		(
+			kZPUIAlertDlgBtn1WidgetID,		// WidgetID
+			kSysButtonPMRsrcId,				// RsrcID
+			kBindNone,						// Binding
+			ZPAlertDlgBtn1_Left, ZPAlertDlg_BtnTop, ZPAlertDlgBtn2_Left - 5, ZPAlertDlg_BtnTop + ZPAlertDlg_BtnHeight,
+			kTrue, kTrue,					// Visible, Enabled
+			"",								// Button text
+		),
+		
+		ButtonWidget
+		(
+			kZPUIAlertDlgBtn2WidgetID,		// WidgetID
+			kSysButtonPMRsrcId,				// RsrcID
+			kBindNone,						// Binding
+			ZPAlertDlgBtn2_Left, ZPAlertDlg_BtnTop, ZPAlertDlgBtn3_Left - 5, ZPAlertDlg_BtnTop + ZPAlertDlg_BtnHeight,
+			kTrue, kTrue,					// Visible, Enabled
+			""
+		),
+
+		ButtonWidget
+		(
+			kZPUIAlertDlgBtn3WidgetID,		// WidgetID
+			kSysButtonPMRsrcId,				// RsrcID
+			kBindNone,						// Binding
+			ZPAlertDlgBtn3_Left, ZPAlertDlg_BtnTop, ZPAlertDlgBtn4_Left - 5, ZPAlertDlg_BtnTop + ZPAlertDlg_BtnHeight,
+			kTrue, kTrue,					// Visible, Enabled
+			""
+		),
+
+		ButtonWidget
+		(
+			kZPUIAlertDlgBtn4WidgetID,		// WidgetID
+			kSysButtonPMRsrcId,				// RsrcID
+			kBindNone,						// Binding
+			ZPAlertDlgBtn4_Left, ZPAlertDlg_BtnTop, ZPAlertDlgBtn4_Left + 90, ZPAlertDlg_BtnTop + ZPAlertDlg_BtnHeight,
+			kTrue, kTrue,					// Visible, Enabled
+			""
+		),
+	},
+};
+
+
+#endif // __ODFRC__

@@ -1,0 +1,12 @@
+
+
+Use visual studio macros to update the factory list.
+
+use "Design Details.xlsm" to update the class definition resource.
+
+Naming file/class
+
+	All interface files start with IZP or IZPUI
+	All interface implementation classes start with CZP or CZPUI
+	Non impl class/file start with ZP
+

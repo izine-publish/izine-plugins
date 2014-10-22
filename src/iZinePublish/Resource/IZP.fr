@@ -1,0 +1,141 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP.fr $
+//	$Revision: 4088 $
+//	$Date: 2012-10-26 14:24:55 +0200 (Fri, 26 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#include "VCPlugInHeaders.h"
+
+//Fr includes
+#include "ActionDef.fh"
+#include "ActionDefs.h"
+#include "AdobeMenuPositions.h"
+#include "BuildNumber.h"
+#include "IControlViewDefs.h"
+#include "IDList.fh"
+#include "IDListPair.fh"
+#include "InterfaceColorDefines.h"
+#include "INXMetadataDefs.h"
+#include "LocaleIndex.h"
+#include "ObjectModelTypes.fh"
+#include "PanelList.fh"
+#include "PMLocaleIds.h"
+#include "ScriptInfoTypes.fh"
+#include "StringTable.fh"
+#include "Widgets.fh"	// for PalettePanelWidget or DialogBoss
+
+// ID define includes:
+#include "ActionID.h"
+#include "AppFrameworkID.h"
+#include "AssignmentID.h"
+#include "CommandID.h"
+#include "DocFrameworkID.h"
+#include "DragDropID.h"
+#include "EPSID.h" // for kEPS...
+#include "GenericID.h" // IID_IADORN...
+#include "InCopyBridgeID.h"
+#include "InCopyBridgeUIID.h"
+#include "InCopyExportID.h"
+#include "INXCoreID.h"	// for kINXScriptManagerBoss
+#include "LayoutUIID.h"
+#include "LinksID.h" // kDataLinkBoss
+#ifdef InDnCS3
+//#include "LinksPanelID.h"
+#endif
+#include "LibraryProviderID.h"
+#include "MovieID.h" // kMovie...
+#include "PageItemScrapID.h"
+#include "ShuksanID.h"
+#include "SoundID.h" // kSound...
+#include "SysControlIDs.h"
+#include "TextID.h"
+#include "TextScriptID.h"	// kStory...
+#include "WidgetID.h"
+#include "workgroupID.h"
+#include "WorkspaceID.h"
+#include "WritingModeID2.h"
+#include "XMLID.h" // kXML...
+
+// Project includes:
+#include "IZPID.h"
+
+#ifdef __ODFRC__
+
+#define kInDesignProductAndServerFS	( kInDesignProductFS | kInDesignServerProductFS | kAllLanguagesFS)
+
+
+
+
+#pragma mark -
+// You do not need to mark any IDs that do not appear in the document 
+resource IgnoreTags(1)
+{
+	kImplementationIDSpace,
+	{
+		kZPWSConfigPersistImpl,
+		kZPPrefsPersistImpl,
+		kZPUserCredentialsPersistImpl,
+//		kZPAssetLocalInfoImpl,
+	}
+};
+
+resource IgnoreTags(2)
+{
+	kClassIDSpace,
+	{
+		kZPAssetLocalInfoBoss,
+	}
+};
+
+/*
+	The following resource asks the InDesign to warn the user that the data$
+	to the document is critical, if this plug-in is missing when
+	InDesign tries to open a document that contains the data.
+	Continuing opening the document opens the copy of document and not the original.
+*/
+
+resource CriticalTags(1)
+{
+	kImplementationIDSpace,
+	{
+//		kZPAssetDataPersistImpl,
+	}
+};
+/*
+resource CriticalTags(2)
+{
+	kClassIDSpace,
+	{
+//		kDocDataBoss,
+	}
+};
+*/
+
+/*	Implementation definition.
+*/
+resource FactoryList (kSDKDefFactoryListResourceID)
+{
+	kImplementationIDSpace,
+	{
+		#include "IZPFactoryList.h"
+	}
+};
+
+#include "IZP Version.fri"
+#include "IZP Aliases.fri"
+#include "IZP ClassDefinitions.fri"
+#include "IZP Addins.fri"
+#include "IZP Scripting.fri"
+#include "IZP Strings.fri"
+#include "IZP Schema.fri"
+#include "IZP ErrorTable.fri"
+
+#endif // __ODFRC__=======

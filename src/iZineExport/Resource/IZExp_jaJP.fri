@@ -1,0 +1,32 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp_jaJP.fri $
+//	$Revision: 2482 $
+//	$Date: 2010-11-09 15:30:38 +0100 (Tue, 09 Nov 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+
+#ifdef __ODFRC__
+
+
+// Japanese string table is defined here
+
+resource StringTable (kSDKDefStringsResourceID + index_jaJP)
+{
+		k_jaJP,	// Locale Id
+		0,		// Character encoding converter
+		{
+			// ----- Menu strings
+				kIZExpCompanyKey,					kIZExpCompanyValue,
+		}
+};
+
+#endif // __ODFRC__
+

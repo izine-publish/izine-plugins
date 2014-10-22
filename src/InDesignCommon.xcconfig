@@ -1,0 +1,64 @@
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/InDesignCommon.xcconfig $
+//	$Revision: 3984 $
+//	$Date: 2012-03-07 06:17:44 +0100 (Wed, 07 Mar 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 May 13
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Common configuration file to be added to all InDesign plugin projects
+
+#include "InDnLocalPaths.xcconfig"
+
+//General settings
+GCC_PREFIX_HEADER = $(InDesignSDK_Source)/precomp/gcc/PluginPrefix.pch
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) MACINTOSH $(BIB_THROW)
+SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES
+
+
+//InDesign specific settings
+IC_CREATOR = "InCp"
+
+ID_APPLICATION_TYPE = "APPL"
+ID_CREATOR = "InDn"
+ID_PLUGIN_OPTIONAL_TYPE = "InDa"
+ID_PLUGIN_REQUIRED_TYPE = "InDr"
+ID_PLUGIN_SDK_TYPE = "InD3"
+
+PLC_OUTPUT_CREATOR = InDn
+PLC_OUTPUT_TYPE = InDa
+
+WRAPPER_EXTENSION = InDesignPlugin
+
+
+//Paths 
+SDKROOT = $(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk
+SHARED_PRECOMPS_DIR = $(SYMROOT)/SharedPrecompiledHeaders/$(TARGET_NAME)
+
+InDesignSDK_Source=$(InDesignSDKDir)/Source
+InDesignSDK_PackageDir = $(InDesignSDKDir)/build/mac/$(DebugOrReleaseFolder)/packagefolder
+InDesignSDK_AppDir = $(InDesignSDK_PackageDir)/contents/macos
+
+FRAMEWORK_SEARCH_PATHS = $(FRAMEWORK_SEARCH_PATHS) $(InDesignSDK_PackageDir)/contents/macos $(InDesignSDK_PackageDir)/contents/Frameworks
+InDnCPPPaths = $(InDesignSDK_Source)/precomp/msvc $(InDesignSDK_Source)/precomp/common $(InDesignSDK_Source)/public/interfaces/xmedia $(InDesignSDK_Source)/public/interfaces/ui $(InDesignSDK_Source)/public/interfaces/utils $(InDesignSDK_Source)/public/interfaces/tables $(InDesignSDK_Source)/public/interfaces/text $(InDesignSDK_Source)/public/interfaces/graphics $(InDesignSDK_Source)/public/interfaces/workgroup $(InDesignSDK_Source)/public/interfaces/interactive $(InDesignSDK_Source)/public/interfaces/interactive/ui $(InDesignSDK_Source)/public/interfaces/colormgmt $(InDesignSDK_Source)/public/interfaces/utils $(InDesignSDK_Source)/public/interfaces/incopy $(InDesignSDK_Source)/public/interfaces/layout $(InDesignSDK_Source)/public/interfaces/architecture $(InDesignSDK_Source)/public/interfaces/cjk $(InDesignSDK_Source)/public/facades/graphics $(InDesignSDK_Source)/public/facades/text $(InDesignSDK_Source)/public/facades/layout $(InDesignSDK_Source)/public/includes $(InDesignSDK_Source)/sdksamples/common $(InDesignSDKDir)/external/afl/includes $(InDesignSDK_Source)/private/includes/architecture $(InDesignSDK_Source)/public/includes/utils
+InDnODFRCPaths = $(InDesignSDK_Source)/precomp/** $(InDesignSDK_Source)/public/includes $(InDesignSDKDir)source/components/documentui $(InDesignSDK_Source)/components/documentactions $(InDesignSDK_Source)/application/shared $(InDesignSDK_Source)/components/s4sp/control/includes $(InDesignSDK_Source)/components/kfkerning/hzincludes $(InDesignSDK_Source)/components/filters/pngfilter $(InDesignSDKDir)/external/application\ icons $(InDesignSDKDir)/external/workflow\ icons
+PLC_INCLUDES = $(PLC_INCLUDES) /Developer/Headers/FlatCarbon $(InDnODFRCPaths)
+
+LIBRARY_SEARCH_PATHS_IDLibs = "$(InDesignSDK_PackageDir)/contents/macos/Libs"
+LIBRARY_SEARCH_PATHS_IDModel = "$(InDesignSDK_PackageDir)/contents/macos/InDesignModel.framework/Versions/A"
+LIBRARY_SEARCH_PATHS_IDModelAndUI = "$(InDesignSDK_PackageDir)/contents/macos/InDesignModelAndUI.framework/Versions/A"
+
+INDNCS3_HEADER_PATHS = $(InDesignSDK_Source)/public/components/widgetbin/includes $(InDesignSDK_Source)/public/components/publiclib/plugins $(InDesignSDK_Source)/public/components/publiclib/files $(InDesignSDK_Source)/public/components/publiclib/objectmodel $(InDesignSDKDir)/external/adobesourcelibrary/third_party/boost_tp/boost
+
+INDNCS4_HEADER_PATHS = $(InDesignSDK_Source)/public/libs/widgetbin/includes $(InDesignSDK_Source)/public/libs/publiclib/plugins $(InDesignSDK_Source)/public/libs/publiclib/files $(InDesignSDK_Source)/public/libs/publiclib/objectmodel $(InDesignSDKDir)/external/asl/boost_libraries
+
+INDNCS5_HEADER_PATHS = $(InDesignSDK_Source)/precomp/gcc $(InDesignSDK_Source)/public/libs/widgetbin/includes $(InDesignSDK_Source)/public/libs/publiclib/plugins $(InDesignSDK_Source)/public/libs/publiclib/files $(InDesignSDK_Source)/public/libs/publiclib/objectmodel $(InDesignSDKDir)/external/asl/boost_libraries
+
+//Rule script must be similar to 
+//"$ODFRCCommandPath" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 "$INPUT_FILE_PATH" -o "$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc" $ODFRC_INCLUDE_PATHS
+ODFRCCommandPath = $(InDesignSDKDir)/devtools/bin/odfrc-cmd
+
+ODFRCArg1 = -d MACINTOSH -d __GNUC__  
+
+

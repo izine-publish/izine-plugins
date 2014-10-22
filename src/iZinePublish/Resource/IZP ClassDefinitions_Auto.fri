@@ -1,0 +1,920 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP%20ClassDefinitions_Auto.fri $
+//	$Revision: 4088 $
+//	$Date: 2012-10-26 14:24:55 +0200 (Fri, 26 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 29-3-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: This is auto generated file. Any change made to it will be lost. Generated
+//	from excel sheet macro.
+//========================================================================================
+
+
+	AddIn
+	{
+		kSessionBoss,
+		kInvalidClass,
+		{
+			IID_IZPWSCONTROLLER,	kZPWSControllerImpl,	// Add request to queue
+			IID_IZPDEFAULTSESSION,	kZPDefaultSessionImpl,	// stores the current login session, object of kZPUserSession
+			IID_IZPAPP,	kZPAppImpl,	// Provides objects of global managers
+			IID_IZPASSETSLOCALINFOMGR,	kZPAssetsLocalInfoMgrImpl,	// Manages assets local info persisted objects
+			IID_IZPPREVIEWMGR,	kZPPreviewMgrImpl,	// manages cache for preview
+			IID_IZPGLOBALTEMPDATA,	kZPGlobalTempDataImpl,	// stores intermediate values used for some Patch
+		}
+	},
+
+	AddIn
+	{
+		kWorkspaceBoss,
+		kInvalidClass,
+		{
+			IID_IZPWSCONFIG,	kZPWSConfigPersistImpl,	// persists, stores connection related info
+			IID_IZPUSERCREDENTIALS,	kZPUserCredentialsPersistImpl,	// for user name
+			IID_IZPASSETLOCALINFOUIDLIST,	kZPUIDListPersistImpl,	// Keeps info about what is downloaded and its state
+			IID_IZPPREFS,	kZPPrefsPersistImpl,	// stores small preferences values
+			IID_IZPLASTCLEARCACHEDATE,	kZPPersistGlobalTimeDataAliasImpl,	// Stores when the clear cache was last run.
+		}
+	},
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			IID_IZPINDNUTILS,	kZPInDnUtilsImpl,	// Common utils for InDesign/InCopy/Server
+			IID_IZPCOMMANDFACADE,	kZPCommandFacadeImpl,	// helper for calling commands
+			IID_IZPALERTUTILS,	kZPAlertUtilsImpl,	// util for displaying messages
+			IID_IZPFILEUTILS,	kZPFileUtilsImpl,	// file handling read/write/copy/delete
+			IID_IZPCOMPRESSIONUTILS,	kZPCompressionUtilsImpl,	// compress/decompress memory buff, file
+			IID_IZPAMDEBUGHELPER,	kZPAMDebugHelperImpl,	// Helper to provide debug strings for service ids.
+			IID_IZPAMHELPER,	kZPAMHelperImpl,	// Asset Management Helper
+			IID_IZPAMWSUTILS,	kZPAMWSUtilsImpl,	// Utils for calling WS sync/async related to assets
+			IID_IZPDOCUTILS,	kZPDocUtilsImpl,	// Document reated utils
+			IID_IZPSTORYUTILS,	kZPStoryUtilsImpl,	// Utils for dealing with stories.
+			IID_IZPASSETUTILS,	kZPAssetUtilsImpl,	// Helper class for Asset handling. Nothing to do with AM.
+			IID_IZPASSETDOCUTILS,	kZPAssetDocUtilsImpl,	// Helper class for document handling.
+			IID_IZPWSUTILS,	kZPWSUtilsImpl,	// Non-Asset, WS sysn/async calling utils.
+		}
+	},
+
+	AddIn
+	{
+		kDocBoss,
+		kInvalidClass,
+		{
+			IID_IZPASSETDATA,	kZPAssetDataPersistImpl,	// Asset related info like ID, title, edition
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Asset name, description, status etc.
+//			IID_IZPASSETVERSIONINFODATA,	kZPAssetVersionInfoDataImpl,	// Version related info like ID, number, date, user,
+			IID_IZPASSIGNMENTCMDINTERCEPTOR,	kZPAssignmentCmdInterceptorImpl,	// patch path used to created assignment
+			IID_IZPTEMPLATECMDINTERCEPTOR,	kZPTemplateCmdInterceptorImpl,	// patch to support IC templates and stop assignment creation in ID template
+			IID_IZPISTEMPLATECOPY,	kZPFalseInitBoolDataImpl,	// True if template document opened as copy, not as original
+			IID_IZPDOCCMDOBSERVER,	kZPDocCmdObserverImpl,	// capture command after do messages, patch for frame copy paste
+		}
+	},
+
+	AddIn
+	{
+		kAssignmentBoss,
+		kInvalidClass,
+		{
+			IID_IZPASSETDATA,	kZPAssetDataPersistImpl,	// Asset related info like ID, title, edition
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Asset name, description, status etc.
+//			IID_IZPASSETVERSIONINFODATA,	kZPAssetVersionInfoDataImpl,	// Version related info like ID, number, date, user,
+			IID_IZPSTORYCHECKINMADE,	kFalseInitBoolDataImpl,	// Flag to check if any story check-in was made. Used only in InCopy
+		}
+	},
+
+	AddIn
+	{
+		kDataLinkBoss,
+		kInvalidClass,
+		{
+			IID_IZPASSETDATA,	kZPAssetDataPersistImpl,	// Asset related info like ID, title, edition
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Asset name, description, status etc.
+//			IID_IZPASSETVERSIONINFODATA,	kZPAssetVersionInfoDataImpl,	// Version related info like ID, number, date, user,
+		}
+	},
+	
+#if defined(InDnCS5) || defined(InDnCS5_5)
+	AddIn
+	{
+		kBidirectionalLinkBoss,
+		kInvalidClass,
+		{
+			IID_IZPASSETDATA,	kZPAssetDataPersistImpl,	// Asset related info like ID, title, edition
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Asset name, description, status etc.
+			IID_IGETWORKGROUPSTATE, kBoolDataImpl,
+		}
+	},
+	
+	AddIn
+	{
+		kImportLinkBoss,
+		kInvalidClass,
+		{
+			IID_IZPASSETDATA,	kZPAssetDataPersistImpl,	// Asset related info like ID, title, edition
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Asset name, description, status etc.
+		}
+	}
+	
+	AddIn
+	{
+		kIntegratorSuiteBoss,
+		kInvalidClass,
+		{
+			IID_IZPICEXPORTSUITE,	kZPICExportSuiteASBImpl,
+		}
+	},
+	
+	AddIn
+	{
+		kLayoutSuiteBoss,
+		kInvalidClass,
+		{
+		/** Selection suite implementation */
+			IID_IZPICEXPORTSUITE,	kZPICExportSuiteLayoutImpl,
+		}
+	},	
+	
+#endif
+
+	AddIn
+	{
+		kAssignSetPropsCmdBoss,
+		kInvalidClass,
+		{
+			IID_IZPRUNBYPUBLISH,	kZPFalseInitBoolDataImpl,	// True if command was run by this plugin,
+		}
+	},
+
+	Class
+	{
+		kZPAppBoss,
+		kInvalidClass,
+		{
+			IID_IZPAPPCONTROLLER,	kZPAppControllerImpl,	// Maintains states of application.
+			IID_IZPLOGINCONTROLLER,	kZPLoginControllerImpl,	// handles the login process.
+			IID_IZPWSRESPONSEHANDLER,	kZPWSResponseHandlerImpl,	// handles the response received from WSController
+			IID_IZPWSLOGINRESPONSEHANDLER,	kZPWSLoginResponseHandlerImpl,	// handles the login request response
+			IID_IZPCONFIGCONTROLLER,	kZPConfigControllerImpl,	// handles meta data managers
+			IID_IOBSERVER,	kZPAppObserverImpl,	// Observes messages and calls respective controller
+			IID_IIDLETASK,	kZPAppIdleTaskImpl,	// Common idle task, used by CZPIdleTaskMgr
+			IID_ISUBJECT,	kCSubjectImpl,	// used to send message
+		}
+	},
+
+	Class
+	{
+		kZPAppInitializerBoss,
+		kInvalidClass,
+		{
+			IID_IINITIALIZER,	kZPAppEarlyInitializerImpl,	// Create objects, before startup
+		}
+	},
+
+	Class
+	{
+		kZPStartupShutdownBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kCStartupShutdownProviderImpl,	// default impl for startup shutdown
+#if defined(InDnCS5) || defined(InDnCS5_5)
+			IID_ISTARTUPSHUTDOWN,	kZPStartupShutdownImpl,
+#else
+			IID_IAPPSTARTUPSHUTDOWN,	kZPStartupShutdownImpl,
+#endif
+		}
+	},
+
+	Class
+	{
+		kZPConversionProviderBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kConversionServiceImpl,
+			IID_ICONVERSIONPROVIDER,	kSchemaBasedConversionImpl,
+		}
+	},
+
+	Class
+	{
+		kZPErrorStringServiceBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kErrorStringProviderImpl,
+			IID_IERRORSTRINGSERVICE,	kZPErrorStringServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPUserSessionBoss,
+		kInvalidClass,
+		{
+			IID_IZPUSERCREDENTIALS,	kZPUserCredentialsImpl,	// Credentials used to authenticate
+			IID_IZPSESSIONDATA,	kZPSessionDataImpl,	// ticket or cookies if any
+//			IID_IZPLASTREQUESTTIME,	kIntDataImpl,	// used to send keep alive packet
+			IID_IZPISVALID,	kFalseInitBoolDataImpl,	// If authenticated
+			IID_IZPUSERROLE,	kZPUserRoleImpl,	// permission related info
+		}
+	},
+
+	Class
+	{
+		kZPDataMgrBoss,
+		kInvalidClass,
+		{
+			IID_ISUBJECT,	kCSubjectImpl,	// used to send message
+			IID_IZPASSETMGR,	kZPAssetMgrImpl,	// Maintains the list/tree of assets
+			IID_IZPTITLEMGR,	kZPTitleMgrImpl,	// Maintains the list of titles available.
+			IID_IZPEDITIONMGR,	kZPEditionMgrImpl,	// Maintains the list of editions
+			IID_IZPTITLESTATUSMGR,	kZPTitleStatusMgrImpl,	// Maintains list of status
+			IID_IZPUSERMGR,	kZPUserMgrImpl,	// Maintains the list of Users.
+			IID_IZPTASKMGR,	kZPTaskMgrImpl,	// Maintains list of tasks
+			IID_IZPTASKSTATUSMGR,	kZPTaskStatusMgrImpl,	// Maintains list of tasks status
+			IID_IZPTASKCATEGORYMGR,	kZPTaskCategoryMgrImpl,	// Maintains list of task categories
+			IID_IOBSERVER,	kZPDataObserverImpl,	// Observe login and server response
+			IID_IIDLETASK,	kZPDataIdleTaskImpl,	// Fetches Title,Editition,Status after 30 min interval
+		}
+	},
+
+	Class
+	{
+		kZPAssetLocalInfoBoss,
+		kInvalidClass,
+		{
+			IID_ISUBJECT,	kCSubjectImpl,	// used to send message
+			IID_IZPASSETLOCALINFO,	kZPAssetLocalInfoImpl,	// Stores asset's machine specific information
+			IID_IZPDATAID,	kPersistStringDataImpl,	// AssetID persisted
+			IID_IPMPERSIST,	kPMPersistImpl,
+			IID_IDATETIMEDATA,	kZPDateTimeDataPersistImpl,	// time stamp when it was last modified.
+		}
+	},
+
+	Class
+	{
+		kZPSoapRequestBoss,
+		kInvalidClass,
+		{
+			IID_IZPSOAPREQUEST,	kZPSoapRequestImpl,	// wrapper for AZPSoapRequest objects
+		}
+	},
+
+	Class
+	{
+		kZPSyncSoapRequestBoss,
+		kZPSoapRequestBoss,
+		{
+			IID_IZPSOAPRESPONSE,	kZPSoapResponseImpl,	// wrapper for AZPSoapResponse object.
+			IID_IZPWSRESPONSEHANDLER,	kZPWSResponseHolderImpl,	// Stores the response received from WS if any.
+		}
+	},
+
+	/* Object created and maintained by WSController. */
+	Class
+	{
+		kZPWSThreadBoss,
+		kInvalidClass,
+		{
+			IID_IIDLETASKTHREAD,	kZPWSIdleTaskThreadImpl,	// idle task thread for request processing
+			IID_IZPWSTHREADHANDLER,	kZPWSThreadHandlerImpl,	// Maintains list of request to process.
+			IID_IZPWSCALLHELPER,	kZPWSCallHelperImpl,	// Gives info about request types, skip old/new
+		}
+	},
+
+	Class
+	{
+		kZPSaveWSConfigCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZPSaveWSConfigCmdImpl,	// Takes target from item list
+			IID_IZPWSCONFIG,	kZPWSConfigImpl,	// Data to save
+		}
+	},
+
+	Class
+	{
+		kZPSaveUserCredentialCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZPSaveUserCredentialsCmdImpl,	// Takes target from item list
+			IID_IZPUSERCREDENTIALS,	kZPUserCredentialsImpl,	// Data to save
+		}
+	},
+
+	Class
+	{
+		kZPSaveAssetDataCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZPSaveAssetDataCmdImpl,	// Takes target from item list
+			IID_IZPASSETDATA,	kZPAssetDataImpl,	// Data to save, non-persist impl
+		}
+	},
+
+	Class
+	{
+		kZPModifyPersistUIDListCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZPModifyPersistUIDListCmdImpl,	// Create/Delete a UID and add/remove to a UID list
+			IID_IBOOLDATA,	kFalseInitBoolDataImpl,	// true will perform delete else create a new UID
+			IID_IINTERFACEIDDATA,	kInterfaceIDDataImpl,	// inteface ID of IZPUIDListData to modify
+			IID_ICLASSIDDATA,	kClassIDDataImpl,	// new UID to create of ClassIDData
+		}
+	},
+
+	/* Command to update asset local info */
+	Class
+	{
+		kZPModifyAssetLocalInfoCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZPModifyAssetLocalInfoCmdImpl,
+			IID_IINTDATA,	kIntDataImpl,	// version number
+			IID_IBOOLDATA,	kBoolDataImpl,	// is modified
+			IID_IZPMODIFYASSETLOCALINFOFLAGS,	kZPIntDataAliasImpl,	// flags for data to update
+			IID_IZPDATAID,	kZPDataIDStringDataImpl,	// Asset ID to set
+		}
+	},
+
+	Class
+	{
+		kZPSavePrefsCmdBoss,
+		kInvalidClass,
+		{
+			IID_ICOMMAND,	kZPSavePrefsCmdImpl,	// Target must be workspace.
+			IID_IZPPREFS,	kZPPrefsImpl,	// Non-persist Impl
+		}
+	},
+
+	Class
+	{
+		kZPLinkResponderBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kZPLinkResponderServiceProviderImpl,
+			IID_IRESPONDER,	kZPLinkResponderImpl,	// Used to patch new ID story
+		}
+	},
+
+	Class
+	{
+		kZPDocSignalResponderBoss,
+		kInvalidClass,
+		{
+			IID_IK2SERVICEPROVIDER,	kZPDocResponderServiceProviderImpl,
+			IID_IRESPONDER,	kZPDocSignalResponderImpl,	// Observe doc signals
+		}
+	},
+
+	/* Represent DB object - No object created of this boss, only derived. */
+	Class
+	{
+		kZPDBObjectBoss,
+		kInvalidClass,
+		{
+			IID_IZPDATAID,	kZPDataIDStringDataImpl,
+			IID_IZPDATANAME,	kZPDataNameStringDataImpl,
+			IID_ISUBJECT,	kCSubjectImpl,	// used to send message
+			IID_IZPCACHEMGRCOUNT,	kIntDataImpl,	// Used by cache manager to keep its reference count. Not used by title mgr
+			IID_IZPDBOBJCONTROLLER,	kZPDBObjControllerImpl,	// Used to mark dirty and for refetching its contents.
+		}
+	},
+
+	/* Represent DB object - title */
+	Class
+	{
+		kZPDataTitleBoss,
+		kZPDBObjectBoss,
+		{
+			IID_IZPSTATUSLIST,	kZPStatusListImpl,	// list of status ids
+			IID_IZPEDITIONLIST,	kZPEditionListImpl,	// list of edition ids
+			IID_IZPUSERLIST,	kZPUserListImpl,	// list of user ids
+		}
+	},
+
+	/* Represent DB object - status */
+	Class
+	{
+		kZPDataTitleStatusBoss,
+		kZPDBObjectBoss,
+		{
+			IID_IZPTITLESTATUSINFO,	kZPTitleStatusInfoImpl,	// More details about the status.
+		}
+	},
+
+	/* Represent DB object - Edition */
+	Class
+	{
+		kZPDataTitleEditionBoss,
+		kZPDBObjectBoss,
+		{
+			IID_IZPASSETLIST,	kZPAssetListImpl,	// list of asset ids
+			IID_IZPTASKLIST,	kZPTaskListImpl,	// list of tasks for this edition
+			IID_IZPDBOBJCONTROLLER,	kZPEditionObjControllerImpl,	// controller for Edition cached object
+		}
+	},
+
+	/* Represent DB object - asset */
+	Class
+	{
+		kZPDataAssetBoss,
+		kZPDBObjectBoss,
+		{
+			IID_IZPASSETINFO,	kZPAssetInfoImpl,	// detail info of asset
+			IID_IZPASSETLOCKINFO,	kZPAssetLockInfoImpl,	// details about lock
+			IID_IZPDBOBJCONTROLLER,	kZPAssetObjControllerImpl,	// controller for Asset cached object
+			IID_IZPASSETMONITOROBSERVECOUNTER,	kIntDataImpl,	// Counter to help Asset Monitor
+		}
+	},
+
+	/* Name is Subject of task */
+	Class
+	{
+		kZPDataTaskBoss,
+		kZPDBObjectBoss,
+		{
+			IID_IZPTASKINFO,	kZPTaskInfoImpl,	// detail info of task
+		}
+	},
+
+	/* Task status like New, Assigned, Done, Closed */
+	Class
+	{
+		kZPDataTaskStatusBoss,
+		kZPDBObjectBoss,
+		{
+		}
+	},
+
+	/* Task category like Editing, Image placement, styling */
+	Class
+	{
+		kZPDataTaskCategoryBoss,
+		kZPDBObjectBoss,
+		{
+		}
+	},
+
+	/* User configured in DB */
+	Class
+	{
+		kZPDataUserBoss,
+		kZPDBObjectBoss,
+		{
+		}
+	},
+
+	
+#if defined(InDnCS5) || defined(InDnCS5_5)
+	AddIn
+	{
+		kLinkResourceBoss,
+		kInvalidClass,
+		{			
+			IID_IZPASSETDATA,	kZPAssetDataPersistImpl,,				
+			IID_IZPASSETCHECKINDATA,	kZPAssetCheckInDataImpl,	// Asset name, description, status etc.			
+		}	
+	}
+#endif
+
+/* Represets our asset management system provider for document */
+	Class
+	{
+		kZPAMSPDocumentBoss,
+		kAMSPBoss,
+		{
+			IID_IAMSYSTEMPROVIDER,	kZPAMDocumentSystemProviderImpl,
+			IID_IAMSERVICEPROVIDER,	kZPAMDocumentServiceProviderImpl,
+			IID_IAMUIENABLEMENTRULES,	kZPAMDocUIEnablementRulesImpl,
+			IID_IASSETMONITOR,	kZPAMDocAssetMonitorImpl,
+		}
+	},
+
+	/* Represets our asset management system provider for Assignments */
+	Class
+	{
+		kZPAMSPAssignmentBoss,
+		kAMSPBoss,
+		{
+			IID_IAMSYSTEMPROVIDER,	kZPAMAssignmentSystemProviderImpl,
+			IID_IAMSERVICEPROVIDER,	kZPAMAssignmentServiceProviderImpl,
+			IID_IAMUIENABLEMENTRULES,	kZPAMAssignmentUIEnablementRulesImpl,
+			IID_IASSETMONITOR,	kZPAMAssignmentAssetMonitorImpl,
+		}
+	},
+
+	/* Represets our asset management system provider for linked stories */
+	Class
+	{
+		kZPAMSPLinkedStoryBoss,
+		kAMSPBoss,
+		{
+			IID_IAMSYSTEMPROVIDER,	kZPAMLinkedStorySystemProviderImpl,
+			IID_IAMSERVICEPROVIDER,	kZPAMLinkedStoryServiceProviderImpl,
+			IID_IAMUIENABLEMENTRULES,	kZPAMLinkedStoryUIEnablementRulesImpl,
+			IID_IASSETMONITOR,	kZPAMLinkedStoryAssetMonitorImpl,	// Periodically checks for lock/version changes.
+			IID_IOBSERVER,	kZPAMAssetObserverImpl,	// Listen to ZPDataAsset objects for change messages
+		}
+	},
+
+	/* Represets our asset management system provider for InCopy document */
+	Class
+	{
+		kZPAMSPICDocumentBoss,
+		kZPAMSPDocumentBoss,
+		{
+			IID_IAMSERVICEPROVIDER,	kZPAMICDocumentServiceProviderImpl,
+			IID_IAMSYSTEMPROVIDER,	kZPAMICDocumentSystemProviderImpl,	// Only for InCopy, Not used in InDesign
+		}
+	},
+
+	/* Base class for managed status */
+	Class
+	{
+		kZPAMManagedStatusBoss,
+		kManagedStatusBoss,
+		{
+//			IID_IMANAGEDSTATUS,	kZPAMManagedStatusDelegateImpl,	// use kZPAMManagedStatusDelegate to debug and uncomment IZPManagedStatus also
+			IID_IZPDATAID,	kZPDataIDStringDataImpl,	// Asset ID, can be nil till not logged in.
+//			IID_IZPMANAGEDSTATUS,	kManagedStatusImpl,	// debugging only, Used to delegate the calls to.
+		}
+	},
+
+	Class
+	{
+		kZPAMDocManagedStatusBoss,
+		kZPAMManagedStatusBoss,
+		{
+			IID_IAMLOCKABLE,	kZPAMLockableImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryManagedStatusBoss,
+		kZPAMManagedStatusBoss,
+		{
+			IID_IAMLOCKABLE,	kZPAMLockableImpl,
+		}
+	},
+
+	Class
+	{
+		kZPDocFileHandlerBoss,
+		kInvalidClass,
+		{
+			IID_IDOCFILEHANDLER,	kZPDocFileHandlerImpl,	// Used in InCopy only
+		}
+	},
+
+	/* all AM Service classes must be derived from it. */
+	Class
+	{
+		kZPAMServiceBoss,
+		kInvalidClass,
+		{
+#if 1
+			IID_IAMSERVICEDATA,	kAMServiceDataImpl,
+#else
+			IID_IZPAMSERVICEDATADELEGATE,	kAMServiceDataImpl,
+			IID_IAMSERVICEDATA,	kZPAMServiceDataDelegateImpl,
+#endif
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentInitializeServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentInitializeServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentCancelCheckOutServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentCancelCheckOutServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentCheckInServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentCheckInServiceImpl,
+			IID_ISAVEASSETCONTENT,	kSaveDocumentContentImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentCheckOutServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentCheckOutServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentRevertServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentRevertServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentEnsureLatestVersionServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentEnsureLatestVersionServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentAfterSaveServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentAfterSaveServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentUpdateStoredAssetRefServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentUpdateStoredRefServiceImpl,	// Not used
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentUpdateProxyVersionNumServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentUpdateProxyVersionNumServiceImpl,	// Not used
+		}
+	},
+
+	Class
+	{
+		kZPAMDocumentTerminateServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMDocumentTerminateServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMICDocumentInitializeServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMICDocumentInitializeServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMICDocumentCheckInServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMICDocumentCheckInServiceImpl,
+			IID_ISAVEASSETCONTENT,	kSaveDocumentContentImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMICDocumentCheckOutServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMICDocumentCheckOutServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMICDocumentAfterSaveServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMICDocumentAfterSaveServiceImpl,	// Used to patch check-in of new IC document
+		}
+	},
+
+	/* Only for InCopy */
+	Class
+	{
+		kZPAMAssignmentInitializeServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentInitializeServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentCheckInServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentCheckInServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentCheckOutServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentCheckOutServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentCancelCheckOutServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentCancelCheckoutServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentRevertServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentRevertServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentEnsureLatestVersionServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentEnsureLatestVersionServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentAfterSaveServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentAfterSaveServiceImpl,	// Mark all check-out story as dirty.
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentUpdateStoredAssetReferenceServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentUpdateStoredRefServiceImpl,	// Not used
+		}
+	},
+
+	Class
+	{
+		kZPAMAssignmentUpdateProxyVersionNumberServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentUpdateProxyVersionNumServiceImpl,	// Not used
+		}
+	},
+
+	/* Only for InCopy, to show check-in dialog */
+	Class
+	{
+		kZPAMAssignmentTerminateServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMAssignmentTerminateServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryInitializeServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryInitializeServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryCheckInServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryCheckInServiceImpl,
+			IID_ISAVEASSETCONTENT,	kSaveStoryContentImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryAfterCheckInServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryAfterCheckInServiceImpl,	// Update assignment status of which story is child
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryCheckOutServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryCheckOutServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryCancelCheckOutServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryCancelCheckoutServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryRevertServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryRevertServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryEnsureLatestVersionServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryEnsureLatestVersionServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryAfterSaveServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryAfterSaveServiceImpl,	// Not called by AM
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryUpdateStoredAssetReferenceServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryUpdateStoredRefServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryUpdateProxyVersionNumberServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryUpdateProxyVersionNumServiceImpl,	// Not doing anything
+		}
+	},
+
+	Class
+	{
+		kZPAMLinkedStoryTerminateServiceBoss,
+		kZPAMServiceBoss,
+		{
+			IID_IAMSERVICE,	kZPAMLinkedStoryTerminateServiceImpl,
+		}
+	},
+
+	Class
+	{
+		kZPAssetDataScriptProviderBoss,
+		kBaseScriptProviderBoss,
+		{
+			IID_ISCRIPTPROVIDER,	kZPAssetDataScriptProviderImpl,
+		}
+	},
+

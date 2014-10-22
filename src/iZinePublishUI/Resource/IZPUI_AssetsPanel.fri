@@ -1,0 +1,288 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_AssetsPanel.fri $
+//	$Revision: 4089 $
+//	$Date: 2012-10-30 06:59:29 +0100 (Tue, 30 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 27-4-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+type IZPAssetsPanelWidget(kViewRsrcType) : PalettePanelWidget(ClassID = kZPUIAssetsPanelWidgetBoss)
+{
+	CPanelMenuData;
+};
+
+resource PanelList (kZPUIAssetsPanelResourceID)
+{
+	{
+		// 1st panel in the list
+		kZPUIAssetsPanelResourceID,		// Resource ID for this panel (use SDK default rsrc ID)
+		kIZPUIPluginID,					// ID of plug-in that owns this panel
+		kIsResizable,
+		kIZPAssetsPanelWidgetActionID,	// Action ID to show/hide the panel		
+#if defined(InDnCS5) || defined(InDnCS5_5)
+		"",								// Shows up in the Window list.
+		"",								// Alternate menu path of the form "Main:Foo" if you want your palette menu item in a second place
+#else
+		kIZPUIPluginsMenuKey ":" kIZPAssetsPanelTitleKey,	// Shows up in the Window list.
+		"",													// Alternate menu path of the form "Main:Foo" if you want your palette menu item in a second place
+#endif
+		601,							// Alternate Menu position Alternate Menu position for determining menu order
+		0,0,							// Rsrc ID, Plugin ID for a PNG icon resource to use for this palette
+		c_Panel
+	}
+};
+
+resource LocaleIndex (kZPUIAssetsPanelResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUIAssetsPanelResourceID + index_enUS
+	}
+};
+
+#define ZPAssetPnlWidth		911
+#define ZPAssetPnlHeight	185
+
+#define ZPAssetPnlLeftMargin		10
+#define ZPAssetPnlRightMargin		10
+#define ZPAssetPnlTopMargin			10
+#define ZPAssetPnlBottomMargin		10
+#define ZPAssetPnlLblRightMarign	5
+#define ZPAssetPnlCtrlVMarign		5
+#define ZPAssetPnlCtrlHMarign		10
+#define ZPAssetPnlCtrlLblHeight		18
+#define ZPAssetPnlCtrlTxtHeight		20
+#define ZPAssetPnlCtrlPopHeight		20
+#define ZPAssetPnlCtrlBtnHeight		18
+
+//Top Bottom calculations
+#define ZPAssetPnlPopTitle_T		ZPAssetPnlTopMargin
+#define ZPAssetPnlHdrAssets_T		(ZPAssetPnlPopTitle_T + ZPAssetPnlCtrlPopHeight + ZPAssetPnlCtrlVMarign)
+#define ZPAssetPnlLstAssets_T		(ZPAssetPnlHdrAssets_T + 19)
+#define ZPAssetPnlLstAssets_B		(ZPAssetPnlTxtUser_T - ZPAssetPnlCtrlVMarign )
+#define ZPAssetPnlTxtUser_T			(ZPAssetPnlTxtUser_B - ZPAssetPnlCtrlTxtHeight )
+#define ZPAssetPnlTxtUser_B			(ZPAssetPnlHeight - ZPAssetPnlBottomMargin )
+
+
+//Left Right calculations
+	//First Row
+#define ZPAssetPnlPopTitle_L		ZPAssetPnlLeftMargin
+#define ZPAssetPnlPopTitle_R		(ZPAssetPnlPopTitle_L + 150 )
+#define ZPAssetPnlPopEdition_L		(ZPAssetPnlPopTitle_R + ZPAssetPnlCtrlHMarign )
+#define ZPAssetPnlPopEdition_R		(ZPAssetPnlPopEdition_L + 150 )
+#define ZPAssetPnlBtnRefresh_L		(ZPAssetPnlPopEdition_R + ZPAssetPnlCtrlHMarign )
+#define ZPAssetPnlBtnRefresh_R		(ZPAssetPnlBtnRefresh_L + 80 )
+
+	//Second Row
+#define ZPAssetPnlLblAssetName_L	ZPAssetPnlLeftMargin
+#define ZPAssetPnlLblAssetName_R	(ZPAssetPnlLblAssetName_L + 80 )
+#define ZPAssetPnlTxtAssetName_L	(ZPAssetPnlLblAssetName_R + 5 )
+#define ZPAssetPnlTxtAssetName_R	(ZPAssetPnlTxtAssetName_L + 100 )
+#define ZPAssetPnlLblAssetType_L	(ZPAssetPnlTxtAssetName_R + ZPAssetPnlCtrlHMarign )
+#define ZPAssetPnlLblAssetType_R	(ZPAssetPnlLblAssetType_L + 80 )
+#define ZPAssetPnlBtnPopAssetType_L	(ZPAssetPnlLblAssetType_R + 5 )
+#define ZPAssetPnlBtnPopAssetType_R	(ZPAssetPnlBtnPopAssetType_L + 20 )
+#define ZPAssetPnlLblLockedBy_L		(ZPAssetPnlBtnPopAssetType_R + ZPAssetPnlCtrlHMarign )
+#define ZPAssetPnlLblLockedBy_R		(ZPAssetPnlLblLockedBy_L + 80 )
+#define ZPAssetPnlPopLockedBy_L		(ZPAssetPnlLblLockedBy_R + 5 )
+#define ZPAssetPnlPopLockedBy_R		(ZPAssetPnlPopLockedBy_L + 100 )
+
+	//Third Row
+#define ZPAssetPnlHdrAssets_L		ZPAssetPnlLeftMargin
+#define ZPAssetPnlHdrAssets_R		(ZPAssetPnlPreview_L - ZPAssetPnlCtrlHMarign )
+#define ZPAssetPnlPreview_L			(ZPAssetPnlPreview_R - 150 )
+#define ZPAssetPnlPreview_R			(ZPAssetPnlWidth - ZPAssetPnlRightMargin )
+
+	//Fourth Row
+#define ZPAssetPnlLblCurrUser_L		ZPAssetPnlLeftMargin
+#define ZPAssetPnlLblCurrUser_R		(ZPAssetPnlLblCurrUser_L + 50 )
+#define ZPAssetPnlTxtCurrUser_L		(ZPAssetPnlLblCurrUser_R + 5 )
+#define ZPAssetPnlTxtCurrUser_R		(ZPAssetPnlTxtCurrUser_L + 300 )
+#define ZPAssetPnlTxtCurrVersion_L	(ZPAssetPnlTxtCurrVersion_R - 100 )
+#define ZPAssetPnlTxtCurrVersion_R	(ZPAssetPnlWidth - ZPAssetPnlRightMargin )
+
+/*	PanelView definition.
+	The view is not currently localised: therefore, it can reside here.
+	However, if you wish to localise it, it is recommended to locate it in one of
+	the localised framework resource files (i.e. IZP_enUS.fr etc.).
+*/
+resource IZPAssetsPanelWidget(kZPUIAssetsPanelResourceID + index_enUS)
+{
+	__FILE__, __LINE__,					// Localization macro
+	kZPUIAssetsPanelWidgetID,			// WidgetID
+	kPMRsrcID_None,						// RsrcID
+	kBindAll,							// Binding (0=none)
+	0, 0, ZPAssetPnlWidth, ZPAssetPnlHeight,	// Frame: left, top, right, bottom.
+	kTrue, kFalse,						// Visible, Enabled
+	kTrue,								// Erase background
+	kInterfacePaletteFill,				// Erase to color
+	kFalse,								// Draw dropshadow
+	kIZPAssetsPanelTitleKey,			// Panel name
+	{
+	//First Row
+		ZPTitlesDropdownWidget
+		(
+			kZPUIAssetsPanelTitleDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | kBindTop,
+			Frame(ZPAssetPnlPopTitle_L, ZPAssetPnlPopTitle_T, ZPAssetPnlPopTitle_R, ZPAssetPnlPopTitle_T + ZPAssetPnlCtrlPopHeight),
+			kTrue, kTrue,				// Visible, Enabled
+			{{
+			}}
+		),
+		
+		ZPEditionsDropdownWidget
+		(
+			kZPUIAssetsPanelEditionDropDownWidgetID,
+			kSysDropDownPMRsrcId,
+			kBindLeft | kBindTop,
+			Frame(ZPAssetPnlPopEdition_L, ZPAssetPnlPopTitle_T, ZPAssetPnlPopEdition_R, ZPAssetPnlPopTitle_T + ZPAssetPnlCtrlPopHeight),
+			kTrue, kTrue,				// Visible, Enabled
+			{{
+			}}
+		),
+		
+		//Refresh button
+		DefaultButtonWidget
+		(
+			kZPUIAssetsPanelRefreshButtonWidgetID,	// WidgetID
+			kSysButtonPMRsrcId,						// Icon resource ID
+			kBindLeft | kBindTop,
+			Frame(ZPAssetPnlBtnRefresh_L, ZPAssetPnlPopTitle_T, ZPAssetPnlBtnRefresh_R, ZPAssetPnlPopTitle_T + ZPAssetPnlCtrlBtnHeight),
+			kTrue, kTrue,							// Visible, Enabled
+			kIZPAssetsPanelRefreshButtonKey,
+		),
+		
+	//Second Row
+		//TODO:
+
+
+	//Third Row
+		ZPTVHeaderWidget
+		(
+			kZPUIAssetsPanelHdrAssetsWidgetID,	// widget ID
+			kPMRsrcID_None,						// PMRsrc ID
+			kBindLeft | kBindTop | kBindRight,	// frame binding
+			#if defined(InDnCS5) || defined(InDnCS5_5)
+			Frame(ZPAssetPnlHdrAssets_L - 1, ZPAssetPnlHdrAssets_T, ZPAssetPnlHdrAssets_R, ZPAssetPnlLstAssets_T-1)	// Frame
+			#else
+			Frame(ZPAssetPnlHdrAssets_L, ZPAssetPnlHdrAssets_T, ZPAssetPnlHdrAssets_R, ZPAssetPnlLstAssets_T-1)	// Frame
+			#endif			
+			kTrue, kTrue,						// Visible, Enabled
+			2,									//Tree Type - Assets
+			kZPUIAssetsPanelLstAssetsWidgetID,//Associated Tree WidgetID
+			{
+				GenericPanelWidget
+				(
+					kZPUITVHdrControlStripWidgetID, // widget ID
+					kPMRsrcID_None,					// PMRsrc ID
+					kBindLeft | kBindTop,			// frame binding
+					Frame(0, 0, ZPAssetPnlHdrAssets_R - ZPAssetPnlHdrAssets_L, ZPAssetPnlLstAssets_T - ZPAssetPnlHdrAssets_T)			// Frame
+					kTrue, kTrue,					// Visible, Enabled
+					"",
+					{
+					}
+				),
+			},
+		),
+
+		ZPAssetsPanelTreeViewWidget
+		(
+			// CControlView properties
+			kZPUIAssetsPanelLstAssetsWidgetID, // widget ID
+			kPMRsrcID_None,					// PMRsrc ID
+			kBindAll,						// frame binding
+			#if defined(InDnCS5) || defined(InDnCS5_5)
+			Frame(ZPAssetPnlHdrAssets_L, ZPAssetPnlLstAssets_T + 1, ZPAssetPnlHdrAssets_R, ZPAssetPnlLstAssets_B + 1)	// Frame
+			#else
+			Frame(ZPAssetPnlHdrAssets_L, ZPAssetPnlLstAssets_T, ZPAssetPnlHdrAssets_R, ZPAssetPnlLstAssets_B)	// Frame
+			#endif
+			kTrue, kTrue,					// Visible, Enabled
+			kTrue,							// fEraseBeforeDraw
+			kInterfacePaletteFill,			// InterfaceColor to erase to
+			// CTextControlData properties
+			"",								// control label
+			// TreeAttributes properties
+			kFalse,							// fShouldDisplayRootNode
+			kFalse,							// fShouldUseHScrollBar
+			kTrue,							// fShouldUseVScrollBar
+			20,								// fVScrollButtonIncrement
+			1,								// fVThumbScrollIncrement
+			20,								// fHScrollButtonIncrement
+			1,								// fHThumbScrollIncrement
+			// TreeViewController properties
+			1,								// Items selectable, 0 = No Selection, 1 = Single Selection, 2 = Multiple Selection
+			kFalse,//kFalse,				// fShouldAllowChildrenFromMultipleParentsSelected
+			kTrue,//kFalse,					// fShouldAllowDiscontiguousSelection
+			{								// CPanelControlData Children
+			},
+			kZPUIAssetsPanelHdrAssetsWidgetID
+		),
+
+		ZPAssetsPanelPreviewPanelWidget
+		(
+			kZPUIDocumentsPanelPreviewPanelWidgetID,
+			kPMRsrcID_None,
+			kBindRight,
+			Frame(ZPAssetPnlPreview_L, ZPAssetPnlHdrAssets_T, ZPAssetPnlPreview_R, ZPAssetPnlHdrAssets_T + 150)
+			kTrue, kTrue,					// Visible, Enabled
+			"",
+			{
+			}
+		),
+		//Fourth Row
+		StaticTextWidget
+		(
+			kInvalidWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindLeft | kBindBottom,
+			Frame(ZPAssetPnlLblCurrUser_L, ZPAssetPnlTxtUser_T, ZPAssetPnlLblCurrUser_R, ZPAssetPnlTxtUser_T + ZPAssetPnlCtrlLblHeight)
+			kTrue, kTrue,					// Visible, Enabled
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPAssetsPanelUserKey,
+			kInvalidWidgetID,
+		),
+
+		StaticTextWidget
+		(
+			kZPUIAssetsPanelUsernameWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindLeft | kBindBottom,
+			Frame(ZPAssetPnlTxtCurrUser_L, ZPAssetPnlTxtUser_T, ZPAssetPnlTxtCurrUser_R, ZPAssetPnlTxtUser_T + ZPAssetPnlCtrlLblHeight )
+			kTrue, kTrue,					// Visible, Enabled
+			kAlignLeft,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			"",
+			kInvalidWidgetID,
+		),
+
+		StaticTextWidget
+		(
+			kZPUIAssetsPanelVersionWidgetID,
+			kSysStaticTextPMRsrcId,
+			kBindRight | kBindBottom,
+			Frame(ZPAssetPnlTxtCurrVersion_L, ZPAssetPnlTxtUser_T, ZPAssetPnlTxtCurrVersion_R, ZPAssetPnlTxtUser_T + ZPAssetPnlCtrlLblHeight )
+			kTrue, kTrue,					// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			"",
+			kInvalidWidgetID,
+		),
+	},
+
+	kIZPAssetsPanelInternalMenuPath		// Popup menu name (internal)
+};
+#endif // __ODFRC__
+

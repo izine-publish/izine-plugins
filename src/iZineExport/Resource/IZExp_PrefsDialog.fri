@@ -1,0 +1,313 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp_PrefsDialog.fri $
+//	$Revision: 4013 $
+//	$Date: 2012-05-22 15:06:00 +0200 (Tue, 22 May 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Aman Alam
+//	Created: 6-6-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+/*
+// Selectable dialog ID lists
+// IDList is a list of selectable dialog IDs that we want our panel to appear in.
+*/
+resource IDList (kSDKDefIDListPairResourceID)
+{
+	{
+		kGlobalPrefsDialogServiceImpl,		// Impl ID for Preferences Selectable Dialog
+	},
+};
+
+/*
+// IDListPair resource specifies which resource to use in creating the panel,
+// depending upon which dialog the panel is going into.
+*/
+resource IDListPair (kSDKDefIDListPairResourceID)
+{
+	{
+		kGlobalPrefsDialogServiceImpl,	// ID of Target Selectable Dialog (InDesign's)
+		kZExpPrefsPanelResourceID,		// ID of Panel Resource to be added (Mine)
+		kIZExpPluginID					// Plug-in ID that "owns" the Panel Resource to be added
+	},
+};
+
+resource LocaleIndex (kZExpPrefsPanelResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZExpPrefsPanelResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZExpPrefsDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZExpPrefsDialogBoss)
+{
+};
+
+#define ZExpPrefsDlgPanelWidth	460
+#define ZExpPrefsDlgPanelHeight	400
+
+#define ZExpPrefsDlgLeftMargin		5
+#define ZExpPrefsDlgLblHeight		20
+#define ZExpPrefsDlgLblWidth		110
+#define ZExpPrefsDlgLblGap			20
+
+#define ZExpPrefsDlgTxtLeftMargin	ZExpPrefsDlgLblWidth + 10
+#define ZExpPrefsDlgTxtHeight		ZExpPrefsDlgLblHeight
+#define ZExpPrefsDlgTxtWidth		320
+#define ZExpPrefsDlgTxtGap			ZExpPrefsDlgLblGap
+
+#define ZExpPrefsDlgUserNameLbl_T	20
+#define ZExpPrefsDlgUserNameLbl_B	ZExpPrefsDlgUserNameLbl_T + ZExpPrefsDlgLblHeight
+#define ZExpPrefsDlgUserNameLbl_L	ZExpPrefsDlgLeftMargin
+#define ZExpPrefsDlgUserNameLbl_R	ZExpPrefsDlgUserNameLbl_L + ZExpPrefsDlgLblWidth
+
+#define ZExpPrefsDlgPasswordLbl_T	ZExpPrefsDlgUserNameLbl_B + ZExpPrefsDlgLblGap
+#define ZExpPrefsDlgPasswordLbl_B	ZExpPrefsDlgPasswordLbl_T + ZExpPrefsDlgLblHeight
+#define ZExpPrefsDlgPasswordLbl_L	ZExpPrefsDlgLeftMargin
+#define ZExpPrefsDlgPasswordLbl_R	ZExpPrefsDlgPasswordLbl_L + ZExpPrefsDlgLblWidth
+
+#define ZExpPrefsDlgPluginIdLbl_T	20
+#define ZExpPrefsDlgPluginIdLbl_B	ZExpPrefsDlgPluginIdLbl_T + ZExpPrefsDlgLblHeight
+#define ZExpPrefsDlgPluginIdLbl_L	ZExpPrefsDlgLeftMargin
+#define ZExpPrefsDlgPluginIdLbl_R	ZExpPrefsDlgPluginIdLbl_L + ZExpPrefsDlgLblWidth
+
+#define ZExpPrefsDlgUserNameTxt_T	ZExpPrefsDlgUserNameLbl_T
+#define ZExpPrefsDlgUserNameTxt_B	ZExpPrefsDlgUserNameTxt_T + ZExpPrefsDlgTxtHeight
+#define ZExpPrefsDlgUserNameTxt_L	ZExpPrefsDlgTxtLeftMargin
+#define ZExpPrefsDlgUserNameTxt_R	ZExpPrefsDlgUserNameTxt_L + ZExpPrefsDlgTxtWidth
+
+#define ZExpPrefsDlgPasswordTxt_T	ZExpPrefsDlgUserNameTxt_B + ZExpPrefsDlgTxtGap
+#define ZExpPrefsDlgPasswordTxt_B	ZExpPrefsDlgPasswordTxt_T + ZExpPrefsDlgTxtHeight
+#define ZExpPrefsDlgPasswordTxt_L	ZExpPrefsDlgTxtLeftMargin
+#define ZExpPrefsDlgPasswordTxt_R	ZExpPrefsDlgPasswordTxt_L + ZExpPrefsDlgTxtWidth
+
+#define ZExpPrefsDlgPluginIdTxt_T	ZExpPrefsDlgPluginIdLbl_T
+#define ZExpPrefsDlgPluginIdTxt_B	ZExpPrefsDlgPluginIdTxt_T + ZExpPrefsDlgTxtHeight
+#define ZExpPrefsDlgPluginIdTxt_L	ZExpPrefsDlgTxtLeftMargin
+#define ZExpPrefsDlgPluginIdTxt_R	ZExpPrefsDlgPluginIdTxt_L + ZExpPrefsDlgTxtWidth
+
+resource ZExpPrefsDialogWidget (kZExpPrefsPanelResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kIZExpPrefsPanelWidgetID,
+	kPMRsrcID_None,
+	kBindNone,
+	// Frame: left, top, right, bottom
+	Frame(0,0, ZExpPrefsDlgPanelWidth, ZExpPrefsDlgPanelHeight),
+	kTrue,
+	kTrue,
+	kZExpPrefsPanelTitleKey,
+	{
+		//UserName
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZExpPrefsDlgUserNameLbl_L, ZExpPrefsDlgUserNameLbl_T, ZExpPrefsDlgUserNameLbl_R, ZExpPrefsDlgUserNameLbl_B)	// left, top, right, bottom
+			kFalse, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+#ifdef InDnCS5
+			kTrue,					// Convert ampersands
+#endif
+				// CTextControlData properties
+			kZExpPrefsPanelUserNameKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+
+		TextEditBoxWidget
+		(
+			kZExpUserNameWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | kBindRight,	// Binding
+			Frame(ZExpPrefsDlgUserNameTxt_L, ZExpPrefsDlgUserNameTxt_T, ZExpPrefsDlgUserNameTxt_R, ZExpPrefsDlgUserNameTxt_B)
+			kFalse, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,								// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+
+		//Password
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZExpPrefsDlgPasswordLbl_L, ZExpPrefsDlgPasswordLbl_T, ZExpPrefsDlgPasswordLbl_R, ZExpPrefsDlgPasswordLbl_B)	// left, top, right, bottom
+			kFalse, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+#ifdef InDnCS5
+			kTrue,					// Convert ampersands
+#endif
+				// CTextControlData properties
+			kZExpPrefsPanelPasswordKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+
+		PasswordEditBoxWidget
+		(
+			kZExpPasswordWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | kBindRight,	// Binding
+			Frame(ZExpPrefsDlgPasswordTxt_L, ZExpPrefsDlgPasswordTxt_T, ZExpPrefsDlgPasswordTxt_R, ZExpPrefsDlgPasswordTxt_B)
+			kFalse, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,								// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+
+		//Plugin Id
+		StaticTextWidget
+		(		// CControlView properties
+			kInvalidWidgetID,		// widget ID
+			kSysStaticTextPMRsrcId,	// PMRsrc ID
+			kBindTop | kBindLeft,	// frame binding
+			Frame(ZExpPrefsDlgPluginIdLbl_L, ZExpPrefsDlgPluginIdLbl_T, ZExpPrefsDlgPluginIdLbl_R, ZExpPrefsDlgPluginIdLbl_B)	// left, top, right, bottom
+			kTrue, kTrue,			// visible, enabled
+				// StaticTextAttributes properties
+			kAlignRight,			// Alignment
+			kDontEllipsize,			// Ellipsize style
+#ifdef InDnCS5
+			kTrue,					// Convert ampersands
+#endif
+				// CTextControlData properties
+			kZExpPrefsPanelPluginIDKey,		// control label
+				// AssociatedWidgetAttributes properties
+			kInvalidWidgetID,		// associated widget ID
+		),
+
+		TextEditBoxWidget
+		(
+			kZExpPluginIdWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | kBindRight,	// Binding
+			Frame(ZExpPrefsDlgPluginIdTxt_L, ZExpPrefsDlgPluginIdTxt_T, ZExpPrefsDlgPluginIdTxt_R, ZExpPrefsDlgPluginIdTxt_B)
+			kTrue, kTrue,						// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,								// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+
+		GroupPanelWidget
+		(
+			// CControlView properties
+			kZExpPrefsDlgProxyGroupWidgetID,
+			kPMRsrcID_None,
+			kBindNone,
+			Frame(60, ZExpPrefsDlgPluginIdTxt_B + 20, 60+380, ZExpPrefsDlgPluginIdTxt_B +20 +80)
+			kTrue,
+			kTrue,
+			kZExpPrefsDlgUseProxyCheckBoxWidgetID,
+			{
+				CheckBoxWidget
+				(
+					kZExpPrefsDlgUseProxyCheckBoxWidgetID,
+					kSysCheckBoxPMRsrcId,
+					kBindNone,
+					Frame(5, -5, 120, 10),						//(L,T,R,B)
+					kTrue,
+					kTrue,
+					kAlignLeft,
+					kZExpPrefsDlgUseProxyServerCheckBoxKey,
+				),
+				StaticTextWidget
+				(
+					kInvalidWidgetID,
+					kSysStaticTextPMRsrcId,
+					kBindNone,
+					Frame(10, 15, 110, 35)
+					kTrue,
+					kTrue,
+					kAlignLeft,
+					kDontEllipsize,
+					ConvertAmpersandsTrue
+					kZExpPrefsDlgProxyServerKey,
+					kInvalidWidgetID,
+				),
+				
+				TextEditBoxWidget
+				(
+					kZExpPrefsDlgProxyServerEditBoxWidgetID,
+					kSysEditBoxPMRsrcId,				// RsrcID
+					kBindNone,							// Binding
+					115, 15, 370, 35,						// Frame (l,t,r,b)
+					kTrue, kTrue,						// Visible, Enabled
+					0,									// Nudge control widget ID(0 = no control)
+					0,									// Small nudge amount
+					0,									// Large Nudge amount
+					255,								// Max # chars (0 = no limit)
+					kFalse,								// read only
+					kFalse,								// should notify each key stroke
+					kFalse,								// Range checking enabled
+					kTrue,								// blank allowed
+					0, 0,								// upper/lower bounds
+					"",									// Initial text
+				),
+				StaticTextWidget
+				(
+					kInvalidWidgetID,
+					kSysStaticTextPMRsrcId,
+					kBindNone,
+					Frame(10, 45, 110, 65)
+					kTrue,
+					kTrue,
+					kAlignLeft,
+					kDontEllipsize,
+					ConvertAmpersandsTrue
+					kZExpPrefsDlgProxyPortKey,
+					kInvalidWidgetID,
+				),
+				
+				IntEditBoxWidget
+				(
+					kZExpPrefsDlgProxyPortEditBoxWidgetID,
+					kSysEditBoxPMRsrcId,
+					kBindNone,
+					115, 45, 180, 65,						// Frame (l,t,r,b)
+					kTrue, kTrue
+					0,										// Widget id of nudge button (0 so we dont get one)
+					0,0,									// small,large nudge amount
+					5,										// max num chars( 0 = no limit)
+					kFalse,									// is read only
+					kFalse,									//**new in InDesign 2.0: should notify each key stroke
+					kTrue,									// range checking enabled
+					kFalse,									// blank entry allowed
+					65535,									// Upper bounds
+					0,										// Lower bounds
+					"",										// Initial text
+				),
+			},
+		),
+	}
+};
+#endif //_h_IZPUI_PrefsDialog_

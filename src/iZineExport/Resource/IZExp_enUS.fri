@@ -1,0 +1,101 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp_enUS.fri $
+//	$Revision: 4013 $
+//	$Date: 2012-05-22 15:06:00 +0200 (Tue, 22 May 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+
+#ifdef __ODFRC__
+
+//========================================================================================
+// English strings
+//========================================================================================
+
+resource StringTable (kSDKDefStringsResourceID + index_enUS)
+{
+		k_enUS,									// Locale Id
+		kEuropeanWinToMacEncodingConverter,		// Character encoding converter (irp) I made this WinToMac as we have a bias to generate on Win...
+		{
+			// General
+				kIZExpCompanyKey,						kIZExpCompanyValue,
+
+			//Action Areas
+				kZExpActionArea,						"iZine Export",
+
+			//Menu Items
+				kIZExpAboutMenuKey,						kIZExpPluginName "...",
+				kIZExpExportFrontDocMenuKey,			"Export iZine XML",
+				kIZExpExportMenuKey,					"Redfive Export",
+				kIZExpExportPrefsMenuKey,				"Redfive Export",
+
+
+			//Prefs dialog
+				kZExpPrefsPanelTitleKey,				"Redfive Export",
+				kZExpPrefsPanelUserNameKey,				"User Name",
+				kZExpPrefsPanelPasswordKey,				"Password",
+				kZExpPrefsPanelPluginIDKey,				"Plugin ID",
+				kZExpPrefsDlgUseProxyServerCheckBoxKey,	"Use Proxy Server",
+				kZExpPrefsDlgProxyServerKey,			"Proxy Server",
+				kZExpPrefsDlgProxyPortKey,				"Port",
+				
+			//Export Dialog
+				kZExpExportDialogTitleKey,				"Redfive Export",
+				kZExpExportButtonKey,					"Export",
+				kZExpExportTitleKey,					"Title",
+				kZExpExportEditionKey,					"Edition",
+				kZExpExportDlgAdvOptionGrpKey,			"Options",
+				kZExpExportDlgAdvOptionBothKey,			"Create & upload.",
+				kZExpExportDlgAdvOptionSkipCreateKey,	"Skip data collection.",
+				kZExpExportDlgAdvOptionSkipUploadKey,	"Skip upload.",
+				
+			//Progress bar
+				kZExpProgRedfiveExportTitleKey,			"Redfive Export",
+				kZExpProgFetchingConfigKey,				"Fetching configuration from server",
+				kZExpProgCreatingXMLKey,				"Preparing export",
+				kZExpProgUploadXMLKey,					"Saving XML",
+				kZExpProgUploadPDFKey,					"Saving PDF",
+				kZExpProgUploadLowResImageKey,			"Saving low res images",
+				kZExpProgUploadHighResImageKey,			"Saving high res images",
+				kZExpProgCreatingPDFKey,				"Creating PDF",
+				kZExpProgFinishingUploadKey,			"Finishing upload",
+
+			//UI Messages
+				kIZExpMsgFileWritingFailKey,			"Unable to open file for write",
+				kIZExpParamFailKey,						"Invalid parameters",
+				kZExpMsgAbortedByUserKey,				"Aborted by user",
+				kZExpMsgUploadSuccessKey,				"All items are successfully uploaded",
+				kZExpMsgExportCreateSuccessKey,			"Document export created.",
+				kZExpMsgWSFailKey,						"Error in webservice while uploading",
+				kZExpMsgXMLFileCreationFailKey,			"Xml file creation failed",
+				kZExpMsgPDFFileCreationFailKey,			"PDF file creation failed",
+				kZExpMsgXMLReadFailKey,					"Unable to read xml file",
+				kZExpMsgXMLUploadingFailKey,			"Xml uploading failed",
+				kZExpMsgPDFUploadingFailKey,			"PDF uploading failed",
+				kZExpMsgHighResImageUploadFailKey,		"High res image uploading failed",
+				kZExpMsgLowResImageUploadFailKey,		"Low res image uploading failed",
+				kZExpMsgUploadFinishFailKey,			"Upload finish failed",
+				kZExpMsgPluginIdEmptyErrorKey,			"Plugin ID not found. Please set plugin ID in preferences.",
+				kZExpMsgConfigDataFetchFailKey,			"Problem in fetching config data. Do you want to continue with default values?",
+
+				kZExpMsgRetryImageUploadStringKey,		"Error uploading image. Would you like to retry?\n",
+				kIZExpRetryBtnStringKey,				"Retry",
+				kIZExpAbortBtnStringKey,				"Abort",
+
+			//Format Names
+			kIZExpXMLFormatStringKey,					"iZine XML",
+
+			//Misc
+				kIZExpAboutBoxStringKey,				kIZExpPluginName " , version " kIZExpVersion " by " kIZExpAuthor "\n\n" kIZExpCopyrightValue "\n\n" kIZExpSupportURL,
+		}
+};
+
+#endif // __ODFRC__
+

@@ -1,0 +1,138 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI_RenameAssetDialog.fri $
+//	$Revision: 3854 $
+//	$Date: 2012-01-30 14:20:19 +0100 (Mon, 30 Jan 2012) $
+//	$Author: aman.alam $
+//	
+//	Creator: Aman Alam
+//	Created: 19-7-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+#ifdef __ODFRC__
+
+resource LocaleIndex (kZPUIRenameAssetDialogResourceID)
+{
+	kViewRsrcType,
+	{
+		kWildFS,	k_Wild, kZPUIRenameAssetDialogResourceID + index_enUS
+	}
+};
+
+/*  Type definition.
+*/
+type ZPRenameAssetDialogWidget(kViewRsrcType) : DialogBoss(ClassID = kZPRenameAssetDialogBoss)
+{
+};
+
+#define ZPRenameAssetDlgPanelWidth				(ZPRenameAssetDlgBtnCancel_R + ZPRenameAssetDlgRightMargin)
+#define ZPRenameAssetDlgPanelHeight				(ZPRenameAssetDlgBtnCancel_B + ZPRenameAssetDlgBottomMargin)
+
+#define ZPRenameAssetDlgLeftMargin				10
+#define ZPRenameAssetDlgRightMargin				10
+#define ZPRenameAssetDlgTopMargin				10
+#define ZPRenameAssetDlgBottomMargin			10
+#define ZPRenameAssetDlgLblRightMarign			5
+#define ZPRenameAssetDlgCtrlLblHeight			18
+#define ZPRenameAssetDlgCtrlLblWidth			75
+#define ZPRenameAssetDlgCtrlTxtHeight			20
+#define ZPRenameAssetDlgCtrlTxtWidth			200
+#define ZPRenameAssetDlgCtrlBtnHeight			20
+#define ZPRenameAssetDlgCtrlBtnWidth			75
+#define ZPRenameAssetDlgCtrlBtnRigthMargin		10
+#define ZPRenameAssetDlgCtrlVerticalMargin		20
+
+#define ZPRenameAssetDlgLblNewName_L			ZPRenameAssetDlgLeftMargin
+#define ZPRenameAssetDlgLblNewName_T			ZPRenameAssetDlgTopMargin
+#define ZPRenameAssetDlgLblNewName_R			(ZPRenameAssetDlgLblNewName_L + ZPRenameAssetDlgCtrlLblWidth)
+#define ZPRenameAssetDlgLblNewName_B			(ZPRenameAssetDlgLblNewName_T + ZPRenameAssetDlgCtrlLblHeight)
+
+#define ZPRenameAssetDlgTxtNewName_L			(ZPRenameAssetDlgLblNewName_R + ZPRenameAssetDlgLblRightMarign)
+#define ZPRenameAssetDlgTxtNewName_T			ZPRenameAssetDlgLblNewName_T
+#define ZPRenameAssetDlgTxtNewName_R			(ZPRenameAssetDlgTxtNewName_L + ZPRenameAssetDlgCtrlTxtWidth)
+#define ZPRenameAssetDlgTxtNewName_B			(ZPRenameAssetDlgTxtNewName_T + ZPRenameAssetDlgCtrlTxtHeight)
+
+#define ZPRenameAssetDlgBtnCancel_L				(ZPRenameAssetDlgBtnCancel_R - ZPRenameAssetDlgCtrlBtnWidth)
+#define ZPRenameAssetDlgBtnCancel_T				(ZPRenameAssetDlgTxtNewName_B + ZPRenameAssetDlgCtrlVerticalMargin)
+#define ZPRenameAssetDlgBtnCancel_R				ZPRenameAssetDlgTxtNewName_R
+#define ZPRenameAssetDlgBtnCancel_B				(ZPRenameAssetDlgBtnCancel_T + ZPRenameAssetDlgCtrlBtnHeight)
+
+#define ZPRenameAssetDlgBtnOk_L					(ZPRenameAssetDlgBtnOk_R - ZPRenameAssetDlgCtrlBtnWidth)
+#define ZPRenameAssetDlgBtnOk_T					ZPRenameAssetDlgBtnCancel_T
+#define ZPRenameAssetDlgBtnOk_R					(ZPRenameAssetDlgBtnCancel_L - ZPRenameAssetDlgCtrlBtnRigthMargin)
+#define ZPRenameAssetDlgBtnOk_B					ZPRenameAssetDlgBtnCancel_B
+
+// Vertical binding defined for each row controls. Labels can take binding from one row top/bottom.
+#define ZPRenameAssetDlgVBind_1		kBindTop
+#define ZPRenameAssetDlgVBind_2		kBindBottom
+
+/*  Dialog definition.
+*/
+resource ZPRenameAssetDialogWidget (kZPUIRenameAssetDialogResourceID + index_enUS)
+{
+	__FILE__, __LINE__,
+	kZPUIRenameAssetDlgWidgetID,		// WidgetID
+	kPMRsrcID_None,					// RsrcID
+	kBindAll,						// Binding
+	1, 0, ZPRenameAssetDlgPanelWidth, ZPRenameAssetDlgPanelHeight,	// Frame (l,t,r,b)
+	kTrue, kTrue,					// Visible, Enabled
+	kIZPRenameAssetDialogTitleKey,	// Dialog name
+	{
+		//New name
+		StaticTextWidget
+		(
+			kInvalidWidgetID,			// WidgetID
+			kSysStaticTextPMRsrcId,		// RsrcID
+			kBindLeft | ZPRenameAssetDlgVBind_1,	// Binding
+			Frame(ZPRenameAssetDlgLblNewName_L, ZPRenameAssetDlgLblNewName_T, ZPRenameAssetDlgLblNewName_R, ZPRenameAssetDlgLblNewName_B)	// Frame (l,t,r,b)
+			kTrue, kTrue,				// Visible, Enabled
+			kAlignRight,
+			kDontEllipsize,
+			ConvertAmpersandsTrue
+			kIZPRenameAssetDlgLblNewNameKey,
+			kInvalidWidgetID,			//Associated widget id
+		),
+
+		TextEditBoxWidget
+		(
+			kZPUIRenameAssetDlgTxtNewNameWidgetID,	// WidgetID
+			kSysEditBoxPMRsrcId,				// RsrcID
+			kBindLeft | kBindRight | ZPRenameAssetDlgVBind_1,	// Binding
+			Frame(ZPRenameAssetDlgTxtNewName_L, ZPRenameAssetDlgTxtNewName_T, ZPRenameAssetDlgTxtNewName_R, ZPRenameAssetDlgTxtNewName_B)
+			kTrue, kTrue,				// Visible, Enabled
+			0, 0, 0,							// Nudge control widget ID, Small, Large Nudge amount
+			255,								// Max # chars (0 = no limit)
+			kFalse,								// read only
+			kFalse,								// should notify each key stroke
+			kFalse,								// Range checking enabled
+			kTrue,								// blank allowed
+			0, 0,								// upper/lower bounds
+			"",									// Initial text
+		),
+
+		//Default Buttons
+		DefaultButtonWidget
+		(
+			kOKButtonWidgetID,		// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindRight | ZPRenameAssetDlgVBind_2,	// Binding
+			ZPRenameAssetDlgBtnOk_L, ZPRenameAssetDlgBtnOk_T, ZPRenameAssetDlgBtnOk_R, ZPRenameAssetDlgBtnOk_B,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kSDKDefOKButtonApplicationKey,	// Button text
+		),
+
+		CancelButtonWidget
+		(
+			kCancelButton_WidgetID,	// WidgetID
+			kSysButtonPMRsrcId,		// RsrcID
+			kBindRight | ZPRenameAssetDlgVBind_2,	// Binding
+			ZPRenameAssetDlgBtnCancel_L, ZPRenameAssetDlgBtnCancel_T, ZPRenameAssetDlgBtnCancel_R, ZPRenameAssetDlgBtnCancel_B,		// Frame (l,t,r,b)
+			kTrue, kTrue,			// Visible, Enabled
+			kSDKDefCancelButtonApplicationKey,	// Button name
+			kFalse,					// Change to Reset on option-click.
+		),
+	},
+};
+#endif

@@ -1,0 +1,47 @@
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Project/RedfiveExportCS5Release.xcconfig $
+//	$Revision: 3874 $
+//	$Date: 2012-02-07 08:14:12 +0100 (Tue, 07 Feb 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2011 Aug 19
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+
+//	Description: Configuration file for RedfiveExport CS5 Release target
+
+#include "../../InDesignCommonCS5.xcconfig"
+
+PRODUCT_NAME = RedfiveExport
+INFOPLIST_FILE = RVExport Info.plist
+
+BUILT_PRODUCTS_DIR = $(InDnCS5PlnsRelease)
+DSTROOT = $(InDnCS5PlnsRelease)
+
+DebugOrReleaseFolder = release
+
+//Paths
+InDesignSDKDir = $(IDCS5SDK)
+
+DEAD_CODE_STRIPPING = YES
+GCC_GENERATE_DEBUGGING_SYMBOLS = NO
+GCC_OPTIMIZATION_LEVEL = 3
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) NDEBUG InDnCS5 RVExport
+GCC_THREADSAFE_STATICS = NO
+GCC_MODEL_TUNING = G5
+
+ARCHS = i386
+
+PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES
+
+OTHER_REZFLAGS = -d __GNUC__ -d MACINTOSH -d InDnCS5 -d RVExport
+ODFRCArg2 = -d RELEASE -d InDnCS5 -d RVExport
+
+//setting below this line are for debugging Release build, comment if not being debugging.
+//ARCHS = $(NATIVE_ARCH)
+//COPY_PHASE_STRIP = NO
+
+//GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+GCC_OPTIMIZATION_LEVEL = 0
+//GCC_DEBUGGING_SYMBOLS = full
+
+//DEBUG_INFORMATION_FORMAT = dwarf-with-dsym

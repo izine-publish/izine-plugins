@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/InDnLocalPaths.vsprops $
+//	$Revision: 4088 $
+//	$Date: 2012-10-26 14:24:55 +0200 (Fri, 26 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: Visual Studio property sheet for InDesign project.
+-->
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="InDesign Local Paths"
+	>
+	
+	<!-- Any of the macro defined in this file must not be directly used in project file.
+	It should be only used in another vsprops file. -->
+	
+	<!-- CS3 Paths -->
+	<UserMacro Name="IDCS3SDK"
+		Value="E:\AdobeSDKs\idsdk5"	/>
+	
+	<UserMacro Name="InDnCS3PlnsDebug"
+		Value="E:\InDesign CS3 Debug\Adobe InDesign CS3\Plug-Ins"	/>
+	<UserMacro Name="InDnCS3PlnsRelease"
+		Value="E:\InDesign CS3 Release\Adobe InDesign CS3\Plug-Ins"	/>
+	
+	<UserMacro Name="InCpCS3PlnsDebug"
+		Value="E:\InCopy CS3 Debug\Adobe InCopy CS3\Plug-Ins"	/>
+	<UserMacro Name="InCpCS3PlnsRelease"
+		Value="C:\Program Files\Adobe\Adobe InCopy CS3 Release\Plug-Ins"	/>
+
+	<!-- CS5 Paths -->
+	<UserMacro Name="IDCS5SDK"
+		Value="E:\AdobeSDKs\idsdk7_355"	/>	
+	<UserMacro Name="InDnCS5PlnsDebug"
+		Value="E:\InDesign CS5 Debug\Adobe InDesign CS5\Plug-Ins"	/>
+	<UserMacro Name="InDnCS5PlnsRelease"
+		Value="E:\InDesign CS5 Release\Adobe InDesign CS53\Plug-Ins"	/>
+
+  <!-- CS5.5 Paths -->
+  <UserMacro Name="IDCS5_5SDK"
+		Value="E:\AdobeSDKs\idsdk7_5_142"	/>
+  <UserMacro Name="InDnCS5_5PlnsDebug"
+		Value="E:\InDesign CS5_5 Debug\Adobe InDesign CS5_5\Plug-Ins"	/>
+  <UserMacro Name="InDnCS5_5PlnsRelease"
+		Value="E:\InDesign CS5_5 Release\Adobe InDesign CS5_5\Plug-Ins"	/>
+
+	<UserMacro Name="InCpCS5PlnsDebug"
+		Value="E:\InCopy CS5 Debug\Adobe InCopy CS5\Plug-Ins"	/>
+	<UserMacro Name="InCpCS5PlnsRelease"
+		Value="C:\Program Files\Adobe\Adobe InCopy CS5 Release\Plug-Ins"	/>
+</VisualStudioPropertySheet>

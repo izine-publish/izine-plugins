@@ -1,0 +1,30 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP%20Aliases.fri $
+//	$Revision: 3392 $
+//	$Date: 2011-06-27 14:05:36 +0200 (Mon, 27 Jun 2011) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+resource ImplementationAlias(1)
+{
+	{
+		kZPDataIDStringDataImpl,		kStringDataImpl,
+		kZPDataNameStringDataImpl,		kStringDataImpl,
+		kZPFalseInitBoolDataImpl,		kFalseInitBoolDataImpl,
+		kZPIntDataAliasImpl,			kIntDataImpl,
+		//kZPPersistIntDataAliasImpl,		kPersistIntDataImpl,
+		kZPPersistGlobalTimeDataAliasImpl,	kGlobalTimeDataPersistentImpl,
+	}
+
+};
+ 
+#endif // __ODFRC__=======

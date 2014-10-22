@@ -1,0 +1,17 @@
+/*
+//	$HeadURL: svn://localhost/izine/iZinePlns/Docs/Dev/CodingGuidelines/CodingGuideLine_FileHeader.txt $
+
+//	Owner: IZine Solutions
+
+//	Created:
+
+//	$Date: 2010-01-28 12:43:09 +0100 (Thu, 28 Jan 2010) $
+
+//	$Revision: 768 $
+
+//	$Author: rajkumar.sehrawat $
+
+//	Description: .
+
+//	$Copyright: 2008-2010 iZine Solutions. All rights reserved. $
+*/

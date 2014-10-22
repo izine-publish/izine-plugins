@@ -1,0 +1,1005 @@
+> kAddUndoCmdHistoryItemsMessage @ kCommandProcessorBoss (IID_ICMDHISTORY)
+> kEnableCmdHistoryMessage @ kCommandProcessorBoss (IID_ICMDHISTORY)
+> kDisableCmdHistoryMessage @ kCommandProcessorBoss (IID_ICMDHISTORY)
+> kPipelineSequenceCmdBoss = "Paste" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kCompoundSequenceCmdBoss = "Paste" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kPasteCmdBoss = "Paste" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+			> kCopyPageItemCmdBoss = "Copy" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+				> kNewUIDCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+					> kNewUIDCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+				> kNewUIDCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+					> kNewUIDCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+				> kCopyMultiColumnFrameCmdBoss = "Copy" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+					> kNewUIDCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+						> kNewUIDCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+					> kCopyFrameCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+						> kNewStoryCmdBoss = "New Story" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kSyncRedlineCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kSyncRedlineCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kSetRedlineTrackingCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kSetRedlineTrackingCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+								> kPrivateCreateStrandCmdBoss = "Private Create Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kNewStoryCmdBoss @ kDocBoss (IID_ISTORYLIST)
+						...kNewLayoutSelectionBoss (IID_ITEXTCACHEFOCUSOBSERVER)
+						> kNewStoryCmdBoss = "New Story" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+					> kCopyPageItemCmdBoss = "Copy" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+						> kNewUIDCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kNewUIDCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+						> kXMLPrivateCopyFrameCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+							> kXMLPrivateCopyFrameCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+						> kNewPageItemCmdBoss @ kMultiColumnItemBoss (IID_IHIERARCHY_DOCUMENT)
+					...kAppBoss (IID_IOVERRIDEOBSERVER)
+					...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+					...kAppBoss (IID_IXPDOCOBSERVER)
+					...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+					...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+					...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+					...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+					...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+					...kNewLayoutSelectionBoss (IID_IOBSERVER)
+						> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+					...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+				...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+				...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+				...kDocBoss (IID_IMAINITEMOBSERVER)
+				...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+				...kDocBoss (IID_ITOPDOCOBSERVER)
+				...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+				...kDocBoss (IID_IBNLAYOUTOBSERVER)
+				> kAddToHierarchyCmdBoss @ kDocBoss (IID_IHIERARCHY_DOCUMENT)
+			...kAppBoss (IID_IOVERRIDEOBSERVER)
+			...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+			...kAppBoss (IID_IXPDOCOBSERVER)
+			...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+			...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+			...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+			...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+			...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+			...kNewLayoutSelectionBoss (IID_IOBSERVER)
+				> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+			...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+		...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+		...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+		...kDocBoss (IID_IMAINITEMOBSERVER)
+		...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+		...kDocBoss (IID_ITOPDOCOBSERVER)
+		...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+		...kDocBoss (IID_IBNLAYOUTOBSERVER)
+		> kCopyPageItemCmdBoss = "Copy" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kNewUIDCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kNewUIDCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kAttachStoryAndFrameListCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kRegisterStrandCmdBoss = "Register Strand" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+			> kRegisterStrandCmdBoss = "Register Strand" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kAttachStoryAndFrameListCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kAddFrameCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kFrameListBoss @ kFrameListBoss (IID_IFRAMELIST)
+	> kAddFrameCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kXMLPrivateCopyFrameCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kXMLPrivateCopyFrameCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kCopyFrameCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kXMLPrivateCopyFrameCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kXMLPrivateCopyFrameCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kSetTextInsetCmdBoss = "Set Text Inset" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kSetTextInsetCmdBoss @ kDocBoss (IID_IHIERARCHY_DOCUMENT)
+...kAppBoss (IID_IOVERRIDEOBSERVER)
+...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+...kAppBoss (IID_IXPDOCOBSERVER)
+...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kDocBoss (IID_IMAINITEMOBSERVER)
+...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+...kDocBoss (IID_ITOPDOCOBSERVER)
+...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+...kDocBoss (IID_IBNLAYOUTOBSERVER)
+> kRecalculateColumnsCmdBoss = "Recalculate Columns" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kRecalculateColumnsCmdBoss = "Recalculate Columns" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kRecalculateColumnsCmdBoss = "Recalculate Columns" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kRecalculateColumnsCmdBoss = "Recalculate Columns" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kSetTextInsetCmdBoss @ kDocBoss (IID_IHIERARCHY_DOCUMENT)
+...kAppBoss (IID_IOVERRIDEOBSERVER)
+...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+...kAppBoss (IID_IXPDOCOBSERVER)
+...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kDocBoss (IID_IMAINITEMOBSERVER)
+...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+...kDocBoss (IID_ITOPDOCOBSERVER)
+...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+...kDocBoss (IID_IBNLAYOUTOBSERVER)
+> kSetTextInsetCmdBoss = "Set Text Inset" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kNewPageItemCmdBoss @ kSplineItemBoss (IID_IHIERARCHY_DOCUMENT)
+...kAppBoss (IID_IOVERRIDEOBSERVER)
+...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+...kAppBoss (IID_IXPDOCOBSERVER)
+...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kDocBoss (IID_IMAINITEMOBSERVER)
+...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+...kDocBoss (IID_ITOPDOCOBSERVER)
+...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+...kDocBoss (IID_IBNLAYOUTOBSERVER)
+> kAddToHierarchyCmdBoss @ kDocBoss (IID_IHIERARCHY_DOCUMENT)
+...kAppBoss (IID_IOVERRIDEOBSERVER)
+...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+...kAppBoss (IID_IXPDOCOBSERVER)
+...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kDocBoss (IID_IMAINITEMOBSERVER)
+...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+...kDocBoss (IID_ITOPDOCOBSERVER)
+...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+...kDocBoss (IID_IBNLAYOUTOBSERVER)
+> kCopyMultiColumnFrameCmdBoss = "Copy" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kXMLPrivateCopyFrameCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kXMLPrivateCopyFrameCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kNewPageItemCmdBoss @ kSpreadLayerBoss (IID_IHIERARCHY_DOCUMENT)
+...kAppBoss (IID_IOVERRIDEOBSERVER)
+...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+...kAppBoss (IID_IXPDOCOBSERVER)
+...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kDocBoss (IID_IMAINITEMOBSERVER)
+...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+...kDocBoss (IID_ITOPDOCOBSERVER)
+...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+...kDocBoss (IID_IBNLAYOUTOBSERVER)
+> kAddToHierarchyCmdBoss @ kDocBoss (IID_IHIERARCHY_DOCUMENT)
+...kAppBoss (IID_IOVERRIDEOBSERVER)
+...kAppBoss (IID_IGRADIENTFILLDOCOBSERVER)
+...kAppBoss (IID_IXPDOCOBSERVER)
+...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTHIERARCHYOBSERVER)
+...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+...kDocBoss (IID_IFRAMEBASELINEGRIDDOCOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kDocBoss (IID_IMAINITEMOBSERVER)
+...kDocBoss (IID_IOFFSETPATHCACHEOBSERVER)
+...kDocBoss (IID_ITOPDOCOBSERVER)
+...kDocBoss (IID_FORMFIELDDOCOBSERVER)
+...kDocBoss (IID_IBNLAYOUTOBSERVER)
+> kCopyPageItemCmdBoss = "Copy" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kPasteCmdBoss = "Paste" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kCompoundSequenceCmdBoss = "Paste" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kSetLockPositionCmdBoss = "Unlock Position" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kSetLockPositionCmdBoss @ kDocBoss (IID_ILOCKPOSITION)
+...kAppBoss (IID_IOVERRIDEOBSERVER)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+> kSetLockPositionCmdBoss = "Unlock Position" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kPipelineSequenceCmdBoss = "Paste" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kCopyFramePhase2CmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kPasteTextCmdBoss = "Paste" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kInsertTextCmdBoss @ kTextStoryBoss (IID_ITEXTMODEL)
+	> kPasteTextCmdBoss = "Paste" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kLinkChangedCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kLinkChangedCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kAddLinkCmdBoss = "Add Link" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+
+iZine : CZPLinkResponder::Respond #  84 : Enter
+  iZine : serviceName=kBeforeAddLinkSignalResponderService, 
+  iZine : signalling cmd=kAddLinkCmdBoss, cmdState=0
+
+iZine : CZPLinkResponder::Respond #  84 : Exit
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 17673b30d, class class CZPAMLinkedStoryInitializeService *
+  iZine : IAMServiceProvider::enInitialize : 00015A07 : service impl instance : 17673B30
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryInitializeService::Do # 102 : Enter
+  iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAMLinkedStoryInitializeService::SetAssetData # 227 : Enter/Exit
+  iZine : AZPAMSystemProvider::GetAssetMonitor #  67 : Enter/Exit
+  iZine : Object created : 1769e8b0d, class class CZPAMLockable *
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Enter
+    iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 391 : AssetID = b398e66c-1c4e-44c4-a3c6-a9796f1a1412
+    iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+    iZine :  file path = 'C:\Documents and Settings\Admin\Local Settings\Application Data\Adobe\InDesign\Version 5.0\Caches\iZINE\b398e66c-1c4e-44c4-a3c6-a9796f1a1412\My Story in original text.incx'
+  iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Exit
+iZine : CZPAMLinkedStoryInitializeService::Do # 102 : Exit
+iZine : CZPAMLinkedStoryAssetMonitor::CanMonitor # 126 : Enter
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Enter
+    iZine : CZPAMLinkedStoryServiceProvider::CanService # 166 : Enter
+      iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+      iZine :  CanService asset: 1
+    iZine : CZPAMLinkedStoryServiceProvider::CanService # 166 : Exit
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Exit
+iZine : CZPAMLinkedStoryAssetMonitor::CanMonitor # 126 : Exit
+iZine : CZPAMAssignmentAssetMonitor::CanMonitor #  97 : Enter
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Enter
+    iZine : CZPAMAssignmentServiceProvider::CanService # 149 : Enter
+      iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+      iZine :  CanService asset: 0
+    iZine : CZPAMAssignmentServiceProvider::CanService # 149 : Exit
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Exit
+iZine : CZPAMAssignmentAssetMonitor::CanMonitor #  97 : Exit
+iZine : CZPAMDocAssetMonitor::CanMonitor # 103 : Enter
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Enter
+    iZine : CZPAMDocumentServiceProvider::CanService # 180 : Enter
+      iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+      iZine :  CanService asset: 0
+    iZine : CZPAMDocumentServiceProvider::CanService # 180 : Exit
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Exit
+iZine : CZPAMDocAssetMonitor::CanMonitor # 103 : Exit
+iZine : Object destroyed : 17673b30d, class class CZPAMLinkedStoryInitializeService *
+iZine : AZPAMAssetMonitor::StartMonitoring # 141 : Enter
+  iZine : Asset Monitor: Linked Story
+  iZine : Asset Monitor: 0x16502420  Database: 0x219BD190, UID: 0x13D 
+  iZine : AZPAMAssetMonitor::ListenToDBAsset # 509 : Enter
+    iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine : AZPAMAssetMonitor::ListenToDBAsset # 509 : Exit
+iZine : AZPAMAssetMonitor::StartMonitoring # 141 : Exit
+iZine : AZPAMSystemProvider::GetServiceProvider #  87 : Enter/Exit
+iZine : CZPAMLinkedStoryServiceProvider::CanService # 114 : Enter
+  iZine : File extenstion hint : incx
+  iZine : InCopy story or document extension
+  iZine : AZPAMServiceProvider::GetDBAsset # 336 : Enter
+    iZine :  Provider : Linked story service provider
+    iZine : CZPAssetUtils::GetAssetIDFromLocalFile # 461 : Enter/Exit
+    iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+    iZine : asset from file path : 218174A8
+  iZine : AZPAMServiceProvider::GetDBAsset # 336 : Exit
+  iZine : AZPAMServiceProvider::CanService #  97 : Enter
+    iZine : AZPAMServiceProvider::IsSubPathOfOurReplicaFolder # 314 : Enter
+      iZine : CZPAMHelper::IsSubPathOfOurReplicaFolder #1917 : Enter
+        iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+      iZine : CZPAMHelper::IsSubPathOfOurReplicaFolder #1917 : Exit
+    iZine : AZPAMServiceProvider::IsSubPathOfOurReplicaFolder # 314 : Exit
+    iZine : File path : C:\Documents and Settings\Admin\Local Settings\Application Data\Adobe\InDesign\Version 5.0\Caches\iZINE\b398e66c-1c4e-44c4-a3c6-a9796f1a1412\My Story in original text.incx 
+    iZine :  canService : 1
+  iZine : AZPAMServiceProvider::CanService #  97 : Exit
+  iZine : canService file : 1
+iZine : CZPAMLinkedStoryServiceProvider::CanService # 114 : Exit	> kSetAssetAttributesCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kSetAssetAttributesCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 222dddf8d, class class CZPAMLinkedStoryInitializeService *
+  iZine : IAMServiceProvider::enInitialize : 00015A07 : service impl instance : 222DDDF8
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryInitializeService::Do # 102 : Enter
+  iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAMLinkedStoryInitializeService::SetAssetData # 227 : Enter/Exit
+  iZine : AZPAMSystemProvider::GetAssetMonitor #  67 : Enter/Exit
+  iZine : Object created : 222df3a0d, class class CZPAMLockable *
+  iZine : Object destroyed : 1769e8b0d, class class CZPAMLockable *
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Enter
+    iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 391 : AssetID = b398e66c-1c4e-44c4-a3c6-a9796f1a1412
+    iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+    iZine :  file path = 'C:\Documents and Settings\Admin\Local Settings\Application Data\Adobe\InDesign\Version 5.0\Caches\iZINE\b398e66c-1c4e-44c4-a3c6-a9796f1a1412\My Story in original text.incx'
+  iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Exit
+iZine : CZPAMLinkedStoryInitializeService::Do # 102 : Exit
+iZine : Object destroyed : 222dddf8d, class class CZPAMLinkedStoryInitializeService *
+iZine : CZPAMLinkedStoryAssetMonitor::CanMonitor # 126 : Enter
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Enter
+    iZine : CZPAMLinkedStoryServiceProvider::CanService # 166 : Enter
+      iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+      iZine :  CanService asset: 1
+    iZine : CZPAMLinkedStoryServiceProvider::CanService # 166 : Exit
+  iZine : AZPAMAssetMonitor::CanMonitor # 107 : Exit
+iZine : CZPAMLinkedStoryAssetMonitor::CanMonitor # 126 : Exit
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 222dddf8d, class class CZPAMLinkedStoryUpdateStoredRefService *
+  iZine : IAMServiceProvider::enUpdateStoredAssetReference : 00015A0A : service impl instance : 222DDDF8
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryUpdateStoredRefService::VerifyContext # 170 : Enter
+  iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine :  VerifyContext = 1
+iZine : CZPAMLinkedStoryUpdateStoredRefService::VerifyContext # 170 : Exit
+iZine : CZPAMLinkedStoryUpdateStoredRefService::Do #  96 : Enter
+  iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAMHelper::IsSubPathOfOurReplicaFolder #1917 : Enter
+    iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+  iZine : CZPAMHelper::IsSubPathOfOurReplicaFolder #1917 : Exit
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Enter
+    iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 391 : AssetID = b398e66c-1c4e-44c4-a3c6-a9796f1a1412
+    iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+    iZine :  file path = 'C:\Documents and Settings\Admin\Local Settings\Application Data\Adobe\InDesign\Version 5.0\Caches\iZINE\b398e66c-1c4e-44c4-a3c6-a9796f1a1412\My Story in original text.incx'
+  iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Exit
+  iZine :  service DO status = 1
+iZine : CZPAMLinkedStoryUpdateStoredRefService::Do #  96 : Exit
+iZine : Object destroyed : 222dddf8d, class class CZPAMLinkedStoryUpdateStoredRefService *
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 222a8a98d, class class CZPAMLinkedStoryUpdateProxyVersionNumService *
+  iZine : IAMServiceProvider::enUpdateProxyVersionNumber : 00015A0B : service impl instance : 222A8A98
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryUpdateProxyVersionNumService::VerifyContext #  97 : Enter
+  iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine :  VerifyContext = 0
+iZine : CZPAMLinkedStoryUpdateProxyVersionNumService::VerifyContext #  97 : Exit
+iZine : Object destroyed : 222a8a98d, class class CZPAMLinkedStoryUpdateProxyVersionNumService *
+iZine : AZPAMAssetMonitor::StartMonitoring # 141 : Enter
+  iZine : Asset Monitor: Linked Story
+  iZine : Asset Monitor: 0x16502420  Database: 0x219BD190, UID: 0x13D 
+iZine : AZPAMAssetMonitor::StartMonitoring # 141 : Exit
+iZine : CZPLinkResponder::Respond #  84 : Enter
+  iZine : serviceName=kAfterAddLinkSignalResponderService, 
+  iZine : signalling cmd=kAddLinkCmdBoss, cmdState=0
+
+iZine : CZPLinkResponder::Respond #  84 : Exit	> kInViewPingMsgBoss @ kFrameItemBoss (IID_IFRAMEINVIEWPING_DOCUMENT)
+...kLayoutWidgetBoss (IID_ILAYOUTPAGEITEMOBSERVER)
+> kTextFrameOversetChangedMsg @ kFrameItemBoss (IID_IFRAMEOVERSETCHANGED)
+...kLayoutWidgetBoss (IID_ILAYOUTPAGEITEMOBSERVER)
+> kRecomposeBoss @ kFrameItemBoss (IID_IFRAMECOMPOSER)
+> kRecomposeBoss @ kFrameItemBoss (IID_IFRAMECOMPOSER)
+> kRecomposeBoss @ kFrameItemBoss (IID_IFRAMECOMPOSER)
+...kLayoutWidgetBoss (IID_ILAYOUTMASTERPAGEOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+> kRecomposeBoss @ kFrameItemBoss (IID_IFRAMECOMPOSER_DOCUMENT)
+...kLayoutWidgetBoss (IID_ILAYOUTPAGEITEMOBSERVER)
+
+iZine : CZPAssignmentCmdInterceptor::HandleAddToAssignmentCommand # 760 : Enter
+  iZine : CZPAssignmentCmdInterceptor::HandleAddToAssignmentCommand # 774 : Enter/Exit
+iZine : CZPAssignmentCmdInterceptor::HandleAddToAssignmentCommand # 760 : Exit> kAddToAssignmentCmdBoss = "Assign Content" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kAssignmentSetColorCmdBoss @ kDocBoss (IID_IASSIGNMENTCOLORCHANGED)
+	...kLayoutWidgetBoss (IID_ISTORYLISTLAYOUTOBSERVER)
+	> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kAssignmentSetColorCmdBoss @ kDocBoss (IID_IASSIGNMENTCOLORCHANGED)
+...kLayoutWidgetBoss (IID_ISTORYLISTLAYOUTOBSERVER)
+> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kAssignmentSetColorCmdBoss @ kDocBoss (IID_IASSIGNMENTCOLORCHANGED)
+...kLayoutWidgetBoss (IID_ISTORYLISTLAYOUTOBSERVER)
+> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kRegisterScrapItemCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kRegisterScrapItemCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kAssignmentSetColorCmdBoss @ kDocBoss (IID_IASSIGNMENTCOLORCHANGED)
+...kLayoutWidgetBoss (IID_ISTORYLISTLAYOUTOBSERVER)
+> kAssignmentSetColorCmdBoss = "Set Assignment Color" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kAddToAssignmentCmdBoss @ kDocBoss (IID_IASSIGNMENTMGRCHANGED)
+...kLayoutWidgetBoss (IID_IBRIDGELAYOUTOBSERVER)
+> kAddToAssignmentCmdBoss = "Assign Content" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kAddLinkCmdBoss @ kDocBoss (IID_ILINKSMANAGER)
+...kLinksListBoxBoss (IID_IOBSERVER)
+> kAddLinkCmdBoss = "Add Link" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kPageItemCreateMetaDataCmdBoss = "" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kPageItemCreateMetaDataCmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+
+iZine : CZPAssignmentCmdInterceptor::PatchNewIDStoryName # 703 : Enter
+  iZine : Story label in command : My Story in original text
+  iZine : Story new label : My Story in original text 
+iZine : CZPAssignmentCmdInterceptor::PatchNewIDStoryName # 703 : Exit> kSetStoryLabelCmdBoss = "SetStoryLabelCmd" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kSetStoryLabelCmdImpl @ kTextStoryBoss (IID_ISTORYLABEL)
+> kSetStoryLabelCmdBoss @ kDocBoss (IID_SETSTORYLABEL_DOCUMENT)
+> kSetStoryLabelCmdBoss = "SetStoryLabelCmd" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kSetInCopyInterchangeExportOptionsCmdBoss = "SetICInterchangeExportOptionsCmd" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kSetInCopyInterchangeExportOptionsCmdBoss = "SetICInterchangeExportOptionsCmd" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kSetItemLockDataCmdBoss = "Set Lock State" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+	> kLockStoryStateMsg @ kTextStoryBoss (IID_ITEXTMODEL)
+> kSetItemLockDataCmdBoss @ kDocBoss (IID_IITEMLOCK_DOCUMENT)
+...kNewLayoutSelectionBoss (IID_IOBSERVER)
+	> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+	...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+> kSetItemLockDataCmdBoss = "Set Lock State" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kCopyFramePhase2CmdBoss = "" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+	> kAbstractLayoutDocumentSelectionBoss @ kAbstractLayoutDocumentSelectionBoss (IID_SELECTION_HIGHLIGHT_MESSAGE)
+	...kLayoutWidgetBoss (IID_ISELECTIONHIGHLIGHTOBSERVER)
+...kStoryListTreeViewBoss (IID_IOBSERVER)
+
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 222dddf8d, class class CZPAMLinkedStoryCheckOutService *
+  iZine : IAMServiceProvider::enCheckOut : 00015A04 : service impl instance : 222DDDF8
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryCheckOutService::VerifyContext # 114 : Enter
+  iZine :  Asset UID = 0x000000F1 , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine :  VerifyContext = 1
+iZine : CZPAMLinkedStoryCheckOutService::VerifyContext # 114 : Exit
+iZine : Object destroyed : 222dddf8d, class class CZPAMLinkedStoryCheckOutService *
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 22bb76e0d, class class CZPAMLinkedStoryCheckInService *
+  iZine : IAMServiceProvider::enCheckIn : 00015A02 : service impl instance : 22BB76E0
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Enter
+  iZine :  Asset UID = 0x000000F1 , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine : CZPAMHelper::IsAssetLockedByCurrentUser #2270 : Enter/Exit
+  iZine :  VerifyContext = 0
+iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Exit
+iZine : Object destroyed : 22bb76e0d, class class CZPAMLinkedStoryCheckInService *...kLinksListBoxBoss (IID_IOBSERVER)
+...kDocBoss (IID_IMETADATAOBSERVER)
+...kParentChildControlStripBoss (IID_IOBSERVER)
+...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kLinksListBoxBoss (IID_IOBSERVER)
+...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+...kTransformXFormControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+...kFlipRotateControlSetBoss (IID_IOBSERVER)
+...kStoryListTreeViewBoss (IID_IOBSERVER)
+...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+...kTransformXFormControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+...kLayoutWidgetBoss (IID_IREFERENCEPOINTSPREADOBSERVER)
+	> kMoveReferencePointCmdBoss = "MoveReferencePointCmd" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		> kSetDefaultRefPointPositionCmdBoss = "SetDefaultRefPointPositionCmd" : kBeforeDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+			> kReferencePointChangedMessage @ kWorkspaceBoss (IID_IDEFAULTREFPOINTPOSITION)
+		> kSetDefaultRefPointPositionCmdBoss = "SetDefaultRefPointPositionCmd" : kAfterDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+	> kReferencePointChangedMessage @ kLayoutWidgetBoss (IID_IREFERENCEPOINTDATA)
+	...kLayoutWidgetBoss (IID_ILAYOUTREFERENCEPOINTOBSERVER)
+	> kMoveReferencePointCmdBoss = "MoveReferencePointCmd" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+...kDocBoss (IID_IPAGETHUMBNAIL_DOCOBSERVER)
+...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELREFERENCEPOINTOBSERVER)
+...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELREFERENCEPOINTOBSERVER)
+> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+
+iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter
+  iZine : CZPAMLinkedStoryAssetMonitor::ProcessAsset # 163 : Enter/Exit
+iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Exit
+iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter
+  iZine : AZPAMAssetMonitor::FetchInfoFromServer # 472 : Enter
+    iZine : CZPAMWSUtils::CreateFetchAssetsInfoRequest #1341 : Enter
+      iZine : AZPSoapRequest::AZPSoapRequest #  50 : Object created at : 22495608
+Live request objects: 1
+    iZine : CZPAMWSUtils::CreateFetchAssetsInfoRequest #1341 : Exit
+    iZine : CZPWSController::AddRequest # 106 : Enter
+      iZine : CZPWSThreadHandler::AddRequest #  87 : Enter/Exit
+      iZine :  request refcount : 3
+    iZine : CZPWSController::AddRequest # 106 : Exit
+    iZine : CZPAMWSUtils::CreateFetchLockInfoRequest #1356 : Enter
+      iZine : AZPSoapRequest::AZPSoapRequest #  50 : Object created at : 2234DC98
+Live request objects: 2
+    iZine : CZPAMWSUtils::CreateFetchLockInfoRequest #1356 : Exit
+    iZine : CZPWSController::AddRequest # 106 : Enter
+      iZine : CZPWSThreadHandler::AddRequest #  87 : Enter/Exit
+      iZine :  request refcount : 3
+    iZine : CZPWSController::AddRequest # 106 : Exit
+  iZine : AZPAMAssetMonitor::FetchInfoFromServer # 472 : Exit
+iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Exit> kApplicationSuspendMsg @ kAppBoss (IID_IAPPLICATION)
+...kPanelManagerBoss (IID_IOBSERVER)
+...kLibraryPanelMgrBoss (IID_IOBSERVER)
+...kLinksPanelWidgetBoss (IID_IRESUMEOBSERVER)
+...kLinksListBoxBoss (IID_IOBSERVER)
+...kMenuControlStripBoss (IID_IOBSERVER)
+...kCJKIMEBoss (IID_IOBSERVER)
+...kPMAppQuitObserverBoss (IID_IOBSERVER)
+...kAwsStartupShutdownBoss (IID_IWGAPPSTATEOBSERVER)
+...kScriptStartupShutdownBoss (IID_IAPPRESUMEOBSERVER)
+...kApplicationScriptProviderBoss (IID_ISCRIPTOBSERVER)
+...kPDFAnnihilatorBoss (IID_IPDFAPPRESUMEOBSERVER)
+...kACEAnnihilatorBoss (IID_IAPPRESUMEOBSERVER)
+...kDocBoss (IID_IAPPRESUMEOBSERVER)
+...kDocBoss (IID_IINCOPYBRIDGEIMPORTOBSERVER)
+> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+	> kAbstractLayoutDocumentSelectionBoss @ kAbstractLayoutDocumentSelectionBoss (IID_SELECTION_MESSAGE)
+	...kSessionBoss (IID_ILAYERSELECTIONOBSERVER)
+	...kSessionBoss (IID_IREFERENCEPOINTSELECTIONOBSERVER)
+		> kMoveReferencePointCmdBoss = "MoveReferencePointCmd" : kBeforeDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+			> kSetDefaultRefPointPositionCmdBoss = "SetDefaultRefPointPositionCmd" : kBeforeDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+				> kReferencePointChangedMessage @ kWorkspaceBoss (IID_IDEFAULTREFPOINTPOSITION)
+			> kSetDefaultRefPointPositionCmdBoss = "SetDefaultRefPointPositionCmd" : kAfterDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+		> kReferencePointChangedMessage @ kLayoutWidgetBoss (IID_IREFERENCEPOINTDATA)
+		...kLayoutWidgetBoss (IID_ILAYOUTREFERENCEPOINTOBSERVER)
+		> kMoveReferencePointCmdBoss = "MoveReferencePointCmd" : kAfterDoMessageBoss @ kDocBoss (IID_ICOMMANDMGR)
+		...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELREFERENCEPOINTOBSERVER)
+		...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELREFERENCEPOINTOBSERVER)
+	...kLinksPanelWidgetBoss (IID_ISELECTIONOBSERVER)
+		> kListSelectionChangedMessage @ kLinksListBoxBoss (IID_ILISTCONTROLDATA)
+		...kLinksPanelWidgetBoss (IID_IOBSERVER)
+		> kListSelectionChangedMessage @ kLinksListBoxBoss (IID_ILISTCONTROLDATA)
+		...kLinksPanelWidgetBoss (IID_IOBSERVER)
+	...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+	...kStoryListTreeViewBoss (IID_ISTORYLISTSELECTIONOBSERVER)
+		> kListSelectionChangedMessage @ kStoryListTreeViewBoss (IID_ITREEVIEWCONTROLLER)
+		...kSLUpdateStoryButtonBoss (IID_IOBSERVER)
+		...kSLEditStoryButtonBoss (IID_IOBSERVER)
+		...kSLNewButtonBoss (IID_IOBSERVER)
+		...kSLDeleteButtonBoss (IID_IOBSERVER)
+		- kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kTreeExpanderWidgetBoss (IID_IBOOLEANCONTROLDATA)
+		- kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kStoryListTVNodeWidgetBoss (IID_ITREEVIEWMGR)
+		- kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		- kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		- kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kTreeExpanderWidgetBoss (IID_IBOOLEANCONTROLDATA)
+		- kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kStoryListTVNodeWidgetBoss (IID_ITREEVIEWMGR)
+		- kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		- kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kTreeExpanderWidgetBoss (IID_IBOOLEANCONTROLDATA)
+		- kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kStoryListTVNodeWidgetBoss (IID_ITREEVIEWMGR)
+		- kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		> kDeleteUIDsNoUndoCmdBoss = "" : kBeforeDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+			> kDeleteUIDsNoUndoCmdBoss = "" : kAfterDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+		> kDeleteUIDsNoUndoCmdBoss = "" : kBeforeDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+			> kDeleteUIDsNoUndoCmdBoss = "" : kAfterDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+		> kDeleteUIDsNoUndoCmdBoss = "" : kBeforeDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+			> kDeleteUIDsNoUndoCmdBoss = "" : kAfterDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+		> kDeleteUIDsNoUndoCmdBoss = "" : kBeforeDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+			> kDeleteUIDsNoUndoCmdBoss = "" : kAfterDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+		+ kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kTreeExpanderWidgetBoss (IID_IBOOLEANCONTROLDATA)
+		+ kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kStoryListTVNodeWidgetBoss (IID_ITREEVIEWMGR)
+		+ kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		+ kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kTreeExpanderWidgetBoss (IID_IBOOLEANCONTROLDATA)
+		+ kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kStoryListTVNodeWidgetBoss (IID_ITREEVIEWMGR)
+		+ kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		+ kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		+ kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kTreeExpanderWidgetBoss (IID_IBOOLEANCONTROLDATA)
+		+ kTreeExpanderWidgetBoss (IID_IOBSERVER) -> kStoryListTVNodeWidgetBoss (IID_ITREEVIEWMGR)
+		+ kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+		> kListSelectionChangedMessage @ kStoryListTreeViewBoss (IID_ITREEVIEWCONTROLLER)
+		...kSLUpdateStoryButtonBoss (IID_IOBSERVER)
+		...kSLEditStoryButtonBoss (IID_IOBSERVER)
+
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 222dddf8d, class class CZPAMLinkedStoryCheckOutService *
+  iZine : IAMServiceProvider::enCheckOut : 00015A04 : service impl instance : 222DDDF8
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryCheckOutService::VerifyContext # 114 : Enter
+  iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine :  VerifyContext = 1
+iZine : CZPAMLinkedStoryCheckOutService::VerifyContext # 114 : Exit
+iZine : Object destroyed : 222dddf8d, class class CZPAMLinkedStoryCheckOutService *
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+  iZine : Object created : 1758c8f0d, class class CZPAMLinkedStoryCheckInService *
+  iZine : IAMServiceProvider::enCheckIn : 00015A02 : service impl instance : 1758C8F0
+iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Enter
+  iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+  iZine :  Asset Type = 2
+  iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+  iZine : CZPAMHelper::IsAssetLockedByCurrentUser #2270 : Enter/Exit
+  iZine :  VerifyContext = 0
+iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Exit
+iZine : Object destroyed : 1758c8f0d, class class CZPAMLinkedStoryCheckInService *		...kSLNewButtonBoss (IID_IOBSERVER)
+		...kSLDeleteButtonBoss (IID_IOBSERVER)
+		> kTreeNodeExpandedMsg @ kStoryListTVNodeWidgetBoss (IID_ITREEVIEWMGR)
+		...kTreeExpanderWidgetBoss (IID_IOBSERVER)
+		+ kStoryNameILEBoss (IID_IOBSERVER) -> kStoryNameILEBoss (IID_ITEXTCONTROLDATA)
+	...kStrokeFillProxyToolBoss (IID_IGRAPHICSTATEOBSERVER)
+	...kStrokeFillProxyToolBoss (IID_ITOOLBOXRENDERING_GFXSTATEOBS)
+		> kSetToolCmdBoss @ kToolManagerBoss (IID_ITOOLMANAGER)
+		...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+		...kToolBoxBoss (IID_IOBSERVER)
+			> kFalseStateMessage @ kBoss_ClearFillStrokeTool (IID_IBOOLEANCONTROLDATA)
+		...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+		...kTransformXFormControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+		...kLayoutWidgetBoss (IID_ILAYOUTLAYERLISTOBSERVER)
+		...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+		...kLayoutWidgetBoss (IID_IREFERENCEPOINTTOOLOBSERVER)
+	...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELSELECTIONOBSERVER)
+	...kTransformXFormControlSetBoss (IID_ITRANSFORMPANELSELECTIONOBSERVER)
+	...kFlipRotateControlSetBoss (IID_IOBSERVER)
+	...kParentChildControlStripBoss (IID_IOBSERVER)
+	...kStrokeControlStripBoss (IID_IOBSERVER)
+	...kStrokeControlStripBoss (IID_IGRAPHICSTATEOBSERVER)
+	...kControlStripXPUIBoss (IID_ICONTROLSTRIPXPUISELECTIONOBSERVER)
+		> kSetAttributeTargetCommandBoss = "kSetXPAttributeTargetCommand" : kBeforeDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+			> kSetAttributeTargetCommandBoss @ kSessionBoss (IID_IXPUIATTRIBUTETARGETLIST)
+		...kControlStripXPUIBoss (IID_ICONTROLSTRIPXPUIWIDGETOBSERVER)
+			> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+			...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+			> kTextChangeStateMessage @ kPercentPopupSliderComboWidgetBoss (IID_ITEXTCONTROLDATA)
+			...kControlStripXPUIBoss (IID_ICONTROLSTRIPXPUIWIDGETOBSERVER)
+		> kSetAttributeTargetCommandBoss = "kSetXPAttributeTargetCommand" : kAfterDoMessageBoss @ kSessionBoss (IID_ICOMMANDMGR)
+		> kTextChangeStateMessage @ kPercentPopupSliderComboWidgetBoss (IID_ITEXTCONTROLDATA)
+		...kControlStripXPUIBoss (IID_ICONTROLSTRIPXPUIWIDGETOBSERVER)
+	...kSOModeNoneObserverBoss (IID_IOBSERVER)
+	...kSOModeSideStepObserverBoss (IID_IOBSERVER)
+	...kSOModeManualContourObserverBoss (IID_IOBSERVER)
+	...kSOModeBandObserverBoss (IID_IOBSERVER)
+	...kObjStyleDDListBoss (IID_IOBSERVER)
+	...kObjStylesClearOverrideNoneButtonBoss (IID_IOBSERVER)
+	...kObjStylesClearOverrideButtonBoss (IID_IOBSERVER)
+	...kLayoutWidgetBoss (IID_IOBSERVER)
+	...kFrameOptionsControlStripBoss (IID_IFRAMEOPTIONSSELECTIONOBSERVER)
+
+iZine : CZPWSIdleTaskThread::RunThread #  97 : Enter
+  iZine : CZPWSThreadHandler::ProcessRequestList # 157 : Enter
+    iZine : CZPWSController::AddRequest # 106 : Enter
+      iZine : CZPWSController::ProcessRequest # 130 : Enter
+        iZine : AZPSoapResponse::AZPSoapResponse #  45 : Object created at : 223B7EE0
+Live response objects: 1
+        iZine : CZPWSController::HandleResponse # 177 : Enter
+          iZine : CZPIdleTaskMgr::AddIdleTask # 117 : Enter/Exit
+        iZine : CZPWSController::HandleResponse # 177 : Exit
+      iZine : CZPWSController::ProcessRequest # 130 :  Exit: 1.28
+    iZine : CZPWSController::AddRequest # 106 :  Exit: 1.28
+  iZine : CZPWSThreadHandler::ProcessRequestList # 157 :  Exit: 1.28> kNewLayoutSelectionBoss @ kNewLayoutSelectionBoss (IID_SELECTION_INTERNAL_MESSAGE)
+...kAbstractLayoutDocumentSelectionBoss (IID_IOBSERVER)
+	> kAbstractLayoutDocumentSelectionBoss @ kAbstractLayoutDocumentSelectionBoss (IID_SELECTION_MESSAGE)
+	...kSessionBoss (IID_ILAYERSELECTIONOBSERVER)
+	...kSessionBoss (IID_IREFERENCEPOINTSELECTIONOBSERVER)
+	...kLinksPanelWidgetBoss (IID_ISELECTIONOBSERVER)
+	...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+	...kStoryListTreeViewBoss (IID_ISTORYLISTSELECTIONOBSERVER)
+	...kStrokeFillProxyToolBoss (IID_IGRAPHICSTATEOBSERVER)
+	...kStrokeFillProxyToolBoss (IID_ITOOLBOXRENDERING_GFXSTATEOBS)
+		> kSetToolCmdBoss @ kToolManagerBoss (IID_ITOOLMANAGER)
+		...kControlStripKitViewHorzBoss (IID_ICONTROLSTRIPSELECTIONOBSERVER)
+		...kToolBoxBoss (IID_IOBSERVER)
+			> kFalseStateMessage @ kBoss_ClearFillStrokeTool (IID_IBOOLEANCONTROLDATA)
+		...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+		...kTransformXFormControlSetBoss (IID_ITRANSFORMPANELSPREADOBSERVER)
+		...kLayoutWidgetBoss (IID_ILAYOUTLAYERLISTOBSERVER)
+		...kLayoutWidgetBoss (IID_INOTELAYOUTOBSERVER)
+		...kLayoutWidgetBoss (IID_IREFERENCEPOINTTOOLOBSERVER)
+	...kTransformXYWHControlSetBoss (IID_ITRANSFORMPANELSELECTIONOBSERVER)
+	...kTransformXFormControlSetBoss (IID_ITRANSFORMPANELSELECTIONOBSERVER)
+	...kFlipRotateControlSetBoss (IID_IOBSERVER)
+	...kParentChildControlStripBoss (IID_IOBSERVER)
+	...kStrokeControlStripBoss (IID_IOBSERVER)
+	...kStrokeControlStripBoss (IID_IGRAPHICSTATEOBSERVER)
+	...kControlStripXPUIBoss (IID_ICONTROLSTRIPXPUISELECTIONOBSERVER)
+	...kSOModeNoneObserverBoss (IID_IOBSERVER)
+	...kSOModeSideStepObserverBoss (IID_IOBSERVER)
+	...kSOModeManualContourObserverBoss (IID_IOBSERVER)
+	...kSOModeBandObserverBoss (IID_IOBSERVER)
+	...kObjStyleDDListBoss (IID_IOBSERVER)
+	...kObjStylesClearOverrideNoneButtonBoss (IID_IOBSERVER)
+	...kObjStylesClearOverrideButtonBoss (IID_IOBSERVER)
+	...kLayoutWidgetBoss (IID_IOBSERVER)
+	...kFrameOptionsControlStripBoss (IID_IFRAMEOPTIONSSELECTIONOBSERVER)
+> kInViewPingMsgBoss @ kFrameItemBoss (IID_IFRAMEINVIEWPING_DOCUMENT)
+...kLayoutWidgetBoss (IID_ILAYOUTPAGEITEMOBSERVER)
+> kInViewPingMsgBoss @ kFrameItemBoss (IID_IFRAMEINVIEWPING_DOCUMENT)
+...kLayoutWidgetBoss (IID_ILAYOUTPAGEITEMOBSERVER)
+
+  iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+    iZine : Object created : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+    iZine : IAMServiceProvider::enCheckIn : 00015A02 : service impl instance : 22E2AD90
+  iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+  iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Enter
+    iZine :  Asset UID = 0x000000F1 , asset class name = kDataLinkBoss
+    iZine :  Asset Type = 2
+    iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+    iZine : CZPAMHelper::IsAssetLockedByCurrentUser #2270 : Enter/Exit
+    iZine :  VerifyContext = 0
+  iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Exit
+  iZine : Object destroyed : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+  iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+    iZine : Object created : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+    iZine : IAMServiceProvider::enCheckIn : 00015A02 : service impl instance : 22E2AD90
+  iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+  iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Enter
+    iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+    iZine :  Asset Type = 2
+    iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+    iZine : CZPAMHelper::IsAssetLockedByCurrentUser #2270 : Enter/Exit
+    iZine :  VerifyContext = 0
+  iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Exit
+  iZine : Object destroyed : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *> kApplicationResumeMsg @ kAppBoss (IID_IAPPLICATION)
+...kPanelManagerBoss (IID_IOBSERVER)
+...kLibraryPanelMgrBoss (IID_IOBSERVER)
+...kLinksPanelWidgetBoss (IID_IRESUMEOBSERVER)
+...kLinksListBoxBoss (IID_IOBSERVER)
+...kMenuControlStripBoss (IID_IOBSERVER)
+...kCJKIMEBoss (IID_IOBSERVER)
+...kPMAppQuitObserverBoss (IID_IOBSERVER)
+...kAwsStartupShutdownBoss (IID_IWGAPPSTATEOBSERVER)
+...kScriptStartupShutdownBoss (IID_IAPPRESUMEOBSERVER)
+...kApplicationScriptProviderBoss (IID_ISCRIPTOBSERVER)
+...kPDFAnnihilatorBoss (IID_IPDFAPPRESUMEOBSERVER)
+...kACEAnnihilatorBoss (IID_IAPPRESUMEOBSERVER)
+...kDocBoss (IID_IAPPRESUMEOBSERVER)
+...kDocBoss (IID_IINCOPYBRIDGEIMPORTOBSERVER)
+
+  iZine : AZPAMSystemProvider::GetServiceProvider #  87 : Enter/Exit> kCheckExportSettingsCmdBoss = "Check export settings" : kBeforeDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+	> kCheckExportSettingsCmdBoss = "Check export settings" : kAfterDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+> kCheckColorSettingsCmdBoss = "" : kBeforeDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+	> kCheckColorSettingsCmdBoss = "" : kAfterDoMessageBoss @ kWorkspaceBoss (IID_ICOMMANDMGR)
+
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter
+    iZine : CZPAMLinkedStoryAssetMonitor::ProcessAsset # 163 : Enter
+      iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+      iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Enter
+        iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 391 : AssetID = b398e66c-1c4e-44c4-a3c6-a9796f1a1412
+        iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+        iZine :  file path = 'C:\Documents and Settings\Admin\Local Settings\Application Data\Adobe\InDesign\Version 5.0\Caches\iZINE\b398e66c-1c4e-44c4-a3c6-a9796f1a1412\My Story in original text.incx'
+      iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Exit
+      iZine : CZPAMLockable::VerifyState # 343 : Enter
+        iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+        iZine : state = enAvailable
+
+      iZine : CZPAMLockable::VerifyState # 343 : Exit
+      iZine : CZPAMLockable::GetLockStatusStrings # 124 : Enter/Exit
+      iZine : CZPAMLockable::VerifyState # 343 : Enter
+        iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+        iZine : state = enAvailable
+
+      iZine : CZPAMLockable::VerifyState # 343 : Exit
+      iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Enter
+        iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 391 : AssetID = b398e66c-1c4e-44c4-a3c6-a9796f1a1412
+        iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+        iZine :  file path = 'C:\Documents and Settings\Admin\Local Settings\Application Data\Adobe\InDesign\Version 5.0\Caches\iZINE\b398e66c-1c4e-44c4-a3c6-a9796f1a1412\My Story in original text.incx'
+      iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Exit
+      iZine : File is of same version.
+      iZine : CZPAMLinkedStoryAssetMonitor::InValidateGalleyLines # 328 : Enter/Exit
+      iZine : CZPAMLinkedStoryAssetMonitor::UpdateTextModelLock # 428 : Enter
+        iZine : Story UID: 0x12A  Lock State: 2 
+        iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+          iZine : Object created : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+          iZine : IAMServiceProvider::enCheckIn : 00015A02 : service impl instance : 22E2AD90
+        iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+        iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Enter
+          iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+          iZine :  Asset Type = 2
+          iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+          iZine : CZPAMHelper::IsAssetLockedByCurrentUser #2270 : Enter/Exit
+          iZine :  VerifyContext = 0
+        iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Exit
+        iZine : Object destroyed : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+      iZine : CZPAMLinkedStoryAssetMonitor::UpdateTextModelLock # 428 : Exit
+      iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+        iZine : Object created : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+        iZine : IAMServiceProvider::enCheckIn : 00015A02 : service impl instance : 22E2AD90
+      iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+      iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Enter
+        iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+        iZine :  Asset Type = 2
+        iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+        iZine : CZPAMHelper::IsAssetLockedByCurrentUser #2270 : Enter/Exit
+        iZine :  VerifyContext = 0
+      iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Exit
+      iZine : Object destroyed : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+      iZine : CZPAMLinkedStoryAssetMonitor::NotifyDocObservers # 391 : Enter/Exit> kAssignmentPanelInvalidateNotifyMsg @ kSessionBoss (IID_IASSIGNMENTMGRCHANGED)
+...kStoryListKitBoss (IID_IOBSERVER)
+
+      iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+        iZine : Object created : 22e04398d, class class CZPAMLinkedStoryCheckOutService *
+        iZine : IAMServiceProvider::enCheckOut : 00015A04 : service impl instance : 22E04398
+      iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+      iZine : CZPAMLinkedStoryCheckOutService::VerifyContext # 114 : Enter
+        iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+        iZine :  Asset Type = 2
+        iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+        iZine :  VerifyContext = 1
+      iZine : CZPAMLinkedStoryCheckOutService::VerifyContext # 114 : Exit
+      iZine : Object destroyed : 22e04398d, class class CZPAMLinkedStoryCheckOutService *
+      iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Enter
+        iZine : Object created : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+        iZine : IAMServiceProvider::enCheckIn : 00015A02 : service impl instance : 22E2AD90
+      iZine : CZPAMLinkedStoryServiceProvider::GetService # 235 : Exit
+      iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Enter
+        iZine :  Asset UID = 0x0000013D , asset class name = kDataLinkBoss
+        iZine :  Asset Type = 2
+        iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+        iZine : CZPAMHelper::IsAssetLockedByCurrentUser #2270 : Enter/Exit
+        iZine :  VerifyContext = 0
+      iZine : CZPAMLinkedStoryCheckInService::VerifyContext # 144 : Exit
+      iZine : Object destroyed : 22e2ad90d, class class CZPAMLinkedStoryCheckInService *
+    iZine : CZPAMLinkedStoryAssetMonitor::ProcessAsset # 163 :  Exit: 0.09
+    iZine : AZPAMAssetMonitor::FetchInfoFromServer # 472 : Enter
+      iZine : CZPAMWSUtils::CreateFetchAssetsInfoRequest #1341 : Enter
+        iZine : AZPSoapRequest::AZPSoapRequest #  50 : Object created at : 223DFA38
+Live request objects: 3
+      iZine : CZPAMWSUtils::CreateFetchAssetsInfoRequest #1341 : Exit
+      iZine : CZPWSController::AddRequest # 106 : Enter
+        iZine : CZPWSThreadHandler::AddRequest #  87 : Enter/Exit
+        iZine :  request refcount : 3
+      iZine : CZPWSController::AddRequest # 106 : Exit
+      iZine : CZPAMWSUtils::CreateFetchLockInfoRequest #1356 : Enter
+        iZine : AZPSoapRequest::AZPSoapRequest #  50 : Object created at : 223E09E0
+Live request objects: 4
+      iZine : CZPAMWSUtils::CreateFetchLockInfoRequest #1356 : Exit
+      iZine : CZPWSController::AddRequest # 106 : Enter
+        iZine : CZPWSThreadHandler::AddRequest #  87 : Enter/Exit
+        iZine :  request refcount : 3
+      iZine : CZPWSController::AddRequest # 106 : Exit
+    iZine : AZPAMAssetMonitor::FetchInfoFromServer # 472 : Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 :  Exit: 0.11
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+  iZine : CZPAppIdleTask::RunTask #  94 : Enter
+    iZine : CZPIdleTaskMgr::PerformIdleTask # 189 : Enter
+      iZine : CIdleTaskWSResponseHandle::PerformTask #  64 : Enter
+        iZine : CZPWSController::CallResponseHandler # 309 : Enter
+          iZine : CZPWSResponseHandler::HandleWSResponse # 147 : Enter
+            iZine : CZPWSResponseHandler::PreProcessWSResponse # 104 : Enter/Exit
+            iZine : CZPAssetMgr::HandleWSResponse # 270 : Enter
+              iZine : CZPAssetMgr::HandleResponse_FetchAssets # 327 : Enter
+                iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Enter
+                  iZine : CZPAssetMgr::UpdateAssetName # 629 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Exit
+              iZine : CZPAssetMgr::HandleResponse_FetchAssets # 327 : Exit
+            iZine : CZPAssetMgr::HandleWSResponse # 270 : Exit
+          iZine : CZPWSResponseHandler::HandleWSResponse # 147 : Exit
+          iZine : AZPSoapResponse::~AZPSoapResponse #  55 : Object destoyed at : 223B7EE0
+Live response objects: 0
+          iZine : AZPSoapRequest::~AZPSoapRequest #  75 : Object destoyed at : 22495608
+Live request objects: 3
+        iZine : CZPWSController::CallResponseHandler # 309 : Exit
+      iZine : CIdleTaskWSResponseHandle::PerformTask #  64 : Exit
+    iZine : CZPIdleTaskMgr::PerformIdleTask # 189 : Exit
+    iZine : CZPIdleTaskMgr::RemoveIdleTask # 211 : Enter/Exit
+  iZine : CZPAppIdleTask::RunTask #  94 : Exit
+  iZine : CZPWSThreadHandler::ProcessRequestList # 157 : Enter
+    iZine : CZPWSController::AddRequest # 106 : Enter
+      iZine : CZPWSController::ProcessRequest # 130 : Enter
+        iZine : AZPSoapResponse::AZPSoapResponse #  45 : Object created at : 223B7EE0
+Live response objects: 1
+        iZine : CZPWSController::HandleResponse # 177 : Enter
+          iZine : CZPIdleTaskMgr::AddIdleTask # 117 : Enter/Exit
+        iZine : CZPWSController::HandleResponse # 177 : Exit
+      iZine : CZPWSController::ProcessRequest # 130 :  Exit: 1.05
+    iZine : CZPWSController::AddRequest # 106 :  Exit: 1.06
+  iZine : CZPWSThreadHandler::ProcessRequestList # 157 :  Exit: 1.06
+  iZine : AZPAMSystemProvider::GetServiceProvider #  87 : Enter/Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+  iZine : CZPAppIdleTask::RunTask #  94 : Enter
+    iZine : CZPIdleTaskMgr::PerformIdleTask # 189 : Enter
+      iZine : CIdleTaskWSResponseHandle::PerformTask #  64 : Enter
+        iZine : CZPWSController::CallResponseHandler # 309 : Enter
+          iZine : CZPWSResponseHandler::HandleWSResponse # 147 : Enter
+            iZine : CZPWSResponseHandler::PreProcessWSResponse # 104 : Enter/Exit
+            iZine : CZPAssetMgr::HandleWSResponse # 270 : Enter
+              iZine : CZPAssetMgr::HandleResponse_FetchLockInfo # 369 : Enter
+                iZine : CZPAssetMgr::UpdateAssetsLockInfo # 498 : Enter
+                  iZine : CZPAssetMgr::UpdateAssetLockInfo # 518 : Enter
+                    iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+                  iZine : CZPAssetMgr::UpdateAssetLockInfo # 518 : Exit
+                iZine : CZPAssetMgr::UpdateAssetsLockInfo # 498 : Exit
+              iZine : CZPAssetMgr::HandleResponse_FetchLockInfo # 369 : Exit
+            iZine : CZPAssetMgr::HandleWSResponse # 270 : Exit
+          iZine : CZPWSResponseHandler::HandleWSResponse # 147 : Exit
+          iZine : AZPSoapResponse::~AZPSoapResponse #  55 : Object destoyed at : 223B7EE0
+Live response objects: 0
+          iZine : AZPSoapRequest::~AZPSoapRequest #  75 : Object destoyed at : 2234DC98
+Live request objects: 2
+        iZine : CZPWSController::CallResponseHandler # 309 : Exit
+      iZine : CIdleTaskWSResponseHandle::PerformTask #  64 : Exit
+    iZine : CZPIdleTaskMgr::PerformIdleTask # 189 : Exit
+    iZine : CZPIdleTaskMgr::RemoveIdleTask # 211 : Enter/Exit
+  iZine : CZPAppIdleTask::RunTask #  94 : Exit
+  iZine : CZPWSThreadHandler::ProcessRequestList # 157 : Enter
+    iZine : CZPWSController::AddRequest # 106 : Enter
+      iZine : CZPWSController::ProcessRequest # 130 : Enter
+        iZine : AZPSoapResponse::AZPSoapResponse #  45 : Object created at : 223B7EE0
+Live response objects: 1
+        iZine : CZPWSController::HandleResponse # 177 : Enter
+          iZine : CZPIdleTaskMgr::AddIdleTask # 117 : Enter/Exit
+        iZine : CZPWSController::HandleResponse # 177 : Exit
+      iZine : CZPWSController::ProcessRequest # 130 :  Exit: 1.27
+    iZine : CZPWSController::AddRequest # 106 :  Exit: 1.27
+  iZine : CZPWSThreadHandler::ProcessRequestList # 157 :  Exit: 1.27> kListSelectionChangedMessage @ kLinksListBoxBoss (IID_ILISTCONTROLDATA)
+...kLinksPanelWidgetBoss (IID_IOBSERVER)
+> kTextChangeStateMessage @ kStaticTextWidgetBoss (IID_ITEXTCONTROLDATA)
+> kListSelectionChangedMessage @ kLinksListBoxBoss (IID_ILISTCONTROLDATA)
+...kLinksPanelWidgetBoss (IID_IOBSERVER)
+
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter/Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Enter
+    iZine : CZPAMDocAssetMonitor::ProcessAsset # 125 : Enter
+      iZine : CZPAMLockable::VerifyState # 343 : Enter
+        iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+        iZine : state = enCheckedOut
+
+      iZine : CZPAMLockable::VerifyState # 343 : Exit
+      iZine : CZPAMLockable::GetLockStatusStrings # 124 : Enter/Exit
+      iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+      iZine : CZPAMLockable::VerifyState # 343 : Enter
+        iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+        iZine : state = enCheckedOut
+
+      iZine : CZPAMLockable::VerifyState # 343 : Exit
+      iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Enter
+        iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 391 : AssetID = d1de4c6d-99dd-4830-8822-c225f7996b22
+        iZine : CZPFileUtils::GetLocalStoreFolder # 383 : Enter/Exit
+        iZine :  file path = 'C:\Documents and Settings\Admin\Local Settings\Application Data\Adobe\InDesign\Version 5.0\Caches\iZINE\d1de4c6d-99dd-4830-8822-c225f7996b22\Testing frame copy Nov 22 2011.indd'
+      iZine : CZPAssetUtils::CreateLocalFilePathFromAssetID # 389 : Exit
+      iZine : File is locally modified.
+      iZine : File is of same version.
+    iZine : CZPAMDocAssetMonitor::ProcessAsset # 125 : Exit
+  iZine : AZPAMAssetMonitor::ProcessNextAsset # 331 : Exit
+  iZine : CZPAppIdleTask::RunTask #  94 : Enter
+    iZine : CZPIdleTaskMgr::PerformIdleTask # 189 : Enter
+      iZine : CIdleTaskWSResponseHandle::PerformTask #  64 : Enter
+        iZine : CZPWSController::CallResponseHandler # 309 : Enter
+          iZine : CZPWSResponseHandler::HandleWSResponse # 147 : Enter
+            iZine : CZPWSResponseHandler::PreProcessWSResponse # 104 : Enter/Exit
+            iZine : CZPAssetMgr::HandleWSResponse # 270 : Enter
+              iZine : CZPAssetMgr::HandleResponse_FetchAssets # 327 : Enter
+                iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Enter
+                  iZine : CZPAssetMgr::UpdateAssetName # 629 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Exit
+                iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Enter
+                  iZine : CZPAssetMgr::UpdateAssetName # 629 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Exit
+                iZine : CZPAssetMgr::GetAssetByID # 748 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Enter
+                  iZine : CZPAssetMgr::UpdateAssetName # 629 : Enter/Exit
+                iZine : CZPAssetMgr::UpdateAsset # 606 : Exit
+              iZine : CZPAssetMgr::HandleResponse_FetchAssets # 327 : Exit
+            iZine : CZPAssetMgr::HandleWSResponse # 270 : Exit
+          iZine : CZPWSResponseHandler::HandleWSResponse # 147 : Exit
+          iZine : AZPSoapResponse::~AZPSoapResponse #  55 : Object destoyed at : 223B7EE0
+Live response objects: 0
+          iZine : AZPSoapRequest::~AZPSoapRequest #  75 : Object destoyed at : 223DFA38
+Live request objects: 1
+        iZine : CZPWSController::CallResponseHandler # 309 : Exit
+      iZine : CIdleTaskWSResponseHandle::PerformTask #  64 : Exit
+    iZine : CZPIdleTaskMgr::PerformIdleTask # 189 : Exit
+    iZine : CZPIdleTaskMgr::RemoveIdleTask # 211 : Enter/Exit
+  iZine : CZPAppIdleTask::RunTask #  94 : Exit
+  iZine : CZPWSThreadHandler::ProcessRequestList # 157 : Enter
+    iZine : CZPWSController::AddRequest # 106 : Enter
+      iZine : CZPWSController::ProcessRequest # 130 : Enter
+        iZine : AZPSoapResponse::AZPSoapResponse #  45 : Object created at : 223B7EE0

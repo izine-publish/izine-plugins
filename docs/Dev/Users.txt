@@ -1,0 +1,38 @@
+
+At 192.168.1.19
+https://192.168.1.19/iZINE.Web.MVC/server.svc
+	KeyUsers
+aman_a/a
+rajkumar_k/r
+	Users
+rajkumar/r
+amana/a
+
+
+
+At Staging Server
+https://izine.redfive-labs.biz/server.svc
+
+	KeyUsers
+aman_a/a
+remco_a/r
+rajkumar_a/r
+	Users
+rajkumar/r
+remco/r
+Robin/robin
+amana/a
+
+
+
+https://192.168.1.19/iZINE.Web.MVC/server.svc
+
+
+https://izine.redfive-labs.biz/server.svc
+
+
+Live server
+https://www2.izine-publish.net/server.svc 
+rakesh.kumar@in.redfive.biz 
+Frun9vew
+

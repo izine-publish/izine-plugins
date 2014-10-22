@@ -1,0 +1,70 @@
+//	$HeadURL: https://my.redfive.biz/svn/izine/iZinePlns/Codebase/trunk/InDesignCommonCS5_5.xcconfig $
+//	$Revision: 4084 $
+//	$Date: 2012-10-12 18:43:16 +0530 (Fri, 12 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: mindfire
+//	Created: 2012 Oct 29
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+
+//	Description: Common file to be added to all InDesign CS5_5 plugin projects.
+
+#include "InDesignCommon.xcconfig"
+
+
+//General settings
+// GCC flags
+GCC_ENABLE_CPP_EXCEPTIONS = YES
+////GCC_ENABLE_CPP_RTTI = YES
+////GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES
+////GCC_INLINES_ARE_PRIVATE_EXTERN = YES
+//GCC_INPUT_FILETYPE = sourcecode.cpp.cpp
+////GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) MACINTOSH MACOSX_SDKVERSION=$(MACOSX_SDKVERSION)
+////GCC_THREADSAFE_STATICS = NO
+////GCC_WARN_CHECK_SWITCH_STATEMENTS = YES
+////GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES
+////GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES
+////GCC_WARN_MISSING_PARENTHESES = YES
+////GCC_WARN_SHADOW = YES
+////GCC_WARN_UNUSED_FUNCTION = YES
+////GCC_WARN_UNUSED_LABEL = YES
+////GCC_WARN_UNUSED_PARAMETER = NO
+////GCC_WARN_UNUSED_VARIABLE = NO
+//GCC_WARN_64_TO_32_BIT_CONVERSION = YES // Too many warnings from headers we don't own
+
+////WARNING_CFLAGS = -Wchar-subscripts -Wimplicit -Wsequence-point -Winit-self -Wmissing-field-initializers -Wpointer-arith -Wcast-align -Wpacked
+////SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES
+
+// Uncomment these two lines to see which deprecated API's we are using in our code
+// You can control model vs ui and dylibs vs plugin separately - see the other xcconfig files
+//GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES
+//GCC_TREAT_WARNINGS_AS_ERRORS = NO  
+
+//InDesign specific settings
+
+//Paths 
+InDesignSDKDir = $(IDCS55SDK)
+ZPCommonSDKDir=$(ZPCommonDir)/AdobeInDnSDKCS5_5
+
+// ASL/boost headers
+ASL_HEADER_SEARCH_PATHS = $(InDesignSDKDir)/external/asl/boost_libraries/ $(InDesignSDKDir)/external/asl/intel_tbb_libraries/include/ $(InDesignSDKDir)/external/asl/adobe_source_libraries/ 
+
+HEADER_SEARCH_PATHS = $(HEADER_SEARCH_PATHS) $(InDnCPPPaths) $(INDNCS5_HEADER_PATHS) $(ASL_HEADER_SEARCH_PATHS) $(InDesignSDK_Source)/sdksamples/InCopyExport $(InDesignSDK_Source)/sdksamples/InCopyExportUI $(InDesignSDK_Source)/open/components/incopyexport $(InDesignSDK_Source)/open/components/incopyexportui $(InDesignSDKDir)/external/bibxmp/include $(ZPRootDir)/Source/SelectionSuite
+LIBRARY_SEARCH_PATHS = $(inherited) $(LIBRARY_SEARCH_PATHS_IDLibs)
+
+GCC_MODEL_TUNING = G5
+
+// SDK and minimum deployment target
+SDKROOT = $(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk
+MACOSX_DEPLOYMENT_TARGET = 10.5
+MACOSX_SDKVERSION = 1050	// use to compare SDK version against constants in AvailabilityMacros.h
+
+//SDKROOT = $(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk
+//MACOSX_DEPLOYMENT_TARGET = 10.6
+//MACOSX_SDKVERSION = 1060	// use to compare SDK version against constants in AvailabilityMacros.h
+
+ARCHS = $(NATIVE_ARCH)	// by default just build for the architecture of host machine
+VALID_ARCHS = i386 x86_64 // farewell to ppc builds
+
+// Compiler version (4.0 vs 4.2 vs 4.2LLVM)
+GCC_VERSION = 4.0

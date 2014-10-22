@@ -1,0 +1,1 @@
+copy CmdUI.PRF "%appdata%\Microsoft\VisualStudio\8.0\1033"

@@ -1,0 +1,226 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP_enUS.fri $
+//	$Revision: 4086 $
+//	$Date: 2012-10-18 15:17:53 +0200 (Thu, 18 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+// English string table is defined here
+
+resource StringTable (kSDKDefStringsResourceID + index_enUS)
+{
+		k_enUS,									// Locale Id
+		kEuropeanWinToMacEncodingConverter,		// Character encoding converter (irp) I made this WinToMac as we have a bias to generate on Win...
+		{
+			 // ----- Menu strings
+				kIZPCompanyKey,						kIZPCompanyValue,
+				
+
+			// Error Strings
+			kZPOpenFileWithoutLoginErrorKey,		"Document cannot be opened without login.",
+			kZPNewAssignmentNotAllowedErrorKey,		"New assignment not allowed in this document.",
+
+			kZPWSAssetCreatingErrorKey,				"Error occurred creating asset in repository.",
+			kZPAssetDeletedOnServerErrorKey,		"Some of the assets are deleted on server.",
+			kZPAssetDownloadingErrorKey,			"Error occurred downloading asset from repository.",
+			kZPAssignmentCheckinErrorKey,			"Error occurred during checkin assignment.",
+			kZPAssignmentPropertiesUpdateErrorKey,	"Error occurred during update assignment properties.",
+			kZPAssignmentUpdatingErrorKey,			"Error occurred during updating assignment.",
+			kZPDocumentAlreadyOpenErrorKey,			"The document is already opened.",
+			kZPDocumentLockErrorKey,				"Error occurred during lock of document.",
+			kZPDocumentWritingErrorKey,				"Error during writing document.",
+			kZPExportImageToJpegErrorKey,			"Error occurred ExportImageToJPEG.",
+			kZPFileOpeningErrorKey,					"Error occurred while opening file.",
+			kZPLinkedStoryWritingErrorKey,			"Error during writing linked story.",
+			kZPLockAcquireFailErrorKey,				"Failed to acquire lock.",
+			kZPLoginFailedErrorKey,					"Login failed.",
+			kZPServerErrorErrorKey,					"Server Error:",
+
+			//UI errors
+			kZPUIEditionCannotChangeErrorKey,		"Cannot change Edition.",
+			kZPUIEditionEmptyErrorKey,				"Edition cannot be empty.",
+			kZPUINameEmptyErrorKey,					"Name cannot be empty.",
+			kZPUITitleCannotChangeErrorKey,			"Cannot change Title.",
+			kZPUITitleEmptyErrorKey,				"Title cannot be empty.",
+			kZPUIStatusEmptyErrorKey,				"Status cannot be empty.",
+			kZPUIDuplicateAssetNameErrorKey,		"Duplicate asset name.",
+
+			//WS errors
+			kZPWSAssetRetrieveErrorKey,				"Error retrieving assets.",
+			kZPWSAssetUploadErrorKey,				"Error occurred during asset upload.",
+			kZPWSAssignmentUploadingErrorKey,		"Error during uploading assignment.",
+			kZPWSDocumentCheckinErrorKey,			"Error occurred during checkin document.",
+			kZPWSDocumentUploadingErrorKey,			"Error during uploading document.",
+			kZPWSPDFUploadErrorKey,					"UploadPDF failed.",
+
+		//		kIZPDialogMenuItemKey,					"Show dialog[US]",
+		//		kIZPSaveVersionMenuItemKey,				"Save Version",
+		//		kIZPSaveCopyMenuItemKey,				"Save Copy",
+		//		kIZPOpenFromRepositoryMenuItemKey,		"Open from iZINE...",
+		//		kIZPPreferencesPanelMenuItemKey,		"iZINE",
+		//		kIZPMainMenuRefreshMenuKey,				"Refresh",
+		//		kIZPMainMenuCheckInMenuItemKey,			"Check In",
+		//		kIZPMainMenuExportMenuItemKey,			"Export",
+		//		kIZPMainMenuCheckOutMenuItemKey,		"Check Out",
+		//		kIZPMainMenuCancelCheckOutMenuItemKey,	"Cancel Check Out",
+		//		kIZPMainMenuUnlinkMenuItemKey,			"Unlink",
+		//		kIZPMainMenuUpdateMenuItemKey,			"Update",
+		//		kIZPMainMenuSaveMenuItemKey,			"Save",
+		//		kIZPCheckOutAllMenuItemKey,		"Check Out All",
+		//		kIZPMainMenuExportAllMenuItemKey,			"Export all",
+		//		kIZPApplyTagsMenuItemKey,				"Apply Tags",
+		//		
+		//		kIZPLoginMenuKey,						"Login",
+		//		kIZPLogoffMenuKey,						"Logoff",
+		//		kIZPExportAssetDialogTitleKey,			"Export Asset",
+		//		
+		//		// Prefs Panel
+		//		kIZPPrefsPanelPanelTitleKey,			"iZINE",
+		//		kIZPPrefsWebServicelTitleKey,			"Web Service Settings",
+		//		kIZPPrefsUserNameKey,					"User Name:",
+		//		kIZPPrefsPasswordKey,					"Password:",
+		//		kIZPPrefsProjectPathKey,				"Project Path:",
+		//		kIZPPrefsWebServiceURLKey,				"Web Service URL:",
+		//		kIZPPrefsProjectPathTextWidgetKey,		"Project Path",
+	//				kSDKDefAboutThisPlugInMenuKey,			kSDKDefAboutThisPlugInMenuValue_enUS,
+		//		kIZPPrefsProjectFolderTextBoxKey,		"Folder",
+		//		kIZPPrefsBrowseButtonTextBoxKey,		"Browse...",
+		//		kIZPDocumentsPanelUpdateButtonKey,		"Update",
+		//		
+	//				// ----- Command strings
+
+	//				// ----- Window strings
+
+	//				// ----- Panel/dialog strings
+	//				kIZPDocumentsPanelTitleKey,				"Documents",
+	//				kIZPStaticTextKey,						"iZINE",
+		//		
+		//		// Save to Repository Dialog
+		//		kIZPSaveToRepDialogTitleKey,			"Opslaan",
+		//		kIZPSaveToRepNameKey,					"Naam",
+		//		kIZPSaveToRepDescriptionKey,			"Omschrijving",
+		//		kIZPSaveToRepUploadKey,					"Opslaan",
+		//		kIZPSaveToRepPublicationKey,			"Titel",
+		//		kIZPSaveToRepEditionKey,				"Editie",
+		//		kIZPSaveToRepStoriesKey,				"Stories",
+		//		
+		//		// Open from Repository Dialog
+		//		kIZPOpenFromRepDialogTitleKey,			"Open",
+		//		kIZPOpenFromRepOpenKey,					"Open",
+		//		
+		//		// Comments Dialog
+		//		kIZPEnterCommentTitleKey,				"Enter Comments",
+		//		kIZPCommentsDialogTitleKey,				"Check-In Comments",
+		//		kIZPCommentsDialogStatusKey,			"Status",
+		//		kIZPCommentsDialogDescriptionKey,		"Description",
+
+		//		// History Panel
+		//		kIZPHistoryPanelTitleKey,				"History",
+		//		kIZPHistoryPanelUpdateButtonKey,		"Update",
+		//		kIZPHistoryCol_DateKey,					"Date",
+		//		kIZPHistoryCol_UserKey,					"User",
+		//		kIZPHistoryCol_DocumentKey,				"Document",
+		//		kIZPHistoryCol_CommentKey,				"Comment",
+		//		
+		//		// Document Info Panel
+		//		kIZPDocumentsPanelIDStaticTextKey,			"ID: ",
+		//		kIZPDocumentsPanelPublicationStaticTextKey,	"Publication: ",
+		//		kIZPDocumentsPanelNameStaticTextKey,		"Name: ",
+
+		//		// Asset Info Panel
+		//		kIZPAssetsPanelTitleKey,					"Assets",
+		//		kIZPAssetsPanelUpdateButtonKey,				"Update",
+		//		kIZPAssetsPanelIDStaticTextKey, 			"",
+		//		kIZpAssetsPanelPublicationStaticTextKey,	"",
+		//		kIZPAssetsPanelNameStaticTextKey,			"",
+		//		kIZPAssetsPanelUserKey,						"User:",
+
+		//		kIZPExportAssetDialogStatusKey,				"Status",
+		//		
+		//		kIZPAssignmentDialogCaptionKey,				"Assignment",
+		//		kIZPAssignmentDialogGroupTitleKey,			"Assignment",
+		//		kIZPAssignmentDialogNameKey,				"Name",
+		//		kIZPAssignmentDialogAssignedToKey,			"Assigned To",
+		//		kIZPAssignmentDialogColorKey,				"Color",
+		//		kIZPAssignmentDialogStatusKey,				"Status",
+		//		kIZPAssignmentDialogTitleKey,				"Titel",
+		//		kIZPAssignmentDialogShelveKey,				"Editie",
+
+		//		kIZPAssignmentsPanelTitleKey,				"Assignments",
+		//		
+		//// ----- Misc strings
+	//				kIZPAboutBoxStringKey,						kIZPPluginName " , version " kIZPVersion " by " kIZPAuthor "\n\n" kIZPCopyrightValue "\n\n" kIZPSupportURL,
+	//				kIZPDocServiceProviderKey,					"Document Service Provider",
+	//				kIZPProgressBarOpenDocumentKey,				"Open Document",
+	//				kIZPProgressBarSavingDocumentKey,			"Saving Document",
+	//				kIZPDocAlreadyExistKey,						"The Document Already Exists",
+	//				kIZPErrorOccuredWhileDownlodingVersionKey,	"EnsureLatestVersion: Error occurred while downloading version",
+	//				kIZPErrorOoccurredDuringCheckoutOfStoryKey,	"Error occurred during Checkout of Story",
+	//				kIZPErrorCouldNotRetrieveAssetPropertiesKey,"EnsureLatestVersion: Could not retrieve asset properties",
+	//				kIZPProgressBarUpdateDocumentKey,			"Update Document",
+		//		kIZPProgressBarUpdateLinksKey,				"Update Links",
+		//		kIZPProgressBarUploadDocumentKey,			"Uploaden document",
+		//		kIZPProgressBarUpdatePagesKey,				"Bijwerken pagina's",
+		//		kIZPProgressBarUpdatePdfKey,				"Bijwerken pdf",
+		//		kIZPProgressBarCheckFilesKey,				"Check Files",
+		//		
+		//	// ----- Moved to InCopySharedStrings_enUS.fr
+		//	//"InCopyStory",		"InCopy Story",
+		//	"Export Seq Name", 		"Export InCopy Story",
+		//	"Graphic",				"Graphic", // append "Graphic" to export name on a graphic item
+		//	"Text",					"Text", // append "Text" to export name on a text story
+		//	
+		//	// ----- Export options dialog strings
+		//	"InCopyExportOptions",	"Adobe InCopy Export Options",
+		//	"ExportOptions_DataType",	"&Encoding:",
+		//	"ExportOptions_UTF16",	"UTF16",
+		//	"ExportOptions_UTF8",	"UTF8",
+		//	"ExportOptions_DataOptions",	"Options:",
+		//	"ExportOptions_StyleTable",	"Include &Style Table",
+		//	"ExportOptions_SwatchList",	"Include S&watch List",
+		//	"ExportOptions_XMPData",	"Include XMP &Information",
+		//	"ExportOptions_StoryLabel",	"Story &Label:",
+
+		//	//menu
+		//	"ExportMenu",				"E&xport",
+		//	"kExportLayerToIC",			"&Layer...",
+		//	"kExportAllStoriesToIC",	"All Sto&ries...",
+		//	"kExportAllGraphicsToIC",	"All &Graphics...",
+		//	"kExportAllItemsToIC",		"&All Graphics and Stories...",
+
+		//	"INCDFeatureLost",	"This story may contain features that are not supported by this file format. Those features will be lost when this story is updated.",
+
+		//	kIZPSaveDialogTemplateKey,				"&Template",
+		//	kIZPSaveDialogStatusKey,				"Status",
+		//	kIZPAssetsPanelRefreshButtonKey,		"Refresh",
+		//	
+		//	// Error Strings
+		//	kIZPAssetErrorDataKey,					"Error occurred retrieving asset data.",
+		//	kIZPLockInfoErrorKey,					"Error occurred retrieving lock info.",
+		//	kIZPLoginErrorKey,						"Error during login.",
+		//	
+		//	// Alerts
+		//	kIZPSaveAlertKey,						"Save changes to the Adobe InDesign document ^1 before closing?",
+		//		
+		//	kIZPConflictAlertKey,						"\"",
+		//	kIZPConflictAlertContinuationKey,			"\" has been changed. Checking out the content will automatically update to the latest version. Do you want to continue?",
+
+		//	kIZPLiveEditConflictAlertKey,						"\"",
+		//	kIZPLiveEditConflictAlertContinuationKey,			"\" has been changed. Checking out the content will automatically update to the latest version. Do you want to continue?",
+
+		}
+
+};
+
+
+#endif // __ODFRC__
+

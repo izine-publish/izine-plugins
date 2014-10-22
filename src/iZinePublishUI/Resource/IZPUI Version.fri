@@ -1,0 +1,81 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI%20Version.fri $
+//	$Revision: 4088 $
+//	$Date: 2012-10-26 14:24:55 +0200 (Fri, 26 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#if defined(InDnCS5) || defined(InDnCS5_5)
+#include "PlugInModel_UIAttributes.h"
+#endif
+
+#define kIZPUIPluginVersionResourceID		1000
+
+#pragma mark -
+/*	Plugin version definition.
+*/
+resource PluginVersion (kIZPUIPluginVersionResourceID)
+{
+	kTargetVersion,
+	kIZPUIPluginID,
+	kIZPUIMajorVersion, kIZPUIMinorVersion,
+	kMajorVersionNumber, kMinorVersionNumber,					//Defined in SDK\source\public\includes\buildnumber.h
+	kIZPUICurrentMajorFormatNumber, kIZPUICurrentMinorFormatNumber,
+	{ kInDesignProduct, kInDesignServerProduct, kInCopyProduct},
+	{ kWildFS },
+#if defined(InDnCS5) || defined(InDnCS5_5)
+	kUIPlugIn,
+#endif
+	kIZPUIVersion
+};
+
+//UI plugin is dependent on Assignment UI & iZine non-UI.
+resource PluginDependency(kSDKDefPluginDependencyResourceID)
+{
+	kWildFS
+	{
+		//Assignment UI
+		kStoryListPanelPluginID,	kStoryListPanelPluginName,		kMajorVersionNumber,			kMinorVersionNumber,
+
+		//iZine Non-UI
+		kIZPPluginID,				kIZPPluginName,					kIZPMajorVersion,				kIZPMinorVersion,
+	},
+}
+
+#define kInCopyExportUIPrefix_ 0x17300
+DECLARE_PMID(kPlugInIDSpace, kInCopyExportUIPlugInID_,							kInCopyExportUIPrefix_ + 1)
+
+//UI plugin is dependent on InCopy Export UI.apln only in InDesign. Not a requirement for InCopy.
+resource PluginDependency(kSDKDefPluginDependencyResourceID + 1)
+{
+	kInDesignProductAndServerFS
+	{
+		//InCopy Export UI
+		kInCopyExportUIPlugInID_,	kInCopyExportUIPluginName,		kMajorVersionNumber,			kMinorVersionNumber,
+	},
+}
+
+#pragma mark -
+/*	The ExtraPluginInfo resource adds extra information to the Missing Plug-in dialog
+	that is popped when a document containing this plug-in's data is opened when
+	this plug-in is not present. These strings are not translatable strings
+	since they must be available when the plug-in isn't around. They get stored
+	in any document that this plug-in contributes data to.
+*/
+resource ExtraPluginInfo(1)
+{
+	kIZPUICompanyValue,				// Company name
+	kIZPUIMissingPluginURLValue,	// URL
+	kIZPUIMissingPluginAlertValue,	// Missing plug-in alert text
+};
+
+#endif // __ODFRC__=======

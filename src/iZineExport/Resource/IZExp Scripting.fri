@@ -1,0 +1,30 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp%20Scripting.fri $
+//	$Revision: 2482 $
+//	$Date: 2010-11-09 15:30:38 +0100 (Tue, 09 Nov 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 9-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#include "ZExpScriptingDefs.h"
+
+resource VersionedScriptElementInfo(1)
+{
+	//Contexts
+	{
+		//kFiredrakeScriptVersion, kCoreScriptManagerBoss, kWildFS, k_Wild,
+		//kFiredrakeScriptVersion, kINXScriptManagerBoss, kWildFS, k_Wild,
+		//kCobaltScriptVersion, kCoreScriptManagerBoss, kWildFS, k_Wild,
+		kCobaltScriptVersion, kINXScriptManagerBoss, kWildFS, k_Wild,
+	}
+};
+
+#endif // __ODFRC__=======

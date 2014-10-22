@@ -1,0 +1,13 @@
+*.ncb
+*.opt
+*.plg
+*.sbr
+*.ilk
+*.obj
+*.pdb
+*.suo
+*.idb
+*.exp
+*.bsc
+*.vcproj.*.*.user
+Thumbs.db

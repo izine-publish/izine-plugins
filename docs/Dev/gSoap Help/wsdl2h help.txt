@@ -1,0 +1,41 @@
+G:\Projects\izine.ui\External\gsoap-2.7\gsoap\bin\win32>wsdl2h /?
+
+**  The gSOAP WSDL parser for C and C++ 1.2.13
+**  Copyright (C) 2000-2009 Robert van Engelen, Genivia Inc.
+**  All Rights Reserved. This product is provided "as is", without any warranty.
+**  The gSOAP WSDL parser is released under one of the following two licenses:
+**  GPL or the commercial license by Genivia Inc. Use option -l for more info.
+
+Usage: wsdl2h [-a] [-c] [-d] [-e] [-f] [-g] [-h] [-I path] [-j] [-k] [-l] [-m] [-n name] [-N name] [-p] [-q name] [-r pr
+oxyhost[:port[:uid:pwd]]] [-s] [-t typemapfile] [-u] [-v] [-w] [-x] [-y] [-z] [-_] [-o outfile.h] infile.wsdl infile.xsd
+ http://www... ...
+
+-a      generate indexed struct names for local elements with anonymous types
+-c      generate C source code
+-d      use DOM to populate xs:any and xsd:anyType elements
+-e      don't qualify enum names
+-f      generate flat C++ class hierarchy
+-g      generate global top-level element declarations
+-h      display help info
+-Ipath  use path to find files
+-j      don't generate SOAP_ENV__Header and SOAP_ENV__Detail definitions
+-k      don't generate SOAP_ENV__Header mustUnderstand qualifiers
+-l      include license information in output
+-m      use xsd.h module to import primitive types
+-nname  use name as the base namespace prefix instead of 'ns'
+-Nname  use name as the base namespace prefix for service namespaces
+-ofile  output to file
+-p      create polymorphic types with C++ inheritance with base xsd__anyType
+-qname  use name for the C++ namespace of all declarations
+-rhost[:port[:uid:pwd]]
+        connect via proxy host, port, and proxy credentials
+-s      don't generate STL code (no std::string and no std::vector)
+-tfile  use type map file instead of the default file typemap.dat
+-u      don't generate unions
+-v      verbose output
+-w      always wrap response parameters in a response struct (<=1.1.4 behavior)
+-x      don't generate _XML any/anyAttribute extensibility elements
+-y      generate typedef synonyms for structs and enums
+-z      generate pointer-based arrays for backward compatibility < gSOAP 2.7.6e
+-_      don't generate _USCORE (replace with UNICODE _x005f)
+infile.wsdl infile.xsd http://www... list of input sources (if none: use stdin)

@@ -1,0 +1,77 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP%20Version.fri $
+//	$Revision: 4088 $
+//	$Date: 2012-10-26 14:24:55 +0200 (Fri, 26 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#if defined(InDnCS5) || defined(InDnCS5_5)
+#include "PlugInModel_UIAttributes.h"
+#endif
+
+#define kIZPPluginVersionResourceID		1000
+
+#pragma mark -
+/*	Plugin version definition.
+*/
+resource PluginVersion (kIZPPluginVersionResourceID)
+{
+	kTargetVersion,
+	kIZPPluginID,
+	kIZPMajorVersion, kIZPMinorVersion,
+	kMajorVersionNumber, kMinorVersionNumber,					//Defined in SDK\source\public\includes\buildnumber.h
+	kIZPCurrentMajorFormatNumber, kIZPCurrentMinorFormatNumber,
+	{ kInDesignProduct, kInDesignServerProduct, kInCopyProduct},
+	{ kWildFS },
+#if defined(InDnCS5) || defined(InDnCS5_5)
+	kUIPlugIn,	//kModelPlugIn
+#endif
+	kIZPVersion
+};
+
+//this plugin is dependent on following
+resource PluginDependency(1)
+{
+	kWildFS
+	{
+		//Assignment
+		kAssignmentPlugInID,		kAssignmentPlugInName,			kMajorVersionNumber,			kMinorVersionNumber,
+	}
+}
+
+//this plugin is dependent on InCopy Export.apln only in InDesign. Not a requirement for InCopy.
+#define kInCopyExportPrefix_ 0x17000
+DECLARE_PMID(kPlugInIDSpace, kInCopyExportPlugInID_,							kInCopyExportPrefix_ + 1)
+resource PluginDependency(kSDKDefPluginDependencyResourceID)
+{
+	kInDesignProductAndServerFS
+	{
+		//InCopy Export
+		kInCopyExportPlugInID_,		kInCopyExportPluginName,		kMajorVersionNumber,			kMinorVersionNumber,
+	}
+}
+
+#pragma mark -
+/*	The ExtraPluginInfo resource adds extra information to the Missing Plug-in dialog
+	that is popped when a document containing this plug-in's data is opened when
+	this plug-in is not present. These strings are not translatable strings
+	since they must be available when the plug-in isn't around. They get stored
+	in any document that this plug-in contributes data to.
+*/
+resource ExtraPluginInfo(1)
+{
+	kIZPCompanyValue,				// Company name
+	kIZPMissingPluginURLValue,	// URL
+	kIZPMissingPluginAlertValue,	// Missing plug-in alert text
+};
+
+#endif // __ODFRC__=======

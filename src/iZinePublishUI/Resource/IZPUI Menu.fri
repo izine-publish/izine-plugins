@@ -1,0 +1,741 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI%20Menu.fri $
+//	$Revision: 4089 $
+//	$Date: 2012-10-30 06:59:29 +0100 (Tue, 30 Oct 2012) $
+//	$Author: mindfire $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 22-4-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+//Application related menu items
+//prefs,about,login,logoff
+resource MenuDef (kSDKDefMenuResourceID)
+{
+	{
+		// The About Plug-ins sub-menu item for this plug-in.
+		kIZPAboutActionID,			// ActionID (kInvalidActionID for positional entries)
+		kIZPUIAboutMenuPath,			// Menu Path.
+		kSDKDefAlphabeticPosition,			// Menu Position.
+		kSDKDefIsNotDynamicMenuFlag,		// kSDKDefIsNotDynamicMenuFlag or kSDKDefIsDynamicMenuFlag
+
+		//Edit->Preferences->IZINEPublish
+		kIZPPreferencesPanelSep1ActionID,
+		kIZPPreferencesPanelSepMenuPath,
+		kIZPPreferencesPanelSepMenuPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		
+		//Edit->Preferences->IZINEPublish
+		kIZPPreferencesPanelActionID,
+		kSDKDefPreferencesStandardMenuPath,
+		kIZPPreferencesMenuPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		
+#if defined(InDnCS5) || defined(InDnCS5_5)		
+		kInvalidActionID,
+		"Main:&Window" kSDKDefDelimitMenuPath kIZPUIPluginsMenuKey kSDKDefDelimitMenuPath,
+		601.0, // Other menu items under Window menu have position 600.0
+		kSDKDefIsNotDynamicMenuFlag,
+		
+		kIZPAssetsPanelWidgetActionID,
+		"Main:&Window" kSDKDefDelimitMenuPath kIZPUIPluginsMenuKey,
+		10.0,
+		kSDKDefIsNotDynamicMenuFlag,
+		
+		kIZPTasksPanelWidgetActionID,
+		"Main:&Window" kSDKDefDelimitMenuPath kIZPUIPluginsMenuKey,
+		10.0,
+		kSDKDefIsNotDynamicMenuFlag,
+#endif
+	
+	// The main menu for this plug-in.
+		kIZPLoginActionID,
+		kIZPMainMenuPath,
+		kIZPLoginMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		
+		kIZPLogoffActionID,
+		kIZPMainMenuPath,
+		kIZPLogoffMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		
+		kIZPCreateTaskActionID,
+		kIZPMainMenuPath,
+		kIZPLogoffMenuItemPosition + 2,
+		kSDKDefIsNotDynamicMenuFlag,
+	}
+};
+
+resource MenuDef (kSDKDefMenuResourceID + 1)
+{
+	{	//Assets Panel Popup
+		kIZPLoginActionID,
+		kIZPAssetsPanelInternalMenuPath,
+		kIZPLoginMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		 
+		kIZPLogoffActionID,
+		kIZPAssetsPanelInternalMenuPath,
+		kIZPLogoffMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		
+		// Separator for the popup menu on the panel
+		kIZPSeparator1ActionID,
+		kIZPAssetsPanelInternalMenuPath kSDKDefDelimiterAndSeparatorPath,	// :- to mark an item as a separator.
+		kIZPLogoffMenuItemPosition+1,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPUpdatedSelectedAssetStatusActionID
+		kIZPAssetsPanelInternalMenuPath,
+		kIZPLogoffMenuItemPosition + 2,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPSeparator2ActionID,
+		kIZPAssetsPanelInternalMenuPath kSDKDefDelimiterAndSeparatorPath,
+		kIZPLogoffMenuItemPosition+1,
+		kSDKDefIsNotDynamicMenuFlag,
+
+	// Assignment panel menu item
+		kIZPCheckoutAllAssignmentStoriesActionID,
+		"RtMenuAssignment",
+		kIZPCheckoutAllAssignmentStoriesMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPCheckoutAllAssignmentStoriesActionID,
+		"AssignmentPanelPopup",
+		kIZPCheckoutAllAssignmentStoriesMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPAddLayerToAssignmentActionID,
+		"AssignmentPanelPopup",
+		1,//501,//(kSLAddToAssignmentMenuPosition + 1),
+		kSDKDefIsDynamicMenuFlag,
+
+	// Edit Incopy
+		kIZPCheckoutAllAssignmentStoriesActionID,
+		"Main:&Edit:kInCopyMenu",
+		kIZPCheckoutAllAssignmentStoriesEditMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+	// Right mouse click menu
+		kIZPCheckoutAllAssignmentStoriesActionID,
+		"RtMouseText:kInCopyMenu",
+		kIZPCheckoutAllAssignmentStoriesRtMouseTextMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPCheckoutAllAssignmentStoriesActionID,
+		"RtMouseLayout:kInCopyMenu",
+		kIZPCheckoutAllAssignmentStoriesRtMouseLayoutMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kICBridgeSubmitAllActionID,
+		"RtMouseText:kInCopyMenu",
+		kIZPCheckinAllAssignmentStoriesRtMouseTextMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kICBridgeSubmitAllActionID,
+		"RtMouseLayout:kInCopyMenu",
+		kIZPCheckinAllAssignmentStoriesRtMouseLayoutMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+	}
+};
+
+resource MenuDef (kSDKDefMenuResourceID + 2)
+{
+	{	//Tasks Panel Popup
+		kIZPLoginActionID,
+		kIZPTasksPanelInternalMenuPath,
+		kIZPLoginMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		 
+		kIZPLogoffActionID,
+		kIZPTasksPanelInternalMenuPath,
+		kIZPLogoffMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+		
+		kIZPSeparatorActionID + 2,
+		kIZPTasksPanelInternalMenuPath kSDKDefDelimiterAndSeparatorPath,
+		kIZPLogoffMenuItemPosition+1,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPCreateTaskActionID,
+		kIZPTasksPanelInternalMenuPath,
+		kIZPLogoffMenuItemPosition + 2,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPDuplicateTaskActionID,
+		kIZPTasksPanelInternalMenuPath,
+		kIZPLogoffMenuItemPosition + 3,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPDeleteTaskActionID,
+		kIZPTasksPanelInternalMenuPath,
+		kIZPLogoffMenuItemPosition + 4,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		kIZPOpenTaskDocumentActionID,
+		kIZPTasksPanelInternalMenuPath,
+		kIZPLogoffMenuItemPosition + 5,
+		kSDKDefIsNotDynamicMenuFlag,
+	}
+};
+
+resource MenuDef (kSDKDefMenuResourceID + 3)
+{
+	{	//Tree View Header right click menu
+		kIZPTVHeaderShowColumnsActionID,
+		kIZPTVHeaderMenuPath,
+		1,
+		kSDKDefIsDynamicMenuFlag,
+	}
+};
+
+resource MenuDef (kSDKDefMenuResourceID + 4)
+{
+	{	//Assets Tree View right click menu
+
+		kIZPRenameAssetActionID,
+		kIZPAssetsTVMenuPath,
+		40,
+		kSDKDefIsNotDynamicMenuFlag,
+	}
+};
+
+#ifdef DEBUG
+resource MenuDef (kSDKDefMenuResourceID + 20)
+{
+	{
+#define LogsSubMenu(action, pos)		\
+		k ## action ## ActionID,		\
+		kIZPDbgLogsMenuPath,			\
+		pos,							\
+		kSDKDefIsNotDynamicMenuFlag
+
+		//WS: Upload Version
+		kIZPDbgMenuWSUploadVersionActionID,
+		kIZPDbgMenuPath,
+		kIZPDbgMenuWSUploadVersionMenuItemPosition,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		//WS: Download Version
+		kIZPDbgMenuWSDownloadVersionActionID,
+		kIZPDbgMenuPath,
+		kIZPDbgMenuWSUploadVersionMenuItemPosition + 1,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		//WS: Update Status
+		kIZPDbgMenuWSUpdateStatusActionID,
+		kIZPDbgMenuPath,
+		kIZPDbgMenuWSUploadVersionMenuItemPosition + 2,
+		kSDKDefIsNotDynamicMenuFlag,
+
+		//Logs
+		LogsSubMenu(IZPDbgMenuLogsDisableAll, 1),
+		LogsSubMenu(IZPDbgMenuLogsEnableAll, 2),
+		//Logs General
+		LogsSubMenu(IZPDbgMenuLogsSeparator1, 10),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAApp, 11),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAIdle, 12),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAScripting, 13),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMACommands, 14),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAResponder, 15),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAWS, 16),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMADBObjects, 17),
+		//Logs Asset Management
+		LogsSubMenu(IZPDbgMenuLogsSeparator2, 20),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAMSysP, 21),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAMSrvP, 22),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAMUISrvP, 23),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAMService, 24),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAMUIService, 25),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAssetMonitor, 26),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAM, 27),
+		//Logs Utils
+		LogsSubMenu(IZPDbgMenuLogsSeparator3, 30),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAICExport, 31),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAUtils, 32),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAStory, 33),
+		//Logs UI
+		LogsSubMenu(IZPDbgMenuLogsSeparator4, 40),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAActionComponent, 41),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMADialogs, 42),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAUI, 43),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMADnD, 44),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAPanelAssets, 45),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAPanelTasks, 46),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMAAssetsTV, 47),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMATasksTV, 48),
+		LogsSubMenu(IZPDbgMenuLogsEnableLMATVHeader, 49),
+	}
+};
+#endif
+
+//Asset Management related menu items
+//resource MenuDef (kSDKDefMenuResourceID+1)
+//{
+//	{
+//		// Add Seperator
+//		kIZPMainMenuSeparator1ActionID,
+//		kIZPMainMenuSeparatorPath,
+//		kIZPMainMenuSeparator1ItemPosition,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		// Add Seperator
+//		kIZPMainMenuSeparator2ActionID,
+//		kIZPMainMenuSeparatorPath,
+//		kIZPMainMenuSeparator2ItemPosition,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		// Add Seperator
+//		kIZPMainMenuSeparator3ActionID,
+//		kIZPMainMenuSeparatorPath,
+//		kIZPMainMenuSeparator3ItemPosition,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPSeparatorActionID + 0,
+//		"RtMouseText" kSDKDefDelimiterAndSeparatorPath,
+//		6000,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPSeparatorActionID + 1
+//		"RtMouseLayout" kSDKDefDelimiterAndSeparatorPath,
+//		6000,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPApplyTagsActionID,
+//		kIZPTargetMenuPath,
+//		kIZPLogoffMenuItemPosition+8,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPCheckOutAllActionID,
+//		"Main:&Edit:kInCopyMenu",
+//		710,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPCheckOutAllActionID,
+//		"RtMouseLayout:kInCopyMenu",
+//		210,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPCheckOutAllActionID,
+//		"RtMouseText:kInCopyMenu",
+//		510,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPCheckOutAllActionID,
+//		"AssignmentPanelPopup",
+//		1210,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//		kIZPCheckOutAllActionID,
+//		"RtMenuAssignment",
+//		1210,
+//		kSDKDefIsNotDynamicMenuFlag,
+//
+//	}
+//};
+
+
+//Application related Action items
+//prefs,about,login,logoff, server actions
+//panels pop menu
+resource ActionDef (kSDKDefActionResourceID)
+{
+	{
+		kZPUIAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPAboutActionID,					// ActionID.
+		kIZPAboutMenuKey,					// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem,					// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		kZPUIAppActionComponentBoss, 			// ClassID of boss class that implements the ActionID.
+		kIZPLoginActionID,					// ActionID.
+		kIZPLoginMenuKey,					// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kCustomEnabling,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		kZPUIAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPLogoffActionID,					// ActionID.
+		kIZPLogoffMenuKey,					// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kCustomEnabling,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		kZPUIAppActionComponentBoss,
+		kIZPPopupAboutThisActionID,
+		kSDKDefAboutThisPlugInMenuKey,	// Key to the name of this action
+		kOtherActionArea,
+		kNormalAction,
+		kDisableIfLowMem,
+		kInvalidInterfaceID,
+		kSDKDefInvisibleInKBSCEditorFlag,
+
+		//Edit->Preferences->IZINEPublish
+		kZPUIAppActionComponentBoss,
+		kIZPPreferencesPanelActionID,
+		kIZPPreferencesPanelMenuItemKey,
+		kOtherActionArea,
+		kNormalAction,
+		kDisableIfLowMem,
+		kInvalidInterfaceID,
+		kSDKDefVisibleInKBSCEditorFlag,
+
+#if defined(InDnCS5) || defined(InDnCS5_5)
+		kZPUIAppActionComponentBoss,		
+		kIZPAssetsPanelWidgetActionID,
+		kIZPAssetsPanelTitleKey,
+		kWindowMenuActionArea,
+		kNormalAction,
+		kDisableIfLowMem,
+		kInvalidInterfaceID,
+		kSDKDefInvisibleInKBSCEditorFlag,
+		
+		kZPUIAppActionComponentBoss,		
+		kIZPTasksPanelWidgetActionID,
+		kIZPTasksPanelTitleKey,
+		kWindowMenuActionArea,
+		kNormalAction,
+		kDisableIfLowMem,
+		kInvalidInterfaceID,
+		kSDKDefInvisibleInKBSCEditorFlag,
+#endif
+	}
+};
+
+//Task panel Menu
+resource ActionDef ( kSDKDefActionResourceID+1 )
+{
+	{
+		//Create Task
+		kZPUITasksActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPCreateTaskActionID,				// ActionID.
+		kIZPCreateTaskMenuKey,				// Sub-menu string.
+		kZPUITasksActionArea,				// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kCustomEnabling,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefVisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		//Duplicate Task
+		kZPUITasksActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPDuplicateTaskActionID,			// ActionID.
+		kIZPDuplicateTaskMenuKey,			// Sub-menu string.
+		kZPUITasksActionArea,				// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kCustomEnabling,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		//Delete Task
+		kZPUITasksActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPDeleteTaskActionID,				// ActionID.
+		kIZPDeleteTaskMenuKey,				// Sub-menu string.
+		kZPUITasksActionArea,				// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kCustomEnabling,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		//Open Task doc
+		kZPUITasksActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPOpenTaskDocumentActionID,		// ActionID.
+		kIZPOpenTaskDocumentMenuKey,		// Sub-menu string.
+		kZPUITasksActionArea,				// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kCustomEnabling,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefVisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+	}
+};
+
+#ifdef DEBUG
+#define LogsAction(action)				\
+		kZPUIDebugActionComponentBoss,	\
+		k ## action ## ActionID,		\
+		k ## action ## MenuKey,			\
+		kOtherActionArea,				\
+		kNormalAction,					\
+		kCustomEnabling,				\
+		kInvalidInterfaceID,			\
+		kSDKDefInvisibleInKBSCEditorFlag
+#define LogsActionSep(action)				\
+		kZPUIDebugActionComponentBoss,	\
+		k ## action ## ActionID,		\
+		k ## action ## MenuKey,			\
+		kOtherActionArea,				\
+		kNormalAction,					\
+		kAlwaysEnabled,					\
+		kInvalidInterfaceID,			\
+		kSDKDefInvisibleInKBSCEditorFlag
+
+//Debugging Menu actions
+resource ActionDef ( kSDKDefActionResourceID+2 )
+{
+	{
+		//WS: Upload Version
+		kZPUIAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPDbgMenuWSUploadVersionActionID,	// ActionID.
+		kIZPDbgMenuWSUploadVersionMenuKey,	// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kAlwaysEnabled,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		//WS: Download Version
+		kZPUIAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPDbgMenuWSDownloadVersionActionID,	// ActionID.
+		kIZPDbgMenuWSDownloadVersionMenuKey,	// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kAlwaysEnabled,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		//WS: Update status
+		kZPUIAppActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPDbgMenuWSUpdateStatusActionID,	// ActionID.
+		kIZPDbgMenuWSUpdateStatusMenuKey,	// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kAlwaysEnabled,
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		//Logs
+		LogsAction(IZPDbgMenuLogsDisableAll),
+		LogsAction(IZPDbgMenuLogsEnableAll),
+		//Logs General
+		LogsActionSep(IZPDbgMenuLogsSeparator1),
+		LogsAction(IZPDbgMenuLogsEnableLMAApp),
+		LogsAction(IZPDbgMenuLogsEnableLMAIdle),
+		LogsAction(IZPDbgMenuLogsEnableLMAScripting),
+		LogsAction(IZPDbgMenuLogsEnableLMACommands),
+		LogsAction(IZPDbgMenuLogsEnableLMAResponder),
+		LogsAction(IZPDbgMenuLogsEnableLMAWS),
+		LogsAction(IZPDbgMenuLogsEnableLMADBObjects),
+		//Logs Asset Management
+		LogsActionSep(IZPDbgMenuLogsSeparator2),
+		LogsAction(IZPDbgMenuLogsEnableLMAAMSysP),
+		LogsAction(IZPDbgMenuLogsEnableLMAAMSrvP),
+		LogsAction(IZPDbgMenuLogsEnableLMAAMUISrvP),
+		LogsAction(IZPDbgMenuLogsEnableLMAAMService),
+		LogsAction(IZPDbgMenuLogsEnableLMAAMUIService),
+		LogsAction(IZPDbgMenuLogsEnableLMAAssetMonitor),
+		LogsAction(IZPDbgMenuLogsEnableLMAAM),
+		//Logs Utils
+		LogsActionSep(IZPDbgMenuLogsSeparator3),
+		LogsAction(IZPDbgMenuLogsEnableLMAICExport),
+		LogsAction(IZPDbgMenuLogsEnableLMAUtils),
+		LogsAction(IZPDbgMenuLogsEnableLMAStory),
+		//Logs UI
+		LogsActionSep(IZPDbgMenuLogsSeparator4),
+		LogsAction(IZPDbgMenuLogsEnableLMAActionComponent),
+		LogsAction(IZPDbgMenuLogsEnableLMADialogs),
+		LogsAction(IZPDbgMenuLogsEnableLMAUI),
+		LogsAction(IZPDbgMenuLogsEnableLMADnD),
+		LogsAction(IZPDbgMenuLogsEnableLMAPanelAssets),
+		LogsAction(IZPDbgMenuLogsEnableLMAPanelTasks),
+		LogsAction(IZPDbgMenuLogsEnableLMAAssetsTV),
+		LogsAction(IZPDbgMenuLogsEnableLMATasksTV),
+		LogsAction(IZPDbgMenuLogsEnableLMATVHeader),
+	}
+};
+#endif
+
+//TreeView Header Menu
+resource ActionDef ( kSDKDefActionResourceID+3 )
+{
+	{
+		//WS: Upload Version
+		kZPTVHeaderActionComponentBoss,		// ClassID of boss class that implements the ActionID.
+		kIZPTVHeaderShowColumnsActionID,	// ActionID.
+		kIZPTVHdrVisibleColumnsMenuKey,		// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem,					// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		kZPAssetsTVActionComponentBoss,		// ClassID of boss class that implements the ActionID.
+		kIZPRenameAssetActionID,			// ActionID.
+		kIZPRenameAssetMenuKey,				// Sub-menu string.
+		kOtherActionArea,					// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem | kCustomEnabling,	// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,	// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+	}
+};
+
+//Asset panel related Action items
+//update asset status
+resource ActionDef (kSDKDefActionResourceID+4)
+{
+	{
+		kZPUIAMActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPUpdatedSelectedAssetStatusActionID,	// ActionID.
+		kIZPUpdatedSelectedAssetStatusMenuKey,	// Sub-menu string.
+		kZPUIAssetsActionArea,				// Area name (see ActionDefs.h).
+		kNormalAction,						// Type of action (see ActionDefs.h).
+		kDisableIfLowMem | kCustomEnabling,	// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefVisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+
+		kZPUIAMActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPCheckoutAllAssignmentStoriesActionID,	// ActionID.
+		kIZPCheckoutAllAssignmentStoriesMenuKey,	// Sub-menu string.
+		kZPUIAssetsActionArea, //kPaletteMenusStoryListActionArea,			// Area name (see ActionDefs.h).
+		kNormalAction,			// Type of action (see ActionDefs.h).
+		kDisableIfLowMem | kCustomEnabling,	// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefVisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+	}
+};
+
+resource ActionDef (kSDKDefActionResourceID+5)
+{
+	{
+		kZPUIAMAddLayerToAssignmentActionComponentBoss, 		// ClassID of boss class that implements the ActionID.
+		kIZPAddLayerToAssignmentActionID,	// ActionID.
+		kIZPAddLayerToAssignmentMenuKey,	// Sub-menu string.
+		kZPUIAssetsActionArea, //kPaletteMenusStoryListActionArea,			// Area name (see ActionDefs.h).
+		kNormalAction,			// Type of action (see ActionDefs.h).
+		kDisableIfLowMem | kCustomEnabling,	// Enabling type (see ActionDefs.h).
+		kInvalidInterfaceID,				// Selection InterfaceID this action cares about or kInvalidInterfaceID.
+		kSDKDefInvisibleInKBSCEditorFlag,		// kSDKDefVisibleInKBSCEditorFlag or kSDKDefInvisibleInKBSCEditorFlag.
+	}
+};
+
+//Asset management related Action items
+//
+//resource ActionDef (kSDKDefActionResourceID+1)
+//{
+//	{
+//		//File->Save to Repository
+//		kZPAMActionComponentBoss,
+//		kIZPSaveVersionActionID,
+//		kIZPSaveVersionMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//		
+//		kZPAMActionComponentBoss,
+//		kIZPSaveCopyActionID,
+//		kIZPSaveCopyMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuExportActionID,
+//		kIZPMainMenuExportMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuCheckInActionID,
+//		kIZPMainMenuCheckInMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//		
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuCheckOutActionID,
+//		kIZPMainMenuCheckOutMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuCancelCheckOutActionID,
+//		kIZPMainMenuCancelCheckOutMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//
+//
+//		kZPAMActionComponentBoss,
+//		kIZPApplyTagsActionID,
+//		kIZPApplyTagsMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuUnlinkActionID,
+//		kIZPMainMenuUnlinkMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuUpdateActionID,
+//		kIZPMainMenuUpdateMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//		
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuSaveActionID,
+//		kIZPMainMenuSaveMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//		
+//		kZPAMActionComponentBoss,
+//		kIZPMainMenuExportAllActionID,
+//		kIZPMainMenuExportAllMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//
+//		kZPAMActionComponentBoss,
+//		kIZPCheckOutAllActionID,
+//		kIZPCheckOutAllMenuItemKey,
+//		kOtherActionArea,
+//		kNormalAction,
+//		kDisableIfNoFrontDocument|kCustomEnabling,
+//		kInvalidInterfaceID,
+//		kSDKDefVisibleInKBSCEditorFlag,
+//	}
+//};
+
+#endif //__ODFRC__

@@ -1,0 +1,61 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI%20Images.fri $
+//	$Revision: 1840 $
+//	$Date: 2010-07-26 11:48:19 +0200 (Mon, 26 Jul 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#ifdef MACINTOSH
+	resource PNGA(kIZPAvailableIconRsrcID)		"B_CheckedOut_Sm_N.png"
+	resource PNGA(kIZPCheckedOutIconRsrcID)		"B_CheckedOut_Sm_N.png"
+	resource PNGA(kIZPDownloadableIconRsrcID)	"B_Downloadable2_C_Sm_D.png"
+	resource PNGA(kIZPEditedLocallyIconRsrcID)	"B_EditedLocally_C_Sm_D.png"
+	resource PNGA(kIZPEditElsewhereIconRsrcID)	"B_EditElsewhere_C_Sm_D.png"
+	resource PNGA(kIZPLockedIconRsrcID)			"B_Locked_Sm_N.png"
+	resource PNGA(kIZPProxyUpdateIconRsrcID)	"B_ProxyUpdate_C_Sm_D.png"
+	resource PNGA(kIZPInCopyIconRsrcID)			"Incopy-CS3_32.png"
+	resource PNGA(kIZPInDesignIconRsrcID)		"Indesign-CS3_32.png"
+	resource PNGA(kIZPLogoIconRsrcID)			"iZine.png"
+	resource PNGA(kIZPAscIconRsrcID)			"upArrow.png"
+	resource PNGA(kIZPDescIconRsrcID)			"downArrow.png"
+	resource PNGA( kIZPAssetType_ICCS3DocumentIconRsrcID )		"AssetType_InCopyCS3Document.png"
+	resource PNGA( kIZPAssetType_ICCS3TemplateIconRsrcID )		"AssetType_InCopyCS3Template.png"
+	resource PNGA( kIZPAssetType_IDCS3AssignmentIconRsrcID )	"AssetType_InDesignCS3Assignment.png"
+	resource PNGA( kIZPAssetType_IDCS3DocumentIconRsrcID )		"AssetType_InDesignCS3Document.png"
+	resource PNGA( kIZPAssetType_IDCS3StoryIconRsrcID )			"AssetType_InDesignCS3Story.png"
+	resource PNGA( kIZPAssetType_IDCS3TemplateIconRsrcID )		"AssetType_InDesignCS3Template.png"
+
+//	kIZPLogoIconRsrcID BITMAP DISCARDABLE	 "CenterComp.bmp"
+#else
+#define ImagesPath	"../Resource/Images"
+	resource PNGA(kIZPAvailableIconRsrcID)		ImagesPath "/B_CheckedOut_Sm_N.png"
+	resource PNGA(kIZPCheckedOutIconRsrcID)		ImagesPath "/B_CheckedOut_Sm_N.png"
+	resource PNGA(kIZPDownloadableIconRsrcID)	ImagesPath "/B_Downloadable2_C_Sm_D.png"
+	resource PNGA(kIZPEditedLocallyIconRsrcID)	ImagesPath "/B_EditedLocally_C_Sm_D.png"
+	resource PNGA(kIZPEditElsewhereIconRsrcID)	ImagesPath "/B_EditElsewhere_C_Sm_D.png"
+	resource PNGA(kIZPLockedIconRsrcID)			ImagesPath "/B_Locked_Sm_N.png"
+	resource PNGA(kIZPProxyUpdateIconRsrcID)	ImagesPath "/B_ProxyUpdate_C_Sm_D.png"
+	resource PNGA(kIZPInCopyIconRsrcID)			ImagesPath "/Incopy-CS3_32.png"
+	resource PNGA(kIZPInDesignIconRsrcID)		ImagesPath "/Indesign-CS3_32.png"
+	resource PNGA(kIZPLogoIconRsrcID)			ImagesPath "/iZine.png"
+	resource PNGA(kIZPAscIconRsrcID)			ImagesPath "/upArrow.png"
+	resource PNGA(kIZPDescIconRsrcID)			ImagesPath "/downArrow.png"
+	resource PNGA( kIZPAssetType_ICCS3DocumentIconRsrcID )		ImagesPath "/AssetType_InCopyCS3Document.png"
+	resource PNGA( kIZPAssetType_ICCS3TemplateIconRsrcID )		ImagesPath "/AssetType_InCopyCS3Template.png"
+	resource PNGA( kIZPAssetType_IDCS3AssignmentIconRsrcID )	ImagesPath "/AssetType_InDesignCS3Assignment.png"
+	resource PNGA( kIZPAssetType_IDCS3DocumentIconRsrcID )		ImagesPath "/AssetType_InDesignCS3Document.png"
+	resource PNGA( kIZPAssetType_IDCS3StoryIconRsrcID )			ImagesPath "/AssetType_InDesignCS3Story.png"
+	resource PNGA( kIZPAssetType_IDCS3TemplateIconRsrcID )		ImagesPath "/AssetType_InDesignCS3Template.png"
+#endif
+
+
+#endif // __ODFRC__=======

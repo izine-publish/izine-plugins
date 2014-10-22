@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		18A7C43116158E7E00C68CB2 /* CS5 Debug */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18A7C43616158E7E00C68CB2 /* Build configuration list for PBXAggregateTarget "CS5 Debug" */;
+			buildPhases = (
+			);
+			dependencies = (
+				18A7C66D1615B38300C68CB2 /* PBXTargetDependency */,
+				18A7C66F1615B38800C68CB2 /* PBXTargetDependency */,
+			);
+			name = "CS5 Debug";
+			productName = iZinePublish;
+		};
+		18A7C6541615B31800C68CB2 /* CS5 Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18A7C6591615B31800C68CB2 /* Build configuration list for PBXAggregateTarget "CS5 Release" */;
+			buildPhases = (
+			);
+			dependencies = (
+				18A7C6631615B34300C68CB2 /* PBXTargetDependency */,
+				18A7C6651615B34E00C68CB2 /* PBXTargetDependency */,
+			);
+			name = "CS5 Release";
+			productName = "CS3 Release";
+		};
+		18A9B3CD163E609B00AEA9E3 /* CS5_5 Debug */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18A9B3D2163E609B00AEA9E3 /* Build configuration list for PBXAggregateTarget "CS5_5 Debug" */;
+			buildPhases = (
+			);
+			dependencies = (
+				18A9B3D9163E615B00AEA9E3 /* PBXTargetDependency */,
+				18A9B3DB163E616300AEA9E3 /* PBXTargetDependency */,
+			);
+			name = "CS5_5 Debug";
+			productName = iZinePublish;
+		};
+		18A9B3DC163E61CE00AEA9E3 /* CS5_5 Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18A9B3E1163E61CE00AEA9E3 /* Build configuration list for PBXAggregateTarget "CS5_5 Release" */;
+			buildPhases = (
+			);
+			dependencies = (
+				18A9B3E4163E61E800AEA9E3 /* PBXTargetDependency */,
+				18A9B3E6163E61ED00AEA9E3 /* PBXTargetDependency */,
+			);
+			name = "CS5_5 Release";
+			productName = "CS3 Release";
+		};
+		E113295D11A2666700BABCAB /* CS3 Debug */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E113297211A266B700BABCAB /* Build configuration list for PBXAggregateTarget "CS3 Debug" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E1027D2711A2BA34007DA6FF /* PBXTargetDependency */,
+				E1027D2911A2BA3B007DA6FF /* PBXTargetDependency */,
+			);
+			name = "CS3 Debug";
+			productName = iZinePublish;
+		};
+		E113296311A2669800BABCAB /* CS3 Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E113297311A266B700BABCAB /* Build configuration list for PBXAggregateTarget "CS3 Release" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E1027D2D11A2BA55007DA6FF /* PBXTargetDependency */,
+				E1027D2B11A2BA50007DA6FF /* PBXTargetDependency */,
+			);
+			name = "CS3 Release";
+			productName = "CS3 Release";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		18A7C42E16158E5800C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A7C37816158D7200C68CB2;
+			remoteInfo = "CS5 Debug";
+		};
+		18A7C43916158EA800C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A7C41816158DEE00C68CB2;
+			remoteInfo = "CS5 Debug";
+		};
+		18A7C6621615B34300C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A7C4A11615B16D00C68CB2;
+			remoteInfo = "CS5 Release";
+		};
+		18A7C6641615B34E00C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A7C5A71615B20900C68CB2;
+			remoteInfo = "CS5 Release";
+		};
+		18A7C6671615B37200C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A7C59B1615B16D00C68CB2;
+			remoteInfo = "CS5 Release";
+		};
+		18A7C66A1615B37200C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A7C6321615B20900C68CB2;
+			remoteInfo = "CS5 Release";
+		};
+		18A7C66C1615B38300C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A7C27E16158D7200C68CB2;
+			remoteInfo = "CS5 Debug";
+		};
+		18A7C66E1615B38800C68CB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A7C38D16158DEE00C68CB2;
+			remoteInfo = "CS5 Debug";
+		};
+		18A9B23D163E5AB500AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A9B127163E529B00AEA9E3;
+			remoteInfo = "CS5_5 Debug";
+		};
+		18A9B23F163E5AB500AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A9B226163E52B400AEA9E3;
+			remoteInfo = "CS5_5 Release";
+		};
+		18A9B3C2163E608600AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A9B30F163E5C7C00AEA9E3 /* iZinePublishUI.InDesignPlugin */;
+			remoteInfo = "CS5_5 Debug";
+		};
+		18A9B3C4163E608600AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A9B39D163E5C8D00AEA9E3 /* iZinePublishUI.InDesignPlugin */;
+			remoteInfo = "CS5_5 Release";
+		};
+		18A9B3D8163E615B00AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A9B02A163E529B00AEA9E3 /* CS5_5 Debug */;
+			remoteInfo = "CS5_5 Debug";
+		};
+		18A9B3DA163E616300AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A9B283163E5C7C00AEA9E3 /* CS5_5 Debug */;
+			remoteInfo = "CS5_5 Debug";
+		};
+		18A9B3E3163E61E800AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A9B129163E52B400AEA9E3 /* CS5_5 Release */;
+			remoteInfo = "CS5_5 Release";
+		};
+		18A9B3E5163E61ED00AEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A9B311163E5C8D00AEA9E3 /* CS5_5 Release */;
+			remoteInfo = "CS5_5 Release";
+		};
+		E1027D1411A2B927007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B05EEBA08840E8D00D809E1;
+			remoteInfo = "CS3 Debug";
+		};
+		E1027D1611A2B927007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B05EEC208840E8D00D809E1;
+			remoteInfo = "CS3 Release";
+		};
+		E1027D1F11A2B936007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D07F2C80486CC7A007CD1D0;
+			remoteInfo = "CS3 Debug";
+		};
+		E1027D2111A2B936007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E182A68B11A1707D00910465;
+			remoteInfo = "CS3 Release";
+		};
+		E1027D2611A2BA34007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B05EEB908840E8D00D809E1;
+			remoteInfo = "CS3 Debug";
+		};
+		E1027D2811A2BA3B007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
+			remoteInfo = "CS3 Debug";
+		};
+		E1027D2A11A2BA50007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E182A68011A1707D00910465;
+			remoteInfo = "CS3 Release";
+		};
+		E1027D2C11A2BA55007DA6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B05EEC108840E8D00D809E1;
+			remoteInfo = "CS3 Release";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iZinePublishPln.xcodeproj; path = iZinePublish/Project/iZinePublishPln.xcodeproj; sourceTree = "<group>"; };
+		E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iZinePublishUIPln.xcodeproj; path = iZinePublishUI/Project/iZinePublishUIPln.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E1027D0D11A2B926007DA6FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1027D1511A2B927007DA6FF /* iZinePublish.InDesignPlugin */,
+				E1027D1711A2B927007DA6FF /* iZinePublish.InDesignPlugin */,
+				18A7C42F16158E5800C68CB2 /* iZinePublish.InDesignPlugin */,
+				18A7C6681615B37200C68CB2 /* iZinePublish.InDesignPlugin */,
+				18A9B23E163E5AB500AEA9E3 /* iZinePublish.InDesignPlugin */,
+				18A9B240163E5AB500AEA9E3 /* iZinePublish.InDesignPlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1027D1B11A2B936007DA6FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1027D2011A2B936007DA6FF /* iZinePublishUI.InDesignPlugin */,
+				E1027D2211A2B936007DA6FF /* iZinePublishUI.InDesignPlugin */,
+				18A7C43A16158EA800C68CB2 /* iZinePublishUI.InDesignPlugin */,
+				18A7C66B1615B37200C68CB2 /* iZinePublishUI.InDesignPlugin */,
+				18A9B3C3163E608600AEA9E3 /* iZinePublishUI.InDesignPlugin */,
+				18A9B3C5163E608600AEA9E3 /* iZinePublishUI.InDesignPlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E113295211A2664300BABCAB = {
+			isa = PBXGroup;
+			children = (
+				E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */,
+				E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E113295411A2664300BABCAB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E113295711A2664300BABCAB /* Build configuration list for PBXProject "iZinePublishPlns" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = E113295211A2664300BABCAB;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E1027D0D11A2B926007DA6FF /* Products */;
+					ProjectRef = E1027D0C11A2B926007DA6FF /* iZinePublishPln.xcodeproj */;
+				},
+				{
+					ProductGroup = E1027D1B11A2B936007DA6FF /* Products */;
+					ProjectRef = E113297411A266DB00BABCAB /* iZinePublishUIPln.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E113295D11A2666700BABCAB /* CS3 Debug */,
+				E113296311A2669800BABCAB /* CS3 Release */,
+				18A7C43116158E7E00C68CB2 /* CS5 Debug */,
+				18A7C6541615B31800C68CB2 /* CS5 Release */,
+				18A9B3CD163E609B00AEA9E3 /* CS5_5 Debug */,
+				18A9B3DC163E61CE00AEA9E3 /* CS5_5 Release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18A7C42F16158E5800C68CB2 /* iZinePublish.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublish.InDesignPlugin;
+			remoteRef = 18A7C42E16158E5800C68CB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A7C43A16158EA800C68CB2 /* iZinePublishUI.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublishUI.InDesignPlugin;
+			remoteRef = 18A7C43916158EA800C68CB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A7C6681615B37200C68CB2 /* iZinePublish.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublish.InDesignPlugin;
+			remoteRef = 18A7C6671615B37200C68CB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A7C66B1615B37200C68CB2 /* iZinePublishUI.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublishUI.InDesignPlugin;
+			remoteRef = 18A7C66A1615B37200C68CB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A9B23E163E5AB500AEA9E3 /* iZinePublish.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublish.InDesignPlugin;
+			remoteRef = 18A9B23D163E5AB500AEA9E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A9B240163E5AB500AEA9E3 /* iZinePublish.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublish.InDesignPlugin;
+			remoteRef = 18A9B23F163E5AB500AEA9E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A9B3C3163E608600AEA9E3 /* iZinePublishUI.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublishUI.InDesignPlugin;
+			remoteRef = 18A9B3C2163E608600AEA9E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18A9B3C5163E608600AEA9E3 /* iZinePublishUI.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublishUI.InDesignPlugin;
+			remoteRef = 18A9B3C4163E608600AEA9E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1027D1511A2B927007DA6FF /* iZinePublish.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublish.InDesignPlugin;
+			remoteRef = E1027D1411A2B927007DA6FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1027D1711A2B927007DA6FF /* iZinePublish.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublish.InDesignPlugin;
+			remoteRef = E1027D1611A2B927007DA6FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1027D2011A2B936007DA6FF /* iZinePublishUI.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublishUI.InDesignPlugin;
+			remoteRef = E1027D1F11A2B936007DA6FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1027D2211A2B936007DA6FF /* iZinePublishUI.InDesignPlugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iZinePublishUI.InDesignPlugin;
+			remoteRef = E1027D2111A2B936007DA6FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXTargetDependency section */
+		18A7C6631615B34300C68CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5 Release";
+			targetProxy = 18A7C6621615B34300C68CB2 /* PBXContainerItemProxy */;
+		};
+		18A7C6651615B34E00C68CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5 Release";
+			targetProxy = 18A7C6641615B34E00C68CB2 /* PBXContainerItemProxy */;
+		};
+		18A7C66D1615B38300C68CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5 Debug";
+			targetProxy = 18A7C66C1615B38300C68CB2 /* PBXContainerItemProxy */;
+		};
+		18A7C66F1615B38800C68CB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5 Debug";
+			targetProxy = 18A7C66E1615B38800C68CB2 /* PBXContainerItemProxy */;
+		};
+		18A9B3D9163E615B00AEA9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5_5 Debug";
+			targetProxy = 18A9B3D8163E615B00AEA9E3 /* PBXContainerItemProxy */;
+		};
+		18A9B3DB163E616300AEA9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5_5 Debug";
+			targetProxy = 18A9B3DA163E616300AEA9E3 /* PBXContainerItemProxy */;
+		};
+		18A9B3E4163E61E800AEA9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5_5 Release";
+			targetProxy = 18A9B3E3163E61E800AEA9E3 /* PBXContainerItemProxy */;
+		};
+		18A9B3E6163E61ED00AEA9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS5_5 Release";
+			targetProxy = 18A9B3E5163E61ED00AEA9E3 /* PBXContainerItemProxy */;
+		};
+		E1027D2711A2BA34007DA6FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS3 Debug";
+			targetProxy = E1027D2611A2BA34007DA6FF /* PBXContainerItemProxy */;
+		};
+		E1027D2911A2BA3B007DA6FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS3 Debug";
+			targetProxy = E1027D2811A2BA3B007DA6FF /* PBXContainerItemProxy */;
+		};
+		E1027D2B11A2BA50007DA6FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS3 Release";
+			targetProxy = E1027D2A11A2BA50007DA6FF /* PBXContainerItemProxy */;
+		};
+		E1027D2D11A2BA55007DA6FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CS3 Release";
+			targetProxy = E1027D2C11A2BA55007DA6FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18A7C43716158E7E00C68CB2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = iZinePublish;
+			};
+			name = Default;
+		};
+		18A7C65A1615B31800C68CB2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "CS5 Release";
+			};
+			name = Default;
+		};
+		18A9B3D3163E609B00AEA9E3 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = iZinePublish;
+			};
+			name = Default;
+		};
+		18A9B3E2163E61CE00AEA9E3 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "CS5 Release";
+			};
+			name = Default;
+		};
+		E113295511A2664300BABCAB /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Default;
+		};
+		E113295E11A2666800BABCAB /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = iZinePublish;
+			};
+			name = Default;
+		};
+		E113296411A2669800BABCAB /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "CS3 Release";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A7C43616158E7E00C68CB2 /* Build configuration list for PBXAggregateTarget "CS5 Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A7C43716158E7E00C68CB2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		18A7C6591615B31800C68CB2 /* Build configuration list for PBXAggregateTarget "CS5 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A7C65A1615B31800C68CB2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		18A9B3D2163E609B00AEA9E3 /* Build configuration list for PBXAggregateTarget "CS5_5 Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A9B3D3163E609B00AEA9E3 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		18A9B3E1163E61CE00AEA9E3 /* Build configuration list for PBXAggregateTarget "CS5_5 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A9B3E2163E61CE00AEA9E3 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E113295711A2664300BABCAB /* Build configuration list for PBXProject "iZinePublishPlns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E113295511A2664300BABCAB /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E113297211A266B700BABCAB /* Build configuration list for PBXAggregateTarget "CS3 Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E113295E11A2666800BABCAB /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E113297311A266B700BABCAB /* Build configuration list for PBXAggregateTarget "CS3 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E113296411A2669800BABCAB /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E113295411A2664300BABCAB /* Project object */;
+}

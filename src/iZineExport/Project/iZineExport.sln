@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iZineExport", "iZineExport.vcproj", "{4FBC773F-A9EA-493D-993F-AFA66CD0B52F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Both CS3 Debug|Win32 = Both CS3 Debug|Win32
+		iZineExport CS3 Release|Win32 = iZineExport CS3 Release|Win32
+		RedfiveExport CS3 Release|Win32 = RedfiveExport CS3 Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FBC773F-A9EA-493D-993F-AFA66CD0B52F}.Both CS3 Debug|Win32.ActiveCfg = CS3Debug|Win32
+		{4FBC773F-A9EA-493D-993F-AFA66CD0B52F}.Both CS3 Debug|Win32.Build.0 = CS3Debug|Win32
+		{4FBC773F-A9EA-493D-993F-AFA66CD0B52F}.iZineExport CS3 Release|Win32.ActiveCfg = iZineExportCS3Release|Win32
+		{4FBC773F-A9EA-493D-993F-AFA66CD0B52F}.iZineExport CS3 Release|Win32.Build.0 = iZineExportCS3Release|Win32
+		{4FBC773F-A9EA-493D-993F-AFA66CD0B52F}.RedfiveExport CS3 Release|Win32.ActiveCfg = RedfiveExportCS3Release|Win32
+		{4FBC773F-A9EA-493D-993F-AFA66CD0B52F}.RedfiveExport CS3 Release|Win32.Build.0 = RedfiveExportCS3Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,239 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP_nlNL.fri $
+//	$Revision: 3580 $
+//	$Date: 2011-08-12 14:51:11 +0200 (Fri, 12 Aug 2011) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+
+//========================================================================================
+// Dutch strings
+//========================================================================================
+
+// Dutch string table is defined here
+
+resource StringTable (kSDKDefStringsResourceID + index_nlNL)
+{
+	k_nlNL,									// Locale Id
+	kEuropeanMacToWinEncodingConverter,		// Character encoding converter
+	
+	{
+
+		// ----- Menu strings
+				kIZPCompanyKey,						kIZPCompanyValue,
+		
+
+		// Error Strings
+			kZPOpenFileWithoutLoginErrorKey,		"Document kan niet worden geopend zonder login.",
+			kZPNewAssignmentNotAllowedErrorKey,		"Nieuwe opdracht niet toegestaan in dit document.",
+
+			kZPWSAssetCreatingErrorKey,				"Fout opgetreden creëren actief in de repository.",
+			kZPAssetDeletedOnServerErrorKey,		"Sommige van de activa worden geschrapt op de server.",
+			kZPAssetDownloadingErrorKey,			"Fout opgetreden bij het downloaden actief uit de repository.",
+			kZPAssignmentCheckinErrorKey,			"Fout opgetreden tijdens checkin opdracht.",
+			kZPAssignmentPropertiesUpdateErrorKey,	"Fout is opgetreden tijdens het updaten opdracht eigenschappen.",
+			kZPAssignmentUpdatingErrorKey,			"Fout is opgetreden tijdens het bijwerken opdracht.",
+			kZPDocumentAlreadyOpenErrorKey,			"Het document is reeds geopend.",
+			kZPDocumentLockErrorKey,				"Fout opgetreden tijdens het slot van document.",
+			kZPDocumentWritingErrorKey,				"Fout tijdens het schrijven van een document.",
+			kZPExportImageToJpegErrorKey,			"Fout opgetreden ExportImageToJPEG.",
+			kZPFileOpeningErrorKey,					"Fout opgetreden bij het openen van het bestand.",
+			kZPLinkedStoryWritingErrorKey,			"Fout tijdens het schrijven verbonden verhaal.",
+			kZPLockAcquireFailErrorKey,				"Document al vergrendeld.",
+			kZPLoginFailedErrorKey,					"Login failed.",
+			kZPServerErrorErrorKey,					"Server Error:",
+
+			//UI errors
+			kZPUIEditionCannotChangeErrorKey,		"Cannot change Edition.",
+			kZPUIEditionEmptyErrorKey,				"Edition cannot be empty.",
+			kZPUINameEmptyErrorKey,					"Name cannot be empty.",
+			kZPUITitleCannotChangeErrorKey,			"Cannot change Title.",
+			kZPUITitleEmptyErrorKey,				"Title cannot be empty.",
+			kZPUIStatusEmptyErrorKey,				"Status cannot be empty.",
+			kZPUIDuplicateAssetNameErrorKey,		"Naam bestaat al.",
+
+			//WS errors
+			kZPWSAssetRetrieveErrorKey,				"Fout bij het ophalen activa.",
+			kZPWSAssetUploadErrorKey,				"Fout opgetreden tijdens het uploaden van actief.",
+			kZPWSAssignmentUploadingErrorKey,		"Fout tijdens het uploaden van opdracht.",
+			kZPWSDocumentCheckinErrorKey,			"Fout opgetreden tijdens checkin document.",
+			kZPWSDocumentUploadingErrorKey,			"Fout tijdens het uploaden van document.",
+			kZPWSPDFUploadErrorKey,					"UploadPDF failed.",
+
+		//		kIZPDialogMenuItemKey,					"Show dialog",
+		//		kIZPSaveVersionMenuItemKey,				"Versie opslaan",
+		//		kIZPSaveCopyMenuItemKey,				"Kopie opslaan",
+		//		kIZPOpenFromRepositoryMenuItemKey,		"Open from iZINE...",
+		//		kIZPPreferencesPanelMenuItemKey,		"iZINE",
+		//		kIZPMainMenuRefreshMenuKey,				"Vernieuwen",
+		//		kIZPMainMenuCheckInMenuItemKey,			"Check In",
+		//		kIZPMainMenuExportMenuItemKey,			"Exporteren",
+		//		kIZPMainMenuCheckOutMenuItemKey,		"Check Out",
+		//		kIZPMainMenuCancelCheckOutMenuItemKey,	"Cancel Check Out",
+		//		kIZPMainMenuUnlinkMenuItemKey,			"Unlink",
+		//		kIZPMainMenuUpdateMenuItemKey,			"Bijwerken",
+		//		kIZPMainMenuSaveMenuItemKey,			"Opslaan",
+		//		kIZPMainMenuExportAllMenuItemKey,			"Alles Exporteren",
+		//	 	kIZPCheckOutAllMenuItemKey,		"Alles uitchecken",
+		//		kIZPApplyTagsMenuItemKey,				"Apply Tags",
+		//		
+		//		kIZPLoginMenuKey,						"Inloggen",
+		//		kIZPLogoffMenuKey,						"Uitloggen",
+		//		kIZPExportAssetDialogTitleKey,			"Export Asset",
+		//		
+		//		// Prefs Panel
+		//		kIZPPrefsPanelPanelTitleKey,			"iZINE",
+		//		kIZPPrefsWebServicelTitleKey,			"Web Service Settings",
+		//		kIZPPrefsUserNameKey,					"Gebruikersnaam:",
+		//		kIZPPrefsPasswordKey,					"Wachtwoord:",
+		//		kIZPPrefsProjectPathKey,				"Project Path:",
+		//		kIZPPrefsWebServiceURLKey,				"Web Service URL:",
+		//		kIZPPrefsProjectPathTextWidgetKey,		"Project Path",
+	//				kSDKDefAboutThisPlugInMenuKey,			kSDKDefAboutThisPlugInMenuValue_enUS,
+		//		kIZPPrefsProjectFolderTextBoxKey,		"Folder",
+		//		kIZPPrefsBrowseButtonTextBoxKey,		"Bladeren...",
+		//		kIZPDocumentsPanelUpdateButtonKey,		"Update",
+		//		
+	//				// ----- Command strings
+
+	//				// ----- Window strings
+
+	//				// ----- Panel/dialog strings
+	//				kIZPDocumentsPanelTitleKey,				"Documents",
+	//				kIZPStaticTextKey,						"iZINE",
+		//		
+		//		// Save to Repository Dialog
+		//		kIZPSaveToRepDialogTitleKey,			"Opslaan",
+		//		kIZPSaveToRepNameKey,					"Naam",
+		//		kIZPSaveToRepDescriptionKey,			"Omschrijving",
+		//		kIZPSaveToRepUploadKey,					"Opslaan",
+		//		kIZPSaveToRepPublicationKey,			"Titel",
+		//		kIZPSaveToRepEditionKey,				"Editie",
+		//		kIZPSaveToRepStoriesKey,				"Stories",
+		//		
+		//		// Open from Repository Dialog
+		//		kIZPOpenFromRepDialogTitleKey,			"Open",
+		//		kIZPOpenFromRepOpenKey,					"Open",
+		//		
+		//		// Comments Dialog
+		//		kIZPEnterCommentTitleKey,				"Enter Comments",
+		//		kIZPCommentsDialogTitleKey,				"Check-In Comments",
+		//		kIZPCommentsDialogStatusKey,			"Status",
+		//		kIZPCommentsDialogDescriptionKey,		"Description",
+
+		//		// History Panel
+		//		kIZPHistoryPanelTitleKey,				"History",
+		//		kIZPHistoryPanelUpdateButtonKey,		"Update",
+		//		kIZPHistoryCol_DateKey,					"Date",
+		//		kIZPHistoryCol_UserKey,					"User",
+		//		kIZPHistoryCol_DocumentKey,				"Document",
+		//		kIZPHistoryCol_CommentKey,				"Comment",
+		//		
+		//		// Document Info Panel
+		//		kIZPDocumentsPanelIDStaticTextKey,			"ID: ",
+		//		kIZPDocumentsPanelPublicationStaticTextKey,	"Publication: ",
+		//		kIZPDocumentsPanelNameStaticTextKey,		"Name: ",
+
+		//		// Asset Info Panel
+		//		kIZPAssetsPanelTitleKey,					"Assets",
+		//		kIZPAssetsPanelUpdateButtonKey,				"Bijwerken",
+		//		kIZPAssetsPanelIDStaticTextKey, 			"",
+		//		kIZpAssetsPanelPublicationStaticTextKey,	"",
+		//		kIZPAssetsPanelNameStaticTextKey,			"",
+		//		kIZPAssetsPanelUserKey,						"Gebruiker:",
+
+		//		kIZPExportAssetDialogStatusKey,				"Status",
+		//		
+		//		kIZPAssignmentDialogCaptionKey,				"Toewijzing",
+		//		kIZPAssignmentDialogGroupTitleKey,			"Toewijzing",
+		//		kIZPAssignmentDialogNameKey,				"Naam",
+		//		kIZPAssignmentDialogAssignedToKey,			"Assigned To",
+		//		kIZPAssignmentDialogColorKey,				"Kleur",
+		//		kIZPAssignmentDialogStatusKey,				"Status",
+		//		kIZPAssignmentDialogTitleKey,				"Titel",
+		//		kIZPAssignmentDialogShelveKey,				"Editie",
+
+		//		kIZPAssignmentsPanelTitleKey,				"Toewijzingen",
+		//		
+		//// ----- Misc strings
+	//				kIZPAboutBoxStringKey,						kIZPPluginName " [US], version " kIZPVersion " by " kIZPAuthor "\n\n" kIZPCopyrightValue "\n\n" kIZPSupportURL,
+	//				kIZPDocServiceProviderKey,					"Document Service Provider",
+	//				kIZPProgressBarOpenDocumentKey,				"Openen document",
+	//				kIZPProgressBarSavingDocumentKey,			"Bezig met opslaan document",
+	//				kIZPDocAlreadyExistKey,						"Het document bestaat reeds",
+	//				kIZPErrorOccuredWhileDownlodingVersionKey,	"EnsureLatestVersion: Error occurred while downloading version",
+	//				kIZPErrorOoccurredDuringCheckoutOfStoryKey,	"Error occurred during Checkout of Story",
+		//		kIZPErrorCouldNotRetrieveAssetPropertiesKey,"EnsureLatestVersion: Could not retrieve asset properties",
+		//		kIZPProgressBarUpdateDocumentKey,			"Bijwerken toewijzingen",
+		//		kIZPProgressBarUpdateLinksKey,				"Bijwerken koppelingen",
+		//		kIZPProgressBarUploadDocumentKey,			"Uploaden document",
+		//		kIZPProgressBarUpdatePagesKey,				"Bijwerken pagina's",
+		//		kIZPProgressBarUpdatePdfKey,				"Bijwerken pdf",
+		//		kIZPProgressBarCheckFilesKey,				"Uitchecken bestanden",
+		//		
+		//		
+		//		
+		//	// ----- Moved to InCopySharedStrings_enUS.fr
+		//	//"InCopyStory",		"InCopy Story",
+		//	"Export Seq Name", 		"Export InCopy Story",
+		//	"Graphic",				"Graphic", // append "Graphic" to export name on a graphic item
+		//	"Text",					"Text", // append "Text" to export name on a text story
+		//	
+		//	// ----- Export options dialog strings
+		//	"InCopyExportOptions",	"Adobe InCopy Export Options",
+		//	"ExportOptions_DataType",	"&Encoding:",
+		//	"ExportOptions_UTF16",	"UTF16",
+		//	"ExportOptions_UTF8",	"UTF8",
+		//	"ExportOptions_DataOptions",	"Options:",
+		//	"ExportOptions_StyleTable",	"Include &Style Table",
+		//	"ExportOptions_SwatchList",	"Include S&watch List",
+		//	"ExportOptions_XMPData",	"Include XMP &Information",
+		//	"ExportOptions_StoryLabel",	"Story &Label:",
+
+		//	//menu
+		//	"ExportMenu",				"E&xporteren",
+		//	"kExportLayerToIC",			"&Laag...",
+		//	"kExportAllStoriesToIC",	"Alle Ar&tikelen...",
+		//	"kExportAllGraphicsToIC",	"Alle &Images...",
+		//	"kExportAllItemsToIC",		"&Alle Images en Artikelen...",
+
+
+		//	"INCDFeatureLost",	"This story may contain features that are not supported by this file format. Those features will be lost when this story is updated.",
+
+		//	kIZPSaveDialogTemplateKey,				"&Template",
+		//	kIZPSaveDialogStatusKey,				"Status",
+		//	kIZPAssetsPanelRefreshButtonKey,		"Vernieuwen",
+		//	
+		//	// Error Strings
+		//	kIZPAssetErrorDataKey,					"Error occurred retrieving asset data.",
+		//	kIZPLockInfoErrorKey,					"Error occurred retrieving lock info.",
+		//	kIZPLoginErrorKey,						"Error during login.",
+		//	
+		//	// Alerts
+		//	kIZPSaveAlertKey,						"Wilt u de wijzigingen in het Adobe InDesign document ^1 opslaan?",
+
+		//	kIZPConflictAlertKey,						"\"",
+		//	kIZPConflictAlertContinuationKey,			"\" has been changed. Checking out the content will automatically update to the latest version. Do you want to continue? ",
+
+
+		//	kIZPLiveEditConflictAlertKey,						"\"",
+		//	kIZPLiveEditConflictAlertContinuationKey,			"\" has been changed. Checking out the content will automatically update to the latest version. Do you want to continue? ",
+
+	}
+
+};
+
+#endif // __ODFRC__
+
+
+
+

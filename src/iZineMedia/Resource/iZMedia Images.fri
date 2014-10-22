@@ -1,0 +1,36 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMedia%20Images.fri $
+//	$Revision: 2754 $
+//	$Date: 2011-04-08 12:53:24 +0200 (Fri, 08 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 25-03-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#ifdef MACINTOSH
+	//resource PNGA(kIZPAvailableIconRsrcID)		"B_CheckedOut_Sm_N.png"
+//	kIZPLogoIconRsrcID BITMAP DISCARDABLE	 "CenterComp.bmp"
+
+	resource PNGA(kIZMAscIconRsrcID)			"upArrow.png"
+	resource PNGA(kIZMDescIconRsrcID)			"downArrow.png"
+
+	resource PNGA(kIZMNodeType_AdIconRsrcID)	"AdIcon.png"
+#else
+#define ImagesPath	"../Resource/Images"
+//	resource PNGA(kIZPAvailableIconRsrcID)		ImagesPath "/B_CheckedOut_Sm_N.png"
+
+	resource PNGA(kIZMAscIconRsrcID)			ImagesPath "/upArrow.png"
+	resource PNGA(kIZMDescIconRsrcID)			ImagesPath "/downArrow.png"
+
+	resource PNGA(kIZMNodeType_AdIconRsrcID)	ImagesPath "/AdIcon.png"
+#endif
+
+
+#endif // __ODFRC__=======

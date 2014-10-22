@@ -1,0 +1,26 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublishUI/Resource/IZPUI%20Aliases.fri $
+//	$Revision: 2250 $
+//	$Date: 2010-10-07 12:11:43 +0200 (Thu, 07 Oct 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Mar 19
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description: 
+//========================================================================================
+
+#ifdef __ODFRC__
+
+resource ImplementationAlias(1)
+{
+	{
+		kZPDataIDStringData1Impl,		kStringDataImpl,
+		kZPStringListControlDataImpl,	kDropDownListControlDataImpl,
+	}
+
+};
+ 
+#endif // __ODFRC__=======

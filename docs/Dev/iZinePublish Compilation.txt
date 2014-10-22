@@ -1,0 +1,22 @@
+Hello Remco/Rahul,
+
+I have moved all third party files/folder to “External” folder besides “trunk” folder i.e. “svn\izine.ui\External”.
+
+To compile you will have to uncompress two files present in ”External” folder.
+1.	“openssl-0.9.8l.tar.gz” using “extract here”.
+2.	“openssl-0.9.8l.tar” using “extract here”. It will create a folder “openssl-0.9.8l”.
+3.	“zlib123.zip” using “extract here”. It will create a folder “zlib123”.
+
+Windows project settings are already using these folders. These are configured in iZineUI.vsprops :-
+<UserMacro Name="OpenSSLRootDir"
+            Value="..\..\External\openssl-0.9.8l"     />
+      <UserMacro Name="ZlibRootDir"
+            Value="..\..\External\zlib123"      />
+      <UserMacro Name="gSoapRootDir"
+      Value="..\..\External\gsoap"  />
+
+On Mac we will have to modify project settings to use these folders.
+
+
+Regards,
+Rajkumar

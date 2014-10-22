@@ -1,0 +1,2134 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070988AA13BB2E5E00C62009 /* CZExpInDnUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */; };
+		070988AC13BB2E5E00C62009 /* CZExpInDnUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */; };
+		070988AE13BB2E5E00C62009 /* CZExpInDnUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */; };
+		070F7D5813A8935C00AEDAC3 /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */; };
+		070F7D5A13A8935C00AEDAC3 /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */; };
+		0718ECFC13A8C8180047B28B /* CZExpExportDlgHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */; };
+		0718ECFE13A8C8180047B28B /* CZExpExportDlgHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */; };
+		E10C476A157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */; };
+		E10C476B157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */; };
+		E10C476C157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */; };
+		E10C476D157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */; };
+		E10C476E157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */; };
+		E10C476F157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */; };
+		E10C4770157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */; };
+		E173482412A3C648005A0AAD /* IZExp.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = E173482312A3C648005A0AAD /* IZExp.fr.rsrc */; };
+		E173489B12A3CD2E005A0AAD /* IZExp.fr in Sources */ = {isa = PBXBuildFile; fileRef = E18253C612A3B9BE00E9D502 /* IZExp.fr */; };
+		E173489C12A3CD2E005A0AAD /* CZExpStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */; };
+		E173489D12A3CD2E005A0AAD /* ZExpConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */; };
+		E173489E12A3CD2E005A0AAD /* CZExpAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */; };
+		E173489F12A3CD2E005A0AAD /* CZExpDocUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */; };
+		E17348A012A3CD2E005A0AAD /* CZExpFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */; };
+		E17348A112A3CD2E005A0AAD /* CZExpPageItemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */; };
+		E17348A212A3CD2E005A0AAD /* CZExpStoryUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */; };
+		E17348A312A3CD2E005A0AAD /* CZExpTextFrameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */; };
+		E17348A412A3CD2E005A0AAD /* CZExpXMLAttrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */; };
+		E17348A512A3CD2E005A0AAD /* ZPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182541F12A3BC3700E9D502 /* ZPString.cpp */; };
+		E17348A612A3CD2E005A0AAD /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */; };
+		E17348A712A3CD2E005A0AAD /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */; };
+		E17348A812A3CD2E005A0AAD /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542712A3BC5D00E9D502 /* StUtils.cpp */; };
+		E17348A912A3CD2E005A0AAD /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542F12A3BC7A00E9D502 /* iZPLog.cpp */; };
+		E17348AA12A3CD2E005A0AAD /* CZExpXMLExport_Styles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */; };
+		E17348AB12A3CD2E005A0AAD /* CZExpXMLWriteFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */; };
+		E17348AC12A3CD2E005A0AAD /* CZExpDocXMLExportProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */; };
+		E17348AD12A3CD2E005A0AAD /* IZExpID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543912A3BD8C00E9D502 /* IZExpID.cpp */; };
+		E17348AE12A3CD2E005A0AAD /* IZExpNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */; };
+		E17348AF12A3CD2E005A0AAD /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */; };
+		E17348B012A3CD2E005A0AAD /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */; };
+		E17348B212A3CD2E005A0AAD /* IZExp.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = E173482312A3C648005A0AAD /* IZExp.fr.rsrc */; };
+		E17348B412A3CD2E005A0AAD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547512A3C13B00E9D502 /* AppKit.framework */; };
+		E17348B512A3CD2E005A0AAD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547712A3C13B00E9D502 /* Carbon.framework */; };
+		E17348B612A3CD2E005A0AAD /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182538F12A3B63200E9D502 /* libPublicPlugIn.a */; };
+		E17348B712A3CD2E005A0AAD /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */; };
+		E17DCF0A13FE3E48000FECD2 /* IZExp.fr in Sources */ = {isa = PBXBuildFile; fileRef = E18253C612A3B9BE00E9D502 /* IZExp.fr */; };
+		E17DCF0B13FE3E48000FECD2 /* CZExpStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */; };
+		E17DCF0C13FE3E48000FECD2 /* ZExpConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */; };
+		E17DCF0D13FE3E48000FECD2 /* CZExpAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */; };
+		E17DCF0E13FE3E48000FECD2 /* CZExpDocUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */; };
+		E17DCF0F13FE3E48000FECD2 /* CZExpFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */; };
+		E17DCF1013FE3E48000FECD2 /* CZExpPageItemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */; };
+		E17DCF1113FE3E48000FECD2 /* CZExpStoryUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */; };
+		E17DCF1213FE3E48000FECD2 /* CZExpTextFrameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */; };
+		E17DCF1313FE3E48000FECD2 /* CZExpXMLAttrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */; };
+		E17DCF1413FE3E48000FECD2 /* ZPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182541F12A3BC3700E9D502 /* ZPString.cpp */; };
+		E17DCF1513FE3E48000FECD2 /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */; };
+		E17DCF1613FE3E48000FECD2 /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */; };
+		E17DCF1713FE3E48000FECD2 /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542712A3BC5D00E9D502 /* StUtils.cpp */; };
+		E17DCF1813FE3E48000FECD2 /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542F12A3BC7A00E9D502 /* iZPLog.cpp */; };
+		E17DCF1913FE3E48000FECD2 /* CZExpXMLExport_Styles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */; };
+		E17DCF1A13FE3E48000FECD2 /* CZExpXMLWriteFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */; };
+		E17DCF1B13FE3E48000FECD2 /* CZExpDocXMLExportProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */; };
+		E17DCF1C13FE3E48000FECD2 /* IZExpID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543912A3BD8C00E9D502 /* IZExpID.cpp */; };
+		E17DCF1D13FE3E48000FECD2 /* IZExpNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */; };
+		E17DCF1E13FE3E48000FECD2 /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */; };
+		E17DCF1F13FE3E48000FECD2 /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */; };
+		E17DCF2013FE3E48000FECD2 /* ZPStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */; };
+		E17DCF2113FE3E48000FECD2 /* AZExpWSRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */; };
+		E17DCF2213FE3E48000FECD2 /* CZExpFetchTitleEditionsRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */; };
+		E17DCF2313FE3E48000FECD2 /* CZExpFetchTitleListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */; };
+		E17DCF2413FE3E48000FECD2 /* CZExpUploadExportRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */; };
+		E17DCF2513FE3E48000FECD2 /* AZExpWSResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */; };
+		E17DCF2613FE3E48000FECD2 /* CZExpFetchTitleEditionsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */; };
+		E17DCF2713FE3E48000FECD2 /* CZExpFetchTitleListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */; };
+		E17DCF2813FE3E48000FECD2 /* CZExpUploadExportResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */; };
+		E17DCF2913FE3E48000FECD2 /* CZExpServerData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */; };
+		E17DCF2A13FE3E48000FECD2 /* CZExpPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */; };
+		E17DCF2B13FE3E48000FECD2 /* CZExpExportDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */; };
+		E17DCF2C13FE3E48000FECD2 /* CZExpExportDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */; };
+		E17DCF2D13FE3E48000FECD2 /* CZExpPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */; };
+		E17DCF2E13FE3E48000FECD2 /* CZExpPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */; };
+		E17DCF2F13FE3E48000FECD2 /* CZExpSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */; };
+		E17DCF3013FE3E48000FECD2 /* CZExpWSFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */; };
+		E17DCF3113FE3E48000FECD2 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652313A78C35006F6249 /* tinystr.cpp */; };
+		E17DCF3213FE3E48000FECD2 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652513A78C35006F6249 /* tinyxml.cpp */; };
+		E17DCF3313FE3E48000FECD2 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652713A78C35006F6249 /* tinyxmlerror.cpp */; };
+		E17DCF3413FE3E48000FECD2 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652813A78C35006F6249 /* tinyxmlparser.cpp */; };
+		E17DCF3513FE3E48000FECD2 /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */; };
+		E17DCF3613FE3E48000FECD2 /* CZExpExportDlgHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */; };
+		E17DCF3713FE3E48000FECD2 /* CZExpInDnUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */; };
+		E17DCF3913FE3E48000FECD2 /* IZExp.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = E173482312A3C648005A0AAD /* IZExp.fr.rsrc */; };
+		E17DCF3B13FE3E48000FECD2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547512A3C13B00E9D502 /* AppKit.framework */; };
+		E17DCF3C13FE3E48000FECD2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547712A3C13B00E9D502 /* Carbon.framework */; };
+		E17DCF3D13FE3E48000FECD2 /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182538F12A3B63200E9D502 /* libPublicPlugIn.a */; };
+		E17DCF3E13FE3E48000FECD2 /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */; };
+		E17E64C013A78A54006F6249 /* AZExpWSRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */; };
+		E17E64C213A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */; };
+		E17E64C413A78A54006F6249 /* CZExpFetchTitleListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */; };
+		E17E64C613A78A54006F6249 /* CZExpUploadExportRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */; };
+		E17E64C913A78A54006F6249 /* AZExpWSRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */; };
+		E17E64CB13A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */; };
+		E17E64CD13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */; };
+		E17E64CF13A78A54006F6249 /* CZExpUploadExportRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */; };
+		E17E64DC13A78A63006F6249 /* AZExpWSResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */; };
+		E17E64DE13A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */; };
+		E17E64E013A78A63006F6249 /* CZExpFetchTitleListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */; };
+		E17E64E213A78A63006F6249 /* CZExpUploadExportResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */; };
+		E17E64E513A78A63006F6249 /* AZExpWSResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */; };
+		E17E64E713A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */; };
+		E17E64E913A78A63006F6249 /* CZExpFetchTitleListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */; };
+		E17E64EB13A78A63006F6249 /* CZExpUploadExportResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */; };
+		E17E64F713A78AF4006F6249 /* CZExpServerData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */; };
+		E17E64F913A78AF4006F6249 /* CZExpServerData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */; };
+		E17E64FE13A78B12006F6249 /* CZExpPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */; };
+		E17E650013A78B12006F6249 /* CZExpPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */; };
+		E17E650913A78B57006F6249 /* CZExpExportDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */; };
+		E17E650A13A78B57006F6249 /* CZExpExportDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */; };
+		E17E650B13A78B57006F6249 /* CZExpPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */; };
+		E17E650C13A78B57006F6249 /* CZExpPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */; };
+		E17E650D13A78B57006F6249 /* CZExpExportDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */; };
+		E17E650E13A78B57006F6249 /* CZExpExportDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */; };
+		E17E650F13A78B57006F6249 /* CZExpPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */; };
+		E17E651013A78B57006F6249 /* CZExpPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */; };
+		E17E651413A78B83006F6249 /* CZExpSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */; };
+		E17E651513A78B83006F6249 /* CZExpSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */; };
+		E17E651913A78B9F006F6249 /* CZExpWSFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */; };
+		E17E651B13A78B9F006F6249 /* CZExpWSFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */; };
+		E17E652913A78C35006F6249 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652313A78C35006F6249 /* tinystr.cpp */; };
+		E17E652B13A78C35006F6249 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652513A78C35006F6249 /* tinyxml.cpp */; };
+		E17E652D13A78C35006F6249 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652713A78C35006F6249 /* tinyxmlerror.cpp */; };
+		E17E652E13A78C35006F6249 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652813A78C35006F6249 /* tinyxmlparser.cpp */; };
+		E17E652F13A78C35006F6249 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652313A78C35006F6249 /* tinystr.cpp */; };
+		E17E653113A78C35006F6249 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652513A78C35006F6249 /* tinyxml.cpp */; };
+		E17E653313A78C35006F6249 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652713A78C35006F6249 /* tinyxmlerror.cpp */; };
+		E17E653413A78C35006F6249 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652813A78C35006F6249 /* tinyxmlparser.cpp */; };
+		E18253D112A3B9BE00E9D502 /* IZExp.fr in Sources */ = {isa = PBXBuildFile; fileRef = E18253C612A3B9BE00E9D502 /* IZExp.fr */; };
+		E18253F812A3BB5500E9D502 /* CZExpStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */; };
+		E18253F912A3BB5500E9D502 /* ZExpConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */; };
+		E18253FD12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */; };
+		E182540412A3BB9800E9D502 /* CZExpDocUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */; };
+		E182540512A3BB9800E9D502 /* CZExpFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */; };
+		E182540612A3BB9800E9D502 /* CZExpPageItemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */; };
+		E182540712A3BB9800E9D502 /* CZExpStoryUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */; };
+		E182540812A3BB9800E9D502 /* CZExpTextFrameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */; };
+		E182540912A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */; };
+		E182542112A3BC3700E9D502 /* ZPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182541F12A3BC3700E9D502 /* ZPString.cpp */; };
+		E182542912A3BC5D00E9D502 /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */; };
+		E182542B12A3BC5D00E9D502 /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */; };
+		E182542D12A3BC5D00E9D502 /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542712A3BC5D00E9D502 /* StUtils.cpp */; };
+		E182543112A3BC7A00E9D502 /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542F12A3BC7A00E9D502 /* iZPLog.cpp */; };
+		E182543512A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */; };
+		E182543612A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */; };
+		E182543812A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */; };
+		E182543C12A3BD8C00E9D502 /* IZExpID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543912A3BD8C00E9D502 /* IZExpID.cpp */; };
+		E182543D12A3BD8C00E9D502 /* IZExpNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */; };
+		E182543E12A3BD8C00E9D502 /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */; };
+		E182544012A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */; };
+		E182546A12A3C0B600E9D502 /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182538F12A3B63200E9D502 /* libPublicPlugIn.a */; };
+		E182547812A3C13B00E9D502 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547512A3C13B00E9D502 /* AppKit.framework */; };
+		E182547A12A3C13B00E9D502 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547712A3C13B00E9D502 /* Carbon.framework */; };
+		E182547C12A3C14C00E9D502 /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */; };
+		E1870A9E13FE600D00AEB0CF /* IZExp.fr in Sources */ = {isa = PBXBuildFile; fileRef = E18253C612A3B9BE00E9D502 /* IZExp.fr */; };
+		E1870A9F13FE600D00AEB0CF /* CZExpStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */; };
+		E1870AA013FE600D00AEB0CF /* ZExpConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */; };
+		E1870AA113FE600D00AEB0CF /* CZExpAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */; };
+		E1870AA213FE600D00AEB0CF /* CZExpDocUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */; };
+		E1870AA313FE600D00AEB0CF /* CZExpFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */; };
+		E1870AA413FE600D00AEB0CF /* CZExpPageItemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */; };
+		E1870AA513FE600D00AEB0CF /* CZExpStoryUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */; };
+		E1870AA613FE600D00AEB0CF /* CZExpTextFrameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */; };
+		E1870AA713FE600D00AEB0CF /* CZExpXMLAttrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */; };
+		E1870AA813FE600D00AEB0CF /* ZPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182541F12A3BC3700E9D502 /* ZPString.cpp */; };
+		E1870AA913FE600D00AEB0CF /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */; };
+		E1870AAA13FE600D00AEB0CF /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */; };
+		E1870AAB13FE600D00AEB0CF /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542712A3BC5D00E9D502 /* StUtils.cpp */; };
+		E1870AAC13FE600D00AEB0CF /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542F12A3BC7A00E9D502 /* iZPLog.cpp */; };
+		E1870AAD13FE600D00AEB0CF /* CZExpXMLExport_Styles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */; };
+		E1870AAE13FE600D00AEB0CF /* CZExpXMLWriteFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */; };
+		E1870AAF13FE600D00AEB0CF /* CZExpDocXMLExportProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */; };
+		E1870AB013FE600D00AEB0CF /* IZExpID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543912A3BD8C00E9D502 /* IZExpID.cpp */; };
+		E1870AB113FE600D00AEB0CF /* IZExpNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */; };
+		E1870AB213FE600D00AEB0CF /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */; };
+		E1870AB313FE600D00AEB0CF /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */; };
+		E1870AB413FE600D00AEB0CF /* ZPStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */; };
+		E1870AB513FE600D00AEB0CF /* AZExpWSRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */; };
+		E1870AB613FE600D00AEB0CF /* CZExpFetchTitleEditionsRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */; };
+		E1870AB713FE600D00AEB0CF /* CZExpFetchTitleListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */; };
+		E1870AB813FE600D00AEB0CF /* CZExpUploadExportRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */; };
+		E1870AB913FE600D00AEB0CF /* AZExpWSResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */; };
+		E1870ABA13FE600D00AEB0CF /* CZExpFetchTitleEditionsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */; };
+		E1870ABB13FE600D00AEB0CF /* CZExpFetchTitleListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */; };
+		E1870ABC13FE600D00AEB0CF /* CZExpUploadExportResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */; };
+		E1870ABD13FE600D00AEB0CF /* CZExpServerData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */; };
+		E1870ABE13FE600D00AEB0CF /* CZExpPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */; };
+		E1870ABF13FE600D00AEB0CF /* CZExpExportDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */; };
+		E1870AC013FE600D00AEB0CF /* CZExpExportDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */; };
+		E1870AC113FE600D00AEB0CF /* CZExpPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */; };
+		E1870AC213FE600D00AEB0CF /* CZExpPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */; };
+		E1870AC313FE600D00AEB0CF /* CZExpSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */; };
+		E1870AC413FE600D00AEB0CF /* CZExpWSFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */; };
+		E1870AC513FE600D00AEB0CF /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652313A78C35006F6249 /* tinystr.cpp */; };
+		E1870AC613FE600D00AEB0CF /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652513A78C35006F6249 /* tinyxml.cpp */; };
+		E1870AC713FE600D00AEB0CF /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652713A78C35006F6249 /* tinyxmlerror.cpp */; };
+		E1870AC813FE600D00AEB0CF /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652813A78C35006F6249 /* tinyxmlparser.cpp */; };
+		E1870AC913FE600D00AEB0CF /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */; };
+		E1870ACA13FE600D00AEB0CF /* CZExpExportDlgHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */; };
+		E1870ACB13FE600D00AEB0CF /* CZExpInDnUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */; };
+		E1870ACD13FE600D00AEB0CF /* IZExp.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = E173482312A3C648005A0AAD /* IZExp.fr.rsrc */; };
+		E1870ACF13FE600D00AEB0CF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547512A3C13B00E9D502 /* AppKit.framework */; };
+		E1870AD013FE600D00AEB0CF /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547712A3C13B00E9D502 /* Carbon.framework */; };
+		E1870AD113FE600D00AEB0CF /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182538F12A3B63200E9D502 /* libPublicPlugIn.a */; };
+		E1870AD213FE600D00AEB0CF /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */; };
+		E18750C01352E4DE00DA7EED /* ZPStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */; };
+		E1B0BF791499FDDC00918DCB /* IZExp.fr in Sources */ = {isa = PBXBuildFile; fileRef = E18253C612A3B9BE00E9D502 /* IZExp.fr */; };
+		E1B0BF7A1499FDDC00918DCB /* CZExpStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */; };
+		E1B0BF7B1499FDDC00918DCB /* ZExpConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */; };
+		E1B0BF7C1499FDDC00918DCB /* CZExpAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */; };
+		E1B0BF7D1499FDDC00918DCB /* CZExpDocUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */; };
+		E1B0BF7E1499FDDC00918DCB /* CZExpFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */; };
+		E1B0BF7F1499FDDC00918DCB /* CZExpPageItemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */; };
+		E1B0BF801499FDDC00918DCB /* CZExpStoryUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */; };
+		E1B0BF811499FDDC00918DCB /* CZExpTextFrameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */; };
+		E1B0BF821499FDDC00918DCB /* CZExpXMLAttrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */; };
+		E1B0BF831499FDDC00918DCB /* ZPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182541F12A3BC3700E9D502 /* ZPString.cpp */; };
+		E1B0BF841499FDDC00918DCB /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */; };
+		E1B0BF851499FDDC00918DCB /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */; };
+		E1B0BF861499FDDC00918DCB /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542712A3BC5D00E9D502 /* StUtils.cpp */; };
+		E1B0BF871499FDDC00918DCB /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542F12A3BC7A00E9D502 /* iZPLog.cpp */; };
+		E1B0BF881499FDDC00918DCB /* CZExpXMLExport_Styles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */; };
+		E1B0BF891499FDDC00918DCB /* CZExpXMLWriteFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */; };
+		E1B0BF8A1499FDDC00918DCB /* CZExpDocXMLExportProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */; };
+		E1B0BF8B1499FDDC00918DCB /* IZExpID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543912A3BD8C00E9D502 /* IZExpID.cpp */; };
+		E1B0BF8C1499FDDC00918DCB /* IZExpNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */; };
+		E1B0BF8D1499FDDC00918DCB /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */; };
+		E1B0BF8E1499FDDC00918DCB /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */; };
+		E1B0BF8F1499FDDC00918DCB /* ZPStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */; };
+		E1B0BF901499FDDC00918DCB /* AZExpWSRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */; };
+		E1B0BF911499FDDC00918DCB /* CZExpFetchTitleEditionsRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */; };
+		E1B0BF921499FDDC00918DCB /* CZExpFetchTitleListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */; };
+		E1B0BF931499FDDC00918DCB /* CZExpUploadExportRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */; };
+		E1B0BF941499FDDC00918DCB /* AZExpWSResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */; };
+		E1B0BF951499FDDC00918DCB /* CZExpFetchTitleEditionsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */; };
+		E1B0BF961499FDDC00918DCB /* CZExpFetchTitleListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */; };
+		E1B0BF971499FDDC00918DCB /* CZExpUploadExportResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */; };
+		E1B0BF981499FDDC00918DCB /* CZExpServerData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */; };
+		E1B0BF991499FDDC00918DCB /* CZExpPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */; };
+		E1B0BF9A1499FDDC00918DCB /* CZExpExportDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */; };
+		E1B0BF9B1499FDDC00918DCB /* CZExpExportDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */; };
+		E1B0BF9C1499FDDC00918DCB /* CZExpPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */; };
+		E1B0BF9D1499FDDC00918DCB /* CZExpPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */; };
+		E1B0BF9E1499FDDC00918DCB /* CZExpSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */; };
+		E1B0BF9F1499FDDC00918DCB /* CZExpWSFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */; };
+		E1B0BFA01499FDDC00918DCB /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652313A78C35006F6249 /* tinystr.cpp */; };
+		E1B0BFA11499FDDC00918DCB /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652513A78C35006F6249 /* tinyxml.cpp */; };
+		E1B0BFA21499FDDC00918DCB /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652713A78C35006F6249 /* tinyxmlerror.cpp */; };
+		E1B0BFA31499FDDC00918DCB /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652813A78C35006F6249 /* tinyxmlparser.cpp */; };
+		E1B0BFA41499FDDC00918DCB /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */; };
+		E1B0BFA51499FDDC00918DCB /* CZExpExportDlgHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */; };
+		E1B0BFA61499FDDC00918DCB /* CZExpInDnUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */; };
+		E1B0BFA71499FDDC00918DCB /* CZExpXMLExport_Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */; };
+		E1B0BFA81499FDDC00918DCB /* CZExpXMLExport_Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */; };
+		E1B0BFA91499FDDC00918DCB /* CZExpXMLExport_Snapshots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */; };
+		E1B0BFAA1499FDDC00918DCB /* CZExpGlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */; };
+		E1B0BFAB1499FDDC00918DCB /* CZExpGetConfigRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */; };
+		E1B0BFAC1499FDDC00918DCB /* CZExpGetConfigResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */; };
+		E1B0BFAE1499FDDC00918DCB /* IZExp.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = E173482312A3C648005A0AAD /* IZExp.fr.rsrc */; };
+		E1B0BFB01499FDDC00918DCB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547512A3C13B00E9D502 /* AppKit.framework */; };
+		E1B0BFB11499FDDC00918DCB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547712A3C13B00E9D502 /* Carbon.framework */; };
+		E1B0BFB21499FDDC00918DCB /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182538F12A3B63200E9D502 /* libPublicPlugIn.a */; };
+		E1B0BFB31499FDDC00918DCB /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */; };
+		E1C894ED1499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */; };
+		E1C894EE1499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */; };
+		E1C894EF1499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */; };
+		E1C894F01499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */; };
+		E1C894F11499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */; };
+		E1C894FF1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */; };
+		E1C895001499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */; };
+		E1C895011499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */; };
+		E1C895021499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */; };
+		E1C895031499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */; };
+		E1C895061499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */; };
+		E1C895071499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */; };
+		E1C895081499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */; };
+		E1C895091499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */; };
+		E1C8950A1499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */; };
+		E1CA8EF113AF30C2006D0785 /* IZExp.fr in Sources */ = {isa = PBXBuildFile; fileRef = E18253C612A3B9BE00E9D502 /* IZExp.fr */; };
+		E1CA8EF213AF30C2006D0785 /* CZExpStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */; };
+		E1CA8EF313AF30C2006D0785 /* ZExpConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */; };
+		E1CA8EF413AF30C2006D0785 /* CZExpAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */; };
+		E1CA8EF513AF30C2006D0785 /* CZExpDocUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */; };
+		E1CA8EF613AF30C2006D0785 /* CZExpFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */; };
+		E1CA8EF713AF30C2006D0785 /* CZExpPageItemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */; };
+		E1CA8EF813AF30C2006D0785 /* CZExpStoryUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */; };
+		E1CA8EF913AF30C2006D0785 /* CZExpTextFrameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */; };
+		E1CA8EFA13AF30C2006D0785 /* CZExpXMLAttrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */; };
+		E1CA8EFB13AF30C2006D0785 /* ZPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182541F12A3BC3700E9D502 /* ZPString.cpp */; };
+		E1CA8EFC13AF30C2006D0785 /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */; };
+		E1CA8EFD13AF30C2006D0785 /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */; };
+		E1CA8EFE13AF30C2006D0785 /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542712A3BC5D00E9D502 /* StUtils.cpp */; };
+		E1CA8EFF13AF30C2006D0785 /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542F12A3BC7A00E9D502 /* iZPLog.cpp */; };
+		E1CA8F0013AF30C2006D0785 /* CZExpXMLExport_Styles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */; };
+		E1CA8F0113AF30C2006D0785 /* CZExpXMLWriteFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */; };
+		E1CA8F0213AF30C2006D0785 /* CZExpDocXMLExportProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */; };
+		E1CA8F0313AF30C2006D0785 /* IZExpID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543912A3BD8C00E9D502 /* IZExpID.cpp */; };
+		E1CA8F0413AF30C2006D0785 /* IZExpNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */; };
+		E1CA8F0513AF30C2006D0785 /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */; };
+		E1CA8F0613AF30C2006D0785 /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */; };
+		E1CA8F0713AF30C2006D0785 /* ZPStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */; };
+		E1CA8F0813AF30C2006D0785 /* AZExpWSRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */; };
+		E1CA8F0913AF30C2006D0785 /* CZExpFetchTitleEditionsRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */; };
+		E1CA8F0A13AF30C2006D0785 /* CZExpFetchTitleListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */; };
+		E1CA8F0B13AF30C2006D0785 /* CZExpUploadExportRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */; };
+		E1CA8F0C13AF30C2006D0785 /* AZExpWSResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */; };
+		E1CA8F0D13AF30C2006D0785 /* CZExpFetchTitleEditionsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */; };
+		E1CA8F0E13AF30C2006D0785 /* CZExpFetchTitleListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */; };
+		E1CA8F0F13AF30C2006D0785 /* CZExpUploadExportResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */; };
+		E1CA8F1013AF30C2006D0785 /* CZExpServerData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */; };
+		E1CA8F1113AF30C2006D0785 /* CZExpPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */; };
+		E1CA8F1213AF30C2006D0785 /* CZExpExportDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */; };
+		E1CA8F1313AF30C2006D0785 /* CZExpExportDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */; };
+		E1CA8F1413AF30C2006D0785 /* CZExpPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */; };
+		E1CA8F1513AF30C2006D0785 /* CZExpPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */; };
+		E1CA8F1613AF30C2006D0785 /* CZExpSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */; };
+		E1CA8F1713AF30C2006D0785 /* CZExpWSFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */; };
+		E1CA8F1813AF30C2006D0785 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652313A78C35006F6249 /* tinystr.cpp */; };
+		E1CA8F1913AF30C2006D0785 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652513A78C35006F6249 /* tinyxml.cpp */; };
+		E1CA8F1A13AF30C2006D0785 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652713A78C35006F6249 /* tinyxmlerror.cpp */; };
+		E1CA8F1B13AF30C2006D0785 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652813A78C35006F6249 /* tinyxmlparser.cpp */; };
+		E1CA8F1C13AF30C2006D0785 /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */; };
+		E1CA8F1D13AF30C2006D0785 /* CZExpExportDlgHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */; };
+		E1CA8F1F13AF30C2006D0785 /* IZExp.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = E173482312A3C648005A0AAD /* IZExp.fr.rsrc */; };
+		E1CA8F2113AF30C2006D0785 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547512A3C13B00E9D502 /* AppKit.framework */; };
+		E1CA8F2213AF30C2006D0785 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547712A3C13B00E9D502 /* Carbon.framework */; };
+		E1CA8F2313AF30C2006D0785 /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182538F12A3B63200E9D502 /* libPublicPlugIn.a */; };
+		E1CA8F2413AF30C2006D0785 /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */; };
+		E1CAC42014F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */; };
+		E1CAC42114F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */; };
+		E1CAC42214F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */; };
+		E1CAC42314F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */; };
+		E1CAC42414F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */; };
+		E1CAC42514F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */; };
+		E1CAC42614F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */; };
+		E1CAC42914F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */; };
+		E1CAC42A14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */; };
+		E1CAC42B14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */; };
+		E1CAC42C14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */; };
+		E1CAC42D14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */; };
+		E1CAC42E14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */; };
+		E1CAC42F14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */; };
+		E1CD7BB31507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */; };
+		E1CD7BB41507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */; };
+		E1CD7BB51507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */; };
+		E1CD7BB61507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */; };
+		E1CD7BB71507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */; };
+		E1CD7BB81507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */; };
+		E1CD7BB91507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */; };
+		E1CD7BBA1507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */; };
+		E1CD7BBB1507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */; };
+		E1CD7BBC1507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */; };
+		E1CD7BBD1507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */; };
+		E1CD7BBE1507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */; };
+		E1CD7BBF1507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */; };
+		E1CD7BC01507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */; };
+		E1CD8F091574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */; };
+		E1CD8F0A1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */; };
+		E1CD8F0B1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */; };
+		E1CD8F0C1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */; };
+		E1CD8F0D1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */; };
+		E1CD8F0E1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */; };
+		E1CD8F0F1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */; };
+		E1D3CB9C1414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */; };
+		E1D3CB9D1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */; };
+		E1D3CB9E1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */; };
+		E1D3CB9F1414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */; };
+		E1D3CBA01414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */; };
+		E1D3CBA11414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */; };
+		E1D3CBA21414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */; };
+		E1D3CBA31414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */; };
+		E1D3CBA41414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */; };
+		E1D3CBA51414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */; };
+		E1D3CBA61414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */; };
+		E1D3CBA71414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */; };
+		E1D3CBA81414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */; };
+		E1D3CBA91414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */; };
+		E1D3CBAA1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */; };
+		E1DF6C5714E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */; };
+		E1DF6C5814E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */; };
+		E1DF6C5914E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */; };
+		E1DF6C5A14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */; };
+		E1DF6C5B14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */; };
+		E1DF6C5C14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */; };
+		E1DF6C5D14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */; };
+		E1E4EF3E14E10319007DBA98 /* IZExp.fr in Sources */ = {isa = PBXBuildFile; fileRef = E18253C612A3B9BE00E9D502 /* IZExp.fr */; };
+		E1E4EF3F14E10319007DBA98 /* CZExpStartupShutdown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */; };
+		E1E4EF4014E10319007DBA98 /* ZExpConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */; };
+		E1E4EF4114E10319007DBA98 /* CZExpAppActionComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */; };
+		E1E4EF4214E10319007DBA98 /* CZExpDocUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */; };
+		E1E4EF4314E10319007DBA98 /* CZExpFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */; };
+		E1E4EF4414E10319007DBA98 /* CZExpPageItemUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */; };
+		E1E4EF4514E10319007DBA98 /* CZExpStoryUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */; };
+		E1E4EF4614E10319007DBA98 /* CZExpTextFrameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */; };
+		E1E4EF4714E10319007DBA98 /* CZExpXMLAttrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */; };
+		E1E4EF4814E10319007DBA98 /* ZPString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182541F12A3BC3700E9D502 /* ZPString.cpp */; };
+		E1E4EF4914E10319007DBA98 /* StInDesignUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */; };
+		E1E4EF4A14E10319007DBA98 /* StInDnXmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */; };
+		E1E4EF4B14E10319007DBA98 /* StUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542712A3BC5D00E9D502 /* StUtils.cpp */; };
+		E1E4EF4C14E10319007DBA98 /* iZPLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182542F12A3BC7A00E9D502 /* iZPLog.cpp */; };
+		E1E4EF4D14E10319007DBA98 /* CZExpXMLExport_Styles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */; };
+		E1E4EF4E14E10319007DBA98 /* CZExpXMLWriteFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */; };
+		E1E4EF4F14E10319007DBA98 /* CZExpDocXMLExportProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */; };
+		E1E4EF5014E10319007DBA98 /* IZExpID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543912A3BD8C00E9D502 /* IZExpID.cpp */; };
+		E1E4EF5114E10319007DBA98 /* IZExpNoStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */; };
+		E1E4EF5214E10319007DBA98 /* TriggerResourceDeps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */; };
+		E1E4EF5314E10319007DBA98 /* SDKPlugInEntrypoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */; };
+		E1E4EF5414E10319007DBA98 /* ZPStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */; };
+		E1E4EF5514E10319007DBA98 /* AZExpWSRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */; };
+		E1E4EF5614E10319007DBA98 /* CZExpFetchTitleEditionsRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */; };
+		E1E4EF5714E10319007DBA98 /* CZExpFetchTitleListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */; };
+		E1E4EF5814E10319007DBA98 /* CZExpUploadExportRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */; };
+		E1E4EF5914E10319007DBA98 /* AZExpWSResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */; };
+		E1E4EF5A14E10319007DBA98 /* CZExpFetchTitleEditionsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */; };
+		E1E4EF5B14E10319007DBA98 /* CZExpFetchTitleListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */; };
+		E1E4EF5C14E10319007DBA98 /* CZExpUploadExportResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */; };
+		E1E4EF5D14E10319007DBA98 /* CZExpServerData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */; };
+		E1E4EF5E14E10319007DBA98 /* CZExpPrefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */; };
+		E1E4EF5F14E10319007DBA98 /* CZExpExportDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */; };
+		E1E4EF6014E10319007DBA98 /* CZExpExportDialogObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */; };
+		E1E4EF6114E10319007DBA98 /* CZExpPrefsDialogController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */; };
+		E1E4EF6214E10319007DBA98 /* CZExpPrefsPanelCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */; };
+		E1E4EF6314E10319007DBA98 /* CZExpSavePrefsCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */; };
+		E1E4EF6414E10319007DBA98 /* CZExpWSFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */; };
+		E1E4EF6514E10319007DBA98 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652313A78C35006F6249 /* tinystr.cpp */; };
+		E1E4EF6614E10319007DBA98 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652513A78C35006F6249 /* tinyxml.cpp */; };
+		E1E4EF6714E10319007DBA98 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652713A78C35006F6249 /* tinyxmlerror.cpp */; };
+		E1E4EF6814E10319007DBA98 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17E652813A78C35006F6249 /* tinyxmlparser.cpp */; };
+		E1E4EF6914E10319007DBA98 /* MacFileSystemIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */; };
+		E1E4EF6A14E10319007DBA98 /* CZExpExportDlgHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */; };
+		E1E4EF6B14E10319007DBA98 /* CZExpInDnUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */; };
+		E1E4EF6C14E10319007DBA98 /* CZExpXMLExport_Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */; };
+		E1E4EF6D14E10319007DBA98 /* CZExpXMLExport_Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */; };
+		E1E4EF6E14E10319007DBA98 /* CZExpXMLExport_Snapshots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */; };
+		E1E4EF6F14E10319007DBA98 /* CZExpGlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */; };
+		E1E4EF7014E10319007DBA98 /* CZExpGetConfigRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */; };
+		E1E4EF7114E10319007DBA98 /* CZExpGetConfigResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */; };
+		E1E4EF7314E10319007DBA98 /* IZExp.fr.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = E173482312A3C648005A0AAD /* IZExp.fr.rsrc */; };
+		E1E4EF7514E10319007DBA98 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547512A3C13B00E9D502 /* AppKit.framework */; };
+		E1E4EF7614E10319007DBA98 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547712A3C13B00E9D502 /* Carbon.framework */; };
+		E1E4EF7714E10319007DBA98 /* libPublicPlugIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E182538F12A3B63200E9D502 /* libPublicPlugIn.a */; };
+		E1E4EF7814E10319007DBA98 /* InDesignModelAndUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */; };
+		E1E6B8911370109700895FF3 /* ZPStringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		E17348B812A3CD2E005A0AAD /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		E17DCF3F13FE3E48000FECD2 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		E18253A112A3B80500E9D502 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		E1870AD313FE600D00AEB0CF /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		E1B0BFB51499FDDC00918DCB /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		E1CA8F2513AF30C2006D0785 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+		E1E4EF7A14E10319007DBA98 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.fr";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(REZ_COLLECTOR_DIR)/$(INPUT_FILE_NAME).rsrc",
+			);
+			script = "\"$ODFRCCommandPath\" $ODFRCDefinesAllTgt $ODFRCArg1 $ODFRCArg2 \"$INPUT_FILE_PATH\" -o \"$REZ_COLLECTOR_DIR/$INPUT_FILE_NAME.rsrc\" $ODFRC_INCLUDE_PATHS";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpInDnUtils.cpp; path = ../Source/Utils/CZExpInDnUtils.cpp; sourceTree = SOURCE_ROOT; };
+		070988A913BB2E5E00C62009 /* IZExpInDnUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpInDnUtils.h; path = ../Source/Utils/IZExpInDnUtils.h; sourceTree = SOURCE_ROOT; };
+		070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MacFileSystemIterator.cpp; path = ../../Common/AdobeInDnSDK/MacFileSystemIterator.cpp; sourceTree = SOURCE_ROOT; };
+		070F7D5713A8935C00AEDAC3 /* MacFileSystemIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacFileSystemIterator.h; path = ../../Common/AdobeInDnSDK/MacFileSystemIterator.h; sourceTree = SOURCE_ROOT; };
+		0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpExportDlgHelper.cpp; path = ../Source/Dialogs/CZExpExportDlgHelper.cpp; sourceTree = SOURCE_ROOT; };
+		0718ECFB13A8C8180047B28B /* IZExpExportDlgHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpExportDlgHelper.h; path = ../Source/Dialogs/IZExpExportDlgHelper.h; sourceTree = SOURCE_ROOT; };
+		E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpPrefsDialogObserver.cpp; path = ../Source/Dialogs/CZExpPrefsDialogObserver.cpp; sourceTree = SOURCE_ROOT; };
+		E173482312A3C648005A0AAD /* IZExp.fr.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; name = IZExp.fr.rsrc; path = ./IZExp.fr.rsrc; sourceTree = REZ_COLLECTOR_DIR; };
+		E17348BB12A3CD2E005A0AAD /* iZineExport.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iZineExport.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17DCF0313FE38F7000FECD2 /* InDesignCommonCS5.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = InDesignCommonCS5.xcconfig; path = ../../InDesignCommonCS5.xcconfig; sourceTree = SOURCE_ROOT; };
+		E17DCF0413FE3DB2000FECD2 /* iZineExportCS5Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineExportCS5Debug.xcconfig; sourceTree = "<group>"; };
+		E17DCF4213FE3E48000FECD2 /* iZineExport.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iZineExport.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AZExpWSRequest.cpp; path = ../Source/WS/Requests/AZExpWSRequest.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64B813A78A54006F6249 /* AZExpWSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZExpWSRequest.h; path = ../Source/WS/Requests/AZExpWSRequest.h; sourceTree = SOURCE_ROOT; };
+		E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpFetchTitleEditionsRequest.cpp; path = ../Source/WS/Requests/CZExpFetchTitleEditionsRequest.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64BA13A78A54006F6249 /* CZExpFetchTitleEditionsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpFetchTitleEditionsRequest.h; path = ../Source/WS/Requests/CZExpFetchTitleEditionsRequest.h; sourceTree = SOURCE_ROOT; };
+		E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpFetchTitleListRequest.cpp; path = ../Source/WS/Requests/CZExpFetchTitleListRequest.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64BC13A78A54006F6249 /* CZExpFetchTitleListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpFetchTitleListRequest.h; path = ../Source/WS/Requests/CZExpFetchTitleListRequest.h; sourceTree = SOURCE_ROOT; };
+		E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpUploadExportRequest.cpp; path = ../Source/WS/Requests/CZExpUploadExportRequest.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64BE13A78A54006F6249 /* CZExpUploadExportRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpUploadExportRequest.h; path = ../Source/WS/Requests/CZExpUploadExportRequest.h; sourceTree = SOURCE_ROOT; };
+		E17E64BF13A78A54006F6249 /* ZExpWSRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZExpWSRequests.h; path = ../Source/WS/Requests/ZExpWSRequests.h; sourceTree = SOURCE_ROOT; };
+		E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AZExpWSResponse.cpp; path = ../Source/WS/Responses/AZExpWSResponse.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64D413A78A63006F6249 /* AZExpWSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZExpWSResponse.h; path = ../Source/WS/Responses/AZExpWSResponse.h; sourceTree = SOURCE_ROOT; };
+		E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpFetchTitleEditionsResponse.cpp; path = ../Source/WS/Responses/CZExpFetchTitleEditionsResponse.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64D613A78A63006F6249 /* CZExpFetchTitleEditionsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpFetchTitleEditionsResponse.h; path = ../Source/WS/Responses/CZExpFetchTitleEditionsResponse.h; sourceTree = SOURCE_ROOT; };
+		E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpFetchTitleListResponse.cpp; path = ../Source/WS/Responses/CZExpFetchTitleListResponse.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64D813A78A63006F6249 /* CZExpFetchTitleListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpFetchTitleListResponse.h; path = ../Source/WS/Responses/CZExpFetchTitleListResponse.h; sourceTree = SOURCE_ROOT; };
+		E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpUploadExportResponse.cpp; path = ../Source/WS/Responses/CZExpUploadExportResponse.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64DA13A78A63006F6249 /* CZExpUploadExportResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpUploadExportResponse.h; path = ../Source/WS/Responses/CZExpUploadExportResponse.h; sourceTree = SOURCE_ROOT; };
+		E17E64DB13A78A63006F6249 /* ZExpWSResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZExpWSResponses.h; path = ../Source/WS/Responses/ZExpWSResponses.h; sourceTree = SOURCE_ROOT; };
+		E17E64EF13A78A7A006F6249 /* ZExpWSTypeDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZExpWSTypeDefs.h; path = ../Source/WS/ZExpWSTypeDefs.h; sourceTree = SOURCE_ROOT; };
+		E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpServerData.cpp; path = ../Source/Data/CZExpServerData.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64F613A78AF4006F6249 /* IZExpServerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpServerData.h; path = ../Source/Data/IZExpServerData.h; sourceTree = SOURCE_ROOT; };
+		E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpPrefs.cpp; path = ../Source/Data/CZExpPrefs.cpp; sourceTree = SOURCE_ROOT; };
+		E17E64FD13A78B12006F6249 /* IZExpPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpPrefs.h; path = ../Source/Data/IZExpPrefs.h; sourceTree = SOURCE_ROOT; };
+		E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpExportDialogController.cpp; path = ../Source/Dialogs/CZExpExportDialogController.cpp; sourceTree = SOURCE_ROOT; };
+		E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpExportDialogObserver.cpp; path = ../Source/Dialogs/CZExpExportDialogObserver.cpp; sourceTree = SOURCE_ROOT; };
+		E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpPrefsDialogController.cpp; path = ../Source/Dialogs/CZExpPrefsDialogController.cpp; sourceTree = SOURCE_ROOT; };
+		E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpPrefsPanelCreator.cpp; path = ../Source/Dialogs/CZExpPrefsPanelCreator.cpp; sourceTree = SOURCE_ROOT; };
+		E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpSavePrefsCmd.cpp; path = ../Source/Commands/CZExpSavePrefsCmd.cpp; sourceTree = SOURCE_ROOT; };
+		E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpWSFacade.cpp; path = ../Source/Utils/CZExpWSFacade.cpp; sourceTree = SOURCE_ROOT; };
+		E17E651813A78B9F006F6249 /* IZExpWSFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpWSFacade.h; path = ../Source/Utils/IZExpWSFacade.h; sourceTree = SOURCE_ROOT; };
+		E17E652313A78C35006F6249 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinystr.cpp; path = ../../../../../izine.ui/External/tinyxml/tinystr.cpp; sourceTree = SOURCE_ROOT; };
+		E17E652413A78C35006F6249 /* tinystr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinystr.h; path = ../../../../../izine.ui/External/tinyxml/tinystr.h; sourceTree = SOURCE_ROOT; };
+		E17E652513A78C35006F6249 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = ../../../../../izine.ui/External/tinyxml/tinyxml.cpp; sourceTree = SOURCE_ROOT; };
+		E17E652613A78C35006F6249 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = ../../../../../izine.ui/External/tinyxml/tinyxml.h; sourceTree = SOURCE_ROOT; };
+		E17E652713A78C35006F6249 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = ../../../../../izine.ui/External/tinyxml/tinyxmlerror.cpp; sourceTree = SOURCE_ROOT; };
+		E17E652813A78C35006F6249 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = ../../../../../izine.ui/External/tinyxml/tinyxmlparser.cpp; sourceTree = SOURCE_ROOT; };
+		E18252C512A3B22E00E9D502 /* iZineExport.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineExport.xcconfig; sourceTree = "<group>"; };
+		E18252C612A3B22E00E9D502 /* iZineExportCS3Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineExportCS3Debug.xcconfig; sourceTree = "<group>"; };
+		E18252C712A3B22E00E9D502 /* iZineExportCS3Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineExportCS3Release.xcconfig; sourceTree = "<group>"; };
+		E182538F12A3B63200E9D502 /* libPublicPlugIn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPublicPlugIn.a; path = ./Libs/libPublicPlugIn.a; sourceTree = InDesignSDK_AppDir; };
+		E182539512A3B67300E9D502 /* iZineExport.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iZineExport.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182539B12A3B6BA00E9D502 /* InDesignCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = InDesignCommon.xcconfig; path = ../../InDesignCommon.xcconfig; sourceTree = SOURCE_ROOT; };
+		E182539C12A3B6BA00E9D502 /* InDesignCommonCS3.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = InDesignCommonCS3.xcconfig; path = ../../InDesignCommonCS3.xcconfig; sourceTree = SOURCE_ROOT; };
+		E182539D12A3B6BA00E9D502 /* InDnLocalPaths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = InDnLocalPaths.xcconfig; path = ../../InDnLocalPaths.xcconfig; sourceTree = SOURCE_ROOT; };
+		E18253A312A3B91200E9D502 /* IZExpFactoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpFactoryList.h; path = ../Source/Plugin/IZExpFactoryList.h; sourceTree = SOURCE_ROOT; };
+		E18253A412A3B91200E9D502 /* IZExpFactoryList_Auto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpFactoryList_Auto.h; path = ../Source/Plugin/IZExpFactoryList_Auto.h; sourceTree = SOURCE_ROOT; };
+		E18253A712A3B92A00E9D502 /* iZineExpVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZineExpVersion.h; path = ../Source/iZineExpVersion.h; sourceTree = SOURCE_ROOT; };
+		E18253A912A3B94F00E9D502 /* IZExp_ActionID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExp_ActionID.h; path = ../SDK/Public/IZExp_ActionID.h; sourceTree = SOURCE_ROOT; };
+		E18253AA12A3B94F00E9D502 /* IZExp_ClassDefID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExp_ClassDefID.h; path = ../SDK/Public/IZExp_ClassDefID.h; sourceTree = SOURCE_ROOT; };
+		E18253AB12A3B94F00E9D502 /* IZExp_StringKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExp_StringKeys.h; path = ../SDK/Public/IZExp_StringKeys.h; sourceTree = SOURCE_ROOT; };
+		E18253AC12A3B94F00E9D502 /* IZExpID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpID.h; path = ../SDK/Public/IZExpID.h; sourceTree = SOURCE_ROOT; };
+		E18253AD12A3B94F00E9D502 /* ZExpScriptingDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZExpScriptingDefs.h; path = ../SDK/Public/ZExpScriptingDefs.h; sourceTree = SOURCE_ROOT; };
+		E18253B412A3B99000E9D502 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E18253B612A3B9AC00E9D502 /* IZExp_enUS.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IZExp_enUS.fri; path = ../Resource/IZExp_enUS.fri; sourceTree = SOURCE_ROOT; };
+		E18253B712A3B9AC00E9D502 /* IZExp_jaJP.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IZExp_jaJP.fri; path = ../Resource/IZExp_jaJP.fri; sourceTree = SOURCE_ROOT; };
+		E18253B812A3B9AC00E9D502 /* IZExp_nlNL.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IZExp_nlNL.fri; path = ../Resource/IZExp_nlNL.fri; sourceTree = SOURCE_ROOT; };
+		E18253BC12A3B9BE00E9D502 /* IZExp Addins.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Addins.fri"; path = "../Resource/IZExp Addins.fri"; sourceTree = SOURCE_ROOT; };
+		E18253BD12A3B9BE00E9D502 /* IZExp Aliases.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Aliases.fri"; path = "../Resource/IZExp Aliases.fri"; sourceTree = SOURCE_ROOT; };
+		E18253BE12A3B9BE00E9D502 /* IZExp ClassDefinitions.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp ClassDefinitions.fri"; path = "../Resource/IZExp ClassDefinitions.fri"; sourceTree = SOURCE_ROOT; };
+		E18253BF12A3B9BE00E9D502 /* IZExp ClassDefinitions_Auto.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp ClassDefinitions_Auto.fri"; path = "../Resource/IZExp ClassDefinitions_Auto.fri"; sourceTree = SOURCE_ROOT; };
+		E18253C012A3B9BE00E9D502 /* IZExp Images.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Images.fri"; path = "../Resource/IZExp Images.fri"; sourceTree = SOURCE_ROOT; };
+		E18253C112A3B9BE00E9D502 /* IZExp Menu.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Menu.fri"; path = "../Resource/IZExp Menu.fri"; sourceTree = SOURCE_ROOT; };
+		E18253C212A3B9BE00E9D502 /* IZExp Schema.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Schema.fri"; path = "../Resource/IZExp Schema.fri"; sourceTree = SOURCE_ROOT; };
+		E18253C312A3B9BE00E9D502 /* IZExp Scripting.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Scripting.fri"; path = "../Resource/IZExp Scripting.fri"; sourceTree = SOURCE_ROOT; };
+		E18253C412A3B9BE00E9D502 /* IZExp Strings.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Strings.fri"; path = "../Resource/IZExp Strings.fri"; sourceTree = SOURCE_ROOT; };
+		E18253C512A3B9BE00E9D502 /* IZExp Version.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "IZExp Version.fri"; path = "../Resource/IZExp Version.fri"; sourceTree = SOURCE_ROOT; };
+		E18253C612A3B9BE00E9D502 /* IZExp.fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IZExp.fr; path = ../Resource/IZExp.fr; sourceTree = SOURCE_ROOT; };
+		E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpStartupShutdown.cpp; path = ../Source/App/CZExpStartupShutdown.cpp; sourceTree = SOURCE_ROOT; };
+		E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZExpConstants.cpp; path = ../Source/App/ZExpConstants.cpp; sourceTree = SOURCE_ROOT; };
+		E18253FA12A3BB6500E9D502 /* ZExpConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZExpConstants.h; path = ../SDK/Public/App/ZExpConstants.h; sourceTree = SOURCE_ROOT; };
+		E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpAppActionComponent.cpp; path = ../Source/ActionComponent/CZExpAppActionComponent.cpp; sourceTree = SOURCE_ROOT; };
+		E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpDocUtils.cpp; path = ../Source/Utils/CZExpDocUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpFileUtils.cpp; path = ../Source/Utils/CZExpFileUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpPageItemUtils.cpp; path = ../Source/Utils/CZExpPageItemUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpStoryUtils.cpp; path = ../Source/Utils/CZExpStoryUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpTextFrameUtils.cpp; path = ../Source/Utils/CZExpTextFrameUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpXMLAttrUtils.cpp; path = ../Source/Utils/CZExpXMLAttrUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182540A12A3BBAB00E9D502 /* CZExpXMLAttrUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpXMLAttrUtils.h; path = ../SDK/Public/Utils/CZExpXMLAttrUtils.h; sourceTree = SOURCE_ROOT; };
+		E182540B12A3BBAB00E9D502 /* CZExpXMLExport_Styles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpXMLExport_Styles.h; path = ../SDK/Public/Utils/CZExpXMLExport_Styles.h; sourceTree = SOURCE_ROOT; };
+		E182540C12A3BBAB00E9D502 /* IZExpDocUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpDocUtils.h; path = ../SDK/Public/Utils/IZExpDocUtils.h; sourceTree = SOURCE_ROOT; };
+		E182540D12A3BBAB00E9D502 /* IZExpFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpFileUtils.h; path = ../SDK/Public/Utils/IZExpFileUtils.h; sourceTree = SOURCE_ROOT; };
+		E182540E12A3BBAB00E9D502 /* IZExpPageItemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpPageItemUtils.h; path = ../SDK/Public/Utils/IZExpPageItemUtils.h; sourceTree = SOURCE_ROOT; };
+		E182540F12A3BBAB00E9D502 /* IZExpStoryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpStoryUtils.h; path = ../SDK/Public/Utils/IZExpStoryUtils.h; sourceTree = SOURCE_ROOT; };
+		E182541012A3BBAB00E9D502 /* IZExpTextFrameUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpTextFrameUtils.h; path = ../SDK/Public/Utils/IZExpTextFrameUtils.h; sourceTree = SOURCE_ROOT; };
+		E182541112A3BBAB00E9D502 /* IZExpXMLWriteFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpXMLWriteFacade.h; path = ../SDK/Public/Utils/IZExpXMLWriteFacade.h; sourceTree = SOURCE_ROOT; };
+		E182541212A3BBAB00E9D502 /* ZExpStyleAttrConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZExpStyleAttrConstants.h; path = ../SDK/Public/Utils/ZExpStyleAttrConstants.h; sourceTree = SOURCE_ROOT; };
+		E182541312A3BBAB00E9D502 /* ZExpXMLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZExpXMLConstants.h; path = ../SDK/Public/Utils/ZExpXMLConstants.h; sourceTree = SOURCE_ROOT; };
+		E182541F12A3BC3700E9D502 /* ZPString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZPString.cpp; path = ../../Common/String/ZPString.cpp; sourceTree = SOURCE_ROOT; };
+		E182542012A3BC3700E9D502 /* ZPString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPString.h; path = ../../Common/String/ZPString.h; sourceTree = SOURCE_ROOT; };
+		E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StInDesignUtils.cpp; path = ../../Common/Utils/StInDesignUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182542412A3BC5D00E9D502 /* StInDesignUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StInDesignUtils.h; path = ../../Common/Utils/StInDesignUtils.h; sourceTree = SOURCE_ROOT; };
+		E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StInDnXmlUtils.cpp; path = ../../Common/Utils/StInDnXmlUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182542612A3BC5D00E9D502 /* StInDnXmlUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StInDnXmlUtils.h; path = ../../Common/Utils/StInDnXmlUtils.h; sourceTree = SOURCE_ROOT; };
+		E182542712A3BC5D00E9D502 /* StUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StUtils.cpp; path = ../../Common/Utils/StUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E182542812A3BC5D00E9D502 /* StUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StUtils.h; path = ../../Common/Utils/StUtils.h; sourceTree = SOURCE_ROOT; };
+		E182542F12A3BC7A00E9D502 /* iZPLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iZPLog.cpp; path = ../../Common/Utils/Logs/iZPLog.cpp; sourceTree = SOURCE_ROOT; };
+		E182543012A3BC7A00E9D502 /* iZPLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iZPLog.h; path = ../../Common/Utils/Logs/iZPLog.h; sourceTree = SOURCE_ROOT; };
+		E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpXMLExport_Styles.cpp; path = ../Source/Export/CZExpXMLExport_Styles.cpp; sourceTree = SOURCE_ROOT; };
+		E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpXMLWriteFacade.cpp; path = ../Source/Export/CZExpXMLWriteFacade.cpp; sourceTree = SOURCE_ROOT; };
+		E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpDocXMLExportProvider.cpp; path = ../Source/Services/CZExpDocXMLExportProvider.cpp; sourceTree = SOURCE_ROOT; };
+		E182543912A3BD8C00E9D502 /* IZExpID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IZExpID.cpp; path = ../Source/Plugin/IZExpID.cpp; sourceTree = SOURCE_ROOT; };
+		E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IZExpNoStrip.cpp; path = ../Source/Plugin/IZExpNoStrip.cpp; sourceTree = SOURCE_ROOT; };
+		E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TriggerResourceDeps.cpp; path = ../Source/Plugin/TriggerResourceDeps.cpp; sourceTree = SOURCE_ROOT; };
+		E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDKPlugInEntrypoint.cpp; path = ./sdksamples/common/SDKPlugInEntrypoint.cpp; sourceTree = InDesignSDK_Source; };
+		E182547512A3C13B00E9D502 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		E182547712A3C13B00E9D502 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InDesignModelAndUI.framework; path = ./InDesignModelAndUI.framework; sourceTree = InDesignSDK_AppDir; };
+		E1870A4D13FE593B00AEB0CF /* RedfiveExportCS5Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = RedfiveExportCS5Release.xcconfig; sourceTree = "<group>"; };
+		E1870AD613FE600D00AEB0CF /* RedfiveExport.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RedfiveExport.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZPStringUtils.cpp; path = ../../Common/Utils/ZPStringUtils.cpp; sourceTree = SOURCE_ROOT; };
+		E18750BF1352E4DE00DA7EED /* ZPStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPStringUtils.h; path = ../../Common/Utils/ZPStringUtils.h; sourceTree = SOURCE_ROOT; };
+		E1B0BF671499FC5D00918DCB /* iZineExportCS5Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iZineExportCS5Release.xcconfig; sourceTree = "<group>"; };
+		E1B0BFB81499FDDC00918DCB /* iZineExport.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iZineExport.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpGlobalData.cpp; path = ../Source/Data/CZExpGlobalData.cpp; sourceTree = SOURCE_ROOT; };
+		E1C894EC1499F21A0093E2B0 /* IZExpGlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZExpGlobalData.h; path = ../Source/Data/IZExpGlobalData.h; sourceTree = SOURCE_ROOT; };
+		E1C894FD1499F24D0093E2B0 /* CZExpGetConfigRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpGetConfigRequest.h; path = ../Source/WS/Requests/CZExpGetConfigRequest.h; sourceTree = SOURCE_ROOT; };
+		E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpGetConfigRequest.cpp; path = ../Source/WS/Requests/CZExpGetConfigRequest.cpp; sourceTree = SOURCE_ROOT; };
+		E1C895041499F2620093E2B0 /* CZExpGetConfigResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpGetConfigResponse.h; path = ../Source/WS/Responses/CZExpGetConfigResponse.h; sourceTree = SOURCE_ROOT; };
+		E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpGetConfigResponse.cpp; path = ../Source/WS/Responses/CZExpGetConfigResponse.cpp; sourceTree = SOURCE_ROOT; };
+		E1CA8F2813AF30C2006D0785 /* RedfiveExport.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RedfiveExport.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CA8F2913AF30C2006D0785 /* RVExport Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RVExport Info.plist"; sourceTree = "<group>"; };
+		E1CA8F2A13AF3142006D0785 /* RedfiveExportCS3Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = RedfiveExportCS3Release.xcconfig; sourceTree = "<group>"; };
+		E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpValidateMediaContentRequest.cpp; path = ../Source/WS/Requests/CZExpValidateMediaContentRequest.cpp; sourceTree = SOURCE_ROOT; };
+		E1CAC41F14F7CD4F0098922F /* CZExpValidateMediaContentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpValidateMediaContentRequest.h; path = ../Source/WS/Requests/CZExpValidateMediaContentRequest.h; sourceTree = SOURCE_ROOT; };
+		E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpValidateMediaContentResponse.cpp; path = ../Source/WS/Responses/CZExpValidateMediaContentResponse.cpp; sourceTree = SOURCE_ROOT; };
+		E1CAC42814F7CDCA0098922F /* CZExpValidateMediaContentResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpValidateMediaContentResponse.h; path = ../Source/WS/Responses/CZExpValidateMediaContentResponse.h; sourceTree = SOURCE_ROOT; };
+		E1CD7B6915071B5F00D1630B /* IZExp_PrefsDialog.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IZExp_PrefsDialog.fri; path = ../Resource/IZExp_PrefsDialog.fri; sourceTree = SOURCE_ROOT; };
+		E1CD7B7115071B6800D1630B /* IZExp_ExportDialog.fri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IZExp_ExportDialog.fri; path = ../Resource/IZExp_ExportDialog.fri; sourceTree = SOURCE_ROOT; };
+		E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZPDisclosureTriAngleObserver.cpp; path = ../Source/Controls/Disclosure/CZPDisclosureTriAngleObserver.cpp; sourceTree = SOURCE_ROOT; };
+		E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZPDisclosureTriAngleOptions.cpp; path = ../Source/Controls/Disclosure/CZPDisclosureTriAngleOptions.cpp; sourceTree = SOURCE_ROOT; };
+		E1CD7BB21507221800D1630B /* IZPDisclosureTriAngleOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IZPDisclosureTriAngleOptions.h; path = ../Source/Controls/Disclosure/IZPDisclosureTriAngleOptions.h; sourceTree = SOURCE_ROOT; };
+		E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpXMLExport_Articles.cpp; path = ../Source/Export/CZExpXMLExport_Articles.cpp; sourceTree = SOURCE_ROOT; };
+		E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpXMLExport_Colors.cpp; path = ../Source/Export/CZExpXMLExport_Colors.cpp; sourceTree = SOURCE_ROOT; };
+		E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpXMLExport_Paths.cpp; path = ../Source/Export/CZExpXMLExport_Paths.cpp; sourceTree = SOURCE_ROOT; };
+		E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpXMLExport_Snapshots.cpp; path = ../Source/Export/CZExpXMLExport_Snapshots.cpp; sourceTree = SOURCE_ROOT; };
+		E1D3CBAB1414C87900CB45A4 /* CZExpXMLExport_Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpXMLExport_Colors.h; path = ../SDK/Public/Utils/CZExpXMLExport_Colors.h; sourceTree = SOURCE_ROOT; };
+		E1D3CBAC1414C87900CB45A4 /* CZExpXMLExport_Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpXMLExport_Paths.h; path = ../SDK/Public/Utils/CZExpXMLExport_Paths.h; sourceTree = SOURCE_ROOT; };
+		E1D3CBAD1414C87900CB45A4 /* CZExpXMLExport_Snapshots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZExpXMLExport_Snapshots.h; path = ../SDK/Public/Utils/CZExpXMLExport_Snapshots.h; sourceTree = SOURCE_ROOT; };
+		E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CZExpErrorStringService.cpp; path = ../Source/Services/CZExpErrorStringService.cpp; sourceTree = SOURCE_ROOT; };
+		E1E4EF7D14E10319007DBA98 /* RedfiveExport.InDesignPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RedfiveExport.InDesignPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E4EF8514E10528007DBA98 /* RedfiveExportCS5.5Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = RedfiveExportCS5.5Release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E17348B312A3CD2E005A0AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17348B412A3CD2E005A0AAD /* AppKit.framework in Frameworks */,
+				E17348B512A3CD2E005A0AAD /* Carbon.framework in Frameworks */,
+				E17348B612A3CD2E005A0AAD /* libPublicPlugIn.a in Frameworks */,
+				E17348B712A3CD2E005A0AAD /* InDesignModelAndUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17DCF3A13FE3E48000FECD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17DCF3B13FE3E48000FECD2 /* AppKit.framework in Frameworks */,
+				E17DCF3C13FE3E48000FECD2 /* Carbon.framework in Frameworks */,
+				E17DCF3D13FE3E48000FECD2 /* libPublicPlugIn.a in Frameworks */,
+				E17DCF3E13FE3E48000FECD2 /* InDesignModelAndUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182539312A3B67300E9D502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182547812A3C13B00E9D502 /* AppKit.framework in Frameworks */,
+				E182547A12A3C13B00E9D502 /* Carbon.framework in Frameworks */,
+				E182546A12A3C0B600E9D502 /* libPublicPlugIn.a in Frameworks */,
+				E182547C12A3C14C00E9D502 /* InDesignModelAndUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1870ACE13FE600D00AEB0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1870ACF13FE600D00AEB0CF /* AppKit.framework in Frameworks */,
+				E1870AD013FE600D00AEB0CF /* Carbon.framework in Frameworks */,
+				E1870AD113FE600D00AEB0CF /* libPublicPlugIn.a in Frameworks */,
+				E1870AD213FE600D00AEB0CF /* InDesignModelAndUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B0BFAF1499FDDC00918DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B0BFB01499FDDC00918DCB /* AppKit.framework in Frameworks */,
+				E1B0BFB11499FDDC00918DCB /* Carbon.framework in Frameworks */,
+				E1B0BFB21499FDDC00918DCB /* libPublicPlugIn.a in Frameworks */,
+				E1B0BFB31499FDDC00918DCB /* InDesignModelAndUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CA8F2013AF30C2006D0785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA8F2113AF30C2006D0785 /* AppKit.framework in Frameworks */,
+				E1CA8F2213AF30C2006D0785 /* Carbon.framework in Frameworks */,
+				E1CA8F2313AF30C2006D0785 /* libPublicPlugIn.a in Frameworks */,
+				E1CA8F2413AF30C2006D0785 /* InDesignModelAndUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4EF7414E10319007DBA98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E4EF7514E10319007DBA98 /* AppKit.framework in Frameworks */,
+				E1E4EF7614E10319007DBA98 /* Carbon.framework in Frameworks */,
+				E1E4EF7714E10319007DBA98 /* libPublicPlugIn.a in Frameworks */,
+				E1E4EF7814E10319007DBA98 /* InDesignModelAndUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070988A613BB2E1000C62009 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				070988A813BB2E5E00C62009 /* CZExpInDnUtils.cpp */,
+				070988A913BB2E5E00C62009 /* IZExpInDnUtils.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		070F7D5E13A8936E00AEDAC3 /* Adobe */ = {
+			isa = PBXGroup;
+			children = (
+				070F7D5613A8935C00AEDAC3 /* MacFileSystemIterator.cpp */,
+				070F7D5713A8935C00AEDAC3 /* MacFileSystemIterator.h */,
+			);
+			name = Adobe;
+			sourceTree = "<group>";
+		};
+		E17E64B313A78A29006F6249 /* WS */ = {
+			isa = PBXGroup;
+			children = (
+				E17E64EF13A78A7A006F6249 /* ZExpWSTypeDefs.h */,
+				E17E64B513A78A39006F6249 /* Request */,
+				E17E64B613A78A3E006F6249 /* Response */,
+				E17E651713A78B9F006F6249 /* CZExpWSFacade.cpp */,
+				E17E651813A78B9F006F6249 /* IZExpWSFacade.h */,
+			);
+			name = WS;
+			sourceTree = "<group>";
+		};
+		E17E64B513A78A39006F6249 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E17E64B713A78A54006F6249 /* AZExpWSRequest.cpp */,
+				E17E64B813A78A54006F6249 /* AZExpWSRequest.h */,
+				E1C894FD1499F24D0093E2B0 /* CZExpGetConfigRequest.h */,
+				E1C894FE1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp */,
+				E17E64B913A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp */,
+				E17E64BA13A78A54006F6249 /* CZExpFetchTitleEditionsRequest.h */,
+				E17E64BB13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp */,
+				E17E64BC13A78A54006F6249 /* CZExpFetchTitleListRequest.h */,
+				E17E64BD13A78A54006F6249 /* CZExpUploadExportRequest.cpp */,
+				E17E64BE13A78A54006F6249 /* CZExpUploadExportRequest.h */,
+				E1CAC41E14F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp */,
+				E1CAC41F14F7CD4F0098922F /* CZExpValidateMediaContentRequest.h */,
+				E17E64BF13A78A54006F6249 /* ZExpWSRequests.h */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		E17E64B613A78A3E006F6249 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E17E64D313A78A63006F6249 /* AZExpWSResponse.cpp */,
+				E17E64D413A78A63006F6249 /* AZExpWSResponse.h */,
+				E1C895041499F2620093E2B0 /* CZExpGetConfigResponse.h */,
+				E1C895051499F2620093E2B0 /* CZExpGetConfigResponse.cpp */,
+				E17E64D513A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp */,
+				E17E64D613A78A63006F6249 /* CZExpFetchTitleEditionsResponse.h */,
+				E17E64D713A78A63006F6249 /* CZExpFetchTitleListResponse.cpp */,
+				E17E64D813A78A63006F6249 /* CZExpFetchTitleListResponse.h */,
+				E17E64D913A78A63006F6249 /* CZExpUploadExportResponse.cpp */,
+				E17E64DA13A78A63006F6249 /* CZExpUploadExportResponse.h */,
+				E1CAC42714F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp */,
+				E1CAC42814F7CDCA0098922F /* CZExpValidateMediaContentResponse.h */,
+				E17E64DB13A78A63006F6249 /* ZExpWSResponses.h */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		E17E64F413A78AD8006F6249 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E1C894EB1499F21A0093E2B0 /* CZExpGlobalData.cpp */,
+				E1C894EC1499F21A0093E2B0 /* IZExpGlobalData.h */,
+				E17E64F513A78AF4006F6249 /* CZExpServerData.cpp */,
+				E17E64F613A78AF4006F6249 /* IZExpServerData.h */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E17E64FB13A78AF9006F6249 /* PersistData */ = {
+			isa = PBXGroup;
+			children = (
+				E17E64FC13A78B12006F6249 /* CZExpPrefs.cpp */,
+				E17E64FD13A78B12006F6249 /* IZExpPrefs.h */,
+			);
+			name = PersistData;
+			sourceTree = "<group>";
+		};
+		E17E650313A78B26006F6249 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				E17E650413A78B3A006F6249 /* Export */,
+				E17E651113A78B5B006F6249 /* Prefs */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		E17E650413A78B3A006F6249 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				0718ECFA13A8C8180047B28B /* CZExpExportDlgHelper.cpp */,
+				0718ECFB13A8C8180047B28B /* IZExpExportDlgHelper.h */,
+				E17E650513A78B57006F6249 /* CZExpExportDialogController.cpp */,
+				E17E650613A78B57006F6249 /* CZExpExportDialogObserver.cpp */,
+			);
+			name = Export;
+			sourceTree = "<group>";
+		};
+		E17E651113A78B5B006F6249 /* Prefs */ = {
+			isa = PBXGroup;
+			children = (
+				E10C4769157362670048ECAF /* CZExpPrefsDialogObserver.cpp */,
+				E17E650713A78B57006F6249 /* CZExpPrefsDialogController.cpp */,
+				E17E650813A78B57006F6249 /* CZExpPrefsPanelCreator.cpp */,
+			);
+			name = Prefs;
+			sourceTree = "<group>";
+		};
+		E17E652113A78C07006F6249 /* libcurl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = libcurl;
+			sourceTree = "<group>";
+		};
+		E17E652213A78C14006F6249 /* tinyxml */ = {
+			isa = PBXGroup;
+			children = (
+				E17E652313A78C35006F6249 /* tinystr.cpp */,
+				E17E652413A78C35006F6249 /* tinystr.h */,
+				E17E652513A78C35006F6249 /* tinyxml.cpp */,
+				E17E652613A78C35006F6249 /* tinyxml.h */,
+				E17E652713A78C35006F6249 /* tinyxmlerror.cpp */,
+				E17E652813A78C35006F6249 /* tinyxmlparser.cpp */,
+			);
+			name = tinyxml;
+			sourceTree = "<group>";
+		};
+		E18252B012A3B1A200E9D502 = {
+			isa = PBXGroup;
+			children = (
+				E18252C812A3B23C00E9D502 /* Headers */,
+				E18252CA12A3B24D00E9D502 /* Resources */,
+				E18252CB12A3B27700E9D502 /* Source */,
+				E18252CC12A3B29100E9D502 /* Libraries */,
+				E182547412A3C13B00E9D502 /* Frameworks and Libraries */,
+				E18252CE12A3B2AF00E9D502 /* xcconfig */,
+				E18252CF12A3B2B900E9D502 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E18252C812A3B23C00E9D502 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E18253A912A3B94F00E9D502 /* IZExp_ActionID.h */,
+				E18253AA12A3B94F00E9D502 /* IZExp_ClassDefID.h */,
+				E18253AB12A3B94F00E9D502 /* IZExp_StringKeys.h */,
+				E18253AC12A3B94F00E9D502 /* IZExpID.h */,
+				E18253AD12A3B94F00E9D502 /* ZExpScriptingDefs.h */,
+				E18253A712A3B92A00E9D502 /* iZineExpVersion.h */,
+				E18253A312A3B91200E9D502 /* IZExpFactoryList.h */,
+				E18253A412A3B91200E9D502 /* IZExpFactoryList_Auto.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		E18252CA12A3B24D00E9D502 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD7B7A15071B6C00D1630B /* Dialogs */,
+				E18253B312A3B96900E9D502 /* Translation */,
+				E18253BC12A3B9BE00E9D502 /* IZExp Addins.fri */,
+				E18253BD12A3B9BE00E9D502 /* IZExp Aliases.fri */,
+				E18253BE12A3B9BE00E9D502 /* IZExp ClassDefinitions.fri */,
+				E18253BF12A3B9BE00E9D502 /* IZExp ClassDefinitions_Auto.fri */,
+				E18253C012A3B9BE00E9D502 /* IZExp Images.fri */,
+				E18253C112A3B9BE00E9D502 /* IZExp Menu.fri */,
+				E18253C212A3B9BE00E9D502 /* IZExp Schema.fri */,
+				E18253C312A3B9BE00E9D502 /* IZExp Scripting.fri */,
+				E18253C412A3B9BE00E9D502 /* IZExp Strings.fri */,
+				E18253C512A3B9BE00E9D502 /* IZExp Version.fri */,
+				E18253C612A3B9BE00E9D502 /* IZExp.fr */,
+				E173482312A3C648005A0AAD /* IZExp.fr.rsrc */,
+				E18253B412A3B99000E9D502 /* Info.plist */,
+				E1CA8F2913AF30C2006D0785 /* RVExport Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E18252CB12A3B27700E9D502 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E18253F512A3BB3D00E9D502 /* App */,
+				E18253F412A3BB3700E9D502 /* Commands */,
+				E18253F112A3BB1D00E9D502 /* Common */,
+				E17E64F413A78AD8006F6249 /* Data */,
+				E1CD7BAF150721F700D1630B /* Controls */,
+				E17E650313A78B26006F6249 /* Dialogs */,
+				E182541E12A3BBD100E9D502 /* Export */,
+				E18253EE12A3BB0100E9D502 /* External */,
+				E17E64FB13A78AF9006F6249 /* PersistData */,
+				E18253ED12A3BAE300E9D502 /* Plugin */,
+				070988A613BB2E1000C62009 /* Utils */,
+				E18253EC12A3BADB00E9D502 /* Services */,
+				E17E64B313A78A29006F6249 /* WS */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E18252CC12A3B29100E9D502 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E182538F12A3B63200E9D502 /* libPublicPlugIn.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		E18252CE12A3B2AF00E9D502 /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				E182539B12A3B6BA00E9D502 /* InDesignCommon.xcconfig */,
+				E182539C12A3B6BA00E9D502 /* InDesignCommonCS3.xcconfig */,
+				E17DCF0313FE38F7000FECD2 /* InDesignCommonCS5.xcconfig */,
+				E182539D12A3B6BA00E9D502 /* InDnLocalPaths.xcconfig */,
+				E18252C512A3B22E00E9D502 /* iZineExport.xcconfig */,
+				E18252C612A3B22E00E9D502 /* iZineExportCS3Debug.xcconfig */,
+				E17DCF0413FE3DB2000FECD2 /* iZineExportCS5Debug.xcconfig */,
+				E18252C712A3B22E00E9D502 /* iZineExportCS3Release.xcconfig */,
+				E1B0BF671499FC5D00918DCB /* iZineExportCS5Release.xcconfig */,
+				E1CA8F2A13AF3142006D0785 /* RedfiveExportCS3Release.xcconfig */,
+				E1870A4D13FE593B00AEB0CF /* RedfiveExportCS5Release.xcconfig */,
+				E1E4EF8514E10528007DBA98 /* RedfiveExportCS5.5Release.xcconfig */,
+			);
+			name = xcconfig;
+			sourceTree = "<group>";
+		};
+		E18252CF12A3B2B900E9D502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E182539512A3B67300E9D502 /* iZineExport.InDesignPlugin */,
+				E17348BB12A3CD2E005A0AAD /* iZineExport.InDesignPlugin */,
+				E1CA8F2813AF30C2006D0785 /* RedfiveExport.InDesignPlugin */,
+				E17DCF4213FE3E48000FECD2 /* iZineExport.InDesignPlugin */,
+				E1870AD613FE600D00AEB0CF /* RedfiveExport.InDesignPlugin */,
+				E1B0BFB81499FDDC00918DCB /* iZineExport.InDesignPlugin */,
+				E1E4EF7D14E10319007DBA98 /* RedfiveExport.InDesignPlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E18253B312A3B96900E9D502 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				E18253B612A3B9AC00E9D502 /* IZExp_enUS.fri */,
+				E18253B712A3B9AC00E9D502 /* IZExp_jaJP.fri */,
+				E18253B812A3B9AC00E9D502 /* IZExp_nlNL.fri */,
+			);
+			name = Translation;
+			sourceTree = "<group>";
+		};
+		E18253EC12A3BADB00E9D502 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E1DF6C5614E54AB600F5EA31 /* CZExpErrorStringService.cpp */,
+				E182543712A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		E18253ED12A3BAE300E9D502 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				E182543912A3BD8C00E9D502 /* IZExpID.cpp */,
+				E182543A12A3BD8C00E9D502 /* IZExpNoStrip.cpp */,
+				E182543B12A3BD8C00E9D502 /* TriggerResourceDeps.cpp */,
+				E182543F12A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		E18253EE12A3BB0100E9D502 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				070F7D5E13A8936E00AEDAC3 /* Adobe */,
+				E17E652113A78C07006F6249 /* libcurl */,
+				E17E652213A78C14006F6249 /* tinyxml */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		E18253EF12A3BB0C00E9D502 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E18253F012A3BB1300E9D502 /* Logs */,
+				E182542312A3BC5D00E9D502 /* StInDesignUtils.cpp */,
+				E182542412A3BC5D00E9D502 /* StInDesignUtils.h */,
+				E182542512A3BC5D00E9D502 /* StInDnXmlUtils.cpp */,
+				E182542612A3BC5D00E9D502 /* StInDnXmlUtils.h */,
+				E182542712A3BC5D00E9D502 /* StUtils.cpp */,
+				E182542812A3BC5D00E9D502 /* StUtils.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E18253F012A3BB1300E9D502 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				E182542F12A3BC7A00E9D502 /* iZPLog.cpp */,
+				E182543012A3BC7A00E9D502 /* iZPLog.h */,
+			);
+			name = Logs;
+			sourceTree = "<group>";
+		};
+		E18253F112A3BB1D00E9D502 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E18253F312A3BB2F00E9D502 /* IDUtils */,
+				E18253F212A3BB2900E9D502 /* String */,
+				E18253EF12A3BB0C00E9D502 /* Utils */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		E18253F212A3BB2900E9D502 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				E18750BE1352E4DE00DA7EED /* ZPStringUtils.cpp */,
+				E18750BF1352E4DE00DA7EED /* ZPStringUtils.h */,
+				E182541F12A3BC3700E9D502 /* ZPString.cpp */,
+				E182542012A3BC3700E9D502 /* ZPString.h */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		E18253F312A3BB2F00E9D502 /* IDUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E18253FE12A3BB9800E9D502 /* CZExpDocUtils.cpp */,
+				E18253FF12A3BB9800E9D502 /* CZExpFileUtils.cpp */,
+				E182540012A3BB9800E9D502 /* CZExpPageItemUtils.cpp */,
+				E182540112A3BB9800E9D502 /* CZExpStoryUtils.cpp */,
+				E182540212A3BB9800E9D502 /* CZExpTextFrameUtils.cpp */,
+				E182540312A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp */,
+				E182540A12A3BBAB00E9D502 /* CZExpXMLAttrUtils.h */,
+				E182540C12A3BBAB00E9D502 /* IZExpDocUtils.h */,
+				E182540D12A3BBAB00E9D502 /* IZExpFileUtils.h */,
+				E182540E12A3BBAB00E9D502 /* IZExpPageItemUtils.h */,
+				E182540F12A3BBAB00E9D502 /* IZExpStoryUtils.h */,
+				E182541012A3BBAB00E9D502 /* IZExpTextFrameUtils.h */,
+			);
+			name = IDUtils;
+			sourceTree = "<group>";
+		};
+		E18253F412A3BB3700E9D502 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				E17E651313A78B83006F6249 /* CZExpSavePrefsCmd.cpp */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		E18253F512A3BB3D00E9D502 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E18253FC12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp */,
+				E18253F612A3BB5500E9D502 /* CZExpStartupShutdown.cpp */,
+				E18253F712A3BB5500E9D502 /* ZExpConstants.cpp */,
+				E18253FA12A3BB6500E9D502 /* ZExpConstants.h */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E182541E12A3BBD100E9D502 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD8F081574D05C007E982A /* CZExpXMLExport_Articles.cpp */,
+				E182543312A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp */,
+				E182540B12A3BBAB00E9D502 /* CZExpXMLExport_Styles.h */,
+				E1D3CB991414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp */,
+				E1D3CBAB1414C87900CB45A4 /* CZExpXMLExport_Colors.h */,
+				E1D3CB9A1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp */,
+				E1D3CBAC1414C87900CB45A4 /* CZExpXMLExport_Paths.h */,
+				E1D3CB9B1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp */,
+				E1D3CBAD1414C87900CB45A4 /* CZExpXMLExport_Snapshots.h */,
+				E182543412A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp */,
+				E182541112A3BBAB00E9D502 /* IZExpXMLWriteFacade.h */,
+				E182541212A3BBAB00E9D502 /* ZExpStyleAttrConstants.h */,
+				E182541312A3BBAB00E9D502 /* ZExpXMLConstants.h */,
+			);
+			name = Export;
+			sourceTree = "<group>";
+		};
+		E182547412A3C13B00E9D502 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E182547B12A3C14C00E9D502 /* InDesignModelAndUI.framework */,
+				E182547512A3C13B00E9D502 /* AppKit.framework */,
+				E182547712A3C13B00E9D502 /* Carbon.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		E1CD7B7A15071B6C00D1630B /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD7B6915071B5F00D1630B /* IZExp_PrefsDialog.fri */,
+				E1CD7B7115071B6800D1630B /* IZExp_ExportDialog.fri */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		E1CD7BAF150721F700D1630B /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD7BC11507221D00D1630B /* Disclosure */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		E1CD7BC11507221D00D1630B /* Disclosure */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD7BB01507221800D1630B /* CZPDisclosureTriAngleObserver.cpp */,
+				E1CD7BB11507221800D1630B /* CZPDisclosureTriAngleOptions.cpp */,
+				E1CD7BB21507221800D1630B /* IZPDisclosureTriAngleOptions.h */,
+			);
+			name = Disclosure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E173489712A3CD2E005A0AAD /* iZine Export CS3 Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17348B912A3CD2E005A0AAD /* Build configuration list for PBXNativeTarget "iZine Export CS3 Release" */;
+			buildPhases = (
+				E173489912A3CD2E005A0AAD /* Resources */,
+				E173489A12A3CD2E005A0AAD /* Sources */,
+				E17348B112A3CD2E005A0AAD /* Rez */,
+				E17348B312A3CD2E005A0AAD /* Frameworks */,
+			);
+			buildRules = (
+				E17348B812A3CD2E005A0AAD /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "iZine Export CS3 Release";
+			productName = "CS3 Debug";
+			productReference = E17348BB12A3CD2E005A0AAD /* iZineExport.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		E17DCF0613FE3E48000FECD2 /* CS5 Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17DCF4013FE3E48000FECD2 /* Build configuration list for PBXNativeTarget "CS5 Debug" */;
+			buildPhases = (
+				E17DCF0813FE3E48000FECD2 /* Resources */,
+				E17DCF0913FE3E48000FECD2 /* Sources */,
+				E17DCF3813FE3E48000FECD2 /* Rez */,
+				E17DCF3A13FE3E48000FECD2 /* Frameworks */,
+				E17DCF4713FE3EB4000FECD2 /* Copy Resource Files to plugin folder */,
+			);
+			buildRules = (
+				E17DCF3F13FE3E48000FECD2 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "CS5 Debug";
+			productName = "CS3 Debug";
+			productReference = E17DCF4213FE3E48000FECD2 /* iZineExport.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		E182539412A3B67300E9D502 /* CS3 Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E182539912A3B67300E9D502 /* Build configuration list for PBXNativeTarget "CS3 Debug" */;
+			buildPhases = (
+				E182539112A3B67300E9D502 /* Resources */,
+				E182539212A3B67300E9D502 /* Sources */,
+				E182547F12A3C19300E9D502 /* Rez */,
+				E182539312A3B67300E9D502 /* Frameworks */,
+			);
+			buildRules = (
+				E18253A112A3B80500E9D502 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "CS3 Debug";
+			productName = "CS3 Debug";
+			productReference = E182539512A3B67300E9D502 /* iZineExport.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1870A9913FE600D00AEB0CF /* Redfive Export CS5 Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1870AD413FE600D00AEB0CF /* Build configuration list for PBXNativeTarget "Redfive Export CS5 Release" */;
+			buildPhases = (
+				E1870A9B13FE600D00AEB0CF /* Resources */,
+				E1870A9D13FE600D00AEB0CF /* Sources */,
+				E1870ACC13FE600D00AEB0CF /* Rez */,
+				E1870ACE13FE600D00AEB0CF /* Frameworks */,
+				E13063FA13FE75B200EB832E /* Copy Resource Files to plugin folder */,
+			);
+			buildRules = (
+				E1870AD313FE600D00AEB0CF /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "Redfive Export CS5 Release";
+			productName = "CS3 Debug";
+			productReference = E1870AD613FE600D00AEB0CF /* RedfiveExport.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1B0BF751499FDDC00918DCB /* iZine Export CS5 Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1B0BFB61499FDDC00918DCB /* Build configuration list for PBXNativeTarget "iZine Export CS5 Release" */;
+			buildPhases = (
+				E1B0BF761499FDDC00918DCB /* Resources */,
+				E1B0BF781499FDDC00918DCB /* Sources */,
+				E1B0BFAD1499FDDC00918DCB /* Rez */,
+				E1B0BFAF1499FDDC00918DCB /* Frameworks */,
+				E1B0BFB41499FDDC00918DCB /* Copy Resource Files to plugin folder */,
+			);
+			buildRules = (
+				E1B0BFB51499FDDC00918DCB /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "iZine Export CS5 Release";
+			productName = "CS3 Debug";
+			productReference = E1B0BFB81499FDDC00918DCB /* iZineExport.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1CA8EED13AF30C2006D0785 /* Redfive Export CS3 Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1CA8F2613AF30C2006D0785 /* Build configuration list for PBXNativeTarget "Redfive Export CS3 Release" */;
+			buildPhases = (
+				E1CA8EEF13AF30C2006D0785 /* Resources */,
+				E1CA8EF013AF30C2006D0785 /* Sources */,
+				E1CA8F1E13AF30C2006D0785 /* Rez */,
+				E1CA8F2013AF30C2006D0785 /* Frameworks */,
+			);
+			buildRules = (
+				E1CA8F2513AF30C2006D0785 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "Redfive Export CS3 Release";
+			productName = "CS3 Debug";
+			productReference = E1CA8F2813AF30C2006D0785 /* RedfiveExport.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1E4EF3B14E10319007DBA98 /* Redfive Export CS5.5 Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E4EF7B14E10319007DBA98 /* Build configuration list for PBXNativeTarget "Redfive Export CS5.5 Release" */;
+			buildPhases = (
+				E1E4EF3C14E10319007DBA98 /* Resources */,
+				E1E4EF3D14E10319007DBA98 /* Sources */,
+				E1E4EF7214E10319007DBA98 /* Rez */,
+				E1E4EF7414E10319007DBA98 /* Frameworks */,
+				E1E4EF7914E10319007DBA98 /* Copy Resource Files to plugin folder */,
+			);
+			buildRules = (
+				E1E4EF7A14E10319007DBA98 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "Redfive Export CS5.5 Release";
+			productName = "CS3 Debug";
+			productReference = E1E4EF7D14E10319007DBA98 /* RedfiveExport.InDesignPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E18252B212A3B1A200E9D502 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E18252B512A3B1A200E9D502 /* Build configuration list for PBXProject "iZineExport" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = E18252B012A3B1A200E9D502;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E182539412A3B67300E9D502 /* CS3 Debug */,
+				E17DCF0613FE3E48000FECD2 /* CS5 Debug */,
+				E173489712A3CD2E005A0AAD /* iZine Export CS3 Release */,
+				E1B0BF751499FDDC00918DCB /* iZine Export CS5 Release */,
+				E1CA8EED13AF30C2006D0785 /* Redfive Export CS3 Release */,
+				E1870A9913FE600D00AEB0CF /* Redfive Export CS5 Release */,
+				E1E4EF3B14E10319007DBA98 /* Redfive Export CS5.5 Release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E173489912A3CD2E005A0AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17DCF0813FE3E48000FECD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182539112A3B67300E9D502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1870A9B13FE600D00AEB0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B0BF761499FDDC00918DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CA8EEF13AF30C2006D0785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4EF3C14E10319007DBA98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		E17348B112A3CD2E005A0AAD /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17348B212A3CD2E005A0AAD /* IZExp.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17DCF3813FE3E48000FECD2 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17DCF3913FE3E48000FECD2 /* IZExp.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182547F12A3C19300E9D502 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E173482412A3C648005A0AAD /* IZExp.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1870ACC13FE600D00AEB0CF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1870ACD13FE600D00AEB0CF /* IZExp.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B0BFAD1499FDDC00918DCB /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B0BFAE1499FDDC00918DCB /* IZExp.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CA8F1E13AF30C2006D0785 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA8F1F13AF30C2006D0785 /* IZExp.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4EF7214E10319007DBA98 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E4EF7314E10319007DBA98 /* IZExp.fr.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E13063FA13FE75B200EB832E /* Copy Resource Files to plugin folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Resource Files to plugin folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $InDesignSDKDir/build/mac/packagescripts/copyResources.sh;
+		};
+		E17DCF4713FE3EB4000FECD2 /* Copy Resource Files to plugin folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Copy resource files to plugin directory";
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Resource Files to plugin folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $InDesignSDKDir/build/mac/packagescripts/copyResources.sh;
+		};
+		E1B0BFB41499FDDC00918DCB /* Copy Resource Files to plugin folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Resource Files to plugin folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $InDesignSDKDir/build/mac/packagescripts/copyResources.sh;
+		};
+		E1E4EF7914E10319007DBA98 /* Copy Resource Files to plugin folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Resource Files to plugin folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $InDesignSDKDir/build/mac/packagescripts/copyResources.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E173489A12A3CD2E005A0AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E173489B12A3CD2E005A0AAD /* IZExp.fr in Sources */,
+				E173489C12A3CD2E005A0AAD /* CZExpStartupShutdown.cpp in Sources */,
+				E173489D12A3CD2E005A0AAD /* ZExpConstants.cpp in Sources */,
+				E173489E12A3CD2E005A0AAD /* CZExpAppActionComponent.cpp in Sources */,
+				E173489F12A3CD2E005A0AAD /* CZExpDocUtils.cpp in Sources */,
+				E17348A012A3CD2E005A0AAD /* CZExpFileUtils.cpp in Sources */,
+				E17348A112A3CD2E005A0AAD /* CZExpPageItemUtils.cpp in Sources */,
+				E17348A212A3CD2E005A0AAD /* CZExpStoryUtils.cpp in Sources */,
+				E17348A312A3CD2E005A0AAD /* CZExpTextFrameUtils.cpp in Sources */,
+				E17348A412A3CD2E005A0AAD /* CZExpXMLAttrUtils.cpp in Sources */,
+				E17348A512A3CD2E005A0AAD /* ZPString.cpp in Sources */,
+				E17348A612A3CD2E005A0AAD /* StInDesignUtils.cpp in Sources */,
+				E17348A712A3CD2E005A0AAD /* StInDnXmlUtils.cpp in Sources */,
+				E17348A812A3CD2E005A0AAD /* StUtils.cpp in Sources */,
+				E17348A912A3CD2E005A0AAD /* iZPLog.cpp in Sources */,
+				E17348AA12A3CD2E005A0AAD /* CZExpXMLExport_Styles.cpp in Sources */,
+				E17348AB12A3CD2E005A0AAD /* CZExpXMLWriteFacade.cpp in Sources */,
+				E17348AC12A3CD2E005A0AAD /* CZExpDocXMLExportProvider.cpp in Sources */,
+				E17348AD12A3CD2E005A0AAD /* IZExpID.cpp in Sources */,
+				E17348AE12A3CD2E005A0AAD /* IZExpNoStrip.cpp in Sources */,
+				E17348AF12A3CD2E005A0AAD /* TriggerResourceDeps.cpp in Sources */,
+				E17348B012A3CD2E005A0AAD /* SDKPlugInEntrypoint.cpp in Sources */,
+				E1E6B8911370109700895FF3 /* ZPStringUtils.cpp in Sources */,
+				E17E64C913A78A54006F6249 /* AZExpWSRequest.cpp in Sources */,
+				E17E64CB13A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp in Sources */,
+				E17E64CD13A78A54006F6249 /* CZExpFetchTitleListRequest.cpp in Sources */,
+				E17E64CF13A78A54006F6249 /* CZExpUploadExportRequest.cpp in Sources */,
+				E17E64E513A78A63006F6249 /* AZExpWSResponse.cpp in Sources */,
+				E17E64E713A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp in Sources */,
+				E17E64E913A78A63006F6249 /* CZExpFetchTitleListResponse.cpp in Sources */,
+				E17E64EB13A78A63006F6249 /* CZExpUploadExportResponse.cpp in Sources */,
+				E17E64F913A78AF4006F6249 /* CZExpServerData.cpp in Sources */,
+				E17E650013A78B12006F6249 /* CZExpPrefs.cpp in Sources */,
+				E17E650D13A78B57006F6249 /* CZExpExportDialogController.cpp in Sources */,
+				E17E650E13A78B57006F6249 /* CZExpExportDialogObserver.cpp in Sources */,
+				E17E650F13A78B57006F6249 /* CZExpPrefsDialogController.cpp in Sources */,
+				E17E651013A78B57006F6249 /* CZExpPrefsPanelCreator.cpp in Sources */,
+				E17E651513A78B83006F6249 /* CZExpSavePrefsCmd.cpp in Sources */,
+				E17E651B13A78B9F006F6249 /* CZExpWSFacade.cpp in Sources */,
+				E17E652F13A78C35006F6249 /* tinystr.cpp in Sources */,
+				E17E653113A78C35006F6249 /* tinyxml.cpp in Sources */,
+				E17E653313A78C35006F6249 /* tinyxmlerror.cpp in Sources */,
+				E17E653413A78C35006F6249 /* tinyxmlparser.cpp in Sources */,
+				070F7D5A13A8935C00AEDAC3 /* MacFileSystemIterator.cpp in Sources */,
+				0718ECFE13A8C8180047B28B /* CZExpExportDlgHelper.cpp in Sources */,
+				070988AC13BB2E5E00C62009 /* CZExpInDnUtils.cpp in Sources */,
+				E1D3CBA51414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */,
+				E1D3CBA61414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */,
+				E1D3CBA71414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */,
+				E1C894F01499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */,
+				E1C895021499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */,
+				E1C895091499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */,
+				E1DF6C5A14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */,
+				E1CAC42314F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */,
+				E1CAC42C14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */,
+				E1CD7BB91507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */,
+				E1CD7BBA1507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */,
+				E10C476D157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */,
+				E1CD8F0C1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17DCF0913FE3E48000FECD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17DCF0A13FE3E48000FECD2 /* IZExp.fr in Sources */,
+				E17DCF0B13FE3E48000FECD2 /* CZExpStartupShutdown.cpp in Sources */,
+				E17DCF0C13FE3E48000FECD2 /* ZExpConstants.cpp in Sources */,
+				E17DCF0D13FE3E48000FECD2 /* CZExpAppActionComponent.cpp in Sources */,
+				E17DCF0E13FE3E48000FECD2 /* CZExpDocUtils.cpp in Sources */,
+				E17DCF0F13FE3E48000FECD2 /* CZExpFileUtils.cpp in Sources */,
+				E17DCF1013FE3E48000FECD2 /* CZExpPageItemUtils.cpp in Sources */,
+				E17DCF1113FE3E48000FECD2 /* CZExpStoryUtils.cpp in Sources */,
+				E17DCF1213FE3E48000FECD2 /* CZExpTextFrameUtils.cpp in Sources */,
+				E17DCF1313FE3E48000FECD2 /* CZExpXMLAttrUtils.cpp in Sources */,
+				E17DCF1413FE3E48000FECD2 /* ZPString.cpp in Sources */,
+				E17DCF1513FE3E48000FECD2 /* StInDesignUtils.cpp in Sources */,
+				E17DCF1613FE3E48000FECD2 /* StInDnXmlUtils.cpp in Sources */,
+				E17DCF1713FE3E48000FECD2 /* StUtils.cpp in Sources */,
+				E17DCF1813FE3E48000FECD2 /* iZPLog.cpp in Sources */,
+				E17DCF1913FE3E48000FECD2 /* CZExpXMLExport_Styles.cpp in Sources */,
+				E17DCF1A13FE3E48000FECD2 /* CZExpXMLWriteFacade.cpp in Sources */,
+				E17DCF1B13FE3E48000FECD2 /* CZExpDocXMLExportProvider.cpp in Sources */,
+				E17DCF1C13FE3E48000FECD2 /* IZExpID.cpp in Sources */,
+				E17DCF1D13FE3E48000FECD2 /* IZExpNoStrip.cpp in Sources */,
+				E17DCF1E13FE3E48000FECD2 /* TriggerResourceDeps.cpp in Sources */,
+				E17DCF1F13FE3E48000FECD2 /* SDKPlugInEntrypoint.cpp in Sources */,
+				E17DCF2013FE3E48000FECD2 /* ZPStringUtils.cpp in Sources */,
+				E17DCF2113FE3E48000FECD2 /* AZExpWSRequest.cpp in Sources */,
+				E17DCF2213FE3E48000FECD2 /* CZExpFetchTitleEditionsRequest.cpp in Sources */,
+				E17DCF2313FE3E48000FECD2 /* CZExpFetchTitleListRequest.cpp in Sources */,
+				E17DCF2413FE3E48000FECD2 /* CZExpUploadExportRequest.cpp in Sources */,
+				E17DCF2513FE3E48000FECD2 /* AZExpWSResponse.cpp in Sources */,
+				E17DCF2613FE3E48000FECD2 /* CZExpFetchTitleEditionsResponse.cpp in Sources */,
+				E17DCF2713FE3E48000FECD2 /* CZExpFetchTitleListResponse.cpp in Sources */,
+				E17DCF2813FE3E48000FECD2 /* CZExpUploadExportResponse.cpp in Sources */,
+				E17DCF2913FE3E48000FECD2 /* CZExpServerData.cpp in Sources */,
+				E17DCF2A13FE3E48000FECD2 /* CZExpPrefs.cpp in Sources */,
+				E17DCF2B13FE3E48000FECD2 /* CZExpExportDialogController.cpp in Sources */,
+				E17DCF2C13FE3E48000FECD2 /* CZExpExportDialogObserver.cpp in Sources */,
+				E17DCF2D13FE3E48000FECD2 /* CZExpPrefsDialogController.cpp in Sources */,
+				E17DCF2E13FE3E48000FECD2 /* CZExpPrefsPanelCreator.cpp in Sources */,
+				E17DCF2F13FE3E48000FECD2 /* CZExpSavePrefsCmd.cpp in Sources */,
+				E17DCF3013FE3E48000FECD2 /* CZExpWSFacade.cpp in Sources */,
+				E17DCF3113FE3E48000FECD2 /* tinystr.cpp in Sources */,
+				E17DCF3213FE3E48000FECD2 /* tinyxml.cpp in Sources */,
+				E17DCF3313FE3E48000FECD2 /* tinyxmlerror.cpp in Sources */,
+				E17DCF3413FE3E48000FECD2 /* tinyxmlparser.cpp in Sources */,
+				E17DCF3513FE3E48000FECD2 /* MacFileSystemIterator.cpp in Sources */,
+				E17DCF3613FE3E48000FECD2 /* CZExpExportDlgHelper.cpp in Sources */,
+				E17DCF3713FE3E48000FECD2 /* CZExpInDnUtils.cpp in Sources */,
+				E1D3CBA21414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */,
+				E1D3CBA31414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */,
+				E1D3CBA41414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */,
+				E1C894EF1499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */,
+				E1C895011499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */,
+				E1C895081499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */,
+				E1DF6C5914E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */,
+				E1CAC42214F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */,
+				E1CAC42B14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */,
+				E1CD7BB71507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */,
+				E1CD7BB81507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */,
+				E10C476C157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */,
+				E1CD8F0B1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182539212A3B67300E9D502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18253D112A3B9BE00E9D502 /* IZExp.fr in Sources */,
+				E18253F812A3BB5500E9D502 /* CZExpStartupShutdown.cpp in Sources */,
+				E18253F912A3BB5500E9D502 /* ZExpConstants.cpp in Sources */,
+				E18253FD12A3BB7D00E9D502 /* CZExpAppActionComponent.cpp in Sources */,
+				E182540412A3BB9800E9D502 /* CZExpDocUtils.cpp in Sources */,
+				E182540512A3BB9800E9D502 /* CZExpFileUtils.cpp in Sources */,
+				E182540612A3BB9800E9D502 /* CZExpPageItemUtils.cpp in Sources */,
+				E182540712A3BB9800E9D502 /* CZExpStoryUtils.cpp in Sources */,
+				E182540812A3BB9800E9D502 /* CZExpTextFrameUtils.cpp in Sources */,
+				E182540912A3BB9800E9D502 /* CZExpXMLAttrUtils.cpp in Sources */,
+				E182542112A3BC3700E9D502 /* ZPString.cpp in Sources */,
+				E182542912A3BC5D00E9D502 /* StInDesignUtils.cpp in Sources */,
+				E182542B12A3BC5D00E9D502 /* StInDnXmlUtils.cpp in Sources */,
+				E182542D12A3BC5D00E9D502 /* StUtils.cpp in Sources */,
+				E182543112A3BC7A00E9D502 /* iZPLog.cpp in Sources */,
+				E182543512A3BD2D00E9D502 /* CZExpXMLExport_Styles.cpp in Sources */,
+				E182543612A3BD2D00E9D502 /* CZExpXMLWriteFacade.cpp in Sources */,
+				E182543812A3BD7B00E9D502 /* CZExpDocXMLExportProvider.cpp in Sources */,
+				E182543C12A3BD8C00E9D502 /* IZExpID.cpp in Sources */,
+				E182543D12A3BD8C00E9D502 /* IZExpNoStrip.cpp in Sources */,
+				E182543E12A3BD8C00E9D502 /* TriggerResourceDeps.cpp in Sources */,
+				E182544012A3BD9B00E9D502 /* SDKPlugInEntrypoint.cpp in Sources */,
+				E18750C01352E4DE00DA7EED /* ZPStringUtils.cpp in Sources */,
+				E17E64C013A78A54006F6249 /* AZExpWSRequest.cpp in Sources */,
+				E17E64C213A78A54006F6249 /* CZExpFetchTitleEditionsRequest.cpp in Sources */,
+				E17E64C413A78A54006F6249 /* CZExpFetchTitleListRequest.cpp in Sources */,
+				E17E64C613A78A54006F6249 /* CZExpUploadExportRequest.cpp in Sources */,
+				E17E64DC13A78A63006F6249 /* AZExpWSResponse.cpp in Sources */,
+				E17E64DE13A78A63006F6249 /* CZExpFetchTitleEditionsResponse.cpp in Sources */,
+				E17E64E013A78A63006F6249 /* CZExpFetchTitleListResponse.cpp in Sources */,
+				E17E64E213A78A63006F6249 /* CZExpUploadExportResponse.cpp in Sources */,
+				E17E64F713A78AF4006F6249 /* CZExpServerData.cpp in Sources */,
+				E17E64FE13A78B12006F6249 /* CZExpPrefs.cpp in Sources */,
+				E17E650913A78B57006F6249 /* CZExpExportDialogController.cpp in Sources */,
+				E17E650A13A78B57006F6249 /* CZExpExportDialogObserver.cpp in Sources */,
+				E17E650B13A78B57006F6249 /* CZExpPrefsDialogController.cpp in Sources */,
+				E17E650C13A78B57006F6249 /* CZExpPrefsPanelCreator.cpp in Sources */,
+				E17E651413A78B83006F6249 /* CZExpSavePrefsCmd.cpp in Sources */,
+				E17E651913A78B9F006F6249 /* CZExpWSFacade.cpp in Sources */,
+				E17E652913A78C35006F6249 /* tinystr.cpp in Sources */,
+				E17E652B13A78C35006F6249 /* tinyxml.cpp in Sources */,
+				E17E652D13A78C35006F6249 /* tinyxmlerror.cpp in Sources */,
+				E17E652E13A78C35006F6249 /* tinyxmlparser.cpp in Sources */,
+				070F7D5813A8935C00AEDAC3 /* MacFileSystemIterator.cpp in Sources */,
+				0718ECFC13A8C8180047B28B /* CZExpExportDlgHelper.cpp in Sources */,
+				070988AA13BB2E5E00C62009 /* CZExpInDnUtils.cpp in Sources */,
+				E1D3CB9F1414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */,
+				E1D3CBA01414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */,
+				E1D3CBA11414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */,
+				E1C894EE1499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */,
+				E1C895001499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */,
+				E1C895071499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */,
+				E1DF6C5814E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */,
+				E1CAC42114F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */,
+				E1CAC42A14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */,
+				E1CD7BB51507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */,
+				E1CD7BB61507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */,
+				E10C476B157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */,
+				E1CD8F0A1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1870A9D13FE600D00AEB0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1870A9E13FE600D00AEB0CF /* IZExp.fr in Sources */,
+				E1870A9F13FE600D00AEB0CF /* CZExpStartupShutdown.cpp in Sources */,
+				E1870AA013FE600D00AEB0CF /* ZExpConstants.cpp in Sources */,
+				E1870AA113FE600D00AEB0CF /* CZExpAppActionComponent.cpp in Sources */,
+				E1870AA213FE600D00AEB0CF /* CZExpDocUtils.cpp in Sources */,
+				E1870AA313FE600D00AEB0CF /* CZExpFileUtils.cpp in Sources */,
+				E1870AA413FE600D00AEB0CF /* CZExpPageItemUtils.cpp in Sources */,
+				E1870AA513FE600D00AEB0CF /* CZExpStoryUtils.cpp in Sources */,
+				E1870AA613FE600D00AEB0CF /* CZExpTextFrameUtils.cpp in Sources */,
+				E1870AA713FE600D00AEB0CF /* CZExpXMLAttrUtils.cpp in Sources */,
+				E1870AA813FE600D00AEB0CF /* ZPString.cpp in Sources */,
+				E1870AA913FE600D00AEB0CF /* StInDesignUtils.cpp in Sources */,
+				E1870AAA13FE600D00AEB0CF /* StInDnXmlUtils.cpp in Sources */,
+				E1870AAB13FE600D00AEB0CF /* StUtils.cpp in Sources */,
+				E1870AAC13FE600D00AEB0CF /* iZPLog.cpp in Sources */,
+				E1870AAD13FE600D00AEB0CF /* CZExpXMLExport_Styles.cpp in Sources */,
+				E1870AAE13FE600D00AEB0CF /* CZExpXMLWriteFacade.cpp in Sources */,
+				E1870AAF13FE600D00AEB0CF /* CZExpDocXMLExportProvider.cpp in Sources */,
+				E1870AB013FE600D00AEB0CF /* IZExpID.cpp in Sources */,
+				E1870AB113FE600D00AEB0CF /* IZExpNoStrip.cpp in Sources */,
+				E1870AB213FE600D00AEB0CF /* TriggerResourceDeps.cpp in Sources */,
+				E1870AB313FE600D00AEB0CF /* SDKPlugInEntrypoint.cpp in Sources */,
+				E1870AB413FE600D00AEB0CF /* ZPStringUtils.cpp in Sources */,
+				E1870AB513FE600D00AEB0CF /* AZExpWSRequest.cpp in Sources */,
+				E1870AB613FE600D00AEB0CF /* CZExpFetchTitleEditionsRequest.cpp in Sources */,
+				E1870AB713FE600D00AEB0CF /* CZExpFetchTitleListRequest.cpp in Sources */,
+				E1870AB813FE600D00AEB0CF /* CZExpUploadExportRequest.cpp in Sources */,
+				E1870AB913FE600D00AEB0CF /* AZExpWSResponse.cpp in Sources */,
+				E1870ABA13FE600D00AEB0CF /* CZExpFetchTitleEditionsResponse.cpp in Sources */,
+				E1870ABB13FE600D00AEB0CF /* CZExpFetchTitleListResponse.cpp in Sources */,
+				E1870ABC13FE600D00AEB0CF /* CZExpUploadExportResponse.cpp in Sources */,
+				E1870ABD13FE600D00AEB0CF /* CZExpServerData.cpp in Sources */,
+				E1870ABE13FE600D00AEB0CF /* CZExpPrefs.cpp in Sources */,
+				E1870ABF13FE600D00AEB0CF /* CZExpExportDialogController.cpp in Sources */,
+				E1870AC013FE600D00AEB0CF /* CZExpExportDialogObserver.cpp in Sources */,
+				E1870AC113FE600D00AEB0CF /* CZExpPrefsDialogController.cpp in Sources */,
+				E1870AC213FE600D00AEB0CF /* CZExpPrefsPanelCreator.cpp in Sources */,
+				E1870AC313FE600D00AEB0CF /* CZExpSavePrefsCmd.cpp in Sources */,
+				E1870AC413FE600D00AEB0CF /* CZExpWSFacade.cpp in Sources */,
+				E1870AC513FE600D00AEB0CF /* tinystr.cpp in Sources */,
+				E1870AC613FE600D00AEB0CF /* tinyxml.cpp in Sources */,
+				E1870AC713FE600D00AEB0CF /* tinyxmlerror.cpp in Sources */,
+				E1870AC813FE600D00AEB0CF /* tinyxmlparser.cpp in Sources */,
+				E1870AC913FE600D00AEB0CF /* MacFileSystemIterator.cpp in Sources */,
+				E1870ACA13FE600D00AEB0CF /* CZExpExportDlgHelper.cpp in Sources */,
+				E1870ACB13FE600D00AEB0CF /* CZExpInDnUtils.cpp in Sources */,
+				E1D3CB9C1414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */,
+				E1D3CB9D1414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */,
+				E1D3CB9E1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */,
+				E1C894ED1499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */,
+				E1C894FF1499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */,
+				E1C895061499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */,
+				E1DF6C5C14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */,
+				E1CAC42614F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */,
+				E1CAC42F14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */,
+				E1CD7BBF1507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */,
+				E1CD7BC01507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */,
+				E10C4770157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */,
+				E1CD8F0F1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B0BF781499FDDC00918DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B0BF791499FDDC00918DCB /* IZExp.fr in Sources */,
+				E1B0BF7A1499FDDC00918DCB /* CZExpStartupShutdown.cpp in Sources */,
+				E1B0BF7B1499FDDC00918DCB /* ZExpConstants.cpp in Sources */,
+				E1B0BF7C1499FDDC00918DCB /* CZExpAppActionComponent.cpp in Sources */,
+				E1B0BF7D1499FDDC00918DCB /* CZExpDocUtils.cpp in Sources */,
+				E1B0BF7E1499FDDC00918DCB /* CZExpFileUtils.cpp in Sources */,
+				E1B0BF7F1499FDDC00918DCB /* CZExpPageItemUtils.cpp in Sources */,
+				E1B0BF801499FDDC00918DCB /* CZExpStoryUtils.cpp in Sources */,
+				E1B0BF811499FDDC00918DCB /* CZExpTextFrameUtils.cpp in Sources */,
+				E1B0BF821499FDDC00918DCB /* CZExpXMLAttrUtils.cpp in Sources */,
+				E1B0BF831499FDDC00918DCB /* ZPString.cpp in Sources */,
+				E1B0BF841499FDDC00918DCB /* StInDesignUtils.cpp in Sources */,
+				E1B0BF851499FDDC00918DCB /* StInDnXmlUtils.cpp in Sources */,
+				E1B0BF861499FDDC00918DCB /* StUtils.cpp in Sources */,
+				E1B0BF871499FDDC00918DCB /* iZPLog.cpp in Sources */,
+				E1B0BF881499FDDC00918DCB /* CZExpXMLExport_Styles.cpp in Sources */,
+				E1B0BF891499FDDC00918DCB /* CZExpXMLWriteFacade.cpp in Sources */,
+				E1B0BF8A1499FDDC00918DCB /* CZExpDocXMLExportProvider.cpp in Sources */,
+				E1B0BF8B1499FDDC00918DCB /* IZExpID.cpp in Sources */,
+				E1B0BF8C1499FDDC00918DCB /* IZExpNoStrip.cpp in Sources */,
+				E1B0BF8D1499FDDC00918DCB /* TriggerResourceDeps.cpp in Sources */,
+				E1B0BF8E1499FDDC00918DCB /* SDKPlugInEntrypoint.cpp in Sources */,
+				E1B0BF8F1499FDDC00918DCB /* ZPStringUtils.cpp in Sources */,
+				E1B0BF901499FDDC00918DCB /* AZExpWSRequest.cpp in Sources */,
+				E1B0BF911499FDDC00918DCB /* CZExpFetchTitleEditionsRequest.cpp in Sources */,
+				E1B0BF921499FDDC00918DCB /* CZExpFetchTitleListRequest.cpp in Sources */,
+				E1B0BF931499FDDC00918DCB /* CZExpUploadExportRequest.cpp in Sources */,
+				E1B0BF941499FDDC00918DCB /* AZExpWSResponse.cpp in Sources */,
+				E1B0BF951499FDDC00918DCB /* CZExpFetchTitleEditionsResponse.cpp in Sources */,
+				E1B0BF961499FDDC00918DCB /* CZExpFetchTitleListResponse.cpp in Sources */,
+				E1B0BF971499FDDC00918DCB /* CZExpUploadExportResponse.cpp in Sources */,
+				E1B0BF981499FDDC00918DCB /* CZExpServerData.cpp in Sources */,
+				E1B0BF991499FDDC00918DCB /* CZExpPrefs.cpp in Sources */,
+				E1B0BF9A1499FDDC00918DCB /* CZExpExportDialogController.cpp in Sources */,
+				E1B0BF9B1499FDDC00918DCB /* CZExpExportDialogObserver.cpp in Sources */,
+				E1B0BF9C1499FDDC00918DCB /* CZExpPrefsDialogController.cpp in Sources */,
+				E1B0BF9D1499FDDC00918DCB /* CZExpPrefsPanelCreator.cpp in Sources */,
+				E1B0BF9E1499FDDC00918DCB /* CZExpSavePrefsCmd.cpp in Sources */,
+				E1B0BF9F1499FDDC00918DCB /* CZExpWSFacade.cpp in Sources */,
+				E1B0BFA01499FDDC00918DCB /* tinystr.cpp in Sources */,
+				E1B0BFA11499FDDC00918DCB /* tinyxml.cpp in Sources */,
+				E1B0BFA21499FDDC00918DCB /* tinyxmlerror.cpp in Sources */,
+				E1B0BFA31499FDDC00918DCB /* tinyxmlparser.cpp in Sources */,
+				E1B0BFA41499FDDC00918DCB /* MacFileSystemIterator.cpp in Sources */,
+				E1B0BFA51499FDDC00918DCB /* CZExpExportDlgHelper.cpp in Sources */,
+				E1B0BFA61499FDDC00918DCB /* CZExpInDnUtils.cpp in Sources */,
+				E1B0BFA71499FDDC00918DCB /* CZExpXMLExport_Colors.cpp in Sources */,
+				E1B0BFA81499FDDC00918DCB /* CZExpXMLExport_Paths.cpp in Sources */,
+				E1B0BFA91499FDDC00918DCB /* CZExpXMLExport_Snapshots.cpp in Sources */,
+				E1B0BFAA1499FDDC00918DCB /* CZExpGlobalData.cpp in Sources */,
+				E1B0BFAB1499FDDC00918DCB /* CZExpGetConfigRequest.cpp in Sources */,
+				E1B0BFAC1499FDDC00918DCB /* CZExpGetConfigResponse.cpp in Sources */,
+				E1DF6C5B14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */,
+				E1CAC42414F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */,
+				E1CAC42D14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */,
+				E1CD7BBB1507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */,
+				E1CD7BBC1507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */,
+				E10C476E157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */,
+				E1CD8F0D1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CA8EF013AF30C2006D0785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA8EF113AF30C2006D0785 /* IZExp.fr in Sources */,
+				E1CA8EF213AF30C2006D0785 /* CZExpStartupShutdown.cpp in Sources */,
+				E1CA8EF313AF30C2006D0785 /* ZExpConstants.cpp in Sources */,
+				E1CA8EF413AF30C2006D0785 /* CZExpAppActionComponent.cpp in Sources */,
+				E1CA8EF513AF30C2006D0785 /* CZExpDocUtils.cpp in Sources */,
+				E1CA8EF613AF30C2006D0785 /* CZExpFileUtils.cpp in Sources */,
+				E1CA8EF713AF30C2006D0785 /* CZExpPageItemUtils.cpp in Sources */,
+				E1CA8EF813AF30C2006D0785 /* CZExpStoryUtils.cpp in Sources */,
+				E1CA8EF913AF30C2006D0785 /* CZExpTextFrameUtils.cpp in Sources */,
+				E1CA8EFA13AF30C2006D0785 /* CZExpXMLAttrUtils.cpp in Sources */,
+				E1CA8EFB13AF30C2006D0785 /* ZPString.cpp in Sources */,
+				E1CA8EFC13AF30C2006D0785 /* StInDesignUtils.cpp in Sources */,
+				E1CA8EFD13AF30C2006D0785 /* StInDnXmlUtils.cpp in Sources */,
+				E1CA8EFE13AF30C2006D0785 /* StUtils.cpp in Sources */,
+				E1CA8EFF13AF30C2006D0785 /* iZPLog.cpp in Sources */,
+				E1CA8F0013AF30C2006D0785 /* CZExpXMLExport_Styles.cpp in Sources */,
+				E1CA8F0113AF30C2006D0785 /* CZExpXMLWriteFacade.cpp in Sources */,
+				E1CA8F0213AF30C2006D0785 /* CZExpDocXMLExportProvider.cpp in Sources */,
+				E1CA8F0313AF30C2006D0785 /* IZExpID.cpp in Sources */,
+				E1CA8F0413AF30C2006D0785 /* IZExpNoStrip.cpp in Sources */,
+				E1CA8F0513AF30C2006D0785 /* TriggerResourceDeps.cpp in Sources */,
+				E1CA8F0613AF30C2006D0785 /* SDKPlugInEntrypoint.cpp in Sources */,
+				E1CA8F0713AF30C2006D0785 /* ZPStringUtils.cpp in Sources */,
+				E1CA8F0813AF30C2006D0785 /* AZExpWSRequest.cpp in Sources */,
+				E1CA8F0913AF30C2006D0785 /* CZExpFetchTitleEditionsRequest.cpp in Sources */,
+				E1CA8F0A13AF30C2006D0785 /* CZExpFetchTitleListRequest.cpp in Sources */,
+				E1CA8F0B13AF30C2006D0785 /* CZExpUploadExportRequest.cpp in Sources */,
+				E1CA8F0C13AF30C2006D0785 /* AZExpWSResponse.cpp in Sources */,
+				E1CA8F0D13AF30C2006D0785 /* CZExpFetchTitleEditionsResponse.cpp in Sources */,
+				E1CA8F0E13AF30C2006D0785 /* CZExpFetchTitleListResponse.cpp in Sources */,
+				E1CA8F0F13AF30C2006D0785 /* CZExpUploadExportResponse.cpp in Sources */,
+				E1CA8F1013AF30C2006D0785 /* CZExpServerData.cpp in Sources */,
+				E1CA8F1113AF30C2006D0785 /* CZExpPrefs.cpp in Sources */,
+				E1CA8F1213AF30C2006D0785 /* CZExpExportDialogController.cpp in Sources */,
+				E1CA8F1313AF30C2006D0785 /* CZExpExportDialogObserver.cpp in Sources */,
+				E1CA8F1413AF30C2006D0785 /* CZExpPrefsDialogController.cpp in Sources */,
+				E1CA8F1513AF30C2006D0785 /* CZExpPrefsPanelCreator.cpp in Sources */,
+				E1CA8F1613AF30C2006D0785 /* CZExpSavePrefsCmd.cpp in Sources */,
+				E1CA8F1713AF30C2006D0785 /* CZExpWSFacade.cpp in Sources */,
+				E1CA8F1813AF30C2006D0785 /* tinystr.cpp in Sources */,
+				E1CA8F1913AF30C2006D0785 /* tinyxml.cpp in Sources */,
+				E1CA8F1A13AF30C2006D0785 /* tinyxmlerror.cpp in Sources */,
+				E1CA8F1B13AF30C2006D0785 /* tinyxmlparser.cpp in Sources */,
+				E1CA8F1C13AF30C2006D0785 /* MacFileSystemIterator.cpp in Sources */,
+				E1CA8F1D13AF30C2006D0785 /* CZExpExportDlgHelper.cpp in Sources */,
+				070988AE13BB2E5E00C62009 /* CZExpInDnUtils.cpp in Sources */,
+				E1D3CBA81414C85F00CB45A4 /* CZExpXMLExport_Colors.cpp in Sources */,
+				E1D3CBA91414C85F00CB45A4 /* CZExpXMLExport_Paths.cpp in Sources */,
+				E1D3CBAA1414C85F00CB45A4 /* CZExpXMLExport_Snapshots.cpp in Sources */,
+				E1C894F11499F21A0093E2B0 /* CZExpGlobalData.cpp in Sources */,
+				E1C895031499F24D0093E2B0 /* CZExpGetConfigRequest.cpp in Sources */,
+				E1C8950A1499F2620093E2B0 /* CZExpGetConfigResponse.cpp in Sources */,
+				E1DF6C5714E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */,
+				E1CAC42514F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */,
+				E1CAC42E14F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */,
+				E1CD7BBD1507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */,
+				E1CD7BBE1507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */,
+				E10C476F157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */,
+				E1CD8F0E1574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4EF3D14E10319007DBA98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E4EF3E14E10319007DBA98 /* IZExp.fr in Sources */,
+				E1E4EF3F14E10319007DBA98 /* CZExpStartupShutdown.cpp in Sources */,
+				E1E4EF4014E10319007DBA98 /* ZExpConstants.cpp in Sources */,
+				E1E4EF4114E10319007DBA98 /* CZExpAppActionComponent.cpp in Sources */,
+				E1E4EF4214E10319007DBA98 /* CZExpDocUtils.cpp in Sources */,
+				E1E4EF4314E10319007DBA98 /* CZExpFileUtils.cpp in Sources */,
+				E1E4EF4414E10319007DBA98 /* CZExpPageItemUtils.cpp in Sources */,
+				E1E4EF4514E10319007DBA98 /* CZExpStoryUtils.cpp in Sources */,
+				E1E4EF4614E10319007DBA98 /* CZExpTextFrameUtils.cpp in Sources */,
+				E1E4EF4714E10319007DBA98 /* CZExpXMLAttrUtils.cpp in Sources */,
+				E1E4EF4814E10319007DBA98 /* ZPString.cpp in Sources */,
+				E1E4EF4914E10319007DBA98 /* StInDesignUtils.cpp in Sources */,
+				E1E4EF4A14E10319007DBA98 /* StInDnXmlUtils.cpp in Sources */,
+				E1E4EF4B14E10319007DBA98 /* StUtils.cpp in Sources */,
+				E1E4EF4C14E10319007DBA98 /* iZPLog.cpp in Sources */,
+				E1E4EF4D14E10319007DBA98 /* CZExpXMLExport_Styles.cpp in Sources */,
+				E1E4EF4E14E10319007DBA98 /* CZExpXMLWriteFacade.cpp in Sources */,
+				E1E4EF4F14E10319007DBA98 /* CZExpDocXMLExportProvider.cpp in Sources */,
+				E1E4EF5014E10319007DBA98 /* IZExpID.cpp in Sources */,
+				E1E4EF5114E10319007DBA98 /* IZExpNoStrip.cpp in Sources */,
+				E1E4EF5214E10319007DBA98 /* TriggerResourceDeps.cpp in Sources */,
+				E1E4EF5314E10319007DBA98 /* SDKPlugInEntrypoint.cpp in Sources */,
+				E1E4EF5414E10319007DBA98 /* ZPStringUtils.cpp in Sources */,
+				E1E4EF5514E10319007DBA98 /* AZExpWSRequest.cpp in Sources */,
+				E1E4EF5614E10319007DBA98 /* CZExpFetchTitleEditionsRequest.cpp in Sources */,
+				E1E4EF5714E10319007DBA98 /* CZExpFetchTitleListRequest.cpp in Sources */,
+				E1E4EF5814E10319007DBA98 /* CZExpUploadExportRequest.cpp in Sources */,
+				E1E4EF5914E10319007DBA98 /* AZExpWSResponse.cpp in Sources */,
+				E1E4EF5A14E10319007DBA98 /* CZExpFetchTitleEditionsResponse.cpp in Sources */,
+				E1E4EF5B14E10319007DBA98 /* CZExpFetchTitleListResponse.cpp in Sources */,
+				E1E4EF5C14E10319007DBA98 /* CZExpUploadExportResponse.cpp in Sources */,
+				E1E4EF5D14E10319007DBA98 /* CZExpServerData.cpp in Sources */,
+				E1E4EF5E14E10319007DBA98 /* CZExpPrefs.cpp in Sources */,
+				E1E4EF5F14E10319007DBA98 /* CZExpExportDialogController.cpp in Sources */,
+				E1E4EF6014E10319007DBA98 /* CZExpExportDialogObserver.cpp in Sources */,
+				E1E4EF6114E10319007DBA98 /* CZExpPrefsDialogController.cpp in Sources */,
+				E1E4EF6214E10319007DBA98 /* CZExpPrefsPanelCreator.cpp in Sources */,
+				E1E4EF6314E10319007DBA98 /* CZExpSavePrefsCmd.cpp in Sources */,
+				E1E4EF6414E10319007DBA98 /* CZExpWSFacade.cpp in Sources */,
+				E1E4EF6514E10319007DBA98 /* tinystr.cpp in Sources */,
+				E1E4EF6614E10319007DBA98 /* tinyxml.cpp in Sources */,
+				E1E4EF6714E10319007DBA98 /* tinyxmlerror.cpp in Sources */,
+				E1E4EF6814E10319007DBA98 /* tinyxmlparser.cpp in Sources */,
+				E1E4EF6914E10319007DBA98 /* MacFileSystemIterator.cpp in Sources */,
+				E1E4EF6A14E10319007DBA98 /* CZExpExportDlgHelper.cpp in Sources */,
+				E1E4EF6B14E10319007DBA98 /* CZExpInDnUtils.cpp in Sources */,
+				E1E4EF6C14E10319007DBA98 /* CZExpXMLExport_Colors.cpp in Sources */,
+				E1E4EF6D14E10319007DBA98 /* CZExpXMLExport_Paths.cpp in Sources */,
+				E1E4EF6E14E10319007DBA98 /* CZExpXMLExport_Snapshots.cpp in Sources */,
+				E1E4EF6F14E10319007DBA98 /* CZExpGlobalData.cpp in Sources */,
+				E1E4EF7014E10319007DBA98 /* CZExpGetConfigRequest.cpp in Sources */,
+				E1E4EF7114E10319007DBA98 /* CZExpGetConfigResponse.cpp in Sources */,
+				E1DF6C5D14E54AB600F5EA31 /* CZExpErrorStringService.cpp in Sources */,
+				E1CAC42014F7CD4F0098922F /* CZExpValidateMediaContentRequest.cpp in Sources */,
+				E1CAC42914F7CDCA0098922F /* CZExpValidateMediaContentResponse.cpp in Sources */,
+				E1CD7BB31507221800D1630B /* CZPDisclosureTriAngleObserver.cpp in Sources */,
+				E1CD7BB41507221800D1630B /* CZPDisclosureTriAngleOptions.cpp in Sources */,
+				E10C476A157362670048ECAF /* CZExpPrefsDialogObserver.cpp in Sources */,
+				E1CD8F091574D05C007E982A /* CZExpXMLExport_Articles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E17348BA12A3CD2E005A0AAD /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18252C712A3B22E00E9D502 /* iZineExportCS3Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		E17DCF4113FE3E48000FECD2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E17DCF0413FE3DB2000FECD2 /* iZineExportCS5Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		E18252B312A3B1A200E9D502 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18252C512A3B22E00E9D502 /* iZineExport.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		E182539712A3B67300E9D502 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18252C612A3B22E00E9D502 /* iZineExportCS3Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		E1870AD513FE600D00AEB0CF /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1870A4D13FE593B00AEB0CF /* RedfiveExportCS5Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		E1B0BFB71499FDDC00918DCB /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B0BF671499FC5D00918DCB /* iZineExportCS5Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		E1CA8F2713AF30C2006D0785 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CA8F2A13AF3142006D0785 /* RedfiveExportCS3Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		E1E4EF7C14E10319007DBA98 /* Default */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E4EF8514E10528007DBA98 /* RedfiveExportCS5.5Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E17348B912A3CD2E005A0AAD /* Build configuration list for PBXNativeTarget "iZine Export CS3 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17348BA12A3CD2E005A0AAD /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E17DCF4013FE3E48000FECD2 /* Build configuration list for PBXNativeTarget "CS5 Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17DCF4113FE3E48000FECD2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E18252B512A3B1A200E9D502 /* Build configuration list for PBXProject "iZineExport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18252B312A3B1A200E9D502 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E182539912A3B67300E9D502 /* Build configuration list for PBXNativeTarget "CS3 Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182539712A3B67300E9D502 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E1870AD413FE600D00AEB0CF /* Build configuration list for PBXNativeTarget "Redfive Export CS5 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1870AD513FE600D00AEB0CF /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E1B0BFB61499FDDC00918DCB /* Build configuration list for PBXNativeTarget "iZine Export CS5 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B0BFB71499FDDC00918DCB /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E1CA8F2613AF30C2006D0785 /* Build configuration list for PBXNativeTarget "Redfive Export CS3 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CA8F2713AF30C2006D0785 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		E1E4EF7B14E10319007DBA98 /* Build configuration list for PBXNativeTarget "Redfive Export CS5.5 Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E4EF7C14E10319007DBA98 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E18252B212A3B1A200E9D502 /* Project object */;
+}

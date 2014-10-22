@@ -1,0 +1,91 @@
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Project/iZineExport.xcconfig $
+//	$Revision: 3985 $
+//	$Date: 2012-03-07 06:41:26 +0100 (Wed, 07 Mar 2012) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 2010 Nov 29
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+
+//	Description: config file for iZineExport mac project.
+
+PRODUCT_NAME = iZineExport
+
+ALWAYS_REZ = YES
+ARCHS = $(NATIVE_ARCH)
+BIB_THROW = BIB_NO_THROW
+CONFIGURATION_BUILD_DIR = $(BUILT_PRODUCTS_DIR)
+DEBUG_INFORMATION_FORMAT = dwarf
+
+GCC_VERSION = 4.0
+GCC_ENABLE_CPP_EXCEPTIONS = NO
+GCC_ENABLE_CPP_RTTI = YES
+GCC_ENABLE_SYMBOL_SEPARATION = YES
+GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO
+GCC_INLINES_ARE_PRIVATE_EXTERN = YES
+GCC_INPUT_FILETYPE = automatic
+GCC_PFE_FILE_C_DIALECTS = c++ 
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS) MACINTOSH $(BIB_THROW) WITH_COOKIES WITH_ZLIB WITH_OPENSSL WITH_GZIP ZExpBuild HTTP_ONLY ExportWithAdvanceOptions
+GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = 
+GCC_SYMBOLS_PRIVATE_EXTERN = YES
+GCC_TREAT_WARNINGS_AS_ERRORS = NO
+GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO
+GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES
+GCC_WARN_ABOUT_RETURN_TYPE = YES
+GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO
+GCC_WARN_INHIBIT_ALL_WARNINGS = NO
+GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO
+GCC_WARN_SHADOW = NO
+GCC_WARN_UNUSED_VALUE = YES
+GCC_WARN_UNUSED_VARIABLE = NO
+
+
+EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = .svn
+
+MACOSX_DEPLOYMENT_TARGET_i386 = 10.4
+MACOSX_DEPLOYMENT_TARGET_ppc = 10.4
+ONLY_LINK_ESSENTIAL_SYMBOLS = YES
+OTHER_LDFLAGS = -lssl -lcrypto -Wl,-executable_path -Wl,$(InDesignSDK_AppDir) -lz -lcurl
+PER_ARCH_CFLAGS_i386 = -DMACTEL_SKIP
+
+PLC_GENERATE_PKGINFO_FILE = YES
+PLC_INCLUDES = $(REZ_SEARCH_PATHS)
+
+PREBINDING = NO
+SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES
+WARNING_CFLAGS = -Wno-deprecated 
+
+INFOPLIST_PREPROCESS = YES
+ALWAYS_SEARCH_USER_PATHS = YES
+
+INFOPLIST_FILE = Info.plist
+INFOPLIST_PREFIX_HEADER =  $(ZExpSourceDir)/iZineExpVersion.h
+
+ODFRCDefinesAllTgt = -d ExportWithAdvanceOptions
+
+SYMROOT = ../../build
+OBJROOT = $(SYMROOT)/$(PRODUCT_NAME)_Obj
+SHARED_PRECOMPS_DIR = $(SYMROOT)/SharedPrecompiledHeaders/$(TARGET_NAME)
+TARGET_BUILD_DIR = $(BUILT_PRODUCTS_DIR)
+INSTALL_PATH = ./
+
+//Project specific paths
+FRAMEWORK_SEARCH_PATHS = $(SDKROOT)/System/Library/Frameworks  "$(TARGET_BUILD_DIR)"
+REZ_SEARCH_PATHS = $(ZExpSourceDir)/ $(ZExpSourceDir)/Plugin $(ZExpResourceDir)
+HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon /usr/include
+USER_HEADER_SEARCH_PATHS =  $(ZExpSourceDir)/** $(ZExpSDKDir)/Public/**  $(ZExpSDKDir)/Private/** $(ZExpCommonDir)/** $(ZExpResourceDir)/** 
+ODFRC_INCLUDE_PATHS = -i $(ZExpResourceDir) -i $(ZExpResourceDir)/Images -i $(ZExpSourceDir) -i $(ZExpSourceDir)/Plugin  -i $(ZExpSDKDir)/Public 
+
+LIBRARY_SEARCH_PATHS = $(inherited) $(LIBRARY_SEARCH_PATHS_IDModel)
+
+//UI pln paths
+ZExpRootDir = ..
+ZExpSDKDir = $(ZExpRootDir)/SDK
+ZExpSourceDir = $(ZExpRootDir)/Source
+ZExpResourceDir = $(ZExpRootDir)/Resource
+
+//paths common to both plns
+ZExpCommonDir = $(ZExpRootDir)/../Common
+ZPExternalDir = ../../../../../iZine.ui/External
+

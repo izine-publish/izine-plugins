@@ -1,0 +1,220 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineMedia/Resource/iZMediaUI%20ClassDefinitions_Auto.fri $
+//	$Revision: 2799 $
+//	$Date: 2011-04-12 12:20:30 +0200 (Tue, 12 Apr 2011) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 29-3-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description: This is auto generated file. Any change made to it will be lost. Generated
+//	from excel sheet macro.
+//========================================================================================
+
+
+	AddIn
+	{
+		kWorkspaceBoss,
+		kInvalidClass,
+		{
+		}
+	},
+
+	AddIn
+	{
+		kUtilsBoss,
+		kInvalidClass,
+		{
+			IID_IZMUIDIALOGFACADE,	kZMUIDialogFacadeImpl,	// dialog creation helper
+		}
+	},
+
+	Class
+	{
+		kZMAppActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZMActionComponentImpl,	// Handle application's actions
+		}
+	},
+
+	Class
+	{
+		kZMTVHeaderActionComponentBoss,
+		kBaseActionComponentBoss,
+		{
+			IID_IACTIONCOMPONENT,	kZMTVHeaderActionComponentImpl,
+			IID_IDYNAMICMENU,	kZMTVHeaderDynamicMenuImpl,	// shown on right click on header
+		}
+	},
+
+	Class
+	{
+		kZMPrefsDialogBoss,
+		kPrimaryResourcePanelWidgetBoss,
+		{
+			IID_IK2SERVICEPROVIDER,	kDialogPanelServiceImpl,
+			IID_IPANELCREATOR,	kZMUIPrefsPanelCreatorImpl,
+			IID_IDIALOGCONTROLLER,	kZMUIPrefsDialogControllerImpl,
+			IID_IOBSERVER,	kZMUIPrefsDialogObserverImpl,
+		}
+	},
+
+	Class
+	{
+		kZMAlertDialogBoss,
+		kDialogBoss,
+		{
+//			IID_IDIALOGCONTROLLER,	kZMUIAlertDialogControllerImpl,
+//			IID_IOBSERVER,	kZMUIAlertDialogObserverImpl,
+//			IID_IINTDATA,	kIntDataImpl,	// Default Button (1/2/3/4),  result on return
+//			IID_IZMUIINTDATA,	kZMIntDataAliasImpl,	// Cancel button, used for esc. (1/2/3/4)
+//			IID_ISTRINGDATA,	kStringDataImpl,	// Message
+//			IID_ISTRINGLISTDATA,	kStringListDataImpl,	// Button labels, max 4 used
+		}
+	},
+
+	Class
+	{
+		kZMUIAdsPanelWidgetBoss,
+		kPalettePanelWidgetBoss,
+		{
+			IID_IPANELMENUDATA,	kCPanelMenuDataImpl,
+			IID_IOBSERVER,	kZMAdsPanelObserverImpl,
+			IID_ICONTROLVIEW,	kZMAdsPanelControlViewImpl,
+			IID_IZMADSPANELHELPER,	kZMAdsPanelHelperImpl,
+		}
+	},
+
+	Class
+	{
+		kZMUIDataObjPopupBoss,
+		kDropDownListWidgetBoss,
+		{
+			IID_IZMUISELECTEDID,	kZMDataIDStringDataImpl,	// ID that should be selected when filled, may not be the current selection
+//			IID_IZMUIOBJIDSSTRINGLISTDATA,	kZMStringListDataImpl,	// Should we copy the IDs?
+		}
+	},
+
+	Class
+	{
+		kZMUIPopTitleListBoss,
+		kZMUIDataObjPopupBoss,
+		{
+			IID_IOBSERVER,	kZMTitlePopupObserverImpl,
+			IID_IZMDATAOBJPOPUPCONTROLLER,	kZMTitlePopupControllerImpl,
+		}
+	},
+
+	Class
+	{
+		kZMUIPopEditionsListBoss,
+		kZMUIDataObjPopupBoss,
+		{
+			IID_IOBSERVER,	kZMEditionPopupObserverImpl,
+			IID_IZMDATAOBJPOPUPCONTROLLER,	kZMEditionPopupControllerImpl,
+			IID_IZMTITLEIDSTRINGDATA,	kZMDataIDStringData1Impl,	// Title ID for which it has editions
+		}
+	},
+
+	/* Not being used. */
+	Class
+	{
+		kZMUIDataObjPopupWithFixedValuesBoss,
+		kZMUIDataObjPopupBoss,
+		{
+			IID_IZMPOPFIXEDITEMSTRINGDATA,	kZMStringListControlDataImpl,	// Store list of fixed items in popup, alias impl
+		}
+	},
+
+	/* edition popup with All option */
+	Class
+	{
+		kZMUIPopEditionWithAllListBoss,
+		kZMUIDataObjPopupWithFixedValuesBoss,
+		{
+			IID_IOBSERVER,	kZMEditionCustomPopupObserverImpl,
+			IID_IZMDATAOBJPOPUPCONTROLLER,	kZMEditionCustomPopupControllerImpl,
+		}
+	},
+
+	Class
+	{
+		kZMAdsTreeViewWidgetBoss,
+		kTreeViewWidgetBoss,
+		{
+			IID_ITREEVIEWHIERARCHYADAPTER,	kZMAdsTVHierarchyAdapterImpl,
+			IID_ITREEVIEWWIDGETMGR,	kZMAdsTVWidgetManagerImpl,
+			IID_IOBSERVER,	kZMAdsTVObserverImpl,
+			IID_IZMADSTVDATAMODEL,	kZMAdsTVDataModelImpl,
+			IID_ILINKEDWIDGETATTRIBUTES,	kAssociatedWidgetAttributesImpl,	// Linked TV Header widget ID
+			IID_ITREEVIEWMGR,	kZMTreeViewMgrImpl,	// Sync header with tree scrolling
+		}
+	},
+
+	/* Base class for tree view nodes */
+	Class
+	{
+		kZMUIDataObjTVNodeWidgetBoss,
+		kTreeNodeWidgetBoss,
+		{
+//			IID_IZMUITVNODEDATA,	kZMTVNodeDataImpl,	// Derived objects must implement this interface
+//			IID_IZMUITVNODEWIDGETMGR,	kZMTVNodeWidgetMgrImpl,	// Derived objects must implement this interface
+		}
+	},
+
+	Class
+	{
+		kZMAdsTVAdFileNodeWidgetBoss,
+		kZMUIDataObjTVNodeWidgetBoss,
+		{
+			IID_IZMUITVNODEDATA,	kZMAdsTVAdFileNodeDataImpl,	// stores Ad file shown by node
+			IID_IZMUITVNODEWIDGETMGR,	kZMAdsTVAdFileNodeWidgetMgrImpl,
+			IID_IEVENTHANDLER,	kZMAdsTVAdFileNodeEHImpl,	// to open/close node on dbl click
+			IID_IZMOLDEVENTHANDLER,	kTreeNodeEventHandlerImpl,
+			IID_IINTDATA,	kIntDataImpl,	// Stores last version of header when repositioned columns
+		}
+	},
+
+	Class
+	{
+		kZMAdsTVAdNodeWidgetBoss,
+		kZMUIDataObjTVNodeWidgetBoss,
+		{
+			IID_IZMUITVNODEDATA,	kZMAdsTVAdNodeDataImpl,	// stores Ad data shown by node
+			IID_IZMUITVNODEWIDGETMGR,	kZMAdsTVAdNodeWidgetMgrImpl,
+			IID_IEVENTHANDLER,	kZMAdsTVAdNodeEHImpl,
+			IID_IZMOLDEVENTHANDLER,	kTreeNodeEventHandlerImpl,
+			IID_IOBSERVER,	kZMAdsTVAdNodeObserverImpl,
+			IID_IDRAGDROPSOURCE,	kZMAdsTVAdNodeDragDropSourceImpl,
+			IID_IINTDATA,	kIntDataImpl,	// Stores last version of header when repositioned columns
+		}
+	},
+
+	Class
+	{
+		kZMTVColumnRollOverIconButtonWidgetBoss,
+		kRollOverIconButtonBoss,
+		{
+			IID_IOBSERVER,	kZMTVColumnRollOverIconButtonObserverImpl,
+		}
+	},
+
+	Class
+	{
+		kZMTVHeaderWidgetBoss,
+		kGenericPanelWithBorderWidgetBoss,
+		{
+			IID_IZMTVHEADERCONTROLLER,	kZMTVHeaderControllerImpl,	// Controls the header & TV columns
+			IID_IZMTVCOLUMNSINFO,	kZMTVColumnsInfoImpl,	// Give info which columns are defined for tree
+			IID_IZMTVCOLUMNSPREF,	kZMTVColumnsPrefPersistImpl,	// Persist, Current size & position info
+			IID_IOBSERVER,	kZMTVHeaderObserverImpl,
+			IID_ILINKEDWIDGETATTRIBUTES,	kAssociatedWidgetAttributesImpl,	// Linked TV widget ID
+			IID_IZMINTDATA,	kPersistIntDataImpl,	// TreeType, 1 ads 2 for?
+			IID_IEVENTHANDLER,	kZMTVHeaderEHImpl,	// show popup on right click
+//			IID_IZMOLDEVENTHANDLER,	kPanelEventHandlerImpl,
+		}
+	},
+

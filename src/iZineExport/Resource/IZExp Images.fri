@@ -1,0 +1,26 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZineExport/Resource/IZExp%20Images.fri $
+//	$Revision: 2514 $
+//	$Date: 2010-11-15 09:10:40 +0100 (Mon, 15 Nov 2010) $
+//	$Author: rajkumar.sehrawat $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 12-11-2010
+//	Copyright: 2008-2010 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+
+#ifdef __ODFRC__
+
+#ifdef MACINTOSH
+	//resource PNGA(kIZPAvailableIconRsrcID)		"B_CheckedOut_Sm_N.png"
+//	kIZPLogoIconRsrcID BITMAP DISCARDABLE	 "CenterComp.bmp"
+#else
+#define ImagesPath	"../Resource/Images"
+//	resource PNGA(kIZPAvailableIconRsrcID)		ImagesPath "/B_CheckedOut_Sm_N.png"
+#endif
+
+
+#endif // __ODFRC__=======

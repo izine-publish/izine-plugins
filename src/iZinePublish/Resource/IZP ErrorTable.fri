@@ -1,0 +1,64 @@
+//========================================================================================
+//	
+//	$HeadURL: svn://localhost/izine/iZinePlns/Codebase/trunk/iZinePublish/Resource/IZP%20ErrorTable.fri $
+//	$Revision: 3544 $
+//	$Date: 2011-07-26 14:39:52 +0200 (Tue, 26 Jul 2011) $
+//	$Author: aman.alam $
+//	
+//	Creator: Raj Kumar Sehrawat
+//	Created: 13-5-2011
+//	Copyright: 2008-2011 iZine Publish. All rights reserved.
+//	
+//	Description:
+//========================================================================================
+#ifndef _h_IZP_ErrorTable_
+#define _h_IZP_ErrorTable_
+#pragma once
+
+#include "ErrorTableTypes.h"
+/*
+// User Error Table resource
+// To be coupled with an IErrorStringService implementation and
+// string translations (see localized .fr files)
+// Note: that the string provided in the UserErrorTable is not localized
+*/
+resource UserErrorTable(kSDKDefErrorStringResourceID)	//id is used in service, don't change
+{
+	{
+		kZPOpenFileWithoutLoginError, kZPOpenFileWithoutLoginErrorKey,
+		kZPNewAssignmentNotAllowedError, kZPNewAssignmentNotAllowedErrorKey,
+		kZPAssetDeletedOnServerError, kZPAssetDeletedOnServerErrorKey,
+		kZPAssetDownloadingError, kZPAssetDownloadingErrorKey,
+		kZPAssignmentCheckinError, kZPAssignmentCheckinErrorKey,
+		kZPAssignmentPropertiesUpdateError, kZPAssignmentPropertiesUpdateErrorKey,
+		kZPAssignmentUpdatingError, kZPAssignmentUpdatingErrorKey,
+		kZPDocumentAlreadyOpenError, kZPDocumentAlreadyOpenErrorKey,
+		kZPDocumentLockError, kZPDocumentLockErrorKey,
+		kZPDocumentWritingError, kZPDocumentWritingErrorKey,
+		kZPExportImageToJpegError, kZPExportImageToJpegErrorKey,
+		kZPFileOpeningError, kZPFileOpeningErrorKey,
+		kZPLinkedStoryWritingError, kZPLinkedStoryWritingErrorKey,
+		kZPLockAcquireFailError, kZPLockAcquireFailErrorKey,
+		kZPLoginFailedError, kZPLoginFailedErrorKey,
+		kZPServerErrorError, kZPServerErrorErrorKey,
+		
+		kZPWSAssetCreatingError, kZPWSAssetCreatingErrorKey,
+		kZPWSAssetRetrieveError, kZPWSAssetRetrieveErrorKey,
+		kZPWSAssetUploadError, kZPWSAssetUploadErrorKey,
+		kZPWSAssignmentUploadingError, kZPWSAssignmentUploadingErrorKey,
+		kZPWSDocumentCheckinError, kZPWSDocumentCheckinErrorKey,
+		kZPWSDocumentUploadingError, kZPWSDocumentUploadingErrorKey,
+		kZPWSPDFUploadError, kZPWSPDFUploadErrorKey,
+
+		kZPUIEditionCannotChangeError, kZPUIEditionCannotChangeErrorKey,
+		kZPUIEditionEmptyError, kZPUIEditionEmptyErrorKey,
+		kZPUINameEmptyError, kZPUINameEmptyErrorKey,
+		kZPUITitleCannotChangeError, kZPUITitleCannotChangeErrorKey,
+		kZPUITitleEmptyError, kZPUITitleEmptyErrorKey,
+		kZPUIStatusEmptyError, kZPUIStatusEmptyErrorKey,
+
+		kZPUIDuplicateAssetNameError, kZPUIDuplicateAssetNameErrorKey,
+	}
+};
+
+#endif //_h_IZP_ErrorTable_

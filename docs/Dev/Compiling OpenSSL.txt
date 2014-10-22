@@ -1,0 +1,13 @@
+Open a Visual Studio 2005 Command prompt and add references to the Microsoft SDK as following:
+
+SET PATH=%PATH%;C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin
+SET LIB=%LIB%;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib
+SET INCLUDE=%INCLUDE%;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Include
+
+cd to your openssl uncompressed folder
+
+Now we simply have to follow the tasks listed in INSTALL.W32:
+
+perl Configure VC-WIN32 –prefix=c:/openssl
+ms\do_masm
+nmake -f ms\ntdll.mak

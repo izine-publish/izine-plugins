@@ -1,0 +1,80 @@
+Helpful regEx to be used in iZine.UI visual project.
+These are divided in Find & Replace , Find only
+-----------------------------------------------------------------------------
+							Find & Replace
+			First string is search, second is replace string.
+-----------------------------------------------------------------------------
+=>	Delete all trailing spaces, tabs
+Warning: Don't do Replace all as it will change text between string constants as well.
+
+{[^ \t\r\n/]}( |\t)+$
+\1
+
+=> Find spaces and replace with tab
+Warning: Don't do Replace all
+(    )
+\t
+
+=>	Find assignment without space
+Warning: Don't do Replace all
+{[^ \t=!><'\?\"+]}={[^ \t=0\(\"%'\\/]}
+\1 = \2
+
+=>	Replace text within /* ... */  with // ...
+Warning: Don't do Replace all as it will change text between string constants as well.
+
+/\*{.+}\*/
+//\1
+
+-----------------------------------------------------------------------------
+							Find 
+-----------------------------------------------------------------------------
+=>	Find include fr files
+include[ \t]+\"[a-zA-Z_]+\.fr\"
+
+=>	Regex to find functional cast
+\([ \t]*([a-zA-Z]+)[ \t]*([a-zA-Z]*)[ \t]*\*[ \t]*\)
+
+=>	ReadWrite functions
+\:\:[ \t]*Read
+
+=>	GUID values xx-xx-xx-xx-xx
+\"[a-z0-9]+\-[a-z0-9]+\-[a-z0-9]+\-[a-z0-9]+\-[a-z0-9]+\"
+
+=> Functional cast
+\=[ \t]*\([ \t]*(const)?[ \t]*[a-zA-z_][a-zA-Z0-9_]+[ \t]*\*[ \t]*\)[ \t]*[a-zA-z_][a-zA-Z0-9_]+
+\=[ \t]*\([ \t]*[ \t]*[a-zA-z_][a-zA-Z0-9_]+[ \t]*\*[ \t]*\)[ \t]*[a-zA-z_][a-zA-Z0-9_]*
+
+=> Create pminterface
+CREATE(_|_PERSIST_)PMINTERFACE[ \t]*\([A-Za-z]+[ \t]*\,[ \t]*k[a-zA-Z]+Impl[ \t]*\)
+
+=> Create pminterface, VS Style regex
+CREATE(_|_PERSIST_)PMINTERFACE:b*\(:i:b*\,:b*:i:b*\)
+
+=> TODOs
+//[ \t]*TODO[s]*[ \t]*[\:]*
+
+=> CS5 TODOs
+TODO[s]*[ \t]*[\:]*[ \t]*CS5
+
+
+=> ID not in upper case.
+[a-zA-Z](id|Id)[^a-zA-Z0-9]
+(?[a-zA-Z])(id|Id)(?[^a-zA-Z0-9])
+
+=> InterfacePtr with space just after it before <
+InterfacePtr:b+\<
+
+=> InterfacePtr with space in it.
+InterfacePtr:b*\<:b*:a*:b*:a+:b+\>
+InterfacePtr:b*\<:b+:a*:b*:a+:b*\>
+InterfacePtr:b*\<:b+:a*:b*:a+:b+\>
+
+=> Non const our interface used, other than Utils.
+\<IZP:a+\>:b
+
+=>Alert messages
+CAlert:b*\:\::b*(Information|Error|Warning)Alert:b*\(
+
+=>Search Id Prefix
+\#define[ \t]+k[a-zA-Z]+Prefix[ \t]+
